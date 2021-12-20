@@ -8,14 +8,17 @@ function Section() {
         <h1>Model S</h1>
         <p>Order Online For Touchless Delivery</p>
       </ItemText>
-      <ButtonGroup>
-        <LeftButton>
-          Visit Site
-        </LeftButton>
-        <RightButton>
-          Visit Github Repository
-        </RightButton>
-      </ButtonGroup>
+      <Buttons>
+        <ButtonGroup>
+          <LeftButton>
+            Visit Site
+          </LeftButton>
+          <RightButton>
+            Visit Github Repository
+          </RightButton>
+        </ButtonGroup>
+        <DownArrow src="/images/down-arrow.svg" />
+      </Buttons>
     </Wrap>
   );
 }
@@ -26,7 +29,7 @@ const Wrap = styled.div`
   width: 100vw;
   height: 100vh;
   /* background-color: yellow; */
-  background-image: url("../images/gym.png");
+  background-image: url("/images/model-s.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -44,6 +47,8 @@ const ItemText = styled.div`
 
 const ButtonGroup = styled.div`
   display: flex;
+  margin-bottom: 40px;
+  cursor: pointer;
   `;
 
 const LeftButton = styled.div`
@@ -62,5 +67,14 @@ const LeftButton = styled.div`
   `;
 
 const RightButton = styled(LeftButton)`
+
+  `;
+
+const DownArrow = styled.img`
+  height: 40px;
+  margin-bottom: 20px;
+  `;
+
+const Buttons = styled.div`
 
   `;
