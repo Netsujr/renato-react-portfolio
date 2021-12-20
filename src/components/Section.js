@@ -29,7 +29,8 @@ const Wrap = styled.div`
   width: 100vw;
   height: 100vh;
   /* background-color: yellow; */
-  background-image: url("/images/model-s.jpg");
+  background-image: url("/images/largebg.jpg");
+  opacity: 0.98;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -37,11 +38,16 @@ const Wrap = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  &:img {
+    transform: scaleX(-1);
+  }
   `;
 // sc for const shortcut
 const ItemText = styled.div`
   padding-top: 15vh;
   text-align: center;
+  color: white;
 
   `;
 
@@ -52,7 +58,7 @@ const ButtonGroup = styled.div`
   `;
 
 const LeftButton = styled.div`
-  background-color: rgba(23, 26, 32, 0.8);
+  background-color: rgba(100, 50, 100, 0.8);
   height: 40px;
   width: 256px;
   color: white;
