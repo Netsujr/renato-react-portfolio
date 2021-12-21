@@ -35,7 +35,7 @@ const ImgSlider = ({ FirstImg, SecondImg, ThirdImg }) => {
 export default ImgSlider;
 
 const Carousel = styled(Slider)`
-  border: 6px solid pink;
+  /* border: 6px solid pink; */
   width: 90%;
   height: 90%;
   justify-content: center;
@@ -60,15 +60,15 @@ const Carousel = styled(Slider)`
   }
   `
 const Wrap = styled.div`
-  border: 4px solid orange;
+  border: 4px solid transparent;
   cursor: pointer;
   img {
-    border: 4px solid yellow;
+    /* border: 4px solid yellow; */
     border-radius: 4px;
     width: 100%;
     height: 100%;
     transition-duration: 300ms;
-    box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px, rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+    box-shadow: rgb(0 0 0 / 73%) 0px 16px 10px -10px;
     }
   }
-  `
+  `;

@@ -22,7 +22,7 @@ function Home() {
         Img1={image1}
         Img2={image2}
         projectTitle="Project 11"
-        projectDesc="lorem ipsum"
+        projectDesc="lorem ipsulorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumm"
 
       />
       <Section
