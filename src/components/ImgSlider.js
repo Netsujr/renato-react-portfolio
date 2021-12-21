@@ -10,11 +10,10 @@ const ImgSlider = ({ FirstImg, SecondImg, ThirdImg }) => {
   // projectImgs is a placeholder
   let settings = {
     dots: true,
-    infinite: true,
-    speed: 500,
+    speed: 550,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true
+    autoplay: false
   };
 
 

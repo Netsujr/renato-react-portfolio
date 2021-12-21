@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Section from './Section';
+import Intro from './Intro';
 import image1 from "../images/spotify.png";
 import image2 from "../images/model-s.jpg";
 
@@ -8,12 +9,11 @@ import image2 from "../images/model-s.jpg";
 function Home() {
   return (
     <Container>
-        <Section
+        <Intro
           title="About Me"
-          description="project descrtiption here"
+          description="Introduction"
           leftBtnText="Download Resume"
         />
-      {/* __________________________________________________________________ */}
       <Section
         title="Project 1"
         description="Project descrtiption here"
@@ -39,7 +39,7 @@ const Container = styled.div`
   /* width: 100vw; */
   `;
 
-const SectionContainer = styled.div`
-  width: 100vw;
-  height: 100vh;
-  `;
+// const SectionContainer = styled.div`
+//   width: 100vw;
+//   height: 100vh;
+//   `;
