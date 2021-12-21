@@ -3,20 +3,27 @@ import styled from 'styled-components';
 import ImgSlider from './ImgSlider';
 import arrow from "../images/down-arrow.svg";
 
-function Section({ title, description, leftBtnText, rightBtnText, Img1, Img2, Img3 }) {
+function Section({ title, description, leftBtnText,
+  rightBtnText, Img1, Img2, Img3, projectTitle, projectDesc }) {
   return (
     <Wrap>
       <ItemText>
         <h1>{title}</h1>
         <p>{description}</p>
       </ItemText>
-      <SliderContainer>
-        <ImgSlider
-          FirstImg={Img1}
-          SecondImg={Img2}
-          ThirdImg={Img3}
-        />
-      </SliderContainer>
+      <ProjectContainer>
+        <ProjectInfo >
+          <h1>{projectTitle}</h1>
+          <p>{projectDesc}</p>
+        </ProjectInfo>
+        <SliderContainer>
+          <ImgSlider
+            FirstImg={Img1}
+            SecondImg={Img2}
+            ThirdImg={Img3}
+          />
+        </SliderContainer>
+      </ProjectContainer>
       <Buttons>
         <ButtonGroup>
           <LeftButton>
@@ -24,7 +31,7 @@ function Section({ title, description, leftBtnText, rightBtnText, Img1, Img2, Im
           </LeftButton>
           {rightBtnText &&
             <RightButton>
-             {rightBtnText}
+              {rightBtnText}
             </RightButton>
           }
         </ButtonGroup>
@@ -52,10 +59,9 @@ const Wrap = styled.div`
   `;
 // sc for const shortcut
 const ItemText = styled.div`
-  padding-top: 15vh;
+  padding-top: 12vh;
   text-align: center;
   color: white;
-
   `;
 
 const ButtonGroup = styled.div`
@@ -102,10 +108,26 @@ const Buttons = styled.div`
 
   `;
 
+const ProjectContainer = styled.div`
+  border: 2px solid green;
+  display: flex;
+  justify-content: space-around;
+  margin: 0px 60px;
+  height: 50vh;
+  width: 100vw;
+  `;
+
 const SliderContainer = styled.div`
-  width: 300px;
-  height: 400px;
-  /* overflow: hidden; */
+  width: 400px;
+  overflow: hidden;
   border: 2px solid red;
-  /* object-fit: contain; */
+  background-color: black;
+
+  `;
+
+const ProjectInfo = styled.div`
+  width: 400px;
+  border: 2px solid blue;
+  color: white;
+
   `;

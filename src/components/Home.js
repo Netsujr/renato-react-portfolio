@@ -21,6 +21,9 @@ function Home() {
         rightBtnText={<a href="#" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>}
         Img1={image1}
         Img2={image2}
+        projectTitle="Project 11"
+        projectDesc="lorem ipsum"
+
       />
       <Section
         title="Project 2"
