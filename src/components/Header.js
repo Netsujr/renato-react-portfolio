@@ -1,7 +1,18 @@
-import React from 'react';
+import React, { forwardRef, useRef } from 'react';
 import styled from 'styled-components';
 import logo from "../images/rdlogo.png";
 import MenuIcon from '@material-ui/icons/Menu';
+
+const Projects = forwardRef(({ onBackClick }, ref) => {
+  return (
+    <article>
+      <h1 ref={ref}>A React article for Latin readers</h1>
+            // Rest of the article's content...
+      <button onClick={onBackClick}>Back to the top</button>
+    </article>
+  )
+})
+
 
 function Header() {
   return (
@@ -10,9 +21,7 @@ function Header() {
         <img src={logo} alt="" />
       </a>
       <Menu>
-        <a href="#">
-          <span>Project 1</span>
-        </a>
+        <a href="#p1"><span>Project 1</span></a>
         <a href="#"><span>Project 2</span></a>
         <a href="#"><span>Project 3</span></a>
         <a href="#"><span>Project 4</span></a>

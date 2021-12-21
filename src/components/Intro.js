@@ -93,11 +93,3 @@ const DownArrow = styled.img`
 const Buttons = styled.div`
 
   `;
-
-const SliderContainer = styled.div`
-  width: 300px;
-  height: 400px;
-  /* overflow: hidden; */
-  border: 2px solid red;
-  /* object-fit: contain; */
-  `;
