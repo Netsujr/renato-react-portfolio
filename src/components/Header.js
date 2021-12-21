@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import logo from "../images/rdlogo.png";
+import MenuIcon from '@material-ui/icons/Menu';
 
 function Header() {
   return (
