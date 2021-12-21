@@ -20,14 +20,15 @@ function Home() {
         description="project descrtiption here"
         leftBtnText="Visit Site"
         rightBtnText="Visit Github Repository"
-        images={image1}
+        Img1={image1}
+        Img2={image2}
       />
       <Section
         title="Project 2"
         description="project descrtiption here"
         leftBtnText="Visit Site"
         rightBtnText="Visit Github Repository"
-        images={image2}
+        Img1={image2}
       />
     </Container>
   );

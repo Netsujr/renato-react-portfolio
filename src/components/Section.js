@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import ImgSlider from './ImgSlider';
 import arrow from "../images/down-arrow.svg";
 
-function Section({ title, description, leftBtnText, rightBtnText, images}) {
+function Section({ title, description, leftBtnText, rightBtnText, Img1, Img2, Img3 }) {
   return (
     <Wrap>
       <ItemText>
@@ -12,7 +12,9 @@ function Section({ title, description, leftBtnText, rightBtnText, images}) {
       </ItemText>
       <SliderContainer>
         <ImgSlider
-        projectImgs={images}
+          FirstImg={Img1}
+          SecondImg={Img2}
+          ThirdImg={Img3}
         />
       </SliderContainer>
       <Buttons>

@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 
-const ImgSlider = ({ projectImgs }) => {
+const ImgSlider = ({ FirstImg, SecondImg, ThirdImg }) => {
   // { projectImgs }
   // projectImgs is a placeholder
   let settings = {
@@ -21,10 +21,13 @@ const ImgSlider = ({ projectImgs }) => {
   return (
     <Carousel {...settings} >
       <Wrap>
-        <img src={projectImgs} alt="" />
+        <img src={FirstImg} alt="" />
       </Wrap>
       <Wrap>
-        <img src={projectImgs} alt="" />
+        <img src={SecondImg} alt="" />
+      </Wrap>
+      <Wrap>
+        <img src={ThirdImg} alt="" />
       </Wrap>
     </Carousel>
   );
