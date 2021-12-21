@@ -6,15 +6,28 @@ function Home() {
   return (
     <Container>
       <Section
-      title="project 1"
+      title="About Me"
       description="project descrtiption here"
       backgroundImg=""
-      leftBtnText="Visit Site"
-      rightBtnText="Visit Github Repository"
+      projectImgs=""
+      leftBtnText="Download Resume"
       />
-      {/* <Section />
-      <Section />
-      <Section /> */}
+      <Section
+        title="Project 1"
+        description="project descrtiption here"
+        backgroundImg=""
+        projectImgs=""
+        leftBtnText="Visit Site"
+        rightBtnText="Visit Github Repository"
+      />
+      <Section
+        title="Project 2"
+        description="project descrtiption here"
+        backgroundImg=""
+        projectImgs=""
+        leftBtnText="Visit Site"
+        rightBtnText="Visit Github Repository"
+        />
     </Container>
   );
 }

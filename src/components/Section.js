@@ -1,21 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
+import ImgSlider from './ImgSlider';
 
-function Section({ title, description, backgroundImg, leftBtnText, rightBtnText }) {
+function Section({ title, description, backgroundImg, leftBtnText, rightBtnText, projectImgs }) {
   return (
-    <Wrap>
+    <Wrap bgImage={backgroundImg}>
       <ItemText>
         <h1>{title}</h1>
         <p>{description}</p>
       </ItemText>
+      <ImgSlider />
       <Buttons>
         <ButtonGroup>
           <LeftButton>
-            <a href="https://www.google.com" alt="visitSite" target="_blank">{leftBtnText}</a>
+            <a href="#" alt="visitSite" target="_blank">{leftBtnText}</a>
           </LeftButton>
-          <RightButton>
-            <a href="#" alt="VisitGH">{rightBtnText}</a>
-          </RightButton>
+          {rightBtnText &&
+            <RightButton>
+              <a href="#" alt="VisitGH">{rightBtnText}</a>
+            </RightButton>
+          }
         </ButtonGroup>
         <DownArrow src="/images/down-arrow.svg" />
       </Buttons>
@@ -29,7 +33,7 @@ const Wrap = styled.div`
   width: 100vw;
   height: 100vh;
   background-color: gray;
-  /* background-image: url("/images/largebg.jpg"); */
+  background-image: ${props => `url("/images/${props.bgImage}")`};
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -48,7 +52,7 @@ const ItemText = styled.div`
 
 const ButtonGroup = styled.div`
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   cursor: pointer;
   @media (max-width : 768px) {
     flex-direction: column;
@@ -56,7 +60,7 @@ const ButtonGroup = styled.div`
   `;
 
 const LeftButton = styled.div`
-  background-color: rgba(100, 50, 100, 0.8);
+  background-color: rgba(50, 50, 80, 0.8);
   height: 40px;
   width: 256px;
   color: white;
@@ -76,7 +80,7 @@ const LeftButton = styled.div`
   `;
 
 const RightButton = styled(LeftButton)`
-
+  background-color: rgba(100, 50, 100, 0.8);
   `;
 
 const DownArrow = styled.img`
