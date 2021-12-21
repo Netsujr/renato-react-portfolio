@@ -1,47 +1,33 @@
 import React from 'react';
 import styled from 'styled-components';
 import Section from './Section';
-import ImgSlider from './ImgSlider';
-import model from "../images/model-s.jpg";
+// import model from "../images/model-s.jpg";
+import image1 from "../images/spotify.png";
+import image2 from "../images/model-s.jpg";
+
 
 function Home() {
   return (
     <Container>
-      <SectionContainer>
         <Section
           title="About Me"
           description="project descrtiption here"
-          backgroundImg=""
-          projectImgs=""
           leftBtnText="Download Resume"
         />
-        <SliderContainer>
-          <ImgSlider
-            projectImgs={model}
-          />
-        </SliderContainer>
-      </SectionContainer>
-      {/* __________________________________________________________________ */}
-      {/* __________________________________________________________________ */}
-      {/* __________________________________________________________________ */}
-      {/* __________________________________________________________________ */}
-      {/* __________________________________________________________________ */}
       {/* __________________________________________________________________ */}
       <Section
         title="Project 1"
         description="project descrtiption here"
-        backgroundImg=""
-        projectImgs=""
         leftBtnText="Visit Site"
         rightBtnText="Visit Github Repository"
+        images={image1}
       />
       <Section
         title="Project 2"
         description="project descrtiption here"
-        backgroundImg=""
-        projectImgs=""
         leftBtnText="Visit Site"
         rightBtnText="Visit Github Repository"
+        images={image2}
       />
     </Container>
   );
@@ -56,12 +42,4 @@ const Container = styled.div`
 const SectionContainer = styled.div`
   width: 100vw;
   height: 100vh;
-  `;
-
-const SliderContainer = styled.div`
-  width: 300px;
-  height: 400px;
-  /* overflow: hidden; */
-  border: 2px solid red;
-  /* object-fit: contain; */
   `;

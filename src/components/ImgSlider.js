@@ -3,11 +3,11 @@ import styled from 'styled-components';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import image from "../images/spotify.png";
 
 
-const ImgSlider = ({projectImgs}) => {
-  // projectImgs is a placeholder 
+const ImgSlider = ({ projectImgs }) => {
+  // { projectImgs }
+  // projectImgs is a placeholder
   let settings = {
     dots: true,
     infinite: true,
@@ -24,7 +24,7 @@ const ImgSlider = ({projectImgs}) => {
         <img src={projectImgs} alt="" />
       </Wrap>
       <Wrap>
-        <img src={image} alt="" />
+        <img src={projectImgs} alt="" />
       </Wrap>
     </Carousel>
   );

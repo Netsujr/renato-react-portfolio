@@ -2,15 +2,19 @@ import React from 'react';
 import styled from 'styled-components';
 import ImgSlider from './ImgSlider';
 import arrow from "../images/down-arrow.svg";
-import model from "../images/model-s.jpg";
 
-function Section({ title, description, backgroundImg, leftBtnText, rightBtnText}) {
+function Section({ title, description, leftBtnText, rightBtnText, images}) {
   return (
-    <Wrap bgImage={backgroundImg}>
+    <Wrap>
       <ItemText>
         <h1>{title}</h1>
         <p>{description}</p>
       </ItemText>
+      <SliderContainer>
+        <ImgSlider
+        projectImgs={images}
+        />
+      </SliderContainer>
       <Buttons>
         <ButtonGroup>
           <LeftButton>
@@ -32,9 +36,10 @@ export default Section;
 
 const Wrap = styled.div`
   width: 100vw;
-  /* height: 100vh; */
+  height: 100vh;
   background-color: gray;
-  background-image: ${props => `url("/images/${props.bgImage}")`};
+  /* background-image: url("") */
+  /* ${props => `url("/images/${props.bgImage}")`}; */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -93,4 +98,12 @@ const DownArrow = styled.img`
 
 const Buttons = styled.div`
 
+  `;
+
+const SliderContainer = styled.div`
+  width: 300px;
+  height: 400px;
+  /* overflow: hidden; */
+  border: 2px solid red;
+  /* object-fit: contain; */
   `;
