@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import Section from './Section';
-// import model from "../images/model-s.jpg";
 import image1 from "../images/spotify.png";
 import image2 from "../images/model-s.jpg";
 
@@ -17,17 +16,17 @@ function Home() {
       {/* __________________________________________________________________ */}
       <Section
         title="Project 1"
-        description="project descrtiption here"
-        leftBtnText="Visit Site"
-        rightBtnText="Visit Github Repository"
+        description="Project descrtiption here"
+        leftBtnText={<a href="#" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
+        rightBtnText={<a href="#" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>}
         Img1={image1}
         Img2={image2}
       />
       <Section
         title="Project 2"
-        description="project descrtiption here"
-        leftBtnText="Visit Site"
-        rightBtnText="Visit Github Repository"
+        description="Project descrtiption here"
+        leftBtnText={<a href="https://www.facebook.com" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
+        rightBtnText={<a href="#" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>}
         Img1={image2}
       />
     </Container>

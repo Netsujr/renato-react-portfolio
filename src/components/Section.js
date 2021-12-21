@@ -20,11 +20,11 @@ function Section({ title, description, leftBtnText, rightBtnText, Img1, Img2, Im
       <Buttons>
         <ButtonGroup>
           <LeftButton>
-            <a href="#" alt="visitSite" target="_blank">{leftBtnText}</a>
+            {leftBtnText}
           </LeftButton>
           {rightBtnText &&
             <RightButton>
-              <a href="#" alt="VisitGH">{rightBtnText}</a>
+             {rightBtnText}
             </RightButton>
           }
         </ButtonGroup>
