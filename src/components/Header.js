@@ -17,7 +17,7 @@ function Header() {
         <a href="#">Project 5</a>
       </Menu>
       <RightMenu>
-
+        <CustomMenu />
       </RightMenu>
     </Container>
   );
@@ -30,7 +30,7 @@ const Container = styled.div`
   min-height: 60px;
   position: fixed;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 0px 20px;
   margin-bottom: 10px;
@@ -59,8 +59,19 @@ const Menu = styled.div`
     cursor: pointer;
     color: white;
   }
+
+  @media(max-width: 768px) {
+    display: none;
+  }
+
   `;
 
 const RightMenu = styled.div`
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  `;
 
+const CustomMenu = styled(MenuIcon)`
+  color: white;
   `;
