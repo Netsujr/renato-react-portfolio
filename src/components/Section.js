@@ -1,20 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function Section() {
+function Section({ title, description, backgroundImg, leftBtnText, rightBtnText }) {
   return (
     <Wrap>
       <ItemText>
-        <h1>Model S</h1>
-        <p>Order Online For Touchless Delivery</p>
+        <h1>{title}</h1>
+        <p>{description}</p>
       </ItemText>
       <Buttons>
         <ButtonGroup>
           <LeftButton>
-            Visit Site
+            <a href="https://www.google.com" alt="visitSite" target="_blank">{leftBtnText}</a>
           </LeftButton>
           <RightButton>
-            Visit Github Repository
+            <a href="#" alt="VisitGH">{rightBtnText}</a>
           </RightButton>
         </ButtonGroup>
         <DownArrow src="/images/down-arrow.svg" />
@@ -28,9 +28,8 @@ export default Section;
 const Wrap = styled.div`
   width: 100vw;
   height: 100vh;
-  /* background-color: yellow; */
-  background-image: url("/images/largebg.jpg");
-  opacity: 0.98;
+  background-color: gray;
+  /* background-image: url("/images/largebg.jpg"); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -38,10 +37,6 @@ const Wrap = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
-  &:img {
-    transform: scaleX(-1);
-  }
   `;
 // sc for const shortcut
 const ItemText = styled.div`
@@ -55,6 +50,9 @@ const ButtonGroup = styled.div`
   display: flex;
   margin-bottom: 40px;
   cursor: pointer;
+  @media (max-width : 768px) {
+    flex-direction: column;
+  }
   `;
 
 const LeftButton = styled.div`
@@ -70,6 +68,11 @@ const LeftButton = styled.div`
   text-transform: uppercase;
   font-size: 12px;
   margin: 8px;
+
+  & a {
+    color: white;
+    text-decoration: none;
+  }
   `;
 
 const RightButton = styled(LeftButton)`

@@ -5,7 +5,16 @@ import Section from './Section';
 function Home() {
   return (
     <Container>
+      <Section
+      title="project 1"
+      description="project descrtiption here"
+      backgroundImg=""
+      leftBtnText="Visit Site"
+      rightBtnText="Visit Github Repository"
+      />
+      {/* <Section />
       <Section />
+      <Section /> */}
     </Container>
   );
 }
