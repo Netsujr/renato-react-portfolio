@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import ImgSlider from './ImgSlider';
+import arrow from "../images/down-arrow.svg";
 
 function Section({ title, description, backgroundImg, leftBtnText, rightBtnText, projectImgs }) {
   return (
@@ -8,8 +9,10 @@ function Section({ title, description, backgroundImg, leftBtnText, rightBtnText,
       <ItemText>
         <h1>{title}</h1>
         <p>{description}</p>
+        <SliderContainer>
+          <ImgSlider />
+        </SliderContainer>
       </ItemText>
-      <ImgSlider />
       <Buttons>
         <ButtonGroup>
           <LeftButton>
@@ -21,7 +24,7 @@ function Section({ title, description, backgroundImg, leftBtnText, rightBtnText,
             </RightButton>
           }
         </ButtonGroup>
-        <DownArrow src="/images/down-arrow.svg" />
+        <DownArrow src={arrow} />
       </Buttons>
     </Wrap>
   );
@@ -92,4 +95,12 @@ const DownArrow = styled.img`
 
 const Buttons = styled.div`
 
+  `;
+
+const SliderContainer = styled.div`
+  width: 300px;
+  height: 400px;
+  /* overflow: hidden; */
+  border: 2px solid red;
+  /* object-fit: contain; */
   `;

@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import image from "../images/spotify.png";
+import image2 from "../images/gym.png";
 
 
 const ImgSlider = () => {
@@ -23,7 +24,7 @@ const ImgSlider = () => {
         <img src={image} alt="" />
       </Wrap>
       <Wrap>
-        <img src="/images/largebg.jpg" alt="" />
+        <img src={image2} alt="" />
       </Wrap>
     </Carousel>
   );
@@ -56,10 +57,10 @@ const Carousel = styled(Slider)`
 const Wrap = styled.div`
   cursor: pointer;
   img {
-    border: 4px solid transparent;
+    border: 4px solid blue;
     border-radius: 4px;
-    width: 50px;
-    height: 50px;
+    width: 100%;
+    height: 100%;
     transition-duration: 300ms;
     box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px, rgb(0 0 0 / 73%) 0px 16px 10px -10px;
     &:hover {
