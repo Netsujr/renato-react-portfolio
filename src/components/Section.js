@@ -118,16 +118,20 @@ const ProjectContainer = styled.div`
   `;
 
 const SliderContainer = styled.div`
-  width: 400px;
-  overflow: hidden;
   border: 2px solid red;
+  max-width: 50%;
+  object-fit: contain;
+  overflow: hidden;
   background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   `;
 
 const ProjectInfo = styled.div`
-  width: 400px;
   border: 2px solid blue;
+  max-width: 400px;
   color: white;
 
   `;

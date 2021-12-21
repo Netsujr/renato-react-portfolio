@@ -35,7 +35,10 @@ const ImgSlider = ({ FirstImg, SecondImg, ThirdImg }) => {
 export default ImgSlider;
 
 const Carousel = styled(Slider)`
-  margin-top: 20px;
+  border: 6px solid pink;
+  width: 90%;
+  height: 90%;
+  justify-content: center;
   ul li button {
     &:before {
       font-size: 10px;
@@ -46,7 +49,7 @@ const Carousel = styled(Slider)`
     color: white;
   }
   .slick-list {
-    overflow: visible;
+    overflow: invisible;
   }
   button {
     z-index: 1;
@@ -57,6 +60,7 @@ const Carousel = styled(Slider)`
   }
   `
 const Wrap = styled.div`
+  border: 4px solid orange;
   cursor: pointer;
   img {
     border: 4px solid yellow;
@@ -65,8 +69,6 @@ const Wrap = styled.div`
     height: 100%;
     transition-duration: 300ms;
     box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px, rgb(0 0 0 / 73%) 0px 16px 10px -10px;
-    &:hover {
-      border: 4px solid rgba(249, 249, 249, 0.8);
     }
   }
   `
