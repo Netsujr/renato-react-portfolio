@@ -3,11 +3,14 @@ import styled from 'styled-components';
 import logo from "../images/rdlogo.png";
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
+// import { selectProjects } from "../features/project/projectSlice";
+// import { useSelector } from 'react-redux';
 
 
 function Header() {
 
   const [burgerStatus, setBurgerStatus] = useState(false);
+  // const projects = useSelector(selectProjects);
 
   return (
     <Container>
@@ -15,7 +18,7 @@ function Header() {
         <img src={logo} alt="" />
       </a>
       <Menu>
-        <a href="#p1"><span>Project 1</span></a>
+        <a href="#"><span>Project 1</span></a>
         <a href="#"><span>Project 2</span></a>
         <a href="#"><span>Project 3</span></a>
         <a href="#"><span>Project 4</span></a>

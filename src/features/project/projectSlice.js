@@ -8,8 +8,8 @@ const projectSlice = createSlice({
   name: "project",
   initialState,
   reducers: {}
-});
+})
 
-export const selectProjects = state => state.project.projects
+export const selectProjects = state => state.project.projects;
 
-export default projectSlice.reducer
+export default projectSlice.reducer;
