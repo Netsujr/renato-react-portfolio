@@ -10,11 +10,13 @@ function Header() {
         <img src={logo} alt="" />
       </a>
       <Menu>
-        <a href="#">Project 1</a>
-        <a href="#">Project 2</a>
-        <a href="#">Project 3</a>
-        <a href="#">Project 4</a>
-        <a href="#">Project 5</a>
+        <a href="#">
+          <span>Project 1</span>
+        </a>
+        <a href="#"><span>Project 2</span></a>
+        <a href="#"><span>Project 3</span></a>
+        <a href="#"><span>Project 4</span></a>
+        <a href="#"><span>Project 5</span></a>
       </Menu>
       <RightMenu>
         <CustomMenu />
@@ -40,9 +42,44 @@ const Container = styled.div`
   right: 0;
   /* use this to stick the div to positions of the page  */
 
-  & img {
+  img {
     height: 60px;
   }
+
+   a {
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0 10px;
+    flex-wrap: nowrap;
+    cursor: pointer;
+    color: white;
+
+  span {
+    font-size: 13px;
+    letter-spacing: 1.42px;
+    position: relative;
+    &:after {
+      content: "";
+      height: 1px;
+      background: white;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -6px;
+      opactity: 0;
+      transform-origin: left center;
+      transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+      transform: scaleX(0);
+    }
+  }
+
+  &:hover {
+    span:after {
+      transform: scaleX(1);
+      opacity: 1;
+    }
+  }
+}
   `;
 
 const Menu = styled.div`
@@ -50,15 +87,6 @@ const Menu = styled.div`
   align-items: center;
   justify-content: space-around;
   flex: 1;
-
-  a {
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: 0 10px;
-    flex-wrap: nowrap;
-    cursor: pointer;
-    color: white;
-  }
 
   @media(max-width: 768px) {
     display: none;
