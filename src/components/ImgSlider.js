@@ -4,10 +4,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import image from "../images/spotify.png";
-import image2 from "../images/gym.png";
 
 
-const ImgSlider = () => {
+const ImgSlider = ({projectImgs}) => {
+  // projectImgs is a placeholder 
   let settings = {
     dots: true,
     infinite: true,
@@ -21,10 +21,10 @@ const ImgSlider = () => {
   return (
     <Carousel {...settings} >
       <Wrap>
-        <img src={image} alt="" />
+        <img src={projectImgs} alt="" />
       </Wrap>
       <Wrap>
-        <img src={image2} alt="" />
+        <img src={image} alt="" />
       </Wrap>
     </Carousel>
   );
@@ -50,12 +50,13 @@ const Carousel = styled(Slider)`
     z-index: 1;
   }
   .slick-dots li.slick-active button:before {
-    color: rgba(0, 233, 255, 0.6);
+    color: black;
     font-size: 13px;
   }
   `
 const Wrap = styled.div`
   cursor: pointer;
+  /* width: 400px; */
   img {
     border: 4px solid blue;
     border-radius: 4px;
