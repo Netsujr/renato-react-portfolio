@@ -36,9 +36,13 @@ export default ImgSlider;
 
 const Carousel = styled(Slider)`
   /* border: 6px solid pink; */
-  width: 90%;
+  /* margin-bottom: 10px; */
+  width: 80%;
   height: 90%;
+  /* object-fit: contain; */
+  /* overflow: hidden; */
   justify-content: center;
+
   ul li button {
     &:before {
       font-size: 10px;
@@ -48,9 +52,9 @@ const Carousel = styled(Slider)`
   li.slick-sctive button:before {
     color: white;
   }
-  .slick-list {
-    overflow: invisible;
-  }
+  /* .slick-list {
+    overflow: hidden;
+  } */
   button {
     z-index: 1;
   }
@@ -66,9 +70,10 @@ const Wrap = styled.div`
     /* border: 4px solid yellow; */
     border-radius: 4px;
     width: 100%;
-    height: 100%;
+    height: 40vh;
+    /* object-fit: contain; */
     transition-duration: 300ms;
     box-shadow: rgb(0 0 0 / 73%) 0px 16px 10px -10px;
-    }
   }
-  `;
+}
+`;

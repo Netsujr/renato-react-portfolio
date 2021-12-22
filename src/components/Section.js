@@ -126,11 +126,12 @@ const SliderContainer = styled.div`
     /* border: 2px solid red; */
     /* background-color: black; */
     max-width: 50%;
-    object-fit: contain;
-    overflow: hidden;
+    /* object-fit: contain; */
+    /* overflow: hidden; */
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: -10px;
 
     `;
 
