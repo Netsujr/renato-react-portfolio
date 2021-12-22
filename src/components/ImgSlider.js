@@ -71,9 +71,9 @@ const Wrap = styled.div`
     border-radius: 4px;
     width: 100%;
     height: 40vh;
-    /* object-fit: contain; */
+    object-fit: contain;
     transition-duration: 300ms;
-    box-shadow: rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+    /* box-shadow: rgb(0 0 0 / 73%) 0px 16px 10px -10px; */
   }
 }
 `;
