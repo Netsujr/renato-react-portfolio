@@ -4,20 +4,22 @@ import ImgSlider from './ImgSlider';
 import Fade from 'react-reveal/Fade';
 import arrow from "../images/down-arrow.svg";
 
-function Section({ title, description, leftBtnText,
-  rightBtnText, Img1, Img2, Img3, projectTitle, projectDesc }) {
+function Section({ title, leftBtnText,
+  rightBtnText, Img1, Img2, Img3, projectTitle, projectDesc, projectIcons }) {
   return (
     <Wrap>
       <Fade top>
         <ItemText>
           <h1>{title}</h1>
-          <p>{description}</p>
         </ItemText>
       </Fade>
       <ProjectContainer>
         <ProjectInfo >
           <h1>{projectTitle}</h1>
           <p>{projectDesc}</p>
+          <React.Fragment>
+            <Icons src={projectIcons}/>
+          </React.Fragment>
         </ProjectInfo>
         <SliderContainer>
           <ImgSlider
@@ -114,7 +116,7 @@ const Buttons = styled.div`
     `;
 
 const ProjectContainer = styled.div`
-    /* border: 2px solid green; */
+    border: 2px solid green;
     display: flex;
     justify-content: space-around;
     margin: 0px 60px;
@@ -123,7 +125,7 @@ const ProjectContainer = styled.div`
     `;
 
 const SliderContainer = styled.div`
-    /* border: 2px solid red; */
+    border: 2px solid red;
     /* background-color: black; */
     max-width: 50%;
     /* object-fit: contain; */
@@ -136,8 +138,15 @@ const SliderContainer = styled.div`
     `;
 
 const ProjectInfo = styled.div`
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
     max-width: 400px;
     color: white;
 
+    `;
+
+const Icons = styled.div`
+    border: 2px solid pink;
+    height: 100px;
+    display: flex;
+    cursor: pointer;
     `;
