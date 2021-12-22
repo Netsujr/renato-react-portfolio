@@ -2,16 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import arrow from "../images/Icons/down-arrow.svg";
 // import HerokuIcon from "../images/Icons/heroku-original-wordmark.svg";
-// import GithubIcon from "../images/Icons/github-original.svg";
-// import LinkedinIcon from "../images/Icons/linkedin-original.svg";
 
 
-function Section({ title, description, leftBtnText, rightBtnText }) {
+function Section({ leftBtnText, rightBtnText }) {
   return (
     <Wrap>
       <ItemText>
-        <h1>{title}</h1>
-        <p>{description}</p>
+        <h1>About Me</h1>
+        {/* <p>{description}</p> */}
       </ItemText>
       <Buttons>
         <ButtonGroup>

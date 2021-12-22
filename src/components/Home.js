@@ -6,13 +6,13 @@ import SpotifyClone from './projects/SpotifyClone';
 import Artistible from './projects/Artistible';
 import TeslaClone from './projects/TeslaClone';
 import TinyMe from './projects/TinyMe';
-import zoomClone from './projects/zoomClone';
+// import zoomClone from './projects/zoomClone';
 import MovieList from './projects/MovieList';
 // import MiniProjects from './projects/MiniProjects';
 
 // Mini projects
-
 function Home() {
+
   return (
     <Container>
       <Intro
@@ -23,17 +23,17 @@ function Home() {
       <DisneyClone
         leftBtnText={<a href="https://disney-clone-renato.herokuapp.com/" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
         rightBtnText={<a href="https://github.com/Netsujr/disney-clone" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>}
-        />
+      />
 
       <SpotifyClone
         leftBtnText={<a href="http://renato-spotify-clone.herokuapp.com" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
         rightBtnText={<a href="https://github.com/Netsujr/spotify-clone" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>}
-        />
+      />
 
       <Artistible
         leftBtnText={<a href="https://artistible.herokuapp.com/" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
         rightBtnText={<a href="https://github.com/Netsujr/artistible" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>}
-        />
+      />
 
       <TeslaClone
         leftBtnText={<a href="https://renato-tesla-clone.herokuapp.com/" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}

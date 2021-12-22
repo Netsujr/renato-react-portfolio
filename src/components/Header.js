@@ -1,11 +1,19 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-// import logo from "../images/rdlogo.png";
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
 // import { selectProjects } from "../features/project/projectSlice";
 // import { useSelector } from 'react-redux';
+import GithubIcon from "../images/Icons/github-original.svg";
+import LinkedinIcon from "../images/Icons/linkedin-original.svg";
 
+// export default class Scrolling extends Component {
+//   render() {
+//     return
+//     // <Header />
+//     <DisneyClone />
+//   }
+// }
 
 function Header() {
 
@@ -14,32 +22,43 @@ function Header() {
 
   return (
     <Container>
-      <a href="">
-        <img src="{logo}" alt="" />
-      </a>
+      <HeaderIcons>
+        <a href="https://github.com/netsujr" target="_blank">
+          <img src={GithubIcon} alt="Github" />
+        </a>
+        <a href="https://www.linkedin.com/in/delbonirenato/" target="_blank">
+          <img src={LinkedinIcon} alt="Linkedin" />
+        </a>
+      </HeaderIcons>
       <Menu>
-        <a href="#"><span>Project 1</span></a>
-        <a href="#"><span>Project 2</span></a>
-        <a href="#"><span>Project 3</span></a>
-        <a href="#"><span>Project 4</span></a>
-        <a href="#"><span>Project 5</span></a>
+        <a ><span>Disney Clone</span></a>
+        <a href="#"><span>Spotify Clone</span></a>
+        <a href="#"><span>Artistible</span></a>
+        <a href="#"><span>Tesla Clone</span></a>
+        <a href="#"><span>Movie List</span></a>
+        <a href="#"><span>TinyMe</span></a>
+        {/* <a href="#"><span>Mini Projects</span></a> */}
       </Menu>
       <RightMenu>
-        <CustomMenu onClick={() => setBurgerStatus(true)}/>
+        <CustomMenu onClick={() => setBurgerStatus(true)} />
       </RightMenu>
       <BurgerNav show={burgerStatus}>
         <CloseWrapper>
-          <CustomClose onClick={() => setBurgerStatus(false)}/>
+          <CustomClose onClick={() => setBurgerStatus(false)} />
         </CloseWrapper>
         <li><a href="#"></a>About Me</li>
-        <li><a href="#"></a>Project 1</li>
-        <li><a href="#"></a>Project 2</li>
-        <li><a href="#"></a>Project 3</li>
-        <li><a href="#"></a>Project 4</li>
+        <li><a href="#"></a>Disney Clone</li>
+        <li><a href="#"></a>Spotify Clone</li>
+        <li><a href="#"></a>Artistible</li>
+        <li><a href="#"></a>Tesla Clone</li>
+        <li><a href="#"></a>Movie List</li>
+        <li><a href="#"></a>TinyMe</li>
+        {/* <li><a href="#"></a>Mini Projects</li> */}
+
       </BurgerNav>
     </Container>
   );
-}
+};
 
 export default Header;
 
@@ -72,7 +91,7 @@ const Container = styled.div`
 
     span {
       font-size: 13px;
-      letter-spacing: 1.42px;
+      letter-spacing: 0.4px;
       position: relative;
       &:after {
         content: "";
@@ -132,7 +151,6 @@ const BurgerNav = styled.div`
   padding: 20px;
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-start; */
   text-align: start;
   transform: ${props => props.show ? "translateX(0)" : "translateX(100%)"};
   transition: transform 250ms ease-in-out;
@@ -156,5 +174,20 @@ const CustomClose = styled(CloseIcon)`
 const CloseWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
+
+  `;
+
+const HeaderIcons = styled.div`
+  display: flex;
+
+  img {
+    height: 30px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2px;
+  }
+  `;
+
+const Disney = styled.div`
 
   `;
