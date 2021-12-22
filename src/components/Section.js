@@ -2,65 +2,65 @@ import React from 'react';
 import styled from 'styled-components';
 import ImgSlider from './ImgSlider';
 import Fade from 'react-reveal/Fade';
-import arrow from "../images/down-arrow.svg";
+import arrow from "../images/Icons/down-arrow.svg";
 
 function Section({ title, leftBtnText,
   rightBtnText, Img1, Img2, Img3, projectTitle, projectDesc,
   JavascriptIcon, ReactIcon, CSSIcon, ReduxIcon, HTMLIcon, FirebaseIcon,
   NodeJsIcon, RubyIcon, RailsIcon }) {
-    return (
-      <Wrap>
+  return (
+    <Wrap>
       <Fade top>
-      <ItemText>
-      <h1>{title}</h1>
-      </ItemText>
+        <ItemText>
+          <h1>{title}</h1>
+        </ItemText>
       </Fade>
       <ProjectContainer>
-      <ProjectInfo >
-      <h1>{projectTitle}</h1>
-      <p>{projectDesc}</p>
-      <IconContainer>
-      <Icons src={JavascriptIcon} />
-      <Icons src={ReactIcon} />
-      <Icons src={HTMLIcon} />
-      <Icons src={CSSIcon} />
-      <Icons src={ReduxIcon} />
-      <Icons src={NodeJsIcon} />
-      <Icons src={FirebaseIcon} />
-      <Icons src={RubyIcon} />
-      <Icons src={RailsIcon} />
-      </IconContainer>
-      </ProjectInfo>
-      <SliderContainer>
-      <ImgSlider
-      FirstImg={Img1}
-      SecondImg={Img2}
-      ThirdImg={Img3}
-      />
-      </SliderContainer>
+        <ProjectInfo >
+          <h1>{projectTitle}</h1>
+          <p>{projectDesc}</p>
+          <IconContainer>
+            <Icons src={JavascriptIcon} />
+            <Icons src={ReactIcon} />
+            <Icons src={HTMLIcon} />
+            <Icons src={CSSIcon} />
+            <Icons src={ReduxIcon} />
+            <Icons src={NodeJsIcon} />
+            <Icons src={FirebaseIcon} />
+            <Icons src={RubyIcon} />
+            <Icons src={RailsIcon} />
+          </IconContainer>
+        </ProjectInfo>
+        <SliderContainer>
+          <ImgSlider
+            FirstImg={Img1}
+            SecondImg={Img2}
+            ThirdImg={Img3}
+          />
+        </SliderContainer>
       </ProjectContainer>
       <Buttons>
-      <Fade bottom>
-      <ButtonGroup>
-      <LeftButton>
-      {leftBtnText}
-      </LeftButton>
-      {rightBtnText &&
-        <RightButton>
-        {rightBtnText}
-        </RightButton>
-      }
-      </ButtonGroup>
-      </Fade>
-      <DownArrow src={arrow} />
+        <Fade bottom>
+          <ButtonGroup>
+            <LeftButton>
+              {leftBtnText}
+            </LeftButton>
+            {rightBtnText &&
+              <RightButton>
+                {rightBtnText}
+              </RightButton>
+            }
+          </ButtonGroup>
+        </Fade>
+        <DownArrow src={arrow} />
       </Buttons>
-      </Wrap>
-      );
-    }
+    </Wrap>
+  );
+}
 
-    export default Section;
+export default Section;
 
-    const Wrap = styled.div`
+const Wrap = styled.div`
     width: 100vw;
     height: 100vh;
     background-color: gray;
@@ -74,14 +74,14 @@ function Section({ title, leftBtnText,
     justify-content: space-between;
     align-items: center;
     `;
-    // sc for const shortcut
-    const ItemText = styled.div`
+// sc for const shortcut
+const ItemText = styled.div`
     padding-top: 12vh;
     text-align: center;
     color: white;
     `;
 
-    const ButtonGroup = styled.div`
+const ButtonGroup = styled.div`
     display: flex;
     margin-bottom: 20px;
     cursor: pointer;
@@ -90,7 +90,7 @@ function Section({ title, leftBtnText,
     }
     `;
 
-    const LeftButton = styled.div`
+const LeftButton = styled.div`
     background-color: rgba(50, 50, 80, 0.8);
     height: 40px;
     width: 256px;
@@ -110,22 +110,22 @@ function Section({ title, leftBtnText,
     }
     `;
 
-    const RightButton = styled(LeftButton)`
+const RightButton = styled(LeftButton)`
     background-color: rgba(100, 50, 100, 0.8);
     `;
 
-    const DownArrow = styled.img`
+const DownArrow = styled.img`
     height: 40px;
     margin-bottom: 20px;
     overflow-x: hidden;
     animation: animateDown infinite 1.5s;
     `;
 
-    const Buttons = styled.div`
+const Buttons = styled.div`
 
     `;
 
-    const ProjectContainer = styled.div`
+const ProjectContainer = styled.div`
     border: 2px solid green;
     display: flex;
     justify-content: space-around;
@@ -138,7 +138,7 @@ function Section({ title, leftBtnText,
     }
     `;
 
-    const SliderContainer = styled.div`
+const SliderContainer = styled.div`
     border: 2px solid red;
     /* background-color: black; */
     max-width: 50%;
@@ -154,9 +154,9 @@ function Section({ title, leftBtnText,
     }
     `;
 
-    const ProjectInfo = styled.div`
+const ProjectInfo = styled.div`
     border: 2px solid blue;
-    max-width: 450px;
+    max-width: 500px;
     color: white;
     position: relative;
     @media (max-width : 768px) {
@@ -164,22 +164,24 @@ function Section({ title, leftBtnText,
     }
     `;
 
-    const Icons = styled.img`
+const Icons = styled.img`
     /* border: 2px solid pink; */
-    height: 20px;
-    cursor: pointer;
-  `;
+    height: 25px;
+    @media (max-width : 768px) {
+      height: 20px;
+    }
+    `;
 
-  const IconContainer = styled.div`
-  /* border: 2px solid yellow; */
+const IconContainer = styled.div`
+    /* border: 2px solid yellow; */
 
-  display: flex;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  margin: 5px;
-  @media (max-width : 768px) {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 5px;
+    @media (max-width : 768px) {
       top: 0;
       left: 0;
     }
-  `;
+    `;

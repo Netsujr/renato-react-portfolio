@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import logo from "../images/rdlogo.png";
+// import logo from "../images/rdlogo.png";
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
 // import { selectProjects } from "../features/project/projectSlice";
@@ -15,7 +15,7 @@ function Header() {
   return (
     <Container>
       <a href="">
-        <img src={logo} alt="" />
+        <img src="{logo}" alt="" />
       </a>
       <Menu>
         <a href="#"><span>Project 1</span></a>

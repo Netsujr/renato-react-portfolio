@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import arrow from "../images/down-arrow.svg";
+import arrow from "../images/Icons/down-arrow.svg";
 
 function Section({ title, description, leftBtnText, rightBtnText }) {
   return (
