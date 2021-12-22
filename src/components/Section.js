@@ -22,11 +22,11 @@ function Section({ title, leftBtnText,
           <IconContainer>
             <Icons src={JavascriptIcon} />
             <Icons src={ReactIcon} />
-            <Icons src={CSSIcon} />
-            <Icons src={ReduxIcon} />
             <Icons src={HTMLIcon} />
-            <Icons src={FirebaseIcon} />
+            <Icons src={CSSIcon} />
             <Icons src={NodeJsIcon} />
+            <Icons src={ReduxIcon} />
+            <Icons src={FirebaseIcon} />
             <Icons src={RubyIcon} />
             <Icons src={RailsIcon} />
           </IconContainer>
@@ -155,7 +155,7 @@ const ProjectInfo = styled.div`
     `;
 
 const Icons = styled.img`
-    /* border: 2px solid pink; */
+    border: 2px solid pink;
     height: 25px;
     cursor: pointer;
     margin: 5px;
