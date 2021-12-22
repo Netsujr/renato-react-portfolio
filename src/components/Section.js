@@ -144,7 +144,7 @@ const ProjectInfo = styled.div`
 
     `;
 
-const Icons = styled.div`
+const Icons = styled.img`
     border: 2px solid pink;
     height: 100px;
     display: flex;
