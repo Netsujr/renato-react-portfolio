@@ -38,7 +38,7 @@ import tc3 from "../images/TeslaClone/three.png";
 import tm1 from "../images/TinyMe/one.png";
 import tm2 from "../images/TinyMe/two.png";
 import tm3 from "../images/TinyMe/three.png";
-// zoomClone 
+// zoomClone
 
 function Home() {
   return (
@@ -50,8 +50,8 @@ function Home() {
       />
       <Section
         title="Disney Clone"
-        leftBtnText={<a href="#" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
-        rightBtnText={<a href="#" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>}
+        leftBtnText={<a href="https://disney-clone-renato.herokuapp.com/" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
+        rightBtnText={<a href="https://github.com/Netsujr/disney-clone" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>}
         Img1={dc1}
         Img2={dc2}
         Img3={dc3}
@@ -65,8 +65,8 @@ function Home() {
       />
       <Section
         title="Spotify Clone"
-        leftBtnText={<a href="https://www.facebook.com" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
-        rightBtnText={<a href="#" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>}
+        leftBtnText={<a href="http://renato-spotify-clone.herokuapp.com" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
+        rightBtnText={<a href="https://github.com/Netsujr/spotify-clone" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>}
         Img1={sp1}
         Img2={sp2}
         Img3={sp3}
@@ -81,8 +81,8 @@ function Home() {
 
       <Section
         title="Artistible"
-        leftBtnText={<a href="https://www.facebook.com" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
-        rightBtnText={<a href="#" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>}
+        leftBtnText={<a href="https://artistible.herokuapp.com/" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
+        rightBtnText={<a href="https://github.com/Netsujr/artistible" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>}
         Img1={ar1}
         Img2={ar2}
         Img3={ar3}
@@ -97,8 +97,8 @@ function Home() {
 
       <Section
         title="Tesla Clone"
-        leftBtnText={<a href="https://www.facebook.com" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
-        rightBtnText={<a href="#" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>}
+        leftBtnText={<a href="https://renato-tesla-clone.herokuapp.com/" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
+        rightBtnText={<a href="https://github.com/Netsujr/tesla_clone_using_react" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>}
         Img1={tc1}
         Img2={tc2}
         Img3={tc3}
@@ -113,8 +113,8 @@ function Home() {
 
       <Section
         title="Movie-List"
-        leftBtnText={<a href="https://www.facebook.com" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
-        rightBtnText={<a href="#" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>}
+        leftBtnText={<a href="http://renato-movie-list.herokuapp.com" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
+        rightBtnText={<a href="https://github.com/Netsujr/rails-watch-list" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>}
         Img1={ml1}
         Img2={ml2}
         Img3={ml3}
@@ -128,8 +128,8 @@ function Home() {
 
       <Section
         title="TinyMe"
-        leftBtnText={<a href="https://www.facebook.com" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
-        rightBtnText={<a href="#" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>}
+        leftBtnText={<a href="https://reverent-hermann-98a8cb.netlify.app/" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
+        rightBtnText={<a href="https://github.com/Netsujr/TinymeStudios" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>}
         Img1={tm1}
         Img2={tm2}
         Img3={tm3}
@@ -156,7 +156,6 @@ function Home() {
         title="Mini Projects"
         leftBtnText={<a href="https://www.facebook.com" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
         rightBtnText={<a href="#" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>}
-        // Img1={image2}
         projectTitle="Details"
         projectDesc="lorem ipsulorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumm"
       />
