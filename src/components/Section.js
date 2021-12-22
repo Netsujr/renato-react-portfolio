@@ -5,7 +5,9 @@ import Fade from 'react-reveal/Fade';
 import arrow from "../images/down-arrow.svg";
 
 function Section({ title, leftBtnText,
-  rightBtnText, Img1, Img2, Img3, projectTitle, projectDesc, JavascriptIcon, ReactIcon }) {
+  rightBtnText, Img1, Img2, Img3, projectTitle, projectDesc,
+   JavascriptIcon, ReactIcon, CSSIcon, ReduxIcon, HTMLIcon, FirebaseIcon,
+   NodeJsIcon, RubyIcon, RailsIcon }) {
   return (
     <Wrap>
       <Fade top>
@@ -20,6 +22,13 @@ function Section({ title, leftBtnText,
           <IconContainer>
             <Icons src={JavascriptIcon} />
             <Icons src={ReactIcon} />
+            <Icons src={CSSIcon} />
+            <Icons src={ReduxIcon} />
+            <Icons src={HTMLIcon} />
+            <Icons src={FirebaseIcon} />
+            <Icons src={NodeJsIcon} />
+            <Icons src={RubyIcon} />
+            <Icons src={RailsIcon} />
           </IconContainer>
         </ProjectInfo>
         <SliderContainer>

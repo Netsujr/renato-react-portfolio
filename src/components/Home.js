@@ -2,11 +2,22 @@ import React from 'react';
 import styled from 'styled-components';
 import Section from './Section';
 import Intro from './Intro';
-import JS from "../images/Icons/javascript-plain.svg";
-import RO from "../images/Icons/react-original.svg";
+import JavascriptIcon from "../images/Icons/javascript-plain.svg";
+import ReactIcon from "../images/Icons/react-original.svg";
+import RubyIcon from "../images/Icons/ruby-original-wordmark.svg";
+import RailsIcon from "../images/Icons/rails-plain-wordmark.svg";
+import ReduxIcon from "../images/Icons/redux-original.svg";
+import FirebaseIcon from "../images/Icons/firebase-plain-wordmark.svg";
+import HTMLIcon from "../images/Icons/html5-original.svg";
+import CSSIcon from "../images/Icons/css3-original.svg";
+import NodeJsIcon from "../images/Icons/nodejs-original.svg";
+import HerokuIcon from "../images/Icons/heroku-original-wordmark.svg";
+import GithubIcon from "../images/Icons/github-original.svg";
+import LinkedinIcon from "../images/Icons/linkedin-original.svg";
 import image1 from "../images/spotify.png";
 import image2 from "../images/model-s.jpg";
-
+// JavascriptIcon, ReactIcon, CSSIcon, ReduxIcon, HTMLIcon, FirebaseIcon,
+//   NodeJsIcon, RubyIcon, RailsIcon
 
 function Home() {
   return (
@@ -24,8 +35,10 @@ function Home() {
         Img2={image2}
         projectTitle="Details"
         projectDesc="lorem ipsulorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumm"
-        JavascriptIcon={JS}
-        ReactIcon={RO}
+        JavascriptIcon={JavascriptIcon}
+        ReactIcon={ReactIcon}
+        CSSIcon={CSSIcon}
+        HTMLIcon={HTMLIcon}
       />
       <Section
         title="Spotify Clone"
