@@ -39,6 +39,10 @@ import tm1 from "../images/TinyMe/one.png";
 import tm2 from "../images/TinyMe/two.png";
 import tm3 from "../images/TinyMe/three.png";
 // zoomClone
+import zc1 from "../images/zoomClone/one.png";
+import zc2 from "../images/zoomClone/two.png";
+import zc3 from "../images/zoomClone/three.png";
+// Mini projects
 
 function Home() {
   return (
@@ -142,23 +146,24 @@ function Home() {
 
       <Section
         title="Zoom Clone"
-        leftBtnText={<a href="https://www.facebook.com" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
+        leftBtnText={<a href="https://www.facebook.com" alt="visitSite" target="_blank" rel="noreferrer">Online Soon</a>}
         rightBtnText={<a href="#" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>}
-        // Img1={ml1}
-        // Img2={ml2}
-        // Img3={ml3}
+        Img1={zc1}
+        Img2={zc2}
+        Img3={zc3}
         projectTitle="Details"
         projectDesc="lorem ipsulorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumm"
 
       />
 
-      <Section
-        title="Mini Projects"
-        leftBtnText={<a href="https://www.facebook.com" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
-        rightBtnText={<a href="#" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>}
-        projectTitle="Details"
-        projectDesc="lorem ipsulorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumm"
-      />
+      {/* Maybe here I will create a new section to show off mini projects  */}
+      {/* <Section
+      title="Mini Projects"
+      leftBtnText={<a href="https://www.facebook.com" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
+      rightBtnText={<a href="#" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>}
+      projectTitle="Details"
+      projectDesc="lorem ipsulorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumm"
+    /> */}
 
     </Container>
   );

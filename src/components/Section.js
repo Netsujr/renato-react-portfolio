@@ -134,7 +134,7 @@ const Buttons = styled.div`
     `;
 
 const ProjectContainer = styled.div`
-    border: 2px solid green;
+    /* border: 2px solid green; */
     display: flex;
     justify-content: space-around;
     margin: 0px 60px;
@@ -147,7 +147,7 @@ const ProjectContainer = styled.div`
     `;
 
 const SliderContainer = styled.div`
-    border: 2px solid red;
+    /* border: 2px solid red; */
     /* background-color: black; */
     max-width: 50%;
     /* object-fit: contain; */
@@ -163,7 +163,7 @@ const SliderContainer = styled.div`
     `;
 
 const ProjectInfo = styled.div`
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     max-width: 500px;
     color: white;
     position: relative;
