@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import Section from './Section';
+import DisneyClone from './projects/DisneyClone';
+import SpotifyClone from './projects/SpotifyClone';
+import Artistible from './projects/Artistible';
 import Intro from './Intro';
 import JavascriptIcon from "../images/Icons/javascript-plain.svg";
 import ReactIcon from "../images/Icons/react-original.svg";
@@ -14,18 +17,7 @@ import NodeJsIcon from "../images/Icons/nodejs-original.svg";
 // import HerokuIcon from "../images/Icons/heroku-original-wordmark.svg";
 // import GithubIcon from "../images/Icons/github-original.svg";
 // import LinkedinIcon from "../images/Icons/linkedin-original.svg";
-// Sisney
-import dc1 from "../images/DisneyClone/one.png";
-import dc2 from "../images/DisneyClone/two.png";
-import dc3 from "../images/DisneyClone/three.png";
-// Spotify
-import sp1 from "../images/SpotifyClone/one.png";
-import sp2 from "../images/SpotifyClone/two.png";
-import sp3 from "../images/SpotifyClone/three.png";
-// Artistible
-import ar1 from "../images/Artistible/one.png";
-import ar2 from "../images/Artistible/two.png";
-import ar3 from "../images/Artistible/three.png";
+
 // Movie-List
 import ml1 from "../images/MovieList/one.png";
 import ml2 from "../images/MovieList/two.png";
@@ -52,52 +44,20 @@ function Home() {
         description="Introduction"
         leftBtnText="Download Resume"
       />
-      <Section
-        title="Disney Clone"
+      <DisneyClone
         leftBtnText={<a href="https://disney-clone-renato.herokuapp.com/" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
         rightBtnText={<a href="https://github.com/Netsujr/disney-clone" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>}
-        Img1={dc1}
-        Img2={dc2}
-        Img3={dc3}
-        projectTitle="Details"
-        projectDesc="lorem ipsulorem ipsumlorem ipsumlorem ipsumlorem iipsumlorem ipsumlorem ipsumlorem iipsumlorem ipsumlorem ipsumlorem iipsumlorem ipsumlorem ipsumlorem iipsumlorem ipsumlorem ipsumlorem iipsumlorem ipsumlorem ipsumlorem iipsumlorem ipsumlorem ipsumlorem iipsumlorem ipsumlorem ipsumlorem iipsumlorem ipsumlorem ipsumlorem iipsumlorem ipsumlorem ipsumlorem iipsumlorem ipsumlorem ipsumlorem iipsumlorem ipsumlorem ipsumlorem iipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumm"
-        JavascriptIcon={JavascriptIcon}
-        HTMLIcon={HTMLIcon}
-        ReactIcon={ReactIcon}
-        CSSIcon={CSSIcon}
-        NodeJsIcon={NodeJsIcon}
-      />
-      <Section
-        title="Spotify Clone"
+        />
+
+      <SpotifyClone
         leftBtnText={<a href="http://renato-spotify-clone.herokuapp.com" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
         rightBtnText={<a href="https://github.com/Netsujr/spotify-clone" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>}
-        Img1={sp1}
-        Img2={sp2}
-        Img3={sp3}
-        projectTitle="Details"
-        projectDesc="lorem ipsulorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumm"
-        JavascriptIcon={JavascriptIcon}
-        HTMLIcon={HTMLIcon}
-        ReactIcon={ReactIcon}
-        CSSIcon={CSSIcon}
-        FirebaseIcon={FirebaseIcon}
-      />
+        />
 
-      <Section
-        title="Artistible"
+      <Artistible
         leftBtnText={<a href="https://artistible.herokuapp.com/" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
         rightBtnText={<a href="https://github.com/Netsujr/artistible" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>}
-        Img1={ar1}
-        Img2={ar2}
-        Img3={ar3}
-        projectTitle="Details"
-        projectDesc="lorem ipsulorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumm"
-        RubyIcon={RubyIcon}
-        RailsIcon={RailsIcon}
-        HTMLIcon={HTMLIcon}
-        CSSIcon={CSSIcon}
-        JavascriptIcon={JavascriptIcon}
-      />
+        />
 
       <Section
         title="Tesla Clone"
