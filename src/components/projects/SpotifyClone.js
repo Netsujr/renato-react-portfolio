@@ -3,12 +3,12 @@ import styled from 'styled-components';
 import ImgSlider from '../ImgSlider';
 import Fade from 'react-reveal/Fade';
 import arrow from "../../images/Icons/down-arrow.svg";
-import sp1 from "../images/SpotifyClone/one.png";
-import sp2 from "../images/SpotifyClone/two.png";
-import sp3 from "../images/SpotifyClone/three.png";
+import sp1 from "../../images/SpotifyClone/one.png";
+import sp2 from "../../images/SpotifyClone/two.png";
+import sp3 from "../../images/SpotifyClone/three.png";
 import JavascriptIcon from "../../images/Icons/javascript-plain.svg";
 import ReactIcon from "../../images/Icons/react-original.svg";
-import FirebaseIcon from "../../images/Icons/firebase-plain-wordmark.svg.svg";
+import FirebaseIcon from "../../images/Icons/firebase-plain-wordmark.svg";
 import HTMLIcon from "../../images/Icons/html5-original.svg";
 import CSSIcon from "../../images/Icons/css3-original.svg";
 

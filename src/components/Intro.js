@@ -1,6 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import arrow from "../images/Icons/down-arrow.svg";
+// import HerokuIcon from "../images/Icons/heroku-original-wordmark.svg";
+// import GithubIcon from "../images/Icons/github-original.svg";
+// import LinkedinIcon from "../images/Icons/linkedin-original.svg";
+
 
 function Section({ title, description, leftBtnText, rightBtnText }) {
   return (
