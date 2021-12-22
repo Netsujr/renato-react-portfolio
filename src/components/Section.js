@@ -17,9 +17,9 @@ function Section({ title, leftBtnText,
         <ProjectInfo >
           <h1>{projectTitle}</h1>
           <p>{projectDesc}</p>
-          <React.Fragment>
-            <Icons src={projectIcons}/>
-          </React.Fragment>
+          <IconContainer>
+            <Icons src={projectIcons} />
+          </IconContainer>
         </ProjectInfo>
         <SliderContainer>
           <ImgSlider
@@ -141,12 +141,20 @@ const ProjectInfo = styled.div`
     border: 2px solid blue;
     max-width: 400px;
     color: white;
-
+    position: relative;
     `;
 
 const Icons = styled.img`
     border: 2px solid pink;
-    height: 100px;
-    display: flex;
+    height: 25px;
     cursor: pointer;
+    `;
+
+const IconContainer = styled.div`
+    border: 2px solid yellow;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
     `;
