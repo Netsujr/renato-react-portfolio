@@ -48,7 +48,11 @@ function Home() {
         Img1={image2}
         projectTitle="Details"
         projectDesc="lorem ipsulorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumm"
-
+        JavascriptIcon={JavascriptIcon}
+        HTMLIcon={HTMLIcon}
+        ReactIcon={ReactIcon}
+        CSSIcon={CSSIcon}
+        FirebaseIcon={FirebaseIcon}
       />
 
       <Section
@@ -58,7 +62,11 @@ function Home() {
         Img1={image2}
         projectTitle="Details"
         projectDesc="lorem ipsulorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumm"
-
+        RubyIcon={RubyIcon}
+        RailsIcon={RailsIcon}
+        HTMLIcon={HTMLIcon}
+        CSSIcon={CSSIcon}
+        JavascriptIcon={JavascriptIcon}
       />
 
       <Section
@@ -68,27 +76,35 @@ function Home() {
         Img1={image2}
         projectTitle="Details"
         projectDesc="lorem ipsulorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumm"
-
+        JavascriptIcon={JavascriptIcon}
+        HTMLIcon={HTMLIcon}
+        ReactIcon={ReactIcon}
+        CSSIcon={CSSIcon}
       />
 
       <Section
-        title="Artistible"
+        title="Movie-List"
         leftBtnText={<a href="https://www.facebook.com" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
         rightBtnText={<a href="#" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>}
         Img1={image2}
         projectTitle="Details"
         projectDesc="lorem ipsulorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumm"
-
+        RubyIcon={RubyIcon}
+        RailsIcon={RailsIcon}
+        HTMLIcon={HTMLIcon}
+        CSSIcon={CSSIcon}
       />
 
       <Section
-        title="Artistible"
+        title="TinyMe"
         leftBtnText={<a href="https://www.facebook.com" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
         rightBtnText={<a href="#" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>}
         Img1={image2}
         projectTitle="Details"
         projectDesc="lorem ipsulorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumm"
-
+        HTMLIcon={HTMLIcon}
+        CSSIcon={CSSIcon}
+        JavascriptIcon={JavascriptIcon}
       />
 
       <Section
@@ -108,7 +124,6 @@ function Home() {
         Img1={image2}
         projectTitle="Details"
         projectDesc="lorem ipsulorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumm"
-
       />
 
     </Container>
