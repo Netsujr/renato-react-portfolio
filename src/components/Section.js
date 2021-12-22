@@ -91,7 +91,7 @@ const ButtonGroup = styled.div`
     `;
 
 const LeftButton = styled.div`
-    background-color: rgba(50, 50, 80, 0.8);
+    background-color: rgba(50, 50, 80, 0.7);
     height: 40px;
     width: 256px;
     color: white;
@@ -108,10 +108,18 @@ const LeftButton = styled.div`
       color: white;
       text-decoration: none;
     }
+
+    &:hover {
+      background-color: rgba(50, 50, 80, 0.9);
+    }
     `;
 
 const RightButton = styled(LeftButton)`
-    background-color: rgba(100, 50, 100, 0.8);
+    background-color: rgba(100, 50, 100, 0.7);
+
+    &:hover {
+      background-color: rgba(100, 50, 100, 0.9) !important;
+    }
     `;
 
 const DownArrow = styled.img`
