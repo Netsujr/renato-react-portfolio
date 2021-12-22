@@ -152,7 +152,6 @@ function Section({ title, leftBtnText,
       max-width: 100%;
       height: 40vh;
     }
-
     `;
 
     const ProjectInfo = styled.div`
@@ -160,6 +159,9 @@ function Section({ title, leftBtnText,
     max-width: 450px;
     color: white;
     position: relative;
+    @media (max-width : 768px) {
+      max-width: 100%
+    }
     `;
 
     const Icons = styled.img`
@@ -169,7 +171,7 @@ function Section({ title, leftBtnText,
   `;
 
   const IconContainer = styled.div`
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
 
   display: flex;
   position: absolute;

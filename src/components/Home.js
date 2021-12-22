@@ -11,9 +11,9 @@ import FirebaseIcon from "../images/Icons/firebase-plain-wordmark.svg";
 import HTMLIcon from "../images/Icons/html5-original.svg";
 import CSSIcon from "../images/Icons/css3-original.svg";
 import NodeJsIcon from "../images/Icons/nodejs-original.svg";
-// import HerokuIcon from "../images/Icons/heroku-original-wordmark.svg";
-// import GithubIcon from "../images/Icons/github-original.svg";
-// import LinkedinIcon from "../images/Icons/linkedin-original.svg";
+import HerokuIcon from "../images/Icons/heroku-original-wordmark.svg";
+import GithubIcon from "../images/Icons/github-original.svg";
+import LinkedinIcon from "../images/Icons/linkedin-original.svg";
 import image1 from "../images/spotify.png";
 import image2 from "../images/model-s.jpg";
 // JavascriptIcon, ReactIcon, CSSIcon, ReduxIcon, HTMLIcon, FirebaseIcon,
@@ -34,7 +34,7 @@ function Home() {
         Img1={image1}
         Img2={image2}
         projectTitle="Details"
-        projectDesc="lorem ipsulorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumm"
+        projectDesc="lorem ipsulorem ipsumlorem ipsumlorem ipsumlorem iipsumlorem ipsumlorem ipsumlorem iipsumlorem ipsumlorem ipsumlorem iipsumlorem ipsumlorem ipsumlorem iipsumlorem ipsumlorem ipsumlorem iipsumlorem ipsumlorem ipsumlorem iipsumlorem ipsumlorem ipsumlorem iipsumlorem ipsumlorem ipsumlorem iipsumlorem ipsumlorem ipsumlorem iipsumlorem ipsumlorem ipsumlorem iipsumlorem ipsumlorem ipsumlorem iipsumlorem ipsumlorem ipsumlorem iipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumm"
         JavascriptIcon={JavascriptIcon}
         HTMLIcon={HTMLIcon}
         ReactIcon={ReactIcon}
@@ -77,6 +77,7 @@ function Home() {
         projectTitle="Details"
         projectDesc="lorem ipsulorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumm"
         JavascriptIcon={JavascriptIcon}
+        ReduxIcon={ReduxIcon}
         HTMLIcon={HTMLIcon}
         ReactIcon={ReactIcon}
         CSSIcon={CSSIcon}
