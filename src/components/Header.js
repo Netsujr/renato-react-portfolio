@@ -4,6 +4,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
 import GithubIcon from "../images/Icons/github-original.svg";
 import LinkedinIcon from "../images/Icons/linkedin-original.svg";
+import HomeIcon from "../images/Icons/icons8-home.svg";
 
 
 function Header() {
@@ -14,15 +15,15 @@ function Header() {
   return (
     <Container>
       <HeaderIcons>
-        <a href="https://github.com/netsujr" target="_blank">
+        <a href="https://github.com/netsujr" target="_blank" rel="noreferrer">
           <img src={GithubIcon} alt="Github" />
         </a>
-        <a href="https://www.linkedin.com/in/delbonirenato/" target="_blank">
+        <a href="https://www.linkedin.com/in/delbonirenato/" target="_blank" rel="noreferrer">
           <img src={LinkedinIcon} alt="Linkedin" />
         </a>
+        <a href="/"><img src={HomeIcon} alt=""/></a>
       </HeaderIcons>
       <Menu>
-        <a href="/"><span>Home</span></a>
         <a href="/disney"><span>Disney Clone</span></a>
         <a href="/spotify"><span>Spotify Clone</span></a>
         <a href="/artistible"><span>Artistible</span></a>
@@ -72,6 +73,7 @@ const Container = styled.div`
 
   img {
     height: 60px;
+    background-color: white;
   }
 
   a {

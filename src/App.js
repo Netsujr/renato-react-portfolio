@@ -18,8 +18,7 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route exact path="/" element={<Home />}
-          />
+          <Route exact path="/" element={<Home />}/>
 
           <Route exact path="/disney" element={
             <DisneyClone
@@ -59,8 +58,9 @@ function App() {
 
           <Route exact path="/zoom" element={
             <ZoomClone
-              leftBtnText={<a href="#" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
-              rightBtnText={<a href="#" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
+              // eslint-disable-next-line jsx-a11y/anchor-is-valid
+              leftBtnText={<a href="" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
+              rightBtnText={<a href="https://github.com/Netsujr/zoom-clone" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
           } />
 
           <Route exact path="/" element={
