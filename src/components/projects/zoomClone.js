@@ -22,6 +22,11 @@ function Section({ leftBtnText, rightBtnText }) {
       <ProjectContainer>
         <ProjectInfo >
           <h1>Details</h1>
+          <h4>Role:</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, officia natus? Necessitatibus dolorem provident fugit maxime debitis quam, a dolor quia labore voluptas enim, iusto, numquam nam dolores vitae voluptatibus!</p>
+          <h4>Problems:</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, officia natus? Necessitatibus dolorem provident fugit maxime debitis quam, a dolor quia labore voluptas enim, iusto, numquam nam dolores vitae voluptatibus!</p>
+          <h4>Solution:</h4>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, officia natus? Necessitatibus dolorem provident fugit maxime debitis quam, a dolor quia labore voluptas enim, iusto, numquam nam dolores vitae voluptatibus!</p>
         </ProjectInfo>
         <SliderContainer>
