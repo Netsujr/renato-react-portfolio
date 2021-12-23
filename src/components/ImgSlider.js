@@ -42,26 +42,44 @@ const Carousel = styled(Slider)`
   /* object-fit: contain; */
   /* overflow: hidden; */
   justify-content: center;
+  align-items: center;
+  @media (max-width : 768px) {
+    justify-content: center;
+    align-items: center;
+  }
 
   ul li button {
     &:before {
       font-size: 10px;
       color: white;
+      position: absolute;
+      top: 6px;
     }
   }
   li.slick-sctive button:before {
     color: white;
+    position: absolute;
+    top: 6px;
   }
   /* .slick-list {
     overflow: hidden;
   } */
   button {
     z-index: 1;
+    position: absolute;
+    top: 50%;
+     @media (max-width : 768px) {
+     top: 70%;
   }
+}
   .slick-dots li.slick-active button:before {
     color: black;
     font-size: 13px;
+    position: absolute;
+    @media (max-width : 768px) {
+    top: 6px;
   }
+}
   `
 const Wrap = styled.div`
   border: 4px solid transparent;
@@ -70,7 +88,8 @@ const Wrap = styled.div`
     /* border: 4px solid yellow; */
     border-radius: 4px;
     width: 100%;
-    height: 40vh;
+    height: 50vh;
+    position: relative;
     object-fit: contain;
     transition-duration: 300ms;
     /* box-shadow: rgb(0 0 0 / 73%) 0px 16px 10px -10px; */
@@ -79,5 +98,4 @@ const Wrap = styled.div`
       height: 30vh;
     }
   }
-}
-`;
+}`

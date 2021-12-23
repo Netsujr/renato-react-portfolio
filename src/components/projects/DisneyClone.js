@@ -24,7 +24,7 @@ function Section({ leftBtnText, rightBtnText }) {
         <ProjectInfo >
           <h1>Details</h1>
           <h4>Role:</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, officia natus? Necessitatibus dolorem provident fugit maxime debitis quam, a dolor quia labore voluptas enim, iusto, numquam nam dolores vitae voluptatibus!</p>
+          <p>For this project, I wanted to practice my styling of a webpage using React. I only added links to the 'Home' button and a details page when you click on a movie.</p>
           <h4>Problems:</h4>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, officia natus? Necessitatibus dolorem provident fugit maxime debitis quam, a dolor quia labore voluptas enim, iusto, numquam nam dolores vitae voluptatibus!</p>
           <h4>Solution:</h4>
@@ -66,7 +66,7 @@ function Section({ leftBtnText, rightBtnText }) {
 export default Section;
 
 const Wrap = styled.div`
-  min-width: 100vw;
+  max-width: 100vw;
   min-height: 100vh;
   background-color: rgba(139, 139, 174, 0.9);
   /* background-image: linear-gradient(90deg, rgba(0,0,0,0.7) 35%, rgba(255,255,255,0.5) 81%), url('${BackGround}'); */
@@ -114,7 +114,7 @@ const LeftButton = styled.div`
   }
 
   &:hover {
-    background-color: rgba(136, 217, 230, 0.7);
+    background-color: rgba(190, 226, 239, 1);
   }
   `;
 
@@ -132,6 +132,9 @@ const Buttons = styled.div`
   display: flex;
   justify-content: center;
   background: #442b48;
+  @media (max-width : 768px) {
+    max-width: 100%;
+  }
   `;
 
 const ProjectContainer = styled.div`
@@ -139,11 +142,12 @@ const ProjectContainer = styled.div`
   display: flex;
   justify-content: space-around;
   margin: 0px 60px;
-  height: 60vh;
+  height: 70vh;
   width: 100vw;
   @media (max-width : 768px) {
     flex-direction: column;
     height: 100vh;
+    max-width: 100%;
   }
   `;
 
@@ -160,7 +164,9 @@ const SliderContainer = styled.div`
   padding: -10px;
   @media (max-width : 768px) {
     max-width: 100%;
-    height: 40vh;
+    max-height: 40vh;
+    display: flex;
+    bottom: 50px;
   }
   `;
 
@@ -169,9 +175,10 @@ const ProjectInfo = styled.div`
   max-width: 500px;
   color: white;
   /* position: relative; */
-  margin-top: 20px;
+  /* margin-top: 20px; */
   @media (max-width : 768px) {
-    max-width: 100%
+    max-width: 100%;
+    margin-top: 70px;
   }
 
   h4 {
@@ -179,6 +186,7 @@ const ProjectInfo = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    font-size: 18px;
     @media (max-width : 768px) {
       padding: 2px;
       margin: 10px 10px;
