@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import ImgSlider from '../ImgSlider';
 import Fade from 'react-reveal/Fade';
-import arrow from "../../images/Icons/down-arrow.svg";
 import zc1 from "../../images/zoomClone/one.png";
 import zc2 from "../../images/zoomClone/two.png";
 import zc3 from "../../images/zoomClone/three.png";
@@ -53,7 +52,6 @@ function Section({ leftBtnText, rightBtnText }) {
             }
           </ButtonGroup>
         </Fade>
-        <DownArrow src={arrow} />
       </Buttons>
     </Wrap>
   );
@@ -121,13 +119,6 @@ const RightButton = styled(LeftButton)`
     &:hover {
       background-color: rgba(100, 50, 100, 0.9) !important;
     }
-    `;
-
-const DownArrow = styled.img`
-    height: 40px;
-    margin-bottom: 20px;
-    overflow-x: hidden;
-    animation: animateDown infinite 1.5s;
     `;
 
 const Buttons = styled.div`

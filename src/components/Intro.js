@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import arrow from "../images/Icons/down-arrow.svg";
 // import HerokuIcon from "../images/Icons/heroku-original-wordmark.svg";
 
 
@@ -22,7 +21,6 @@ function Section({ leftBtnText, rightBtnText }) {
             </RightButton>
           }
         </ButtonGroup>
-        <DownArrow src={arrow} />
       </Buttons>
     </Wrap>
   );
@@ -85,12 +83,12 @@ const RightButton = styled(LeftButton)`
   background-color: rgba(100, 50, 100, 0.8);
   `;
 
-const DownArrow = styled.img`
-  height: 40px;
-  margin-bottom: 20px;
-  overflow-x: hidden;
-  animation: animateDown infinite 1.5s;
-  `;
+// const DownArrow = styled.img`
+//   height: 40px;
+//   margin-bottom: 20px;
+//   overflow-x: hidden;
+//   animation: animateDown infinite 1.5s;
+//   `;
 
 const Buttons = styled.div`
 

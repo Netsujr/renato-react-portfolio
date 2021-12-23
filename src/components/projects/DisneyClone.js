@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import ImgSlider from '../ImgSlider';
 import Fade from 'react-reveal/Fade';
-import arrow from "../../images/Icons/down-arrow.svg";
 import dc1 from "../../images/DisneyClone/one.png";
 import dc2 from "../../images/DisneyClone/two.png";
 import dc3 from "../../images/DisneyClone/three.png";
@@ -53,7 +52,6 @@ function Section({leftBtnText, rightBtnText}) {
             }
           </ButtonGroup>
         </Fade>
-        <DownArrow src={arrow} />
       </Buttons>
     </Wrap>
   );
@@ -123,12 +121,6 @@ const RightButton = styled(LeftButton)`
     }
     `;
 
-const DownArrow = styled.img`
-    height: 40px;
-    margin-bottom: 20px;
-    overflow-x: hidden;
-    animation: animateDown infinite 1.5s;
-    `;
 
 const Buttons = styled.div`
 

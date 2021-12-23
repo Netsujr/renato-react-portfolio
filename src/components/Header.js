@@ -2,23 +2,14 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
-// import { selectProjects } from "../features/project/projectSlice";
-// import { useSelector } from 'react-redux';
 import GithubIcon from "../images/Icons/github-original.svg";
 import LinkedinIcon from "../images/Icons/linkedin-original.svg";
 
-// export default class Scrolling extends Component {
-//   render() {
-//     return
-//     // <Header />
-//     <DisneyClone />
-//   }
-// }
 
 function Header() {
 
   const [burgerStatus, setBurgerStatus] = useState(false);
-  // const projects = useSelector(selectProjects);
+
 
   return (
     <Container>
@@ -31,12 +22,14 @@ function Header() {
         </a>
       </HeaderIcons>
       <Menu>
-        <a ><span>Disney Clone</span></a>
-        <a href="#"><span>Spotify Clone</span></a>
-        <a href="#"><span>Artistible</span></a>
-        <a href="#"><span>Tesla Clone</span></a>
-        <a href="#"><span>Movie List</span></a>
-        <a href="#"><span>TinyMe</span></a>
+        <a href="/"><span>Home</span></a>
+        <a href="/disney"><span>Disney Clone</span></a>
+        <a href="/spotify"><span>Spotify Clone</span></a>
+        <a href="/artistible"><span>Artistible</span></a>
+        <a href="/tesla"><span>Tesla Clone</span></a>
+        <a href="/movielist"><span>Movie List</span></a>
+        <a href="/tinyme"><span>TinyMe</span></a>
+        <a href="/zoom"><span>Zoom CLone</span></a>
         {/* <a href="#"><span>Mini Projects</span></a> */}
       </Menu>
       <RightMenu>
