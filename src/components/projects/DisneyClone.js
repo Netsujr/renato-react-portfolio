@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import ImgSlider from '../ImgSlider';
 import Fade from 'react-reveal/Fade';
+import BackGround from "../../images/background2.jpg";
 import dc1 from "../../images/DisneyClone/one.png";
 import dc2 from "../../images/DisneyClone/two.png";
 import dc3 from "../../images/DisneyClone/three.png";
@@ -67,9 +68,9 @@ export default Section;
 const Wrap = styled.div`
   min-width: 100vw;
   min-height: 100vh;
-  background-color: gray;
-  /* background-image: url("") */
-  background-size: 100vh;
+  /* background-color: gray; */
+  background-image: url('${BackGround}');
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;

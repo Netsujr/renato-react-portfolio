@@ -59,7 +59,7 @@ function Header() {
 export default Header;
 
 const Container = styled.div`
-  background-color: black;
+  background: linear-gradient(180deg, rgba(0,0,0,1) 12%, rgba(255,255,255,0.025647759103641476) 100%);
   min-height: 60px;
   position: fixed;
   display: flex;
