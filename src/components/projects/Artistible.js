@@ -65,8 +65,8 @@ function Section({ leftBtnText, rightBtnText }) {
 export default Section;
 
 const Wrap = styled.div`
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
   background-color: gray;
   /* background-image: url("") */
   /* ${props => `url("/images/${props.bgImage}")`}; */
