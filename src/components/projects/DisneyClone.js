@@ -22,11 +22,11 @@ function Section({ leftBtnText, rightBtnText }) {
       </Fade>
       <ProjectContainer>
         <ProjectInfo >
-          <h1>Details</h1>
+          <h2>Details</h2>
           <h4>Role:</h4>
-          <p>For this project, I wanted to practice my styling of a webpage using React. I only added links to the 'Home' button and a details page when you click on a movie.</p>
+          <p>For this project, I wanted to practice my styling of a webpage using React. I only added links to the 'Home' button and a details page when clicking on a movie.</p>
           <h4>Problems:</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, officia natus? Necessitatibus dolorem provident fugit maxime debitis quam, a dolor quia labore voluptas enim, iusto, numquam nam dolores vitae voluptatibus!</p>
+          <p>I had three major issues during prodcution: <br></br> 1. Login authentication function wasn't working after deployment. <br></br> 2. Linking each movie to its respective details page. <br></br> 3. It was my first time using Firebase, so naturally I had to get familiar with the platform.  </p>
           <h4>Solution:</h4>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, officia natus? Necessitatibus dolorem provident fugit maxime debitis quam, a dolor quia labore voluptas enim, iusto, numquam nam dolores vitae voluptatibus!</p>
         </ProjectInfo>
@@ -101,7 +101,7 @@ const LeftButton = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 0.1px solid black;
+  /* border: 0.1px solid black; */
   border-radius: 100px;
   opacity: 0.85;
   text-transform: uppercase;
@@ -131,7 +131,7 @@ const Buttons = styled.div`
   width: 100vw;
   display: flex;
   justify-content: center;
-  background: #442b48;
+  background: rgba(68, 43, 72, 0.95);
   @media (max-width : 768px) {
     max-width: 100%;
   }
@@ -186,7 +186,6 @@ const ProjectInfo = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    font-size: 18px;
     @media (max-width : 768px) {
       padding: 2px;
       margin: 10px 10px;
@@ -194,7 +193,6 @@ const ProjectInfo = styled.div`
   }
 
   p {
-    margin-top: 5px;
     text-align: justify;
     @media (max-width : 768px) {
       padding: 2px;
