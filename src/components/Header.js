@@ -39,18 +39,16 @@ function Header() {
         <CloseWrapper>
           <CustomClose onClick={() => setBurgerStatus(false)} />
         </CloseWrapper>
-        <li><a href="/">Home</a></li>
-        <li><a href="/disney">Disney Clone</a></li>
-        <li><a href="/spotify">Spotify Clone</a></li>
-        <li><a href="/artistible">Artistible</a></li>
-        <li><a href="/tesla">Tesla Clone</a></li>
-        <li><a href="/movielist">Movie List</a></li>
-        <li><a href="/movielist">Movie List</a></li>
-        <li><a href="/tinyme">TinyMe</a></li>
-        <li><a href="/zoom">Zoom CLone</a></li>
-        <li><a href="/miniprojects">Mini Projects</a></li>
+        <li><a href="/"></a>Home</li>
+        <li><a href="/disney"></a>Disney Clone</li>
+        <li><a href="/spotify"></a>Spotify Clone</li>
+        <li><a href="/artistible"></a>Artistible</li>
+        <li><a href="/tesla"></a>Tesla Clone</li>
+        <li><a href="/movielist"></a>Movie List</li>
+        <li><a href="/tinyme"></a>TinyMe</li>
+        <li><a href="/zoom"></a>Zoom CLone</li>
+        <li><a href="/miniprojects"></a>Mini Projects</li>
         {/* <li><a href="#"></a>Mini Projects</li> */}
-
       </BurgerNav>
     </Container>
   );
