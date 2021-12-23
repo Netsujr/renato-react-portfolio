@@ -38,7 +38,7 @@ const Carousel = styled(Slider)`
   /* border: 6px solid pink; */
   /* margin-bottom: 10px; */
   width: 80%;
-  height: 90%;
+  height: 70%;
   /* object-fit: contain; */
   /* overflow: hidden; */
   justify-content: center;
@@ -65,7 +65,7 @@ const Carousel = styled(Slider)`
   `
 const Wrap = styled.div`
   border: 4px solid transparent;
-  cursor: pointer;
+  /* cursor: pointer; */
   img {
     /* border: 4px solid yellow; */
     border-radius: 4px;
@@ -74,6 +74,10 @@ const Wrap = styled.div`
     object-fit: contain;
     transition-duration: 300ms;
     /* box-shadow: rgb(0 0 0 / 73%) 0px 16px 10px -10px; */
+    @media (max-width : 768px) {
+      width: 100%;
+      height: 30vh;
+    }
   }
 }
 `;

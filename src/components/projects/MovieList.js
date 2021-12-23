@@ -22,14 +22,14 @@ function Section({ leftBtnText, rightBtnText }) {
         <ProjectInfo >
           <h1>Details</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, officia natus? Necessitatibus dolorem provident fugit maxime debitis quam, a dolor quia labore voluptas enim, iusto, numquam nam dolores vitae voluptatibus!</p>
+        </ProjectInfo>
+        <SliderContainer>
           <IconContainer>
             <Icons src={HTMLIcon} />
             <Icons src={RubyIcon} />
             <Icons src={RailsIcon} />
             <Icons src={CSSIcon} />
           </IconContainer>
-        </ProjectInfo>
-        <SliderContainer>
           <ImgSlider
             FirstImg={ml1}
             SecondImg={ml2}
@@ -128,7 +128,7 @@ const ProjectContainer = styled.div`
     display: flex;
     justify-content: space-around;
     margin: 0px 60px;
-    height: 50vh;
+    height: 60vh;
     width: 100vw;
     @media (max-width : 768px) {
       flex-direction: column;
@@ -142,6 +142,7 @@ const SliderContainer = styled.div`
     max-width: 50%;
     /* object-fit: contain; */
     /* overflow: hidden; */
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,7 +157,8 @@ const ProjectInfo = styled.div`
     /* border: 2px solid blue; */
     max-width: 500px;
     color: white;
-    position: relative;
+    /* position: relative; */
+    margin-top: 20px;
     @media (max-width : 768px) {
       max-width: 100%
     }
@@ -176,11 +178,10 @@ const IconContainer = styled.div`
 
     display: flex;
     position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: 5px;
+    top: 25px;
+    left: 20;
     @media (max-width : 768px) {
-      top: 0;
-      left: 0;
+      top: 65px;
+      left: 20;
     }
     `;

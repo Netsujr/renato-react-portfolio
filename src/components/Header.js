@@ -14,15 +14,9 @@ function Header() {
 
   return (
     <Container>
-      <HeaderIcons>
-        <a href="https://github.com/netsujr" target="_blank" rel="noreferrer">
-          <img src={GithubIcon} alt="Github" />
-        </a>
-        <a href="https://www.linkedin.com/in/delbonirenato/" target="_blank" rel="noreferrer">
-          <img src={LinkedinIcon} alt="Linkedin" />
-        </a>
+      <LeftIcons>
         <a href="/"><img src={HomeIcon} alt=""/></a>
-      </HeaderIcons>
+      </LeftIcons>
       <Menu>
         <a href="/disney"><span>Disney Clone</span></a>
         <a href="/spotify"><span>Spotify Clone</span></a>
@@ -33,6 +27,14 @@ function Header() {
         <a href="/zoom"><span>Zoom CLone</span></a>
         {/* <a href="#"><span>Mini Projects</span></a> */}
       </Menu>
+      <RightIcons>
+        <a href="https://github.com/netsujr" target="_blank" rel="noreferrer">
+          <img src={GithubIcon} alt="Github" />
+        </a>
+        <a href="https://www.linkedin.com/in/delbonirenato/" target="_blank" rel="noreferrer">
+          <img src={LinkedinIcon} alt="Linkedin" />
+        </a>
+      </RightIcons>
       <RightMenu>
         <CustomMenu onClick={() => setBurgerStatus(true)} />
       </RightMenu>
@@ -128,6 +130,7 @@ const RightMenu = styled.div`
   display: flex;
   align-items: center;
   cursor: pointer;
+  margin-left: 20px;
   `;
 
 const CustomMenu = styled(MenuIcon)`
@@ -178,7 +181,18 @@ const CloseWrapper = styled.div`
 
   `;
 
-const HeaderIcons = styled.div`
+const RightIcons = styled.div`
+  display: flex;
+
+  img {
+    height: 23px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2px;
+  }
+  `;
+
+const LeftIcons = styled.div`
   display: flex;
 
   img {
