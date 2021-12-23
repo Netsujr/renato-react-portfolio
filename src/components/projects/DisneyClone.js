@@ -71,14 +71,13 @@ function Section({ leftBtnText, rightBtnText }) {
   max-width: 100vw;
   min-height: 100vh;
   background-color: rgba(63, 124, 172, 0.8);
-  /* background-image: linear-gradient(90deg, rgba(0,0,0,0.7) 35%, rgba(255,255,255,0.5) 81%), url('${BackGround}'); */
-  /* background-size: cover; */
-  /* background-position: center;
-  background-repeat: no-repeat; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  @media (max-width : 768px) {
+    min-height: 150vh;
+  }
   `;
   // sc for const shortcut
   const ItemText = styled.div`
@@ -178,11 +177,10 @@ function Section({ leftBtnText, rightBtnText }) {
   margin-left: 45px;
   max-width: 500px;
   color: white;
-  /* position: relative; */
-  /* margin-top: 20px; */
   @media (max-width : 768px) {
     max-width: 100%;
     margin-top: 70px;
+
   }
 
   h2 {
