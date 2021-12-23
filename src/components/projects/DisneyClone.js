@@ -68,8 +68,8 @@ export default Section;
 const Wrap = styled.div`
   min-width: 100vw;
   min-height: 100vh;
-  /* background-color: gray; */
-  background-image: url('${BackGround}');
+  background-color: #8B8BAE;
+  /* background-image: linear-gradient(90deg, rgba(0,0,0,0.7) 35%, rgba(255,255,255,0.5) 81%), url('${BackGround}'); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -95,13 +95,13 @@ const ButtonGroup = styled.div`
   `;
 
 const LeftButton = styled.div`
-  background-color: rgba(50, 50, 80, 0.7);
+  background-color: rgba(136, 217, 230, 1);
   height: 40px;
   width: 256px;
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 0.1px solid black;
   border-radius: 100px;
   opacity: 0.85;
   text-transform: uppercase;
@@ -109,26 +109,29 @@ const LeftButton = styled.div`
   margin: 8px;
 
   & a {
-    color: white;
+    color: black;
     text-decoration: none;
   }
 
   &:hover {
-    background-color: rgba(50, 50, 80, 0.9);
+    background-color: rgba(136, 217, 230, 0.7);
   }
   `;
 
 const RightButton = styled(LeftButton)`
-  background-color: rgba(100, 50, 100, 0.7);
-
+  /* background-color: rgba(250, 200, 205, 1);
   &:hover {
-    background-color: rgba(100, 50, 100, 0.9) !important;
-  }
+    background-color: rgba(250, 200, 205, 0.7) !important;
+  } */
   `;
 
 
 const Buttons = styled.div`
-
+  /* border: 2px solid green; */
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background: #442b48;
   `;
 
 const ProjectContainer = styled.div`
