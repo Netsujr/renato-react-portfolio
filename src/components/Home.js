@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Intro from './Intro';
+import Resume from '../RenatoDelboniResume.pdf';
 // import MiniProjects from './projects/MiniProjects';
 
 // Mini projects
@@ -11,18 +12,8 @@ function Home() {
       <Intro
         title="About Me"
         description="Introduction"
-        leftBtnText="Download Resume"
+        leftBtnText={<a href={Resume} alt="Download Resume" download>Download Resume</a>}
       />
-
-      {/* Maybe here I will create a new section to show off mini projects  */}
-      {/* <Section
-      title="Mini Projects"
-      leftBtnText={<a href="https://www.facebook.com" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
-      rightBtnText={<a href="#" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>}
-      projectTitle="Details"
-      projectDesc="lorem ipsulorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumm"
-    /> */}
-
     </Container>
   );
 }
