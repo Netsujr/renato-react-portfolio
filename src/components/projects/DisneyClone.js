@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import ImgSlider from '../ImgSlider';
 import Fade from 'react-reveal/Fade';
-import BackGround from "../../images/background2.jpg";
 import dc1 from "../../images/DisneyClone/one.png";
 import dc2 from "../../images/DisneyClone/two.png";
 import dc3 from "../../images/DisneyClone/three.png";
@@ -19,14 +18,13 @@ function Section({ leftBtnText, rightBtnText }) {
       <Fade top>
         <ItemText>
           <h1>Disney Clone |  </h1>
-          {/* <IconContainer> */}
+          {/*Put Icons innside Itemtext */}
           <Icons src={JavascriptIcon} />
           <Icons src={ReactIcon} />
           <Icons src={ReduxIcon} />
           <Icons src={HTMLIcon} />
           <Icons src={CSSIcon} />
           <Icons src={FirebaseIcon} />
-          {/* </IconContainer> */}
         </ItemText>
       </Fade>
       <ProjectContainer>
@@ -75,10 +73,8 @@ const Wrap = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  @media (max-width : 768px) {
-    min-height: 150vh;
-  }
-  `;
+  }`;
+
 // sc for const shortcut
 const ItemText = styled.div`
   /* border: 2px solid orange; */
@@ -92,143 +88,132 @@ const ItemText = styled.div`
   h1{
     margin-top: -7px;
     margin-right: 2px;
+    @media (max-width : 768px) {
+      font-size: 24px;
+      margin-top: -4px;
+    }
   }
-  `;
+    `;
 
 const ButtonGroup = styled.div`
-  display: flex;
-  margin: 15px 10px;
-  cursor: pointer;
-  @media (max-width : 768px) {
-    flex-direction: column;
-  }
-  `;
+    display: flex;
+    margin: 15px 10px;
+    cursor: pointer;
+    @media (max-width : 768px) {
+      flex-direction: column;
+    }
+    `;
 
 const LeftButton = styled.div`
-  background-color: rgba(136, 217, 230, 1);
-  height: 40px;
-  width: 256px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* border: 0.1px solid black; */
-  border-radius: 100px;
-  opacity: 0.85;
-  text-transform: uppercase;
-  font-size: 12px;
-  margin: 8px;
-  transition: all 250ms ease;
+    background-color: rgba(136, 217, 230, 1);
+    height: 40px;
+    width: 256px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 0.1px solid black; */
+    border-radius: 100px;
+    opacity: 0.85;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 8px;
+    transition: all 250ms ease;
 
-  & a {
-    color: black;
-    text-decoration: none;
-  }
+    & a {
+      color: black;
+      text-decoration: none;
+    }
 
-  &:hover {
-    background-color: rgba(190, 226, 239, 1);
-  }
-  `;
+    &:hover {
+      background-color: rgba(190, 226, 239, 1);
+    }
+    `;
 
 const RightButton = styled(LeftButton)`
-  /* background-color: rgba(250, 200, 205, 1);
-  &:hover {
-    background-color: rgba(250, 200, 205, 0.7) !important;
-  } */
-  `;
+    `;
 
 
 const Buttons = styled.div`
-  /* border: 2px solid green; */
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  background: rgba(13, 24, 33, 0.9);
-  @media (max-width : 768px) {
-    max-width: 100%;
-  }
-  `;
+    /* border: 2px solid green; */
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background: rgba(13, 24, 33, 0.9);
+    @media (max-width : 768px) {
+      max-width: 100%;
+      margin-top: 20px;
+    }
+    `;
 
 const ProjectContainer = styled.div`
-  /* border: 2px solid green; */
-  display: flex;
-  justify-content: space-around;
-  margin: 0px 60px;
-  height: 70vh;
-  width: 100vw;
-  @media (max-width : 768px) {
-    flex-direction: column;
-    height: 100vh;
-    max-width: 100%;
-  }
-  `;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 60px;
+    height: 70vh;
+    width: 100vw;
+    @media (max-width : 768px) {
+      flex-direction: column;
+      height: 100vh;
+      max-width: 100%;
+    }
+    `;
 
 const SliderContainer = styled.div`
-  /* border: 2px solid red; */
-  /* background-color: black; */
-  max-width: 50%;
-  /* object-fit: contain; */
-  /* overflow: hidden; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: -10px;
-  @media (max-width : 768px) {
-    max-width: 100%;
-    max-height: 40vh;
+    /* border: 2px solid red; */
+    /* background-color: black; */
+    max-width: 50%;
     display: flex;
-    bottom: 50px;
-  }
-  `;
+    justify-content: center;
+    align-items: center;
+    padding: -10px;
+    @media (max-width : 768px) {
+      max-width: 100%;
+      display: flex;
+      margin-bottom: 100px;
+    }
+    `;
 
 const ProjectInfo = styled.div`
-  /* border: 2px solid blue; */
-  margin-left: 45px;
-  max-width: 500px;
-  color: white;
-  @media (max-width : 768px) {
-    max-width: 100%;
-
-  }
-
-  h2 {
-    margin-top: 30px;
-  }
-
-  h4 {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    /* border: 2px solid blue; */
+    margin-left: 45px;
+    max-width: 500px;
+    color: white;
     @media (max-width : 768px) {
-      padding: 2px;
-      margin: 10px 10px;
+      max-width: 100%;
+      margin-left: 15px;
+      margin-top: 100px;
     }
-  }
 
-  p {
-    text-align: justify;
-    @media (max-width : 768px) {
-      padding: 2px;
-      margin: 0 20px;
+    h2 {
+      margin-top: 30px;
     }
-  }
-  `;
+
+    h4 {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      @media (max-width : 768px) {
+        padding: 2px;
+        margin: 10px 10px;
+      }
+    }
+
+    p {
+      text-align: justify;
+      @media (max-width : 768px) {
+        padding: 2px;
+        margin: 0 20px;
+      }
+    }
+    `;
 
 const Icons = styled.img`
-  /* border: 2px solid pink; */
-  height: 25px;
-  margin: 5px;
-  @media (max-width : 768px) {
-    height: 20px;
-  }
-  `;
-
-  // const IconContainer = styled.div`
-  //   border: 2px solid yellow;
-  //   display: flex;
-  //   position: absolute;
-  //   @media (max-width : 768px) {
-  //     top: 65px;
-  //     left: 20;
-  //   }
-  //   `;
+    /* border: 2px solid pink; */
+    height: 25px;
+    margin: 5px;
+    @media (max-width : 768px) {
+      height: 20px;
+    }
+    `;

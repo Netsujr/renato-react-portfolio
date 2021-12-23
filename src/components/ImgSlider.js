@@ -36,16 +36,16 @@ export default ImgSlider;
 
 const Carousel = styled(Slider)`
   /* border: 6px solid pink; */
-  /* margin-bottom: 10px; */
-  width: 80%;
+  width: 95%;
   height: 70%;
-  /* object-fit: contain; */
-  /* overflow: hidden; */
   justify-content: center;
   align-items: center;
   @media (max-width : 768px) {
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
+    margin-top: -20px;
+    width: 65%;
   }
 
   ul li button {
@@ -53,33 +53,37 @@ const Carousel = styled(Slider)`
       font-size: 10px;
       color: white;
       position: absolute;
-      top: 6px;
+      @media (max-width : 768px) {
+        top: 20px;
+        left: -24px;
+      }
     }
   }
   li.slick-sctive button:before {
     color: white;
     position: absolute;
-    top: 6px;
+    top: 20px;
+    left: -24px;
   }
-  /* .slick-list {
-    overflow: hidden;
-  } */
+
   button {
     z-index: 1;
     position: absolute;
     top: 50%;
-     @media (max-width : 768px) {
-     top: 70%;
+    @media (max-width : 768px) {
+      top: 70%;
+      margin: 0px 25px;
+    }
   }
-}
   .slick-dots li.slick-active button:before {
     color: black;
     font-size: 13px;
     position: absolute;
     @media (max-width : 768px) {
-    top: 6px;
+      top: 20px;
+      left: -24px;
+    }
   }
-}
   `
 const Wrap = styled.div`
   border: 4px solid transparent;
