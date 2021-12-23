@@ -39,15 +39,14 @@ function Header() {
         <CloseWrapper>
           <CustomClose onClick={() => setBurgerStatus(false)} />
         </CloseWrapper>
-        <li><a href="/"></a>Home</li>
-        <li><a href="/disney"></a>Disney Clone</li>
-        <li><a href="/spotify"></a>Spotify Clone</li>
-        <li><a href="/artistible"></a>Artistible</li>
-        <li><a href="/tesla"></a>Tesla Clone</li>
-        <li><a href="/movielist"></a>Movie List</li>
-        <li><a href="/tinyme"></a>TinyMe</li>
-        <li><a href="/zoom"></a>Zoom CLone</li>
-        <li><a href="/miniprojects"></a>Mini Projects</li>
+        <a href="/"><li>Home</li></a>
+        <a href="/disney"><li>Disney Clone</li></a>
+        <a href="/spotify"><li>Spotify Clone</li></a>
+        <a href="/artistible"><li>Artistible</li></a>
+        <a href="/tesla"><li>Tesla Clone</li></a>
+        <a href="/movielist"><li>Movie List</li></a>
+        <a href="/tinyme"><li>TinyMe</li></a>
+        <a href="/zoom"><li>Zoom CLone</li></a>
         {/* <li><a href="#"></a>Mini Projects</li> */}
       </BurgerNav>
     </Container>
@@ -152,10 +151,16 @@ const BurgerNav = styled.div`
   li {
     padding: 15px 0;
     border-bottom: 1px solid rgba(0, 0, 0, .2);
+    color: black;
+    font-weight: 200;
+
+    &:hover {
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
 
     a {
       font-weight: 600;
-
     }
   }
   `;
@@ -180,8 +185,4 @@ const HeaderIcons = styled.div`
     border-radius: 5px;
     padding: 2px;
   }
-  `;
-
-const Disney = styled.div`
-
   `;
