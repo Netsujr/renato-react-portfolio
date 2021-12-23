@@ -68,7 +68,7 @@ export default Section;
 const Wrap = styled.div`
   min-width: 100vw;
   min-height: 100vh;
-  background-color: #8B8BAE;
+  background-color: rgba(139, 139, 174, 0.9);
   /* background-image: linear-gradient(90deg, rgba(0,0,0,0.7) 35%, rgba(255,255,255,0.5) 81%), url('${BackGround}'); */
   background-size: cover;
   background-position: center;
@@ -87,7 +87,7 @@ const ItemText = styled.div`
 
 const ButtonGroup = styled.div`
   display: flex;
-  margin-bottom: 20px;
+  margin: 15px 10px;
   cursor: pointer;
   @media (max-width : 768px) {
     flex-direction: column;
