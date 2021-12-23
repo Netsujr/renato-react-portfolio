@@ -11,81 +11,83 @@ import ReactIcon from "../../images/Icons/react-original.svg";
 import ReduxIcon from "../../images/Icons/redux-original.svg";
 import HTMLIcon from "../../images/Icons/html5-original.svg";
 import CSSIcon from "../../images/Icons/css3-original.svg";
+import FirebaseIcon from "../../images/Icons/firebase-plain-wordmark.svg";
 
 function Section({ leftBtnText, rightBtnText }) {
   return (
     <Wrap>
-      <Fade top>
-        <ItemText>
-          <h1>Disney Clone</h1>
-        </ItemText>
-      </Fade>
-      <ProjectContainer>
-        <ProjectInfo >
-          <h2>Details</h2>
-          <h4>Role:</h4>
-          <p>For this project, I wanted to practice my styling of a webpage using React. I only added links to the 'Home' button and a details page when clicking on a movie.</p>
-          <h4>Problems:</h4>
-          <p>I had three major issues during prodcution: <br></br> 1. Login authentication function wasn't working after deployment. <br></br> 2. Linking each movie to its respective details page. <br></br> 3. It was my first time using Firebase, so naturally I had to get familiar with the platform.  </p>
-          <h4>Solution:</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, officia natus? Necessitatibus dolorem provident fugit maxime debitis quam, a dolor quia labore voluptas enim, iusto, numquam nam dolores vitae voluptatibus!</p>
-        </ProjectInfo>
-        <SliderContainer>
-          <IconContainer>
-            <Icons src={JavascriptIcon} />
-            <Icons src={ReactIcon} />
-            <Icons src={ReduxIcon} />
-            <Icons src={HTMLIcon} />
-            <Icons src={CSSIcon} />
-          </IconContainer>
-          <ImgSlider
-            FirstImg={dc1}
-            SecondImg={dc2}
-            ThirdImg={dc3}
-          />
-        </SliderContainer>
-      </ProjectContainer>
-      <Buttons>
-        <Fade bottom>
-          <ButtonGroup>
-            <LeftButton>
-              {leftBtnText}
-            </LeftButton>
-            {rightBtnText &&
-              <RightButton>
-                {rightBtnText}
-              </RightButton>
-            }
-          </ButtonGroup>
-        </Fade>
-      </Buttons>
+    <Fade top>
+    <ItemText>
+    <h1>Disney Clone</h1>
+    </ItemText>
+    </Fade>
+    <ProjectContainer>
+    <ProjectInfo >
+    <h2>Details</h2>
+    <h4>Role:</h4>
+    <p>For this project, I wanted to practice my styling of a webpage using React. I only added links to the 'Home' button and a details page when clicking on a movie.</p>
+    <h4>Problems:</h4>
+    <p>I had three major issues during prodcution: <br></br> 1. Login authentication function wasn't working after deployment. <br></br> 2. Linking each movie to its respective details page. <br></br> 3. It was my first time using Firebase, so naturally I had to get familiar with the platform.  </p>
+    <h4>Solution:</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, officia natus? Necessitatibus dolorem provident fugit maxime debitis quam, a dolor quia labore voluptas enim, iusto, numquam nam dolores vitae voluptatibus!</p>
+    </ProjectInfo>
+    <SliderContainer>
+    <IconContainer>
+    <Icons src={JavascriptIcon} />
+    <Icons src={ReactIcon} />
+    <Icons src={ReduxIcon} />
+    <Icons src={HTMLIcon} />
+    <Icons src={CSSIcon} />
+    <Icons src={FirebaseIcon} />
+    </IconContainer>
+    <ImgSlider
+    FirstImg={dc1}
+    SecondImg={dc2}
+    ThirdImg={dc3}
+    />
+    </SliderContainer>
+    </ProjectContainer>
+    <Buttons>
+    <Fade bottom>
+    <ButtonGroup>
+    <LeftButton>
+    {leftBtnText}
+    </LeftButton>
+    {rightBtnText &&
+      <RightButton>
+      {rightBtnText}
+      </RightButton>
+    }
+    </ButtonGroup>
+    </Fade>
+    </Buttons>
     </Wrap>
-  );
-}
+    );
+  }
 
-export default Section;
+  export default Section;
 
-const Wrap = styled.div`
+  const Wrap = styled.div`
   max-width: 100vw;
   min-height: 100vh;
-  background-color: rgba(139, 139, 174, 0.9);
+  background-color: rgba(63, 124, 172, 0.8);
   /* background-image: linear-gradient(90deg, rgba(0,0,0,0.7) 35%, rgba(255,255,255,0.5) 81%), url('${BackGround}'); */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  /* background-size: cover; */
+  /* background-position: center;
+  background-repeat: no-repeat; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   `;
-// sc for const shortcut
-const ItemText = styled.div`
+  // sc for const shortcut
+  const ItemText = styled.div`
   padding-top: 12vh;
   text-align: center;
   color: white;
   `;
 
-const ButtonGroup = styled.div`
+  const ButtonGroup = styled.div`
   display: flex;
   margin: 15px 10px;
   cursor: pointer;
@@ -94,7 +96,7 @@ const ButtonGroup = styled.div`
   }
   `;
 
-const LeftButton = styled.div`
+  const LeftButton = styled.div`
   background-color: rgba(136, 217, 230, 1);
   height: 40px;
   width: 256px;
@@ -107,6 +109,7 @@ const LeftButton = styled.div`
   text-transform: uppercase;
   font-size: 12px;
   margin: 8px;
+  transition: all 250ms ease;
 
   & a {
     color: black;
@@ -118,7 +121,7 @@ const LeftButton = styled.div`
   }
   `;
 
-const RightButton = styled(LeftButton)`
+  const RightButton = styled(LeftButton)`
   /* background-color: rgba(250, 200, 205, 1);
   &:hover {
     background-color: rgba(250, 200, 205, 0.7) !important;
@@ -126,18 +129,18 @@ const RightButton = styled(LeftButton)`
   `;
 
 
-const Buttons = styled.div`
+  const Buttons = styled.div`
   /* border: 2px solid green; */
   width: 100vw;
   display: flex;
   justify-content: center;
-  background: rgba(68, 43, 72, 0.95);
+  background: rgba(13, 24, 33, 0.9);
   @media (max-width : 768px) {
     max-width: 100%;
   }
   `;
 
-const ProjectContainer = styled.div`
+  const ProjectContainer = styled.div`
   /* border: 2px solid green; */
   display: flex;
   justify-content: space-around;
@@ -151,7 +154,7 @@ const ProjectContainer = styled.div`
   }
   `;
 
-const SliderContainer = styled.div`
+  const SliderContainer = styled.div`
   /* border: 2px solid red; */
   /* background-color: black; */
   max-width: 50%;
@@ -170,8 +173,9 @@ const SliderContainer = styled.div`
   }
   `;
 
-const ProjectInfo = styled.div`
+  const ProjectInfo = styled.div`
   /* border: 2px solid blue; */
+  margin-left: 45px;
   max-width: 500px;
   color: white;
   /* position: relative; */
@@ -179,6 +183,10 @@ const ProjectInfo = styled.div`
   @media (max-width : 768px) {
     max-width: 100%;
     margin-top: 70px;
+  }
+
+  h2 {
+    margin-top: 30px;
   }
 
   h4 {
@@ -201,7 +209,7 @@ const ProjectInfo = styled.div`
   }
   `;
 
-const Icons = styled.img`
+  const Icons = styled.img`
   /* border: 2px solid pink; */
   height: 25px;
   margin: 5px;
@@ -210,13 +218,13 @@ const Icons = styled.img`
   }
   `;
 
-const IconContainer = styled.div`
+  const IconContainer = styled.div`
   /* border: 2px solid yellow; */
 
   display: flex;
   position: absolute;
   top: 35px;
-  left: 20;
+  left: 225px;
   @media (max-width : 768px) {
     top: 65px;
     left: 20;
