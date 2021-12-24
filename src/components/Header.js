@@ -27,14 +27,6 @@ function Header() {
         <a href="/mini-projects"><span id="mp" >Mini Projects</span></a>
         {/* <a href="#"><span>Mini Projects</span></a> */}
       </Menu>
-      <RightIcons>
-        <a href="https://github.com/netsujr" target="_blank" rel="noreferrer">
-          <img src={GithubIcon} alt="Github" />
-        </a>
-        <a href="https://www.linkedin.com/in/delbonirenato/" target="_blank" rel="noreferrer">
-          <img src={LinkedinIcon} alt="Linkedin" />
-        </a>
-      </RightIcons>
       <RightMenu>
         <CustomMenu onClick={() => setBurgerStatus(true)} />
       </RightMenu>
@@ -50,6 +42,14 @@ function Header() {
         <a href="/movielist"><li>Movie List</li></a>
         <a href="/zoom"><li>Zoom CLone</li></a>
         <a href="/mini-projects"><li>Mini Projects</li></a>
+        <RightIcons>
+          <a href="https://github.com/netsujr" target="_blank" rel="noreferrer">
+            <img src={GithubIcon} alt="Github" />
+          </a>
+          <a href="https://www.linkedin.com/in/delbonirenato/" target="_blank" rel="noreferrer">
+            <img src={LinkedinIcon} alt="Linkedin" />
+          </a>
+        </RightIcons>
         {/* <li><a href="#"></a>Mini Projects</li> */}
       </BurgerNav>
     </Container>
@@ -186,13 +186,12 @@ const RightIcons = styled.div`
   display: flex;
 
   img {
-    height: 23px;
+    height: 50px;
     /* border-radius: 5px; */
     padding: 2px;
 
     &:hover {
-      border: 1px solid rgba(9, 21, 64, 0.4);
-      border-radius: 50px;
+      height: 55px;
     }
   }
   `;

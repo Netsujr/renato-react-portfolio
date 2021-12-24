@@ -119,7 +119,7 @@ const CardBody = styled.div`
   border-radius: 5px;
 
   &:hover {
-    border: 2px solid rgba(94, 35, 157, 1);
+    border: 3px solid rgba(94, 35, 157, 0.6);
   }
 
   img {
