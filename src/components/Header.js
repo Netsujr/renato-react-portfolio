@@ -184,14 +184,16 @@ const CloseWrapper = styled.div`
 
 const RightIcons = styled.div`
   display: flex;
+  justify-content: center;
+  margin-top: 100px;
 
   img {
-    height: 50px;
+    height: 40px;
     /* border-radius: 5px; */
     padding: 2px;
 
     &:hover {
-      height: 55px;
+      height: 42px;
     }
   }
   `;
