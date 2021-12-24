@@ -19,22 +19,22 @@ const ImgSlider = ({ FirstImg, SecondImg, ThirdImg }) => {
 
   return (
     <Carousel {...settings} >
-      <Wrap>
-        <img src={FirstImg} alt="" />
-      </Wrap>
-      <Wrap>
-        <img src={SecondImg} alt="" />
-      </Wrap>
-      <Wrap>
-        <img src={ThirdImg} alt="" />
-      </Wrap>
+    <Wrap>
+    <img src={FirstImg} alt="" />
+    </Wrap>
+    <Wrap>
+    <img src={SecondImg} alt="" />
+    </Wrap>
+    <Wrap>
+    <img src={ThirdImg} alt="" />
+    </Wrap>
     </Carousel>
-  );
-};
+    );
+  };
 
-export default ImgSlider;
+  export default ImgSlider;
 
-const Carousel = styled(Slider)`
+  const Carousel = styled(Slider)`
   /* border: 6px solid pink; */
   width: 95%;
   height: 70%;
@@ -51,7 +51,6 @@ const Carousel = styled(Slider)`
   ul li button {
     &:before {
       font-size: 10px;
-      color: white;
       position: absolute;
       @media (max-width : 768px) {
         top: 20px;
@@ -60,7 +59,7 @@ const Carousel = styled(Slider)`
     }
   }
   li.slick-sctive button:before {
-    color: white;
+    color: black;
     position: absolute;
     top: 20px;
     left: -24px;
@@ -68,13 +67,19 @@ const Carousel = styled(Slider)`
 
   button {
     z-index: 1;
+    /* border: 4px solid green; */
     position: absolute;
     top: 50%;
+    /* background-color: black; */
     @media (max-width : 768px) {
       top: 70%;
       margin: 0px 25px;
     }
   }
+
+  button.slick-arrow.slick-prev::before, button.slick-arrow.slick-next::before {
+      color: black;
+    }
   .slick-dots li.slick-active button:before {
     color: black;
     font-size: 13px;
@@ -85,7 +90,7 @@ const Carousel = styled(Slider)`
     }
   }
   `
-const Wrap = styled.div`
+  const Wrap = styled.div`
   border: 4px solid transparent;
   /* cursor: pointer; */
   img {

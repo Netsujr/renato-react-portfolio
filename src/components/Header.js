@@ -59,7 +59,7 @@ function Header() {
 export default Header;
 
 const Container = styled.div`
-  background: rgba(13, 24, 33, 0.9);
+  background: rgba(48, 197, 255, 0.6);
   min-height: 60px;
   position: fixed;
   display: flex;
@@ -75,7 +75,7 @@ const Container = styled.div`
 
   img {
     height: 60px;
-    background-color: white;
+
   }
 
   a {
@@ -84,7 +84,7 @@ const Container = styled.div`
     padding: 0 10px;
     flex-wrap: nowrap;
     cursor: pointer;
-    color: white;
+    color: black;
 
     span {
       font-size: 13px;
@@ -93,7 +93,7 @@ const Container = styled.div`
       &:after {
         content: "";
         height: 1px;
-        background: white;
+        background: black;
         position: absolute;
         left: 0;
         right: 0;
@@ -134,7 +134,7 @@ const RightMenu = styled.div`
   `;
 
 const CustomMenu = styled(MenuIcon)`
-  color: white;
+  color: black;
   `;
 
 const BurgerNav = styled.div`
@@ -142,8 +142,8 @@ const BurgerNav = styled.div`
   top: 0;
   bottom: 0;
   right: 0;
-  background-color: white;
   width: 300px;
+  background-color: white;
   z-index: 10;
   list-style: none;
   padding: 20px;
@@ -186,7 +186,7 @@ const RightIcons = styled.div`
 
   img {
     height: 23px;
-    background-color: white;
+
     border-radius: 5px;
     padding: 2px;
   }
@@ -197,7 +197,7 @@ const LeftIcons = styled.div`
 
   img {
     height: 30px;
-    background-color: white;
+
     border-radius: 5px;
     padding: 2px;
   }
