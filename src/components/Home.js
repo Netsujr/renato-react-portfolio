@@ -5,11 +5,18 @@ import Resume from '../RenatoDelboniResume.pdf';
 
 function Home() {
 
+  const activateFinished = () => {
+    let run = document.querySelector(".run");
+    let done = document.querySelector(".done");
+    run.style.display = "none";
+    done.style.display = "flex";
+  }
+
   return (
     <Container>
       <Intro
         title="About Me"
-        leftBtnText={<a href={Resume} alt="Download Resume" download>Download Resume</a>}
+        leftBtnText={<a href={Resume} alt="Download Resume" onClick={activateFinished} download>Download Resume</a>}
       />
     </Container>
   );

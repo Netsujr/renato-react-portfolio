@@ -1,11 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
 import Renato from '../images/RenP.png';
+import running from "../images/gifs/mm-running.gif";
+import finished from "../images/gifs/mm-finished.gif";
 // import HerokuIcon from "../images/Icons/heroku-original-wordmark.svg";
+// const gif = {
+//   running: "../images/gifs/mm-running.gif",
+//   finished: "../images/gifs/mm-finished.gif"
+// }
 
 
 function Section({ leftBtnText, rightBtnText }) {
+
+
+  const activateFinished = () => {
+    let run = document.querySelector(".run");
+    let done = document.querySelector(".done");
+    run.style.display = "none";
+    done.style.display = "flex";
+  }
+
+  const activateRunning = () => {
+    let run = document.querySelector(".run");
+    let done = document.querySelector(".done");
+    run.style.display = "flex";
+    done.style.display = "none";
+  }
+
+
+
   return (
     <Wrap>
       <ItemText>
@@ -20,7 +44,7 @@ function Section({ leftBtnText, rightBtnText }) {
               Even though I'm currently looking for a front-ent position, my ultimate goal would be to become a tech lead/full-stack developer in the future. Even though it's ambitious, I am a very fast learner and my passion to do better always drives me forward. Most of my experience comes from using Ruby on Rails, but I am keen to learn further technologies. I’ve also been actively improving my Javascript/React.js skills, as I really enjoy the front-end aspect of web development. I am excited to start learning other frameworks as well. It would be great to be given the opportunity to display my skills and become part of a strong team.
               <br />
               <br />
-              Currently, I am working part-time for Stats Perform as a soccer scout/data analyst. My passion for soccer takes me around the country where I get to watch something I love and work at the same time. Since the J-league is on winter break right now, I have more time to work on personal projects. Feel free to check them out above!
+              Currently, I am working part-time for Stats Perform as a soccer scout/data analyst. My passion for soccer takes me around Japan where I get to watch something I love and work at the same time. Since the J-league is on winter break, I havea little more time to work on projects. Feel free to check them out above!
               <br />
               <br />
               Renato Delboni</p>
@@ -32,6 +56,14 @@ function Section({ leftBtnText, rightBtnText }) {
           </ImgContainer>
         </Fade>
       </AboutMeContainer>
+      <GifContainer>
+        <Running>
+          <img class="run" src={running} alt="Megaman-Running" onClick={activateFinished} />
+        </Running>
+        <Finished>
+          <img class="done" src={finished} alt="Megaman-Finsihed" onClick={activateRunning} />
+        </Finished>
+      </GifContainer>
       <Buttons>
         <ButtonGroup>
           <LeftButton>
@@ -174,4 +206,30 @@ p {
   font-size: 16px;
 }
 
+`;
+
+const GifContainer = styled.div`
+display: flex;
+width: 100vw;
+justify-content: center;
+
+`;
+
+const Running = styled.div`
+img {
+  /* border: 1px solid black; */
+  max-height: 50px;
+  cursor: pointer;
+  z-index: 1;
+}
+`;
+
+const Finished = styled.div`
+img {
+  /* border: 1px solid black; */
+  max-height: 50px;
+  cursor: pointer;
+  display: none;
+  z-index: 1;
+}
 `;
