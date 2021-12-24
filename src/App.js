@@ -18,13 +18,13 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route exact path="/" element={<Home />}/>
+          <Route exact path="/" element={<Home />} />
 
           <Route exact path="/disney" element={
             <DisneyClone
               leftBtnText={<a href="https://disney-clone-renato.herokuapp.com/" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
-              rightBtnText={<a href="https://github.com/Netsujr/disney-clone" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />}
-          />
+              rightBtnText={<a href="https://github.com/Netsujr/disney-clone" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
+          } />
 
           <Route exact path="/spotify" element={
             <SpotifyClone
@@ -63,13 +63,9 @@ function App() {
               rightBtnText={<a href="https://github.com/Netsujr/zoom-clone" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
           } />
 
-          <Route exact path="/" element={
+          <Route exact path="/mini-projects" element={
             <MiniProjects />
           } />
-
-          {/* <Route exact path="/" element={
-        Extra project in here
-      } /> */}
         </Routes>
       </Router>
     </div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
 import Renato from '../images/RenP.png';

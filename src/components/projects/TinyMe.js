@@ -14,7 +14,7 @@ function Section({ leftBtnText, rightBtnText }) {
     <Wrap>
       <Fade top>
         <ItemText>
-          <h1>TinyMe</h1>
+          <h1>TinyMe |  </h1>
             <Icons src={JavascriptIcon} />
             <Icons src={HTMLIcon} />
             <Icons src={CSSIcon} />
