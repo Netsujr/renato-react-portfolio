@@ -65,7 +65,7 @@ export default Section;
 const Wrap = styled.div`
   max-width: 100vw;
   min-height: 100vh;
-  background-color: rgba(63, 124, 172, 0.8);
+  background-color: rgba(248, 241, 255, 0.8);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -80,7 +80,7 @@ width: 100vw;
 padding-top: 12vh;
 justify-content: center;
 text-align: center;
-color: white;
+color: black;
 display: flex;
 
 h1{
@@ -103,7 +103,7 @@ cursor: pointer;
 `;
 
 const LeftButton = styled.div`
-background-color: rgba(136, 217, 230, 1);
+background-color: rgba(9, 21, 64, 0.8);
 height: 40px;
 width: 256px;
 display: flex;
@@ -118,12 +118,12 @@ margin: 8px;
 transition: all 250ms ease;
 
 & a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
 &:hover {
-  background-color: rgba(190, 226, 239, 1);
+  background-color: rgba(9, 21, 64, 0.9);
 }
 `;
 
@@ -136,7 +136,7 @@ const Buttons = styled.div`
 width: 100vw;
 display: flex;
 justify-content: center;
-background: rgba(13, 24, 33, 0.9);
+background: rgba(48, 197, 255, 0.4);
 @media (max-width : 768px) {
   max-width: 100%;
   margin-top: 20px;

@@ -188,7 +188,6 @@ color: white;
 
 h2 {
   margin-top: 30px;
-  text-decoration: underline;
 }
 
 h4 {
