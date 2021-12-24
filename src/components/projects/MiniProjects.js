@@ -1,16 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
 import comingSoon from "../../images/comingsoon.png";
-// import Fade from 'react-reveal/Fade';
-
-
-// import HerokuIcon from "../images/Icons/heroku-original-wordmark.svg";
-// const gif = {
-//   running: "../images/gifs/mm-running.gif",
-//   finished: "../images/gifs/mm-finished.gif"
-// }
+import rps from "../../images/MiniProjects/Rock-paper-scissors.png";
+import tm1 from "../../images/TinyMe/one.png";
 
 
 function Section({ leftBtnText, rightBtnText }) {
@@ -36,46 +28,75 @@ function Section({ leftBtnText, rightBtnText }) {
       <ItemText>
         <h1>Mini Projects</h1>
       </ItemText>
-      <Card>
-        <img src={comingSoon} alt="" />
+      <Cards>
         <CardBody>
-          <CardTitle>Card Title</CardTitle>
+          <img src={rps} alt="" />
+          <CardTitle>
+            <h4>Rock, Paper, Scissors</h4>
+          </CardTitle>
           <CardDesc>
-            Some quick example text to build on the card title and make up the bulk of
-            the card's content.
+            <p>A quick game of R-P-S, can you beat my super intelligent AI? Used Javascript, HTML and CSS</p>
           </CardDesc>
-          <Button variant="primary">Go somewhere</Button>
         </CardBody>
-      </Card>
-      <Buttons>
-        <ButtonGroup>
-          <LeftButton>
-            {leftBtnText}
-          </LeftButton>
-          {rightBtnText &&
-            <RightButton>
-              {rightBtnText}
-            </RightButton>
-          }
-        </ButtonGroup>
-      </Buttons>
+        <CardBody>
+          <img src={tm1} alt="" />
+          <CardTitle>
+            <h4>TinyMe Studios</h4>
+          </CardTitle>
+          <CardDesc>
+            <p>A landing page for a photographer client. Styling practice using HTML, JS, CSS.</p>
+          </CardDesc>
+        </CardBody>
+        <CardBody>
+          <img src={comingSoon} alt="" />
+          <CardTitle>
+            <h4>My Webstore</h4>
+          </CardTitle>
+          <CardDesc>
+            <p>A westore using a variety of tool. workshop ran by Ben W.</p>
+          </CardDesc>
+        </CardBody>
+      </Cards>
     </Wrap>
   );
 }
 
 export default Section;
 
-const CardBody = styled.div`
+const Cards = styled.div`
+  /* border: 1px solid orange; */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  `;
 
-`;
+const CardBody = styled.div`
+  border: 1px solid gray;
+  max-width: 200px;
+  max-height: 295px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+
+  img {
+    width: 175px;
+    height: 150px;
+    object-fit: cover;
+  }
+  `;
 
 const CardTitle = styled.div`
-
-`;
+  margin-bottom: 2px;
+  `;
 
 const CardDesc = styled.div`
-
-`;
+  p {
+    text-align: start;
+    padding: 0px 10px;
+  }
+  `;
 
 const Wrap = styled.div`
   max-width: 100vw;
@@ -106,52 +127,3 @@ h1{
   }
 }
 `
-
-const ButtonGroup = styled.div`
-display: flex;
-margin: 15px 10px;
-cursor: pointer;
-@media (max-width : 768px) {
-  flex-direction: column;
-}
-`
-
-const LeftButton = styled.div`
-background-color: rgba(9, 21, 64, 0.8);
-height: 40px;
-width: 256px;
-display: flex;
-justify-content: center;
-align-items: center;
-/* border: 0.1px solid black; */
-border-radius: 100px;
-opacity: 0.85;
-text-transform: uppercase;
-font-size: 12px;
-margin: 8px;
-transition: all 250ms ease;
-
-& a {
-  color: white;
-  text-decoration: none;
-}
-
-&:hover {
-  background-color: rgba(9, 21, 64, 0.9);
-}
-`;
-
-const RightButton = styled(LeftButton)`
-`;
-
-const Buttons = styled.div`
-/* border: 2px solid green; */
-width: 100vw;
-display: flex;
-justify-content: center;
-background: rgba(48, 197, 255, 0.4);
-@media (max-width : 768px) {
-  max-width: 100%;
-  margin-top: 20px;
-}
-`;

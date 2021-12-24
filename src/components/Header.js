@@ -23,7 +23,6 @@ function Header() {
         <a href="/artistible"><span>Artistible</span></a>
         <a href="/tesla"><span>Tesla Clone</span></a>
         <a href="/movielist"><span>Movie List</span></a>
-        <a href="/tinyme"><span>TinyMe</span></a>
         <a href="/zoom"><span>Zoom CLone</span></a>
         <a href="/mini-projects"><span id="mp" >Mini Projects</span></a>
         {/* <a href="#"><span>Mini Projects</span></a> */}
@@ -49,7 +48,6 @@ function Header() {
         <a href="/artistible"><li>Artistible</li></a>
         <a href="/tesla"><li>Tesla Clone</li></a>
         <a href="/movielist"><li>Movie List</li></a>
-        <a href="/tinyme"><li>TinyMe</li></a>
         <a href="/zoom"><li>Zoom CLone</li></a>
         <a href="/mini-projects"><li>Mini Projects</li></a>
         {/* <li><a href="#"></a>Mini Projects</li> */}
