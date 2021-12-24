@@ -139,7 +139,7 @@ const Buttons = styled.div`
 width: 100vw;
 display: flex;
 justify-content: center;
-background: rgba(48, 197, 255, 0.6);
+background: rgba(48, 197, 255, 0.4);
 @media (max-width : 768px) {
   max-width: 100%;
   margin-top: 20px;
@@ -188,6 +188,7 @@ color: white;
 
 h2 {
   margin-top: 30px;
+  text-decoration: underline;
 }
 
 h4 {

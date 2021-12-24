@@ -14,52 +14,52 @@ function Header() {
 
   return (
     <Container>
-      <LeftIcons>
-        <a href="/"><img src={HomeIcon} alt=""/></a>
-      </LeftIcons>
-      <Menu>
-        <a href="/disney"><span>Disney Clone</span></a>
-        <a href="/spotify"><span>Spotify Clone</span></a>
-        <a href="/artistible"><span>Artistible</span></a>
-        <a href="/tesla"><span>Tesla Clone</span></a>
-        <a href="/movielist"><span>Movie List</span></a>
-        <a href="/tinyme"><span>TinyMe</span></a>
-        <a href="/zoom"><span>Zoom CLone</span></a>
-        {/* <a href="#"><span>Mini Projects</span></a> */}
-      </Menu>
-      <RightIcons>
-        <a href="https://github.com/netsujr" target="_blank" rel="noreferrer">
-          <img src={GithubIcon} alt="Github" />
-        </a>
-        <a href="https://www.linkedin.com/in/delbonirenato/" target="_blank" rel="noreferrer">
-          <img src={LinkedinIcon} alt="Linkedin" />
-        </a>
-      </RightIcons>
-      <RightMenu>
-        <CustomMenu onClick={() => setBurgerStatus(true)} />
-      </RightMenu>
-      <BurgerNav show={burgerStatus}>
-        <CloseWrapper>
-          <CustomClose onClick={() => setBurgerStatus(false)} />
-        </CloseWrapper>
-        <a href="/"><li>Home</li></a>
-        <a href="/disney"><li>Disney Clone</li></a>
-        <a href="/spotify"><li>Spotify Clone</li></a>
-        <a href="/artistible"><li>Artistible</li></a>
-        <a href="/tesla"><li>Tesla Clone</li></a>
-        <a href="/movielist"><li>Movie List</li></a>
-        <a href="/tinyme"><li>TinyMe</li></a>
-        <a href="/zoom"><li>Zoom CLone</li></a>
-        {/* <li><a href="#"></a>Mini Projects</li> */}
-      </BurgerNav>
+    <LeftIcons>
+    <a href="/"><img src={HomeIcon} alt=""/></a>
+    </LeftIcons>
+    <Menu>
+    <a href="/disney"><span>Disney Clone</span></a>
+    <a href="/spotify"><span>Spotify Clone</span></a>
+    <a href="/artistible"><span>Artistible</span></a>
+    <a href="/tesla"><span>Tesla Clone</span></a>
+    <a href="/movielist"><span>Movie List</span></a>
+    <a href="/tinyme"><span>TinyMe</span></a>
+    <a href="/zoom"><span>Zoom CLone</span></a>
+    {/* <a href="#"><span>Mini Projects</span></a> */}
+    </Menu>
+    <RightIcons>
+    <a href="https://github.com/netsujr" target="_blank" rel="noreferrer">
+    <img src={GithubIcon} alt="Github" />
+    </a>
+    <a href="https://www.linkedin.com/in/delbonirenato/" target="_blank" rel="noreferrer">
+    <img src={LinkedinIcon} alt="Linkedin" />
+    </a>
+    </RightIcons>
+    <RightMenu>
+    <CustomMenu onClick={() => setBurgerStatus(true)} />
+    </RightMenu>
+    <BurgerNav show={burgerStatus}>
+    <CloseWrapper>
+    <CustomClose onClick={() => setBurgerStatus(false)} />
+    </CloseWrapper>
+    <a href="/"><li>Home</li></a>
+    <a href="/disney"><li>Disney Clone</li></a>
+    <a href="/spotify"><li>Spotify Clone</li></a>
+    <a href="/artistible"><li>Artistible</li></a>
+    <a href="/tesla"><li>Tesla Clone</li></a>
+    <a href="/movielist"><li>Movie List</li></a>
+    <a href="/tinyme"><li>TinyMe</li></a>
+    <a href="/zoom"><li>Zoom CLone</li></a>
+    {/* <li><a href="#"></a>Mini Projects</li> */}
+    </BurgerNav>
     </Container>
-  );
-};
+    );
+  };
 
-export default Header;
+  export default Header;
 
-const Container = styled.div`
-  background: rgba(48, 197, 255, 0.6);
+  const Container = styled.div`
+  background: rgba(48, 197, 255, 0.4);
   min-height: 60px;
   position: fixed;
   display: flex;
@@ -114,7 +114,7 @@ const Container = styled.div`
   }
   `;
 
-const Menu = styled.div`
+  const Menu = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -126,25 +126,25 @@ const Menu = styled.div`
 
   `;
 
-const RightMenu = styled.div`
+  const RightMenu = styled.div`
   display: flex;
   align-items: center;
   cursor: pointer;
   margin-left: 20px;
   `;
 
-const CustomMenu = styled(MenuIcon)`
+  const CustomMenu = styled(MenuIcon)`
   color: black;
   `;
 
-const BurgerNav = styled.div`
+  const BurgerNav = styled.div`
   position: fixed;
   top: 0;
   bottom: 0;
   right: 0;
   width: 300px;
   background-color: white;
-  z-index: 10;
+  z-index: 2;
   list-style: none;
   padding: 20px;
   display: flex;
@@ -160,8 +160,8 @@ const BurgerNav = styled.div`
     font-weight: 200;
 
     &:hover {
-        font-weight: 500;
-        letter-spacing: 1px;
+      font-weight: 500;
+      letter-spacing: 1px;
     }
 
     a {
@@ -170,29 +170,33 @@ const BurgerNav = styled.div`
   }
   `;
 
-const CustomClose = styled(CloseIcon)`
+  const CustomClose = styled(CloseIcon)`
   color: black;
   cursor: pointer;
   `;
 
-const CloseWrapper = styled.div`
+  const CloseWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
 
   `;
 
-const RightIcons = styled.div`
+  const RightIcons = styled.div`
   display: flex;
 
   img {
     height: 23px;
-
-    border-radius: 5px;
+    /* border-radius: 5px; */
     padding: 2px;
+
+    &:hover {
+      border: 1px solid rgba(9, 21, 64, 0.4);
+      border-radius: 50px;
+    }
   }
   `;
 
-const LeftIcons = styled.div`
+  const LeftIcons = styled.div`
   display: flex;
 
   img {

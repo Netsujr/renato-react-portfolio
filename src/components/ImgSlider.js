@@ -54,7 +54,7 @@ const ImgSlider = ({ FirstImg, SecondImg, ThirdImg }) => {
       position: absolute;
       @media (max-width : 768px) {
         top: 20px;
-        left: -24px;
+        left: -15px;
       }
     }
   }
@@ -62,18 +62,18 @@ const ImgSlider = ({ FirstImg, SecondImg, ThirdImg }) => {
     color: black;
     position: absolute;
     top: 20px;
-    left: -24px;
+    left: -15px;
   }
 
   button {
-    z-index: 1;
+    /* z-index: 1; */
     /* border: 4px solid green; */
     position: absolute;
     top: 50%;
     /* background-color: black; */
     @media (max-width : 768px) {
       top: 70%;
-      margin: 0px 25px;
+      margin: 0px 15px;
     }
   }
 
@@ -86,7 +86,7 @@ const ImgSlider = ({ FirstImg, SecondImg, ThirdImg }) => {
     position: absolute;
     @media (max-width : 768px) {
       top: 20px;
-      left: -24px;
+      left: -15px;
     }
   }
   `
