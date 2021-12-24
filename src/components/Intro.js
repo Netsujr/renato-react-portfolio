@@ -14,7 +14,16 @@ function Section({ leftBtnText, rightBtnText }) {
       <AboutMeContainer>
         <Fade top>
           <InfoContainer>
-            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam aut maxime nobis distinctio! Hic dignissimos dolorem repudiandae aspernatur, quidem error quia accusamus vel? Sunt aliquam obcaecati voluptatem consequatur animi pariatur.</p>
+            <p> In Japan (Yokohama) since 2018, moved here right after I graduated from University. Front-end developer looking for a job in Tokyo. Experienced with HTML, CSS, Javascript, and a number of other front-end tools and technologies.
+              <br />
+              <br />
+              Even though I'm currently looking for a front-ent position, my ultimate goal would be to become a tech lead/full-stack developer in the future. Even though it's ambitious, I am a very fast learner and my passion to do better always drives me forward. Most of my experience comes from using Ruby on Rails, but I am keen to learn further technologies. I’ve also been actively improving my Javascript/React.js skills, as I really enjoy the front-end aspect of web development. I am excited to start learning other frameworks as well. It would be great to be given the opportunity to display my skills and become part of a strong team.
+              <br />
+              <br />
+              Currently, I am working part-time for Stats Perform as a soccer scout/data analyst. My passion for soccer takes me around the country where I get to watch something I love and work at the same time. Since the J-league is on winter break right now, I have more time to work on personal projects. Feel free to check them out above!
+              <br />
+              <br />
+              Renato Delboni</p>
           </InfoContainer>
         </Fade>
         <Fade bottom>
@@ -121,19 +130,48 @@ background: rgba(48, 197, 255, 0.4);
 `;
 
 const AboutMeContainer = styled.div`
-border: 2px solid purple;
+/* border: 2px solid purple; */
 flex: 1;
-width: 100vw;
+min-width: 100vw;
 display: flex;
+@media (max-width : 768px) {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 `;
 
 const ImgContainer = styled.div`
-border: 2px solid black;
-width: 50vw;
+/* border: 2px solid black; */
+width: 35vw;
 height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 30px;
+
+img {
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px 1px;
+  margin-bottom: 40px;
+}
 `;
 
 const InfoContainer = styled.div`
-border: 2px solid red;
-width: 50vw;
+/* border: 2px solid red; */
+width: 65vw;
+height: 100%;
+display: flex;
+padding: 30px;
+justify-content: center;
+align-items: center;
+@media (max-width : 768px) {
+  width: 90vw;
+}
+
+p {
+  text-align: justify;
+  font-size: 16px;
+}
+
 `;
