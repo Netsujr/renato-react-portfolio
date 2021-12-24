@@ -30,7 +30,7 @@ function Section({ leftBtnText, rightBtnText }) {
       </ItemText>
       <Cards>
         <CardBody>
-          <img src={rps} alt="" />
+          <a href="https://distracted-mahavira-252b8c.netlify.app/" target="blank_" ><img src={rps} alt="RockPaperScissors" /></a>
           <CardTitle>
             <h4>Rock, Paper, Scissors</h4>
           </CardTitle>
@@ -39,7 +39,7 @@ function Section({ leftBtnText, rightBtnText }) {
           </CardDesc>
         </CardBody>
         <CardBody>
-          <img src={tm1} alt="" />
+          <a href="https://reverent-hermann-98a8cb.netlify.app/" target="blank_" ><img src={tm1} alt="TinyMeStudio" /></a>
           <CardTitle>
             <h4>TinyMe Studios</h4>
           </CardTitle>
@@ -56,6 +56,42 @@ function Section({ leftBtnText, rightBtnText }) {
             <p>A westore using a variety of tool. workshop ran by Ben W.</p>
           </CardDesc>
         </CardBody>
+        {/* <CardBody>
+      <img src={comingSoon} alt="" />
+      <CardTitle>
+      <h4>My Webstore</h4>
+      </CardTitle>
+      <CardDesc>
+      <p>A westore using a variety of tool. workshop ran by Ben W.</p>
+      </CardDesc>
+      </CardBody>
+      <CardBody>
+      <img src={comingSoon} alt="" />
+      <CardTitle>
+      <h4>My Webstore</h4>
+      </CardTitle>
+      <CardDesc>
+      <p>A westore using a variety of tool. workshop ran by Ben W.</p>
+      </CardDesc>
+      </CardBody>
+      <CardBody>
+      <img src={comingSoon} alt="" />
+      <CardTitle>
+      <h4>My Webstore</h4>
+      </CardTitle>
+      <CardDesc>
+      <p>A westore using a variety of tool. workshop ran by Ben W.</p>
+      </CardDesc>
+      </CardBody>
+      <CardBody>
+      <img src={comingSoon} alt="" />
+      <CardTitle>
+      <h4>My Webstore</h4>
+      </CardTitle>
+      <CardDesc>
+      <p>A westore using a variety of tool. workshop ran by Ben W.</p>
+      </CardDesc>
+    </CardBody> */}
       </Cards>
     </Wrap>
   );
@@ -70,15 +106,21 @@ const Cards = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 10px;
+  flex-wrap: wrap;
+  /* margin-left: 25px; */
   `;
 
 const CardBody = styled.div`
-  border: 1px solid gray;
+  border: 2px solid gray;
   max-width: 200px;
   max-height: 295px;
   margin: 20px;
   padding: 10px;
   border-radius: 5px;
+
+  &:hover {
+    border: 2px solid rgba(94, 35, 157, 1);
+  }
 
   img {
     width: 175px;
