@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import comingSoon from "../../images/comingsoon.png";
 // import Fade from 'react-reveal/Fade';
 
 
@@ -28,12 +31,22 @@ function Section({ leftBtnText, rightBtnText }) {
   // }
 
 
-
   return (
     <Wrap>
       <ItemText>
         <h1>Mini Projects</h1>
       </ItemText>
+      <Card>
+        <img src={comingSoon} alt="" />
+        <CardBody>
+          <CardTitle>Card Title</CardTitle>
+          <CardDesc>
+            Some quick example text to build on the card title and make up the bulk of
+            the card's content.
+          </CardDesc>
+          <Button variant="primary">Go somewhere</Button>
+        </CardBody>
+      </Card>
       <Buttons>
         <ButtonGroup>
           <LeftButton>
@@ -51,6 +64,18 @@ function Section({ leftBtnText, rightBtnText }) {
 }
 
 export default Section;
+
+const CardBody = styled.div`
+
+`;
+
+const CardTitle = styled.div`
+
+`;
+
+const CardDesc = styled.div`
+
+`;
 
 const Wrap = styled.div`
   max-width: 100vw;
@@ -130,20 +155,3 @@ background: rgba(48, 197, 255, 0.4);
   margin-top: 20px;
 }
 `;
-
-
-
-
-
-
-{/* <Card style={{ width: '18rem' }}>
-<Card.Img variant="top" src="holder.js/100px180" />
-<Card.Body>
-<Card.Title>Card Title</Card.Title>
-<Card.Text>
-Some quick example text to build on the card title and make up the bulk of
-the card's content.
-</Card.Text>
-<Button variant="primary">Go somewhere</Button>
-</Card.Body>
-</Card> */}
