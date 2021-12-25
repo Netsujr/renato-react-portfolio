@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import comingSoon from "../../images/comingsoon.png";
 import rps from "../../images/MiniProjects/Rock-paper-scissors.png";
 import tm1 from "../../images/TinyMe/one.png";
+import GithubIcon from "../../images/Icons/github-original.svg";
+
 
 
 function Section({ leftBtnText, rightBtnText }) {
@@ -30,7 +32,8 @@ function Section({ leftBtnText, rightBtnText }) {
       </ItemText>
       <Cards>
         <CardBody>
-          <a href="https://distracted-mahavira-252b8c.netlify.app/" target="blank_" ><img src={rps} alt="RockPaperScissors" /></a>
+          <a href="https://distracted-mahavira-252b8c.netlify.app/" target="blank_" ><img id="image" src={rps} alt="RockPaperScissors" /></a>
+          <a href="https://github.com/netsujr" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
           <CardTitle>
             <h4>Rock, Paper, Scissors</h4>
           </CardTitle>
@@ -111,22 +114,46 @@ const Cards = styled.div`
   `;
 
 const CardBody = styled.div`
-  border: 2px solid gray;
+  border: 2px solid rgba(83, 83, 83, 0.3);
   max-width: 200px;
   max-height: 295px;
   margin: 20px;
   padding: 10px;
   border-radius: 5px;
+  position: relative;
 
   &:hover {
-    border: 3px solid rgba(94, 35, 157, 0.6);
+    border: 2px solid rgba(83, 83, 83, 0.6);
   }
 
   img {
     width: 175px;
     height: 150px;
     object-fit: cover;
+    z-index: 0;
   }
+
+  #image {
+    z-index: 0;
+  }
+
+  #icon {
+    z-index: 1;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: white;
+    border-radius: 50px;
+
+    &:hover {
+      height: 32px;
+      width: 32px;
+    }
+  }
+
   `;
 
 const CardTitle = styled.div`
@@ -138,6 +165,7 @@ const CardDesc = styled.div`
     text-align: start;
     padding: 0px 10px;
   }
+
   `;
 
 const Wrap = styled.div`
