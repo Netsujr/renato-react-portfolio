@@ -32,8 +32,8 @@ function Section({ leftBtnText, rightBtnText }) {
       </ItemText>
       <Cards>
         <CardBody>
-          <a href="https://distracted-mahavira-252b8c.netlify.app/" target="blank_" ><img id="image" src={rps} alt="RockPaperScissors" /></a>
-          <a href="https://github.com/netsujr" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
+          <a href="https://distracted-mahavira-252b8c.netlify.app/" target="blank_" > <h2>Visit Site</h2><img id="image" src={rps} alt="RockPaperScissors" /></a>
+          <a href="https://github.com/Netsujr/rock-paper-scissors" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
           <CardTitle>
             <h4>Rock, Paper, Scissors</h4>
           </CardTitle>
@@ -42,12 +42,13 @@ function Section({ leftBtnText, rightBtnText }) {
           </CardDesc>
         </CardBody>
         <CardBody>
-          <a href="https://reverent-hermann-98a8cb.netlify.app/" target="blank_" ><img src={tm1} alt="TinyMeStudio" /></a>
+          <a href="https://reverent-hermann-98a8cb.netlify.app/" target="blank_" > <h2>Visit Site</h2><img id="image" src={tm1} alt="RockPaperScissors" /></a>
+          <a href="https://github.com/Netsujr/TinymeStudios" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
           <CardTitle>
             <h4>TinyMe Studios</h4>
           </CardTitle>
           <CardDesc>
-            <p>A landing page for a photographer client. Styling practice using HTML, JS, CSS.</p>
+            <p>A landing page for a photographer client. Styling practice using JS, HTML, CSS.</p>
           </CardDesc>
         </CardBody>
         <CardBody>
@@ -124,6 +125,25 @@ const CardBody = styled.div`
 
   &:hover {
     border: 2px solid rgba(83, 83, 83, 0.6);
+     h2 {
+       z-index: 1;
+     }
+    #image {
+      opacity: 0.5;
+    }
+  }
+
+  h2 {
+    position: absolute;
+    top: 25%;
+    left: 23%;
+    color: black;
+    font-weight: 900;
+    z-index: -1;
+    background-color: rgba(250, 250, 250, 0.6);
+    padding: 2px 9px;
+    border-radius: 15px;
+    }
   }
 
   img {
