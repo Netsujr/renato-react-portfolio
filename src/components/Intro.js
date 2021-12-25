@@ -209,9 +209,12 @@ p {
 `;
 
 const GifContainer = styled.div`
+/* border: 1px solid black; */
 display: flex;
 width: 100vw;
+max-height: 50px;
 justify-content: center;
+margin-top: -22px;
 
 `;
 

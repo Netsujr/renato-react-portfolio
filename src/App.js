@@ -10,7 +10,7 @@ import MovieList from './components/projects/MovieList';
 // import TinyMe from './components/projects/TinyMe';
 import ZoomClone from './components/projects/ZoomClone';
 import MiniProjects from './components/projects/MiniProjects';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 
