@@ -146,6 +146,7 @@ const CardBody = styled.div`
     }
   }
 
+  
   img {
     width: 175px;
     height: 150px;
