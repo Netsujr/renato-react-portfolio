@@ -30,9 +30,9 @@ function Section({ leftBtnText, rightBtnText }) {
           <h4>Role:</h4>
           <p>For this project I was again using a similar authentication login as I did with the Disney Clone project, however, this time I was calling Spotify's API to connect to user's info.</p>
           <h4>Problems:</h4>
-          <p>The point of the App was to be able to controll your songs with basic functionallity like changing to a next or previous song. One issue I still have is, once connected to the user's playlists/songs, the album cover of the current song playing don't update when the next song starts. Its always an image behind or in front (I used the album cover index to match up with song playing).</p>
+          <p>The point of the App was to be able to controll your songs with basic functionallity like changing to a next or previous song. I had alot fun going deeper into Spotify's API capabilities. One little issue I had was matching the album cover to the current song playing, I used the index to find the correct cover.</p>
           <h4>Solution:</h4>
-          <p>I'm sure there's a simple solution, however after a long time debugging, I'm still trying to figure out exactly why the song and album cover don't match. If you look at my code, please share any ideas! </p>
+          <p>I'm still debugging this album/song issue. the rest of the app was really fun to build and get to actually work! Please share if you have any ideas! </p>
         </ProjectInfo>
         <SliderContainer>
           <ImgSlider
