@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Intro from './Intro';
-import Resume from '../RenatoDelboniResume.pdf';
+import Resume from '../RenatoDelboniCV.pdf';
 
 function Home() {
 
