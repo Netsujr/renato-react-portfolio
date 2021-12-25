@@ -28,11 +28,11 @@ function Section({ leftBtnText, rightBtnText }) {
         <ProjectInfo >
           <h2>Details</h2>
           <h4>Role:</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, officia natus? Necessitatibus dolorem provident fugit maxime debitis quam, a dolor quia labore voluptas enim, iusto, numquam nam dolores vitae voluptatibus!</p>
+          <p>This was one of my first attempts at using React, I was practicing styling, components, routes, and using props. You'll notice that alot of the primative features from this Tesla clone site was used to build my portfolio! Ofcourse with more advanced code.</p>
           <h4>Problems:</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, officia natus? Necessitatibus dolorem provident fugit maxime debitis quam, a dolor quia labore voluptas enim, iusto, numquam nam dolores vitae voluptatibus!</p>
+          <p>Alot of the problems was in the back-end of the process, getting each section and buttons to be different even though I was re-using the same 'section' template. There was also a little trouble with the burger nav on the side.</p>
           <h4>Solution:</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, officia natus? Necessitatibus dolorem provident fugit maxime debitis quam, a dolor quia labore voluptas enim, iusto, numquam nam dolores vitae voluptatibus!</p>
+          <p>This is where props came in to save the day. It made perfect sense. Passing different props to each section to change elements while keeping the original skeleton. The burger nav was appearing in front of some sections but not others. A quick z-index refactor over the project, and it was ready to go!</p>
         </ProjectInfo>
         <SliderContainer>
           <ImgSlider
