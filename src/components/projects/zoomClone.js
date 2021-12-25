@@ -17,22 +17,22 @@ function Section({ leftBtnText, rightBtnText }) {
       <Fade top>
         <ItemText>
           <h1>Zoom Clone |  </h1>
-            <Icons src={JavascriptIcon} />
-            <Icons src={ReactIcon} />
-            <Icons src={ReduxIcon} />
-            <Icons src={HTMLIcon} />
-            <Icons src={CSSIcon} />
+          <Icons src={JavascriptIcon} />
+          <Icons src={ReactIcon} />
+          <Icons src={ReduxIcon} />
+          <Icons src={HTMLIcon} />
+          <Icons src={CSSIcon} />
         </ItemText>
       </Fade>
       <ProjectContainer>
         <ProjectInfo >
           <h2>Details</h2>
           <h4>Role:</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, officia natus? Necessitatibus dolorem provident fugit maxime debitis quam, a dolor quia labore voluptas enim, iusto, numquam nam dolores vitae voluptatibus!</p>
+          <p>This was my attempt at using React Native and creating a oom clone. Functionallity includes a custom built API and ngrok for tunneling connectivity with other users.</p>
           <h4>Problems:</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, officia natus? Necessitatibus dolorem provident fugit maxime debitis quam, a dolor quia labore voluptas enim, iusto, numquam nam dolores vitae voluptatibus!</p>
+          <p>The app works on mobile, however getting video from both sides of the connection was a different monster I didn't want to awaken yet. Some issues I had also included refactoring some code to work on different size phones. I know, very trivial, but this detail kept me debugging for a long time. I haven't deployed this app yet.</p>
           <h4>Solution:</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, officia natus? Necessitatibus dolorem provident fugit maxime debitis quam, a dolor quia labore voluptas enim, iusto, numquam nam dolores vitae voluptatibus!</p>
+          <p>I had a lot of fun using React Native and being able to design things straight on my phone. I decided to keep users to a maximum of 2 until I was able to figure out video visualisation on both sides of the call (ongoing).</p>
         </ProjectInfo>
         <SliderContainer>
           <ImgSlider
