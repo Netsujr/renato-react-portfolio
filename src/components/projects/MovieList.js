@@ -26,11 +26,11 @@ function Section({ leftBtnText, rightBtnText }) {
         <ProjectInfo >
           <h2>Details</h2>
           <h4>Role:</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, officia natus? Necessitatibus dolorem provident fugit maxime debitis quam, a dolor quia labore voluptas enim, iusto, numquam nam dolores vitae voluptatibus!</p>
+          <p>A quick site made in a few hours using  a movie API and cloudinary. I was in charge of all the coding for this one.</p>
           <h4>Problems:</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, officia natus? Necessitatibus dolorem provident fugit maxime debitis quam, a dolor quia labore voluptas enim, iusto, numquam nam dolores vitae voluptatibus!</p>
+          <p>There were quite a few issues when creating and deleting lists and movies. Alot of the issues stemmed form blocks of code being called in the wrong places.</p>
           <h4>Solution:</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, officia natus? Necessitatibus dolorem provident fugit maxime debitis quam, a dolor quia labore voluptas enim, iusto, numquam nam dolores vitae voluptatibus!</p>
+          <p>Although this project came early in my coding journey, it gave me alot of insight into debugging and finding where the root of the issue is and following the thread to find the actual error. Its still not perfect by any means, but it functions for creating/deleting lists of your favorite movies.</p>
         </ProjectInfo>
         <SliderContainer>
           <ImgSlider
