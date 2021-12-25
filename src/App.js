@@ -12,6 +12,8 @@ import ZoomClone from './components/projects/ZoomClone';
 import MiniProjects from './components/projects/MiniProjects';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
+
+
 function App() {
   return (
     <div className="App">
