@@ -145,7 +145,6 @@ const CardBody = styled.div`
     border-radius: 15px;
     }
   }
-
   
   img {
     width: 175px;
