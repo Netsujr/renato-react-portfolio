@@ -31,11 +31,11 @@ function Section({ leftBtnText, rightBtnText }) {
         <ProjectInfo >
           <h2>Details</h2>
           <h4>Role:</h4>
-          <p>For this project, I wanted to practice my styling of a webpage using React. I only added links to the 'Home' button and a details page when clicking on a movie.</p>
+          <p>For this project, I wanted to practice my styling of a webpage using React. I also used react-dom but only added links to the 'Home' button and a details page when clicking on a movie.</p>
           <h4>Problems:</h4>
-          <p>I had three major issues during prodcution: <br></br> 1. Login authentication function wasn't working after deployment. <br></br> 2. Linking each movie to its respective details page. <br></br> 3. It was my first time using Firebase, so naturally I had to get familiar with the platform.  </p>
-          <h4>Solution:</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, officia natus? Necessitatibus dolorem provident fugit maxime debitis quam, a dolor quia labore voluptas enim, iusto, numquam nam dolores vitae voluptatibus!</p>
+          <p>I had a few issues during prodcution. Login authentication function wasn't working after deployment. Linking each movie to its respective details page. It was also my first time using Firebase, so naturally I had to get familiar with the platform.  </p>
+          <h4>Solutions:</h4>
+          <p>I realised a I hadn't updated the re-direct link on firebase for correct authentication. I had to create my own database with respective films as I didnt have access to the Disney db and couldn't find one online. After that, giving each film an ID and linking that to the details page was straightfoward. </p>
         </ProjectInfo>
         <SliderContainer>
           <ImgSlider
