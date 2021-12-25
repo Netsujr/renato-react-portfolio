@@ -28,11 +28,11 @@ function Section({ leftBtnText, rightBtnText }) {
         <ProjectInfo >
           <h2>Details</h2>
           <h4>Role:</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, officia natus? Necessitatibus dolorem provident fugit maxime debitis quam, a dolor quia labore voluptas enim, iusto, numquam nam dolores vitae voluptatibus!</p>
+          <p>A group project where I was in charge of the layout, design and structure of the website. So mainly on the front-end of things. </p>
           <h4>Problems:</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, officia natus? Necessitatibus dolorem provident fugit maxime debitis quam, a dolor quia labore voluptas enim, iusto, numquam nam dolores vitae voluptatibus!</p>
+          <p>Getting realistic seeds in order to properly use the website was a little tricky. This site was built in two days, so there a still a little bugs that need to be squashed, like some artists don't have any ratings or reviews yet.</p>
           <h4>Solution:</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, officia natus? Necessitatibus dolorem provident fugit maxime debitis quam, a dolor quia labore voluptas enim, iusto, numquam nam dolores vitae voluptatibus!</p>
+          <p>The answer is to mess around with the seeds and apply missing components to the artist's profile. The main structure is there, with real users the information would be displayed much nicer!</p>
         </ProjectInfo>
         <SliderContainer>
           <ImgSlider
