@@ -136,7 +136,7 @@ const RightButton = styled(LeftButton)`
 
 
 const Buttons = styled.div`
-border: 2px solid green;
+/* border: 2px solid green; */
 width: 100vw;
 display: flex;
 justify-content: center;
@@ -165,7 +165,7 @@ width: 100vw;
 `;
 
 const SliderContainer = styled.div`
-border: 2px solid red;
+/* border: 2px solid red; */
 /* background-color: black; */
 max-width: 50%;
 display: flex;

@@ -83,6 +83,7 @@ text-align: center;
 color: black;
 display: flex;
 
+
 h1{
   margin-top: -7px;
   margin-right: 2px;
@@ -140,6 +141,9 @@ background: rgba(48, 197, 255, 0.4);
 @media (max-width : 768px) {
   max-width: 100%;
   margin-top: 20px;
+@media (max-width : 468px) {
+  margin-top: 100px;
+}
 }
 `;
 
@@ -166,9 +170,11 @@ justify-content: center;
 align-items: center;
 padding: -10px;
 @media (max-width : 768px) {
-  max-width: 100%;
+  max-width: 100vh;
   display: flex;
   margin-bottom: 100px;
+  flex: 1;
+}
 }
 `;
 
@@ -185,6 +191,9 @@ color: white;
 
 h2 {
   margin-top: 30px;
+  @media (max-width : 490px) {
+    margin-top: 90px;
+  }
 }
 
 h4 {
