@@ -101,6 +101,9 @@ justify-content: center;
 text-align: center;
 color: black;
 display: flex;
+@media (max-width : 768px) {
+  flex-direction: column-reverse;
+}
 
 h1{
   margin-top: -7px;
@@ -116,9 +119,6 @@ const ButtonGroup = styled.div`
 display: flex;
 margin: 15px 10px;
 cursor: pointer;
-@media (max-width : 768px) {
-  flex-direction: column;
-}
 `
 
 const LeftButton = styled.div`
@@ -167,7 +167,7 @@ flex: 1;
 min-width: 100vw;
 display: flex;
 @media (max-width : 768px) {
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
 }
