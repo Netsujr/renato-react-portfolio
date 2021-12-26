@@ -46,6 +46,9 @@ const ImgSlider = ({ FirstImg, SecondImg, ThirdImg }) => {
     margin-bottom: 30px;
     margin-top: -20px;
     width: 65%;
+    @media (max-width : 468px) {
+      width: 85%;
+    }
   }
 
   ul li button {
@@ -54,7 +57,11 @@ const ImgSlider = ({ FirstImg, SecondImg, ThirdImg }) => {
       position: absolute;
       @media (max-width : 768px) {
         top: 20px;
-        left: -15px;
+        left: -10px;
+      }
+      @media (max-width : 468px) {
+        top: 20px;
+        left: -5px;
       }
     }
   }
@@ -62,7 +69,11 @@ const ImgSlider = ({ FirstImg, SecondImg, ThirdImg }) => {
     color: black;
     position: absolute;
     top: 20px;
-    left: -15px;
+    left: -10px;
+    @media (max-width : 468px) {
+      top: 20px;
+      left: -5px;
+    }
   }
 
   button {
@@ -73,38 +84,45 @@ const ImgSlider = ({ FirstImg, SecondImg, ThirdImg }) => {
     /* background-color: black; */
     @media (max-width : 768px) {
       top: 70%;
-      margin: 0px 15px;
+      margin: 0px 10px;
+    }
+    @media (max-width : 468px) {
+      margin: 0px 5px;
     }
   }
+}
 
-  button.slick-arrow.slick-prev::before, button.slick-arrow.slick-next::before {
-      color: black;
-    }
-  .slick-dots li.slick-active button:before {
-    color: black;
-    font-size: 13px;
-    position: absolute;
-    @media (max-width : 768px) {
-      top: 20px;
-      left: -15px;
-    }
+button.slick-arrow.slick-prev::before, button.slick-arrow.slick-next::before {
+  color: black;
+}
+.slick-dots li.slick-active button:before {
+  color: black;
+  font-size: 13px;
+  position: absolute;
+  @media (max-width : 768px) {
+    top: 20px;
+    left: -10px;
   }
-  `
-  const Wrap = styled.div`
-  border: 4px solid transparent;
-  /* cursor: pointer; */
-  img {
-    /* border: 4px solid yellow; */
-    border-radius: 4px;
+  @media (max-width : 468px) {
+    top: 20px;
+    left: -5px;
+  }
+}
+`
+const Wrap = styled.div`
+border: 4px solid transparent;
+/* cursor: pointer; */
+img {
+  /* border: 4px solid yellow; */
+  border-radius: 4px;
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  object-fit: contain;
+  transition-duration: 300ms;
+  /* box-shadow: rgb(0 0 0 / 73%) 0px 16px 10px -10px; */
+  @media (max-width : 768px) {
     width: 100%;
-    height: 50vh;
-    position: relative;
-    object-fit: contain;
-    transition-duration: 300ms;
-    /* box-shadow: rgb(0 0 0 / 73%) 0px 16px 10px -10px; */
-    @media (max-width : 768px) {
-      width: 100%;
-      height: 30vh;
-    }
+    height: 30vh;
   }
 }`
