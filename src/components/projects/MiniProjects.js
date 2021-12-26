@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import comingSoon from "../../images/comingsoon.png";
 import rps from "../../images/MiniProjects/Rock-paper-scissors.png";
 import tm1 from "../../images/TinyMe/one.png";
+import theme from '../../images/MiniProjects/theme_toggle.png'
 import GithubIcon from "../../images/Icons/github-original.svg";
 
 
@@ -42,13 +43,23 @@ function Section({ leftBtnText, rightBtnText }) {
           </CardDesc>
         </CardBody>
         <CardBody>
-          <a href="https://reverent-hermann-98a8cb.netlify.app/" target="blank_" > <h2>Visit Site</h2><img id="image" src={tm1} alt="RockPaperScissors" /></a>
+          <a href="https://reverent-hermann-98a8cb.netlify.app/" target="blank_" > <h2>Visit Site</h2><img id="image" src={tm1} alt="TinymeStudios" /></a>
           <a href="https://github.com/Netsujr/TinymeStudios" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
           <CardTitle>
             <h4>TinyMe Studios</h4>
           </CardTitle>
           <CardDesc>
             <p>A landing page for a photographer client. Styling practice using JS, HTML, CSS.</p>
+          </CardDesc>
+        </CardBody>
+        <CardBody>
+          <a href="https://naughty-einstein-a30f95.netlify.app/" target="blank_" > <h2>Visit Site</h2><img id="image" src={theme} alt="themeToggler" /></a>
+          <a href="https://github.com/Netsujr/Changing_Themes" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
+          <CardTitle>
+            <h4>Theme toggler</h4>
+          </CardTitle>
+          <CardDesc>
+            <p>A simple page practicing color scheming. Changes Theme mode, made using JS, HTML, CSS.</p>
           </CardDesc>
         </CardBody>
         <CardBody>
@@ -145,7 +156,7 @@ const CardBody = styled.div`
     border-radius: 15px;
     }
   }
-  
+
   img {
     width: 175px;
     height: 150px;
