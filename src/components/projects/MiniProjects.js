@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import comingSoon from "../../images/comingsoon.png";
 import rps from "../../images/MiniProjects/Rock-paper-scissors.png";
 import tm1 from "../../images/TinyMe/one.png";
-import theme from '../../images/MiniProjects/theme_toggle.png'
+import theme from '../../images/MiniProjects/theme_toggle.png';
+import counter from '../../images/MiniProjects/counter.png';
 import GithubIcon from "../../images/Icons/github-original.svg";
 
 
@@ -59,7 +60,17 @@ function Section({ leftBtnText, rightBtnText }) {
             <h4>Theme toggler</h4>
           </CardTitle>
           <CardDesc>
-            <p>A simple page practicing color scheming. Changes Theme mode, made using JS, HTML, CSS.</p>
+            <p>A simple page practicing color scheming. Changes theme of page, made using JS, HTML, CSS.</p>
+          </CardDesc>
+        </CardBody>
+        <CardBody>
+          <a href="https://modest-colden-be1fdb.netlify.app/" target="blank_" > <h2>Visit Site</h2><img id="image" src={counter} alt="themeToggler" /></a>
+          <a href="https://github.com/Netsujr/simple_counter_js" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
+          <CardTitle>
+            <h4>Javascript Counter</h4>
+          </CardTitle>
+          <CardDesc>
+            <p>A simple JS counter. Can you find both secrets? made using JS, HTML, CSS.</p>
           </CardDesc>
         </CardBody>
         <CardBody>
