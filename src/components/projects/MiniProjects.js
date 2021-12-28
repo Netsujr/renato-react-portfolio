@@ -69,7 +69,7 @@ function Section({ leftBtnText, rightBtnText }) {
         </CardBody>
         {/* --------------------------------------------- */}
         <CardBody>
-          <a href="https://modest-colden-be1fdb.netlify.app/" target="blank_" > <h2>Visit Site</h2><img id="image" src={counter} alt="themeToggler" /></a>
+          <a href="https://modest-colden-be1fdb.netlify.app/" target="blank_" > <h2>Visit Site</h2><img id="image" src={counter} alt="counter" /></a>
           <a href="https://github.com/Netsujr/simple_counter_js" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
           <CardTitle>
             <h4>Javascript Counter</h4>
@@ -80,7 +80,7 @@ function Section({ leftBtnText, rightBtnText }) {
         </CardBody>
         {/* --------------------------------------------- */}
         <CardBody>
-          <a href="https://thirsty-austin-932dc8.netlify.app" target="blank_" > <h2>Visit Site</h2><img id="image" src={grocery} alt="themeToggler" /></a>
+          <a href="https://thirsty-austin-932dc8.netlify.app" target="blank_" > <h2>Visit Site</h2><img id="image" src={grocery} alt="groceries" /></a>
           <a href="https://github.com/Netsujr/JavaScript_grocery_list" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
           <CardTitle>
             <h4>Javascript Grocery List</h4>
