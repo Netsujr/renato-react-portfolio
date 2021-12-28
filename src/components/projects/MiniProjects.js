@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import comingSoon from "../../images/comingsoon.png";
+import GithubIcon from "../../images/Icons/github-original.svg";
 import rps from "../../images/MiniProjects/Rock-paper-scissors.png";
 import tm1 from "../../images/TinyMe/one.png";
 import theme from '../../images/MiniProjects/theme_toggle.png';
 import counter from '../../images/MiniProjects/counter.png';
-import GithubIcon from "../../images/Icons/github-original.svg";
+import grocery from '../../images/MiniProjects/grocery.png';
 
 
 
@@ -33,6 +34,7 @@ function Section({ leftBtnText, rightBtnText }) {
         <h1>Mini Projects</h1>
       </ItemText>
       <Cards>
+        {/* --------------------------------------------- */}
         <CardBody>
           <a href="https://distracted-mahavira-252b8c.netlify.app/" target="blank_" > <h2>Visit Site</h2><img id="image" src={rps} alt="RockPaperScissors" /></a>
           <a href="https://github.com/Netsujr/rock-paper-scissors" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
@@ -43,6 +45,7 @@ function Section({ leftBtnText, rightBtnText }) {
             <p>A quick game of R-P-S, can you beat my super intelligent AI? Used Javascript, HTML and CSS</p>
           </CardDesc>
         </CardBody>
+        {/* --------------------------------------------- */}
         <CardBody>
           <a href="https://reverent-hermann-98a8cb.netlify.app/" target="blank_" > <h2>Visit Site</h2><img id="image" src={tm1} alt="TinymeStudios" /></a>
           <a href="https://github.com/Netsujr/TinymeStudios" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
@@ -53,6 +56,7 @@ function Section({ leftBtnText, rightBtnText }) {
             <p>A landing page for a photographer client. Styling practice using JS, HTML, CSS.</p>
           </CardDesc>
         </CardBody>
+        {/* --------------------------------------------- */}
         <CardBody>
           <a href="https://naughty-einstein-a30f95.netlify.app/" target="blank_" > <h2>Visit Site</h2><img id="image" src={theme} alt="themeToggler" /></a>
           <a href="https://github.com/Netsujr/Changing_Themes" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
@@ -63,6 +67,7 @@ function Section({ leftBtnText, rightBtnText }) {
             <p>A simple page practicing color scheming. Changes theme of page, made using JS, HTML, CSS.</p>
           </CardDesc>
         </CardBody>
+        {/* --------------------------------------------- */}
         <CardBody>
           <a href="https://modest-colden-be1fdb.netlify.app/" target="blank_" > <h2>Visit Site</h2><img id="image" src={counter} alt="themeToggler" /></a>
           <a href="https://github.com/Netsujr/simple_counter_js" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
@@ -70,9 +75,21 @@ function Section({ leftBtnText, rightBtnText }) {
             <h4>Javascript Counter</h4>
           </CardTitle>
           <CardDesc>
-            <p>A simple JS counter. Can you find both secrets? made using JS, HTML, CSS.</p>
+            <p>A simple JS counter. Can you find both secrets? Made using JS, HTML, CSS.</p>
           </CardDesc>
         </CardBody>
+        {/* --------------------------------------------- */}
+        <CardBody>
+          <a href="https://thirsty-austin-932dc8.netlify.app" target="blank_" > <h2>Visit Site</h2><img id="image" src={grocery} alt="themeToggler" /></a>
+          <a href="https://github.com/Netsujr/JavaScript_grocery_list" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
+          <CardTitle>
+            <h4>Javascript Grocery List</h4>
+          </CardTitle>
+          <CardDesc>
+            <p>A simple JS grocery List. Add/Remove/Edit your items. Made using JS, HTML, CSS.</p>
+          </CardDesc>
+        </CardBody>
+        {/* --------------------------------------------- */}
         <CardBody>
           <img src={comingSoon} alt="" />
           <CardTitle>
@@ -82,6 +99,7 @@ function Section({ leftBtnText, rightBtnText }) {
             <p>A westore using a variety of tool. workshop ran by Ben W.</p>
           </CardDesc>
         </CardBody>
+        {/* --------------------------------------------- */}
       </Cards>
     </Wrap>
   );
