@@ -31,6 +31,17 @@ function Section() {
         </CardBody>
         {/* --------------------------------------------- */}
         <CardBody>
+          <a href="https://hungry-mestorf-4efc96.netlify.app/" target="blank_" > <h2>Visit Site</h2><img id="image" src={blackjack} alt="blackjack" /></a>
+          <a href="https://github.com/Netsujr/javascript_blackjack" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
+          <CardTitle>
+            <h4>Javascript BlackJack</h4>
+          </CardTitle>
+          <CardDesc>
+            <p>Can you beat my AI's logic? Dont think so... Made using JS, HTML, CSS.</p>
+          </CardDesc>
+        </CardBody>
+        {/* --------------------------------------------- */}
+        <CardBody>
           <a href="https://reverent-hermann-98a8cb.netlify.app/" target="blank_" > <h2>Visit Site</h2><img id="image" src={tm1} alt="TinymeStudios" /></a>
           <a href="https://github.com/Netsujr/TinymeStudios" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
           <CardTitle>
@@ -60,17 +71,6 @@ function Section() {
           </CardTitle>
           <CardDesc>
             <p>A simple JS counter. Can you find both secrets? Made using JS, HTML, CSS.</p>
-          </CardDesc>
-        </CardBody>
-        {/* --------------------------------------------- */}
-        <CardBody>
-          <a href="https://hungry-mestorf-4efc96.netlify.app/" target="blank_" > <h2>Visit Site</h2><img id="image" src={blackjack} alt="blackjack" /></a>
-          <a href="https://github.com/Netsujr/javascript_blackjack" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
-          <CardTitle>
-            <h4>Javascript BlackJack</h4>
-          </CardTitle>
-          <CardDesc>
-            <p>BlackJack game. Can you beat my AI logic? Dont think so... Made using JS, HTML, CSS.</p>
           </CardDesc>
         </CardBody>
         {/* --------------------------------------------- */}
