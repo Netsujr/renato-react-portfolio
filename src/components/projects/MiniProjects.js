@@ -7,27 +7,11 @@ import tm1 from "../../images/TinyMe/one.png";
 import theme from '../../images/MiniProjects/theme_toggle.png';
 import counter from '../../images/MiniProjects/counter.png';
 import grocery from '../../images/MiniProjects/grocery.png';
+import blackjack from '../../images/MiniProjects/blackjack.png';
 
 
 
-function Section({ leftBtnText, rightBtnText }) {
-
-
-  // const activateFinished = () => {
-  //   let run = document.querySelector(".run");
-  //   let done = document.querySelector(".done");
-  //   run.style.display = "none";
-  //   done.style.display = "flex";
-  // }
-
-  // const activateRunning = () => {
-  //   let run = document.querySelector(".run");
-  //   let done = document.querySelector(".done");
-  //   run.style.display = "flex";
-  //   done.style.display = "none";
-  // }
-
-
+function Section() {
   return (
     <Wrap>
       <ItemText>
@@ -76,6 +60,17 @@ function Section({ leftBtnText, rightBtnText }) {
           </CardTitle>
           <CardDesc>
             <p>A simple JS counter. Can you find both secrets? Made using JS, HTML, CSS.</p>
+          </CardDesc>
+        </CardBody>
+        {/* --------------------------------------------- */}
+        <CardBody>
+          <a href="https://hungry-mestorf-4efc96.netlify.app/" target="blank_" > <h2>Visit Site</h2><img id="image" src={blackjack} alt="blackjack" /></a>
+          <a href="https://github.com/Netsujr/javascript_blackjack" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
+          <CardTitle>
+            <h4>Javascript BlackJack</h4>
+          </CardTitle>
+          <CardDesc>
+            <p>BlackJack game. Can you beat my AI logic? Dont think so... Made using JS, HTML, CSS.</p>
           </CardDesc>
         </CardBody>
         {/* --------------------------------------------- */}
