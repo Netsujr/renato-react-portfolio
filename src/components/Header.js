@@ -145,7 +145,7 @@ const BurgerNav = styled.div`
   right: 0;
   width: 300px;
   background-color: white;
-  z-index: 2;
+  z-index: 3;
   list-style: none;
   padding: 20px;
   display: flex;

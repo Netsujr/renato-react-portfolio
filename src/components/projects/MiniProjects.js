@@ -157,14 +157,14 @@ img {
 }
 
 #icon {
-  z-index: 1;
+  z-index: 0;
   height: 30px;
   width: 30px;
   display: flex;
   position: absolute;
   top: 5px;
   right: 5px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 50px;
 
   &:hover {
