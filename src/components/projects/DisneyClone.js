@@ -15,57 +15,57 @@ import FirebaseIcon from "../../images/Icons/firebase-plain-wordmark.svg";
 function Section({ leftBtnText, rightBtnText }) {
   return (
     <Wrap>
-    <Fade top>
-    <ItemText>
-    <h1>Disney Clone |  </h1>
-    {/*Put Icons innside Itemtext */}
-    <Icons src={JavascriptIcon} />
-    <Icons src={ReactIcon} />
-    <Icons src={ReduxIcon} />
-    <Icons src={HTMLIcon} />
-    <Icons src={CSSIcon} />
-    <Icons src={FirebaseIcon} />
-    </ItemText>
-    </Fade>
-    <ProjectContainer>
-    <ProjectInfo >
-    <h2>Details</h2>
-    <h4>Role:</h4>
-    <p>For this project, I wanted to practice my styling of a webpage using React. I also used react-dom but only added links to the 'Home' button and a details page when clicking on a movie.</p>
-    <h4>Problems:</h4>
-    <p>I had a few issues during prodcution. Login authentication function wasn't working after deployment. Linking each movie to its respective details page. It was also my first time using Firebase, so naturally I had to get familiar with the platform.  </p>
-    <h4>Solutions:</h4>
-    <p>I realised a I hadn't updated the re-direct link on firebase for correct authentication. I had to create my own database with respective films as I didnt have access to the Disney db and couldn't find one online. After that, giving each film an ID and linking that to the details page was straightfoward. </p>
-    </ProjectInfo>
-    <SliderContainer>
-    <ImgSlider
-    FirstImg={dc1}
-    SecondImg={dc2}
-    ThirdImg={dc3}
-    />
-    </SliderContainer>
-    </ProjectContainer>
-    <Buttons>
-    <Fade bottom>
-    <ButtonGroup>
-    <LeftButton>
-    {leftBtnText}
-    </LeftButton>
-    {rightBtnText &&
-      <RightButton>
-      {rightBtnText}
-      </RightButton>
-    }
-    </ButtonGroup>
-    </Fade>
-    </Buttons>
+      <Fade top>
+        <ItemText>
+          <h1>Disney Clone |  </h1>
+          {/*Put Icons innside Itemtext */}
+          <Icons src={JavascriptIcon} />
+          <Icons src={ReactIcon} />
+          <Icons src={ReduxIcon} />
+          <Icons src={HTMLIcon} />
+          <Icons src={CSSIcon} />
+          <Icons src={FirebaseIcon} />
+        </ItemText>
+      </Fade>
+      <ProjectContainer>
+        <ProjectInfo >
+          <h2>Details</h2>
+          <h4>Role:</h4>
+          <p>For this project, I wanted to practice my styling of a webpage using React. I also used react-dom but only added links to the 'Home' button and a details page when clicking on a movie.</p>
+          <h4>Problems:</h4>
+          <p>I had a few issues during prodcution. Login authentication function wasn't working after deployment. Linking each movie to its respective details page. It was also my first time using Firebase, so naturally I had to get familiar with the platform.  </p>
+          <h4>Solutions:</h4>
+          <p>I realised a I hadn't updated the re-direct link on firebase for correct authentication. I had to create my own database with respective films as I didnt have access to the Disney db and couldn't find one online. After that, giving each film an ID and linking that to the details page was straightfoward. </p>
+        </ProjectInfo>
+        <SliderContainer>
+          <ImgSlider
+            FirstImg={dc1}
+            SecondImg={dc2}
+            ThirdImg={dc3}
+          />
+        </SliderContainer>
+      </ProjectContainer>
+      <Buttons>
+        <Fade bottom>
+          <ButtonGroup>
+            <LeftButton>
+              {leftBtnText}
+            </LeftButton>
+            {rightBtnText &&
+              <RightButton>
+                {rightBtnText}
+              </RightButton>
+            }
+          </ButtonGroup>
+        </Fade>
+      </Buttons>
     </Wrap>
-    );
-  }
+  );
+}
 
-  export default Section;
+export default Section;
 
-  const Wrap = styled.div`
+const Wrap = styled.div`
   max-width: 100vw;
   min-height: 100vh;
   background-color: rgba(248, 241, 255, 0.8);
@@ -144,9 +144,9 @@ background: rgba(48, 197, 255, 0.4);
 @media (max-width : 768px) {
   max-width: 100%;
   margin-top: 20px;
-@media (max-width : 468px) {
-  margin-top: 100px;
-}
+  @media (max-width : 468px) {
+    margin-top: 100px;
+  }
 }
 `;
 

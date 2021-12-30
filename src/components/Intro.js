@@ -4,6 +4,8 @@ import Fade from 'react-reveal/Fade';
 import Renato from '../images/RenP.png';
 import running from "../images/gifs/mm-running.gif";
 import finished from "../images/gifs/mm-finished.gif";
+import GithubIcon from "../images/Icons/github-original.svg";
+import LinkedinIcon from "../images/Icons/linkedin-original.svg";
 // import HerokuIcon from "../images/Icons/heroku-original-wordmark.svg";
 // const gif = {
 //   running: "../images/gifs/mm-running.gif",
@@ -33,7 +35,15 @@ function Section({ leftBtnText, rightBtnText }) {
   return (
     <Wrap>
       <ItemText>
-        <h1>About Me</h1>
+        <h1>About Me | </h1>
+        <RightIcons>
+          <a href="https://github.com/netsujr" target="_blank" rel="noreferrer">
+            <img src={GithubIcon} alt="Github" />
+          </a>
+          <a href="https://www.linkedin.com/in/delbonirenato/" target="_blank" rel="noreferrer">
+            <img src={LinkedinIcon} alt="Linkedin" />
+          </a>
+        </RightIcons>
       </ItemText>
       <AboutMeContainer>
         <Fade top>
@@ -178,6 +188,7 @@ const ImgContainer = styled.div`
 width: 35vw;
 height: 100%;
 display: flex;
+flex-direction: column;
 justify-content: center;
 align-items: center;
 padding: 30px;
@@ -236,3 +247,20 @@ img {
   z-index: 1;
 }
 `;
+
+const RightIcons = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 3px;
+
+  img {
+    height: 30px;
+    /* border-radius: 5px; */
+    padding: 2px;
+    margin: 0px 2px;
+
+    &:hover {
+      height: 32px;
+    }
+  }
+  `;

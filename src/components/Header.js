@@ -59,7 +59,7 @@ function Header() {
 export default Header;
 
 const Container = styled.div`
-  background: rgba(48, 197, 255, 0.4);
+  background: rgba(169, 225, 255, 1);
   min-height: 60px;
   position: fixed;
   display: flex;
