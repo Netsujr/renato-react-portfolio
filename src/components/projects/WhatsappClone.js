@@ -30,11 +30,11 @@ function Section({ leftBtnText, rightBtnText }) {
         <ProjectInfo >
           <h2>Details</h2>
           <h4>Role:</h4>
-          <p>For this project I was again using a similar authentication login as I did with the SpotifyClone project, however, this time, I did not add a user token to keep them loged in, It's the the intent that, if the screen is closed, the user has to sign in again (privacy).</p>
+          <p>For this project I was again using a similar authentication login as I did with the SpotifyClone project, however, this time, I did not add a user token to keep them logged in, With the intent that, if the screen is closed, the user has to sign in again (privacy).</p>
           <h4>Problems:</h4>
-          <p>The point of the App was to be able to dinamically pull and push messages and chat-rooms to the database (firebase) in real time. I was able to achieve this, However, users are only able to connect to you if they are connected to the same server.</p>
+          <p>The point of the App was to be able to dynamically pull and push messages and chat-rooms to the database (firebase) in real-time. I was able to achieve this, However, users are only able to connect to you if they are connected to the same server.</p>
           <h4>Solution:</h4>
-          <p>For now the app works as I want it to, in the future I could add the functionality of connecting between users. Deployed usinf Firebase, it was much easier this time around.</p>
+          <p>For now the app works as I want it to, in the future I could add the functionality of connecting between users. Deployed using Firebase, it was much easier this time around.</p>
         </ProjectInfo>
         <SliderContainer>
           <ImgSlider
