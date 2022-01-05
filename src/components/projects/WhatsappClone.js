@@ -30,11 +30,11 @@ function Section({ leftBtnText, rightBtnText }) {
         <ProjectInfo >
           <h2>Details</h2>
           <h4>Role:</h4>
-          <p>For this project I was again using a similar authentication login as I did with the Disney Clone project, however, this time I was calling Spotify's API to connect to user's info.</p>
+          <p>For this project I was again using a similar authentication login as I did with the SpotifyClone project, however, this time, I did not add a user token to keep them loged in, It's the the intent that, if the screen is closed, the user has to sign in again (privacy).</p>
           <h4>Problems:</h4>
-          <p>The point of the App was to be able to controll your songs with basic functionallity like changing to a next or previous song. I had alot fun going deeper into Spotify's API capabilities. One little issue I had was matching the album cover to the current song playing, I used the index to find the correct cover.</p>
+          <p>The point of the App was to be able to dinamically pull and push messages and chat-rooms to the database (firebase) in real time. I was able to achieve this, However, users are only able to connect to you if they are connected to the same server.</p>
           <h4>Solution:</h4>
-          <p>I'm still debugging this album/song issue. the rest of the app was really fun to build and get to actually work! Please share if you have any ideas! </p>
+          <p>For now the app works as I want it to, in the future I could add the functionality of connecting between users. Deployed usinf Firebase, it was much easier this time around.</p>
         </ProjectInfo>
         <SliderContainer>
           <ImgSlider
