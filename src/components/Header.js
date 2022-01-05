@@ -5,6 +5,7 @@ import CloseIcon from '@material-ui/icons/Close';
 import GithubIcon from "../images/Icons/github-original.svg";
 import LinkedinIcon from "../images/Icons/linkedin-original.svg";
 import HomeIcon from "../images/Icons/icons8-home.svg";
+import newtag from "../images/New.png";
 
 
 function Header() {
@@ -18,6 +19,7 @@ function Header() {
         <a href="/"><img src={HomeIcon} alt="" /></a>
       </LeftIcons>
       <Menu>
+        <a id='latest' href="/whatsapp"><span><img src={newtag} alt="new" />WhatsApp Clone</span></a>
         <a href="/disney"><span>Disney Clone</span></a>
         <a href="/spotify"><span>Spotify Clone</span></a>
         <a href="/artistible"><span>Artistible</span></a>
@@ -123,6 +125,22 @@ const Menu = styled.div`
 
   @media(max-width: 768px) {
     display: none;
+  }
+
+  a{
+
+    #latest {
+      position: relative
+    }
+
+    img {
+      position: absolute;
+      height: 30px;
+      left: -15px;
+      top: -15px;
+      transform: rotate(-90deg);
+      object-fit: contain;
+    }
   }
 
   `;
