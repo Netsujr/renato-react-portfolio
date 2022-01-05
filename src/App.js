@@ -7,6 +7,7 @@ import SpotifyClone from './components/projects/SpotifyClone';
 import Artistible from './components/projects/Artistible';
 import TeslaClone from './components/projects/TeslaClone';
 import MovieList from './components/projects/MovieList';
+import WhatsApp from './components/projects/WhatsappClone';
 // import TinyMe from './components/projects/TinyMe';
 import ZoomClone from './components/projects/ZoomClone';
 import MiniProjects from './components/projects/MiniProjects';
@@ -51,12 +52,12 @@ function App() {
               leftBtnText={<a href="http://renato-movie-list.herokuapp.com" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
               rightBtnText={<a href="https://github.com/Netsujr/rails-watch-list" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
           } />
-{/*
-          <Route exact path="/tinyme" element={
-            <TinyMe
-              leftBtnText={<a href="https://reverent-hermann-98a8cb.netlify.app/" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
-              rightBtnText={<a href="https://github.com/Netsujr/TinymeStudios" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
-          } /> */}
+
+          <Route exact path="/whatsappclone" element={
+            <WhatsApp
+              leftBtnText={<a href="https://whatsapp-clone-40cda.web.app/" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
+              rightBtnText={<a href="https://github.com/Netsujr/whatsapp-clone" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
+          } />
 
           <Route exact path="/zoom" element={
             <ZoomClone
