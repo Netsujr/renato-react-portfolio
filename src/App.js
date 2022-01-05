@@ -23,6 +23,12 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
 
+          <Route exact path="/whatsappclone" element={
+            <WhatsApp
+              leftBtnText={<a href="https://whatsapp-clone-40cda.web.app/" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
+              rightBtnText={<a href="https://github.com/Netsujr/whatsapp-clone" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
+          } />
+
           <Route exact path="/disney" element={
             <DisneyClone
               leftBtnText={<a href="https://disney-clone-renato.herokuapp.com/" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
@@ -51,12 +57,6 @@ function App() {
             <MovieList
               leftBtnText={<a href="http://renato-movie-list.herokuapp.com" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
               rightBtnText={<a href="https://github.com/Netsujr/rails-watch-list" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
-          } />
-
-          <Route exact path="/whatsappclone" element={
-            <WhatsApp
-              leftBtnText={<a href="https://whatsapp-clone-40cda.web.app/" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
-              rightBtnText={<a href="https://github.com/Netsujr/whatsapp-clone" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
           } />
 
           <Route exact path="/zoom" element={
