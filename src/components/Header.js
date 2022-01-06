@@ -37,6 +37,7 @@ function Header() {
           <CustomClose onClick={() => setBurgerStatus(false)} />
         </CloseWrapper>
         <a href="/"><li>Home</li></a>
+        <a href="/whatsapp"><li>WhatsApp Clone</li></a>
         <a href="/disney"><li>Disney Clone</li></a>
         <a href="/spotify"><li>Spotify Clone</li></a>
         <a href="/artistible"><li>Artistible</li></a>
@@ -203,7 +204,7 @@ const CloseWrapper = styled.div`
 const RightIcons = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 20px;
 
   img {
     height: 40px;
