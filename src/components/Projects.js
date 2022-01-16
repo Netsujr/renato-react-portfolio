@@ -33,7 +33,7 @@ function Projects() {
         </CardBody>
         {/* --------------------------------------------- */}
         <CardBody>
-          <a href="https://hungry-mestorf-4efc96.netlify.app/" target="blank_" > <h2>Visit Site</h2><img id="image" src={blackjack} alt="blackjack" /></a>
+          <a href="https://hungry-mestorf-4efc96.netlify.app/" target="blank_" ><img id="image" src={blackjack} alt="blackjack" /></a>
           <a href="https://github.com/Netsujr/javascript_blackjack" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
           <CardTitle>
             <h4>Javascript BlackJack</h4>
@@ -45,7 +45,7 @@ function Projects() {
         </CardBody>
         {/* --------------------------------------------- */}
         <CardBody>
-          <a href="https://reverent-hermann-98a8cb.netlify.app/" target="blank_" > <h2>Visit Site</h2><img id="image" src={tm1} alt="TinymeStudios" /></a>
+          <a href="https://reverent-hermann-98a8cb.netlify.app/" target="blank_" ><img id="image" src={tm1} alt="TinymeStudios" /></a>
           <a href="https://github.com/Netsujr/TinymeStudios" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
           <CardTitle>
             <h4>TinyMe Studios</h4>
@@ -57,7 +57,7 @@ function Projects() {
         </CardBody>
         {/* --------------------------------------------- */}
         <CardBody>
-          <a href="https://naughty-einstein-a30f95.netlify.app/" target="blank_" > <h2>Visit Site</h2><img id="image" src={theme} alt="themeToggler" /></a>
+          <a href="https://naughty-einstein-a30f95.netlify.app/" target="blank_" ><img id="image" src={theme} alt="themeToggler" /></a>
           <a href="https://github.com/Netsujr/Changing_Themes" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
           <CardTitle>
             <h4>Theme toggler</h4>
@@ -69,7 +69,7 @@ function Projects() {
         </CardBody>
         {/* --------------------------------------------- */}
         <CardBody>
-          <a href="https://modest-colden-be1fdb.netlify.app/" target="blank_" > <h2>Visit Site</h2><img id="image" src={counter} alt="counter" /></a>
+          <a href="https://modest-colden-be1fdb.netlify.app/" target="blank_" ><img id="image" src={counter} alt="counter" /></a>
           <a href="https://github.com/Netsujr/simple_counter_js" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
           <CardTitle>
             <h4>Javascript Counter</h4>
@@ -81,7 +81,7 @@ function Projects() {
         </CardBody>
         {/* --------------------------------------------- */}
         <CardBody>
-          <a href="https://thirsty-austin-932dc8.netlify.app" target="blank_" > <h2>Visit Site</h2><img id="image" src={grocery} alt="groceries" /></a>
+          <a href="https://thirsty-austin-932dc8.netlify.app" target="blank_" ><img id="image" src={grocery} alt="groceries" /></a>
           <a href="https://github.com/Netsujr/JavaScript_grocery_list" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
           <CardTitle>
             <h4>Javascript Grocery List</h4>
@@ -135,7 +135,8 @@ const CardBody = styled.div`
 
   &:hover {
     #icon {
-      display: flex;
+      animation: fadeIn;
+      opacity: 1;
     }
     border: 2px solid rgba(83, 83, 83, 0.6);
     h2 {
@@ -167,49 +168,51 @@ img {
   z-index: 0;
   height: 30px;
   width: 30px;
-  display: none;
+  display: flex;
   position: absolute;
   top: 5px;
   right: 5px;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 50px;
+  opacity: 0;
+  transition: 200ms ease-in-out;
 
-  &:hover {
-    height: 32px;
-    width: 32px;
+    &:hover {
+      height: 32px;
+      width: 32px;
+    }
   }
-}
 
-`;
+  `;
 
 const CardInfoContainer = styled.div`
-display: flex;
-flex-direction: column;
-`;
+  display: flex;
+  flex-direction: column;
+  `;
 
 const CardTitle = styled.div`
-margin-bottom: 2px;
-`;
+  margin-bottom: 2px;
+  `;
 
 const CardDesc = styled.div`
-p {
-  text-align: start;
-  padding: 0px 10px;
-}
+  p {
+    text-align: start;
+    padding: 0px 10px;
+  }
 
-`;
+  `;
 
 const Wrap = styled.div`
-min-width: 100vw;
-min-height: 100vh;
-background-color: rgba(248, 241, 255, 0.8);
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
-@media (max-width : 490px) {
-  overflow-x: hidden;
-}
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: rgba(248, 241, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width : 490px) {
+    overflow-x: hidden;
+  }
 }`
 
 // sc for const shortcut
