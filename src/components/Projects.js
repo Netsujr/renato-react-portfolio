@@ -4,12 +4,13 @@ import styled from 'styled-components';
 import comingSoon from "../images/comingsoon.png";
 import GithubIcon from "../images/Icons/github-original.svg";
 import WebsiteIcon from "../images/Icons/website.png";
-import rps from "../images/MiniProjects/Rock-paper-scissors.png";
-import tm1 from "../images/TinyMe/one.png";
-import theme from '../images/MiniProjects/theme_toggle.png';
-import counter from '../images/MiniProjects/counter.png';
-import grocery from '../images/MiniProjects/grocery.png';
-import blackjack from '../images/MiniProjects/blackjack.png';
+import spotify from "../images/SpotifyClone/one.png";
+import disney from "../images/disney-clone.jpeg";
+import tesla from "../images/TeslaClone/one.png";
+import zoom from "../images/zoomClone/one.png";
+import whatsapp from "../images/WhatsappClone/wa1.png";
+import movie from '../images/MovieList/one.png';
+import art from '../images/Artistible/one.png';
 
 function Projects() {
   return (
@@ -20,7 +21,7 @@ function Projects() {
       <Cards>
         {/* --------------------------------------------- */}
         <CardBody>
-          <img id="image" src={rps} alt="RockPaperScissors" />
+          <img id="image" src={spotify} alt="RockPaperScissors" />
           <a href="https://distracted-mahavira-252b8c.netlify.app/" target="blank_" ><img id='website' src={WebsiteIcon} alt="RockPaperScissors" /></a>
           <a href="https://github.com/Netsujr/rock-paper-scissors" target="_blank" rel="noreferrer"><img id='icon' src={GithubIcon} alt="Github" /></a>
           <CardInfoContainer>
@@ -28,14 +29,14 @@ function Projects() {
               <h4>Rock, Paper, Scissors</h4>
             </CardTitle>
             <CardDesc>
-              <p>A quick game of R-P-S, can you beat my super intelligent AI? Used Javascript, HTML and CSS</p>
+              <p>A quick game of R-P-S, can you beat my super intelligent AI? Used Javascript, HTML and CSS Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, vitae nisi! Vitae asperiores harum ratione accusamus illum consequatur dolore fugit omnis, quaerat ipsam cupiditate earum quisquam nobis magnam sapiente. Eveniet.</p>
               <a href="http://localhost:3000/projects/spotify" id="link">Learn More</a>
             </CardDesc>
           </CardInfoContainer>
         </CardBody>
         {/* --------------------------------------------- */}
         <CardBody>
-          <a href="https://hungry-mestorf-4efc96.netlify.app/" target="blank_" ><img id="image" src={blackjack} alt="blackjack" /></a>
+          <a href="https://hungry-mestorf-4efc96.netlify.app/" target="blank_" ><img id="image" src={disney} alt="blackjack" /></a>
           <a href="https://github.com/Netsujr/javascript_blackjack" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
           <CardInfoContainer>
             <CardTitle>
@@ -49,7 +50,7 @@ function Projects() {
         </CardBody>
         {/* --------------------------------------------- */}
         <CardBody>
-          <a href="https://reverent-hermann-98a8cb.netlify.app/" target="blank_" ><img id="image" src={tm1} alt="TinymeStudios" /></a>
+          <a href="https://reverent-hermann-98a8cb.netlify.app/" target="blank_" ><img id="image" src={tesla} alt="TinymeStudios" /></a>
           <a href="https://github.com/Netsujr/TinymeStudios" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
           <CardInfoContainer>
             <CardTitle>
@@ -63,7 +64,7 @@ function Projects() {
         </CardBody>
         {/* --------------------------------------------- */}
         <CardBody>
-          <a href="https://naughty-einstein-a30f95.netlify.app/" target="blank_" ><img id="image" src={theme} alt="themeToggler" /></a>
+          <a href="https://naughty-einstein-a30f95.netlify.app/" target="blank_" ><img id="image" src={zoom} alt="themeToggler" /></a>
           <a href="https://github.com/Netsujr/Changing_Themes" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
           <CardInfoContainer>
             <CardTitle>
@@ -77,7 +78,7 @@ function Projects() {
         </CardBody>
         {/* --------------------------------------------- */}
         <CardBody>
-          <a href="https://modest-colden-be1fdb.netlify.app/" target="blank_" ><img id="image" src={counter} alt="counter" /></a>
+          <a href="https://modest-colden-be1fdb.netlify.app/" target="blank_" ><img id="image" src={whatsapp} alt="counter" /></a>
           <a href="https://github.com/Netsujr/simple_counter_js" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
           <CardInfoContainer>
             <CardTitle>
@@ -91,7 +92,21 @@ function Projects() {
         </CardBody>
         {/* --------------------------------------------- */}
         <CardBody>
-          <a href="https://thirsty-austin-932dc8.netlify.app" target="blank_" ><img id="image" src={grocery} alt="groceries" /></a>
+          <a href="https://thirsty-austin-932dc8.netlify.app" target="blank_" ><img id="image" src={art} alt="groceries" /></a>
+          <a href="https://github.com/Netsujr/JavaScript_grocery_list" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
+          <CardInfoContainer>
+            <CardTitle>
+              <h4>Javascript Grocery List</h4>
+            </CardTitle>
+            <CardDesc>
+              <p>A simple JS grocery List. Add/Remove/Edit your items. Made using JS, HTML, CSS. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis corrupti, in eum culpa cupiditate esse delectus consectetur excepturi praesentium deserunt sint quis dicta, nihil quod assumenda ex? Illum, eum eligendi?</p>
+              <a href="http://localhost:3000/projects/spotify" id="link">Learn More</a>
+            </CardDesc>
+          </CardInfoContainer>
+        </CardBody>
+        {/* --------------------------------------------- */}
+        <CardBody>
+          <a href="https://thirsty-austin-932dc8.netlify.app" target="blank_" ><img id="image" src={movie} alt="groceries" /></a>
           <a href="https://github.com/Netsujr/JavaScript_grocery_list" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
           <CardInfoContainer>
             <CardTitle>
@@ -220,14 +235,15 @@ const CardInfoContainer = styled.div`
     letter-spacing: .15rem;
     transition: all .3s;
     overflow: hidden;
-    background-color: #0cf;
+    background-color: #A9E1FF;
     position: absolute;
     right: 0px;
     bottom: 0px;
     opacity: 0;
 
     &:hover {
-      color: #fff;
+      background-color: black;
+      color: #ffffff;
     }
   }`;
 

@@ -87,6 +87,7 @@ const Container = styled.div`
       font-size: 13px;
       letter-spacing: 0.4px;
       position: relative;
+      
       &:after {
         content: "";
         height: 1px;
