@@ -14,55 +14,55 @@ import CSSIcon from "../../images/Icons/css3-original.svg";
 function Section({ leftBtnText, rightBtnText }) {
   return (
     <Wrap>
-      <Fade top>
-        <ItemText>
-          <h1>Spotify Clone |  </h1>
-            <Icons src={JavascriptIcon} />
-            <Icons src={ReactIcon} />
-            <Icons src={FirebaseIcon} />
-            <Icons src={HTMLIcon} />
-            <Icons src={CSSIcon} />
-        </ItemText>
-      </Fade>
-      <ProjectContainer>
-        <ProjectInfo >
-          <h2>Details</h2>
-          <h4>Role:</h4>
-          <p>For this project I was again using a similar authentication login as I did with the Disney Clone project, however, this time I was calling Spotify's API to connect to user's info.</p>
-          <h4>Problems:</h4>
-          <p>The point of the App was to be able to controll your songs with basic functionallity like changing to a next or previous song. I had alot fun going deeper into Spotify's API capabilities. One little issue I had was matching the album cover to the current song playing, I used the index to find the correct cover.</p>
-          <h4>Solution:</h4>
-          <p>I'm still debugging this album/song issue. the rest of the app was really fun to build and get to actually work! Please share if you have any ideas! </p>
-        </ProjectInfo>
-        <SliderContainer>
-          <ImgSlider
-            FirstImg={sp1}
-            SecondImg={sp2}
-            ThirdImg={sp3}
-          />
-        </SliderContainer>
-      </ProjectContainer>
-      <Buttons>
-        <Fade bottom>
-          <ButtonGroup>
-            <LeftButton>
-              {leftBtnText}
-            </LeftButton>
-            {rightBtnText &&
-              <RightButton>
-                {rightBtnText}
-              </RightButton>
-            }
-          </ButtonGroup>
-        </Fade>
-      </Buttons>
+    <Fade top>
+    <ItemText>
+    <h1>Spotify Clone |  </h1>
+    <Icons src={JavascriptIcon} />
+    <Icons src={ReactIcon} />
+    <Icons src={FirebaseIcon} />
+    <Icons src={HTMLIcon} />
+    <Icons src={CSSIcon} />
+    </ItemText>
+    </Fade>
+    <ProjectContainer>
+    <ProjectInfo >
+    <h2>Details</h2>
+    <h4>Role:</h4>
+    <p>For this project I was again using a similar authentication login as I did with the Disney Clone project, however, this time I was calling Spotify's API to connect to user's info.</p>
+    <h4>Problems:</h4>
+    <p>The point of the App was to be able to controll your songs with basic functionallity like changing to a next or previous song. I had alot fun going deeper into Spotify's API capabilities. One little issue I had was matching the album cover to the current song playing, I used the index to find the correct cover.</p>
+    <h4>Solution:</h4>
+    <p>I'm still debugging this album/song issue. the rest of the app was really fun to build and get to actually work! Please share if you have any ideas! </p>
+    </ProjectInfo>
+    <SliderContainer>
+    <ImgSlider
+    FirstImg={sp1}
+    SecondImg={sp2}
+    ThirdImg={sp3}
+    />
+    </SliderContainer>
+    </ProjectContainer>
+    <Buttons>
+    <Fade bottom>
+    <ButtonGroup>
+    <LeftButton>
+    {leftBtnText}
+    </LeftButton>
+    {rightBtnText &&
+      <RightButton>
+      {rightBtnText}
+      </RightButton>
+    }
+    </ButtonGroup>
+    </Fade>
+    </Buttons>
     </Wrap>
-  );
-}
+    );
+  }
 
-export default Section;
+  export default Section;
 
-const Wrap = styled.div`
+  const Wrap = styled.div`
   max-width: 100vw;
   min-height: 100vh;
   background-color: rgba(248, 241, 255, 0.8);
@@ -141,9 +141,9 @@ background: rgba(48, 197, 255, 0.4);
 @media (max-width : 768px) {
   max-width: 100%;
   margin-top: 20px;
-@media (max-width : 468px) {
-  margin-top: 100px;
-}
+  @media (max-width : 468px) {
+    margin-top: 100px;
+  }
 }
 `;
 

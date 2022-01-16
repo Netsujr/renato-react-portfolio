@@ -19,15 +19,17 @@ function Projects() {
       <Cards>
         {/* --------------------------------------------- */}
         <CardBody>
-          <a href="https://distracted-mahavira-252b8c.netlify.app/" target="blank_" > <h2>Visit Site</h2><img id="image" src={rps} alt="RockPaperScissors" /></a>
+          <a href="https://distracted-mahavira-252b8c.netlify.app/" target="blank_" ><img id="image" src={rps} alt="RockPaperScissors" /></a>
           <a href="https://github.com/Netsujr/rock-paper-scissors" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
-          <a href="http://localhost:3000/projects/spotify">Test link</a>
-          <CardTitle>
-            <h4>Rock, Paper, Scissors</h4>
-          </CardTitle>
-          <CardDesc>
-            <p>A quick game of R-P-S, can you beat my super intelligent AI? Used Javascript, HTML and CSS</p>
-          </CardDesc>
+          <CardInfoContainer>
+            <CardTitle>
+              <h4>Rock, Paper, Scissors</h4>
+            </CardTitle>
+            <CardDesc>
+              <p>A quick game of R-P-S, can you beat my super intelligent AI? Used Javascript, HTML and CSS</p>
+              <a href="http://localhost:3000/projects/spotify" id="link">Test link</a>
+            </CardDesc>
+          </CardInfoContainer>
         </CardBody>
         {/* --------------------------------------------- */}
         <CardBody>
@@ -38,6 +40,7 @@ function Projects() {
           </CardTitle>
           <CardDesc>
             <p>Can you beat my AI's logic? Dont think so... Made using JS, HTML, CSS.</p>
+            <a href="http://localhost:3000/projects/spotify" id="link">Test link</a>
           </CardDesc>
         </CardBody>
         {/* --------------------------------------------- */}
@@ -49,6 +52,7 @@ function Projects() {
           </CardTitle>
           <CardDesc>
             <p>A landing page for a photographer client. Styling practice using JS, HTML, CSS.</p>
+            <a href="http://localhost:3000/projects/tinyme" id="link">Test link</a>
           </CardDesc>
         </CardBody>
         {/* --------------------------------------------- */}
@@ -60,6 +64,7 @@ function Projects() {
           </CardTitle>
           <CardDesc>
             <p>A simple page practicing color scheming. Changes theme of page, made using JS, HTML, CSS.</p>
+            <a href="http://localhost:3000/projects/spotify" id="link">Test link</a>
           </CardDesc>
         </CardBody>
         {/* --------------------------------------------- */}
@@ -71,6 +76,7 @@ function Projects() {
           </CardTitle>
           <CardDesc>
             <p>A simple JS counter. Can you find both secrets? Made using JS, HTML, CSS.</p>
+            <a href="http://localhost:3000/projects/spotify" id="link">Test link</a>
           </CardDesc>
         </CardBody>
         {/* --------------------------------------------- */}
@@ -82,16 +88,19 @@ function Projects() {
           </CardTitle>
           <CardDesc>
             <p>A simple JS grocery List. Add/Remove/Edit your items. Made using JS, HTML, CSS.</p>
+            <a href="http://localhost:3000/projects/spotify" id="link">Test link</a>
           </CardDesc>
         </CardBody>
         {/* --------------------------------------------- */}
         <CardBody>
           <img src={comingSoon} alt="" />
+
           <CardTitle>
             <h4>My Webstore</h4>
           </CardTitle>
           <CardDesc>
             <p>A westore using a variety of tool. workshop ran by Ben W.</p>
+            <a href="http://localhost:3000/projects/spotify" id="link">Test link</a>
           </CardDesc>
         </CardBody>
         {/* --------------------------------------------- */}
@@ -104,8 +113,8 @@ export default Projects;
 
 const Cards = styled.div`
   /* border: 1px solid orange; */
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   margin-top: 10px;
@@ -115,20 +124,22 @@ const Cards = styled.div`
 
 const CardBody = styled.div`
   border: 2px solid rgba(83, 83, 83, 0.3);
-  max-width: 200px;
-  max-height: 295px;
+  min-width: 75vw;
+  min-height: 30vh;
   margin: 20px;
   padding: 10px;
   border-radius: 5px;
   position: relative;
+  display: flex;
+  justify-content: space-around;
 
   &:hover {
+    #icon {
+      display: flex;
+    }
     border: 2px solid rgba(83, 83, 83, 0.6);
     h2 {
       z-index: 1;
-    }
-    #image {
-      opacity: 0.5;
     }
   }
 
@@ -146,21 +157,17 @@ const CardBody = styled.div`
 }
 
 img {
-  width: 175px;
+  width: 300px;
   height: 150px;
   object-fit: cover;
-  z-index: 0;
-}
-
-#image {
-  z-index: 0;
+  display: flex;
 }
 
 #icon {
   z-index: 0;
   height: 30px;
   width: 30px;
-  display: flex;
+  display: none;
   position: absolute;
   top: 5px;
   right: 5px;
@@ -173,6 +180,11 @@ img {
   }
 }
 
+`;
+
+const CardInfoContainer = styled.div`
+display: flex;
+flex-direction: column;
 `;
 
 const CardTitle = styled.div`
