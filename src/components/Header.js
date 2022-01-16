@@ -64,7 +64,7 @@ const Container = styled.div`
   align-items: center;
   padding: 0px 20px;
   margin-bottom: 10px;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
   right: 0;

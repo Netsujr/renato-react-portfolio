@@ -104,8 +104,8 @@ export default Section;
 
 const Cards = styled.div`
   /* border: 1px solid orange; */
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   margin-top: 10px;
@@ -143,61 +143,61 @@ const CardBody = styled.div`
     padding: 2px 9px;
     border-radius: 15px;
   }
-}
 
-img {
-  width: 175px;
-  height: 150px;
-  object-fit: cover;
-  z-index: 0;
-}
 
-#image {
-  z-index: 0;
-}
-
-#icon {
-  z-index: 0;
-  height: 30px;
-  width: 30px;
-  display: flex;
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 50px;
-
-  &:hover {
-    height: 32px;
-    width: 32px;
+  img {
+    width: 175px;
+    height: 150px;
+    object-fit: cover;
+    z-index: 0;
   }
-}
+
+  #image {
+    z-index: 0;
+  }
+
+  #icon {
+    z-index: 0;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50px;
+
+    &:hover {
+      height: 32px;
+      width: 32px;
+    }
+  }
 
 `;
 
 const CardTitle = styled.div`
-margin-bottom: 2px;
-`;
+  margin-bottom: 2px;
+  `;
 
 const CardDesc = styled.div`
-p {
-  text-align: start;
-  padding: 0px 10px;
-}
+  p {
+    text-align: start;
+    padding: 0px 10px;
+  }
 
-`;
+  `;
 
 const Wrap = styled.div`
-min-width: 100vw;
-min-height: 100vh;
-background-color: rgba(248, 241, 255, 0.8);
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
-@media (max-width : 490px) {
-  overflow-x: hidden;
-}
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: rgba(248, 241, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width : 490px) {
+    overflow-x: hidden;
+  }
 }`
 
 // sc for const shortcut
