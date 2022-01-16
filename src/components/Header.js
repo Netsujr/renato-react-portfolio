@@ -5,7 +5,6 @@ import CloseIcon from '@material-ui/icons/Close';
 import GithubIcon from "../images/Icons/github-original.svg";
 import LinkedinIcon from "../images/Icons/linkedin-original.svg";
 import HomeIcon from "../images/Icons/icons8-home.svg";
-import newtag from "../images/New.png";
 
 
 function Header() {
@@ -19,15 +18,10 @@ function Header() {
         <a href="/"><img src={HomeIcon} alt="" /></a>
       </LeftIcons>
       <Menu>
-        <a id='latest' href="/whatsapp"><span><img src={newtag} alt="new" />WhatsApp Clone</span></a>
+        <a href="/aboutme"><span>About Me</span></a>
         <a href="/projects"><span>Projects</span></a>
-        <a href="/projects/spotify"><span>Spotify Clone</span></a>
-        <a href="/artistible"><span>Artistible</span></a>
-        <a href="/tesla"><span>Tesla Clone</span></a>
-        <a href="/movielist"><span>Movie List</span></a>
-        <a href="/zoom"><span>Zoom CLone</span></a>
         <a href="/mini-projects"><span id="mp" >Mini Projects</span></a>
-        {/* <a href="#"><span>Mini Projects</span></a> */}
+        <a href="/javascript30"><span>Javascript 30</span></a>
       </Menu>
       <RightMenu>
         <CustomMenu onClick={() => setBurgerStatus(true)} />

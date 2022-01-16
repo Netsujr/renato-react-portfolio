@@ -1,7 +1,6 @@
 import React from 'react';
 import '../App.css';
 import styled from 'styled-components';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import comingSoon from "../images/comingsoon.png";
 import GithubIcon from "../images/Icons/github-original.svg";
 import rps from "../images/MiniProjects/Rock-paper-scissors.png";
