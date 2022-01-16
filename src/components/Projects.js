@@ -3,6 +3,7 @@ import '../App.css';
 import styled from 'styled-components';
 import comingSoon from "../images/comingsoon.png";
 import GithubIcon from "../images/Icons/github-original.svg";
+import WebsiteIcon from "../images/Icons/website.png";
 import rps from "../images/MiniProjects/Rock-paper-scissors.png";
 import tm1 from "../images/TinyMe/one.png";
 import theme from '../images/MiniProjects/theme_toggle.png';
@@ -19,7 +20,8 @@ function Projects() {
       <Cards>
         {/* --------------------------------------------- */}
         <CardBody>
-          <a href="https://distracted-mahavira-252b8c.netlify.app/" target="blank_" ><img id="image" src={rps} alt="RockPaperScissors" /></a>
+          <img id="image" src={rps} alt="RockPaperScissors" />
+          <a href="https://distracted-mahavira-252b8c.netlify.app/" target="blank_" ><img id='website' src={WebsiteIcon} alt="RockPaperScissors" /></a>
           <a href="https://github.com/Netsujr/rock-paper-scissors" target="_blank" rel="noreferrer"><img id='icon' src={GithubIcon} alt="Github" /></a>
           <CardInfoContainer>
             <CardTitle>
@@ -132,7 +134,7 @@ const Cards = styled.div`
   margin-top: 10px;
   flex-wrap: wrap;
   /* margin-left: 25px; */
-`;
+  `;
 
 
 const CardBody = styled.div`
@@ -147,12 +149,11 @@ const CardBody = styled.div`
   justify-content: space-between;
 
   &:hover {
-    #icon, #link {
+    #icon, #link, #website {
       opacity: 1;
     }
     border: 2px solid rgba(83, 83, 83, 0.6);
   }
-}
 
   img {
     width: 300px;
@@ -172,8 +173,8 @@ const CardBody = styled.div`
     width: 30px;
     display: flex;
     position: absolute;
-    top: 5px;
-    right: 5px;
+    bottom: 10px;
+    left: 365px;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 50px;
     transition: all .3s;
@@ -185,6 +186,24 @@ const CardBody = styled.div`
     }
   }
 
+  #website {
+    z-index: 1;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 330px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50px;
+    opacity: 0;
+    transition: all .3s;
+
+    &:hover {
+      height: 32px;
+      width: 32px;
+    }
+  }
 `;
 
 const CardInfoContainer = styled.div`
@@ -238,6 +257,7 @@ const Wrap = styled.div`
 }`
 
 // sc for const shortcut
+
 const ItemText = styled.div`
 /* border: 2px solid orange; */
 width: 100vw;
