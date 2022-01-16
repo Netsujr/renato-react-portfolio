@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import comingSoon from "../../images/comingsoon.png";
-import GithubIcon from "../../images/Icons/github-original.svg";
-import rps from "../../images/MiniProjects/Rock-paper-scissors.png";
-import tm1 from "../../images/TinyMe/one.png";
-import theme from '../../images/MiniProjects/theme_toggle.png';
-import counter from '../../images/MiniProjects/counter.png';
-import grocery from '../../images/MiniProjects/grocery.png';
-import blackjack from '../../images/MiniProjects/blackjack.png';
+import comingSoon from "../images/comingsoon.png";
+import GithubIcon from "../images/Icons/github-original.svg";
+import rps from "../images/MiniProjects/Rock-paper-scissors.png";
+import tm1 from "../images/TinyMe/one.png";
+import theme from '../images/MiniProjects/theme_toggle.png';
+import counter from '../images/MiniProjects/counter.png';
+import grocery from '../images/MiniProjects/grocery.png';
+import blackjack from '../images/MiniProjects/blackjack.png';
 
 
 

@@ -20,8 +20,8 @@ function Header() {
       </LeftIcons>
       <Menu>
         <a id='latest' href="/whatsapp"><span><img src={newtag} alt="new" />WhatsApp Clone</span></a>
-        <a href="/disney"><span>Disney Clone</span></a>
-        <a href="/spotify"><span>Spotify Clone</span></a>
+        <a href="/projects"><span>Projects</span></a>
+        <a href="/projects/spotify"><span>Spotify Clone</span></a>
         <a href="/artistible"><span>Artistible</span></a>
         <a href="/tesla"><span>Tesla Clone</span></a>
         <a href="/movielist"><span>Movie List</span></a>

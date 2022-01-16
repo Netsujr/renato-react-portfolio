@@ -10,7 +10,8 @@ import MovieList from './components/projects/MovieList';
 import WhatsApp from './components/projects/WhatsappClone';
 // import TinyMe from './components/projects/TinyMe';
 import ZoomClone from './components/projects/ZoomClone';
-import MiniProjects from './components/projects/MiniProjects';
+import MiniProjects from './components/MiniProjects';
+import Projects from './components/Projects';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
@@ -23,43 +24,43 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
 
-          <Route exact path="/whatsapp" element={
+          <Route exact path="/projects/whatsapp" element={
             <WhatsApp
               leftBtnText={<a href="https://whatsapp-clone-40cda.web.app/" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
               rightBtnText={<a href="https://github.com/Netsujr/whatsapp-clone" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
           } />
 
-          <Route exact path="/disney" element={
+          <Route exact path="/projects/disney" element={
             <DisneyClone
               leftBtnText={<a href="https://disney-clone-renato.herokuapp.com/" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
               rightBtnText={<a href="https://github.com/Netsujr/disney-clone" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
           } />
 
-          <Route exact path="/spotify" element={
+          <Route exact path="/projects/spotify" element={
             <SpotifyClone
               leftBtnText={<a href="http://renato-spotify-clone.herokuapp.com" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
               rightBtnText={<a href="https://github.com/Netsujr/spotify-clone" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
           } />
 
-          <Route exact path="/artistible" element={
+          <Route exact path="/projects/artistible" element={
             <Artistible
               leftBtnText={<a href="https://artistible.herokuapp.com/" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
               rightBtnText={<a href="https://github.com/Netsujr/artistible" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
           } />
 
-          <Route exact path="/tesla" element={
+          <Route exact path="/projects/tesla" element={
             <TeslaClone
               leftBtnText={<a href="https://renato-tesla-clone.herokuapp.com/" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
               rightBtnText={<a href="https://github.com/Netsujr/tesla_clone_using_react" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
           } />
 
-          <Route exact path="/movielist" element={
+          <Route exact path="/projects/movielist" element={
             <MovieList
               leftBtnText={<a href="http://renato-movie-list.herokuapp.com" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
               rightBtnText={<a href="https://github.com/Netsujr/rails-watch-list" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
           } />
 
-          <Route exact path="/zoom" element={
+          <Route exact path="/projects/zoom" element={
             <ZoomClone
               // eslint-disable-next-line jsx-a11y/anchor-is-valid
               leftBtnText={<a href="" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
@@ -68,6 +69,10 @@ function App() {
 
           <Route exact path="/mini-projects" element={
             <MiniProjects />
+          } />
+
+          <Route exact path="/projects" element={
+            <Projects />
           } />
         </Routes>
       </Router>
