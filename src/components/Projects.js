@@ -26,7 +26,7 @@ function Projects() {
           <a href="https://github.com/Netsujr/spotify-clone" target="_blank" rel="noreferrer"><img id='icon' src={GithubIcon} alt="Github" /></a>
           <CardInfoContainer>
             <CardTitle>
-              <h4>Spotify Clone</h4>
+              <h2>Spotify Clone</h2>
             </CardTitle>
             <CardDesc>
               <p>
@@ -46,7 +46,7 @@ function Projects() {
           <a href="https://github.com/Netsujr/disney-clone" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
           <CardInfoContainer>
             <CardTitle>
-              <h4>Disney Clone</h4>
+              <h2>Disney Clone</h2>
             </CardTitle>
             <CardDesc>
               <p>
@@ -66,11 +66,13 @@ function Projects() {
           <a href="https://github.com/Netsujr/tesla_clone_using_react" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
           <CardInfoContainer>
             <CardTitle>
-              <h4>Tesla Clone</h4>
+              <h2>Tesla Clone</h2>
             </CardTitle>
             <CardDesc>
-              <p>A landing page for a photographer client. Styling practice using JS, HTML, CSS. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias rem itaque eveniet quo nesciunt doloremque voluptates libero architecto suscipit placeat? Illo quam voluptates commodi ea vero earum. Suscipit, provident et.</p>
-              <a href="http://localhost:3000/projects/tinyme" id="link">Learn More</a>
+              <p>One of my early React projects. Used to practice using sections and Redux to prevent prop drilling. The links don't work and aren't supposed to, they are there for styling purposes.
+                A lot of inspiration form the Tesla Clone project style was used on my portfolio.
+              </p>
+              <a href="http://localhost:3000/projects/tesla" id="link">Learn More</a>
             </CardDesc>
           </CardInfoContainer>
         </CardBody>
@@ -81,10 +83,14 @@ function Projects() {
           <a href="https://github.com/Netsujr/zoom-clone" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
           <CardInfoContainer>
             <CardTitle>
-              <h4>Zoom Clone</h4>
+              <h2>Zoom Clone (React Native)</h2>
             </CardTitle>
             <CardDesc>
-              <p>A simple page practicing color scheming. Changes theme of page, made using JS, HTML, CSS. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam non cupiditate praesentium quisquam eos molestiae asperiores omnis veniam vitae temporibus eveniet ipsa placeat maiores ab, assumenda architecto nihil sapiente suscipit!</p>
+              <p>
+                By far one of my most difficult React projects. Custom API built to host users
+                video transmission but I was unable to get cross streaming video between 2 users.
+                At the moment even when there are 2 users in the same 'chatroom', user can only see them selves. App will be deployed when this issue is sorted.
+              </p>
               <a href="http://localhost:3000/projects/zoom" id="link">Learn More</a>
             </CardDesc>
           </CardInfoContainer>
@@ -96,7 +102,7 @@ function Projects() {
           <a href="https://github.com/Netsujr/whatsapp-clone" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
           <CardInfoContainer>
             <CardTitle>
-              <h4>WhatsApp Clone</h4>
+              <h2>WhatsApp Clone</h2>
             </CardTitle>
             <CardDesc>
               <p>A simple JS counter. Can you find both secrets? Made using JS, HTML, CSS. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, dolores explicabo? Consequatur libero aliquid velit? Consectetur ad provident molestias, natus, cumque at corporis, dolore sint a necessitatibus quae dignissimos obcaecati!</p>
@@ -111,7 +117,7 @@ function Projects() {
           <a href="https://github.com/Netsujr/artistible" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
           <CardInfoContainer>
             <CardTitle>
-              <h4>Artistable</h4>
+              <h2>Artistable</h2>
             </CardTitle>
             <CardDesc>
               <p>A simple JS grocery List. Add/Remove/Edit your items. Made using JS, HTML, CSS. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis corrupti, in eum culpa cupiditate esse delectus consectetur excepturi praesentium deserunt sint quis dicta, nihil quod assumenda ex? Illum, eum eligendi?</p>
@@ -126,7 +132,7 @@ function Projects() {
           <a href="https://github.com/Netsujr/rails-watch-list" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
           <CardInfoContainer>
             <CardTitle>
-              <h4>Movie List</h4>
+              <h2>Movie List</h2>
             </CardTitle>
             <CardDesc>
               <p>A simple JS grocery List. Add/Remove/Edit your items. Made using JS, HTML, CSS. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis corrupti, in eum culpa cupiditate esse delectus consectetur excepturi praesentium deserunt sint quis dicta, nihil quod assumenda ex? Illum, eum eligendi?</p>
@@ -140,7 +146,7 @@ function Projects() {
 
           <CardInfoContainer>
             <CardTitle>
-              <h4>My Webstore</h4>
+              <h2>My Webstore</h2>
             </CardTitle>
             <CardDesc>
               <p>A westore using a variety of tool. workshop ran by Ben W. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, harum nemo corrupti qui eveniet numquam odit. Beatae doloremque dolor dolorem dolorum iste non labore eligendi veniam quod. Recusandae, quod maiores!</p>
@@ -271,7 +277,7 @@ const CardDesc = styled.div`
   p {
     text-align: start;
     padding: 0px 10px;
-    font-size: 18px !important;
+    font-size: 17px !important;
     margin-top: 10px;
   }
 
