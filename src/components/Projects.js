@@ -24,7 +24,7 @@ function Projects() {
           <img id="image" src={spotify} alt="RockPaperScissors" />
           <a href="http://renato-spotify-clone.herokuapp.com" target="blank_" ><img id='website' src={WebsiteIcon} alt="spotify" /></a>
           <a href="https://github.com/Netsujr/spotify-clone" target="_blank" rel="noreferrer"><img id='icon' src={GithubIcon} alt="Github" /></a>
-          <a href="http://localhost:3000/projects/spotify" id="link"><span>Learn More </span>{'→'}</a>
+          <a href="/projects/spotify" id="link"><span>Learn More </span>{'→'}</a>
           <CardInfoContainer>
             <CardTitle>
               <h2>Spotify Clone</h2>
@@ -44,7 +44,7 @@ function Projects() {
           <img id="image" src={disney} alt="disney" />
           <a href="https://disney-clone-renato.herokuapp.com/" target="blank_" ><img id='website' src={WebsiteIcon} alt="disney" /></a>
           <a href="https://github.com/Netsujr/disney-clone" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
-          <a href="http://localhost:3000/projects/disney" id="link"><span>Learn More </span>{'→'}</a>
+          <a href="/projects/disney" id="link"><span>Learn More </span>{'→'}</a>
           <CardInfoContainer>
             <CardTitle>
               <h2>Disney Clone</h2>
@@ -64,7 +64,7 @@ function Projects() {
           <img id="image" src={tesla} alt="Tesla" />
           <a href="https://renato-tesla-clone.herokuapp.com/" target="blank_" ><img id='website' src={WebsiteIcon} alt="tesla" /></a>
           <a href="https://github.com/Netsujr/tesla_clone_using_react" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
-          <a href="http://localhost:3000/projects/tesla" id="link"><span>Learn More </span>{'→'}</a>
+          <a href="/projects/tesla" id="link"><span>Learn More </span>{'→'}</a>
           <CardInfoContainer>
             <CardTitle>
               <h2>Tesla Clone</h2>
@@ -81,7 +81,7 @@ function Projects() {
           <img id="image" src={zoom} alt="zoom" />
           <a href="" target="blank_" ></a>
           <a href="https://github.com/Netsujr/zoom-clone" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
-          <a href="http://localhost:3000/projects/zoom" id="link"><span>Learn More </span>{'→'}</a>
+          <a href="/projects/zoom" id="link"><span>Learn More </span>{'→'}</a>
           <CardInfoContainer>
             <CardTitle>
               <h2>Zoom Clone (React Native)</h2>
@@ -100,7 +100,7 @@ function Projects() {
           <img id="image" src={whatsapp} alt="whatsapp" />
           <a href="https://whatsapp-clone-40cda.web.app/" target="blank_" ><img id='website' src={WebsiteIcon} alt="whatsapp" /></a>
           <a href="https://github.com/Netsujr/whatsapp-clone" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
-          <a href="http://localhost:3000/projects/whatsapp" id="link"><span>Learn More </span>{'→'}</a>
+          <a href="/projects/whatsapp" id="link"><span>Learn More </span>{'→'}</a>
           <CardInfoContainer>
             <CardTitle>
               <h2>WhatsApp Clone</h2>
@@ -115,7 +115,7 @@ function Projects() {
           <img id="image" src={art} alt="art" />
           <a href="https://artistible.herokuapp.com/" target="blank_" ><img id='website' src={WebsiteIcon} alt="art" /></a>
           <a href="https://github.com/Netsujr/artistible" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
-          <a href="http://localhost:3000/projects/art" id="link"><span>Learn More </span>{'→'}</a>
+          <a href="/projects/art" id="link"><span>Learn More </span>{'→'}</a>
           <CardInfoContainer>
             <CardTitle>
               <h2>Artistable</h2>
@@ -130,7 +130,7 @@ function Projects() {
           <img id="image" src={movie} alt="movie" />
           <a href="http://renato-movie-list.herokuapp.com" target="blank_" ><img id='website' src={WebsiteIcon} alt="movie" /></a>
           <a href="https://github.com/Netsujr/rails-watch-list" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
-          <a href="http://localhost:3000/projects/movie" id="link"><span>Learn More </span>{'→'}</a>
+          <a href="/projects/movie" id="link"><span>Learn More </span>{'→'}</a>
           <CardInfoContainer>
             <CardTitle>
               <h2>Movie List</h2>
@@ -150,7 +150,7 @@ function Projects() {
               <h2>My Web Store</h2>
             </CardTitle>
             <CardDesc>
-              <a href="http://localhost:3000/projects/" id="link"><span>Learn More </span>{'→'}</a>
+              <a href="/projects/" id="link"><span>Learn More </span>{'→'}</a>
               <p>A web-store for my kitty and her instagram. users are able to purchase my kitty Tachi snacks and toys. Will be updated soon to take real payments using stripe. Want to buy my
                 cat something? follow the link!
               </p>

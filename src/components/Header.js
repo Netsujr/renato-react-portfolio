@@ -31,13 +31,9 @@ function Header() {
           <CustomClose onClick={() => setBurgerStatus(false)} />
         </CloseWrapper>
         <a href="/"><li>Home</li></a>
-        <a href="/whatsapp"><li>WhatsApp Clone</li></a>
-        <a href="/disney"><li>Disney Clone</li></a>
+        <a href="/aboutme"><li>About Me</li></a>
+        <a href="/projects"><li>Projects</li></a>
         <a href="/spotify"><li>Spotify Clone</li></a>
-        <a href="/artistible"><li>Artistible</li></a>
-        <a href="/tesla"><li>Tesla Clone</li></a>
-        <a href="/movielist"><li>Movie List</li></a>
-        <a href="/zoom"><li>Zoom CLone</li></a>
         <a href="/mini-projects"><li>Mini Projects</li></a>
         <RightIcons>
           <a href="https://github.com/netsujr" target="_blank" rel="noreferrer">
@@ -87,7 +83,7 @@ const Container = styled.div`
       font-size: 13px;
       letter-spacing: 0.4px;
       position: relative;
-      
+
       &:after {
         content: "";
         height: 1px;
