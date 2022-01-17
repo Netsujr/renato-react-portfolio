@@ -14,7 +14,7 @@ import art from '../images/Artistible/one.png';
 
 function Projects() {
   return (
-    <Wrap>
+    <Wrap class="wrap">
       <ItemText>
         <h1>Projects</h1>
       </ItemText>
@@ -24,6 +24,7 @@ function Projects() {
           <img id="image" src={spotify} alt="RockPaperScissors" />
           <a href="http://renato-spotify-clone.herokuapp.com" target="blank_" ><img id='website' src={WebsiteIcon} alt="spotify" /></a>
           <a href="https://github.com/Netsujr/spotify-clone" target="_blank" rel="noreferrer"><img id='icon' src={GithubIcon} alt="Github" /></a>
+          <a href="http://localhost:3000/projects/spotify" id="link"><span>Learn More </span>{'→'}</a>
           <CardInfoContainer>
             <CardTitle>
               <h2>Spotify Clone</h2>
@@ -35,7 +36,6 @@ function Projects() {
                 achieved by using Spotify's API and getting permission to authenticate the
                 user's unique token via gmail. Firebase used for database.
               </p>
-              <a href="http://localhost:3000/projects/spotify" id="link">Learn More</a>
             </CardDesc>
           </CardInfoContainer>
         </CardBody>
@@ -44,6 +44,7 @@ function Projects() {
           <img id="image" src={disney} alt="disney" />
           <a href="https://disney-clone-renato.herokuapp.com/" target="blank_" ><img id='website' src={WebsiteIcon} alt="disney" /></a>
           <a href="https://github.com/Netsujr/disney-clone" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
+          <a href="http://localhost:3000/projects/disney" id="link"><span>Learn More </span>{'→'}</a>
           <CardInfoContainer>
             <CardTitle>
               <h2>Disney Clone</h2>
@@ -55,7 +56,6 @@ function Projects() {
                 a database using Firebase for the movies and their respective details pages.
                 User auth was used for login but no information is stored.
               </p>
-              <a href="http://localhost:3000/projects/disney" id="link">Learn More</a>
             </CardDesc>
           </CardInfoContainer>
         </CardBody>
@@ -64,15 +64,15 @@ function Projects() {
           <img id="image" src={tesla} alt="Tesla" />
           <a href="https://renato-tesla-clone.herokuapp.com/" target="blank_" ><img id='website' src={WebsiteIcon} alt="tesla" /></a>
           <a href="https://github.com/Netsujr/tesla_clone_using_react" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
+          <a href="http://localhost:3000/projects/tesla" id="link"><span>Learn More </span>{'→'}</a>
           <CardInfoContainer>
             <CardTitle>
               <h2>Tesla Clone</h2>
             </CardTitle>
             <CardDesc>
               <p>One of my early React projects. Used to practice using sections and Redux to prevent prop drilling. The links don't work and aren't supposed to, they are there for styling purposes.
-                A lot of inspiration form the Tesla Clone project style was used on my portfolio.
+                A lot of inspiration form the Tesla Clone project style was used on my portfolio. Pictures from tesla website.
               </p>
-              <a href="http://localhost:3000/projects/tesla" id="link">Learn More</a>
             </CardDesc>
           </CardInfoContainer>
         </CardBody>
@@ -81,6 +81,7 @@ function Projects() {
           <img id="image" src={zoom} alt="zoom" />
           <a href="" target="blank_" ></a>
           <a href="https://github.com/Netsujr/zoom-clone" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
+          <a href="http://localhost:3000/projects/zoom" id="link"><span>Learn More </span>{'→'}</a>
           <CardInfoContainer>
             <CardTitle>
               <h2>Zoom Clone (React Native)</h2>
@@ -91,7 +92,6 @@ function Projects() {
                 video transmission but I was unable to get cross streaming video between 2 users.
                 At the moment even when there are 2 users in the same 'chatroom', user can only see them selves. App will be deployed when this issue is sorted.
               </p>
-              <a href="http://localhost:3000/projects/zoom" id="link">Learn More</a>
             </CardDesc>
           </CardInfoContainer>
         </CardBody>
@@ -100,13 +100,13 @@ function Projects() {
           <img id="image" src={whatsapp} alt="whatsapp" />
           <a href="https://whatsapp-clone-40cda.web.app/" target="blank_" ><img id='website' src={WebsiteIcon} alt="whatsapp" /></a>
           <a href="https://github.com/Netsujr/whatsapp-clone" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
+          <a href="http://localhost:3000/projects/whatsapp" id="link"><span>Learn More </span>{'→'}</a>
           <CardInfoContainer>
             <CardTitle>
               <h2>WhatsApp Clone</h2>
             </CardTitle>
             <CardDesc>
               <p>WhatsApp clone that also uses firebase to store messages and Chat Rooms. user can login as normal to see messages but token is not stored like in the Spotify Clone for security measures. A really fun app to build. </p>
-              <a href="http://localhost:3000/projects/whatsapp" id="link">Learn More</a>
             </CardDesc>
           </CardInfoContainer>
         </CardBody>
@@ -115,13 +115,13 @@ function Projects() {
           <img id="image" src={art} alt="art" />
           <a href="https://artistible.herokuapp.com/" target="blank_" ><img id='website' src={WebsiteIcon} alt="art" /></a>
           <a href="https://github.com/Netsujr/artistible" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
+          <a href="http://localhost:3000/projects/art" id="link"><span>Learn More </span>{'→'}</a>
           <CardInfoContainer>
             <CardTitle>
               <h2>Artistable</h2>
             </CardTitle>
             <CardDesc>
               <p>A marketplace app built during my time at Lewagon. Artists are able to sell their services by displaying their latest works. Users can choose artist the want to hire based on their work samples. Seeds were used, artists and works are for presentation purposes only. </p>
-              <a href="http://localhost:3000/projects/art" id="link">Learn More</a>
             </CardDesc>
           </CardInfoContainer>
         </CardBody>
@@ -130,6 +130,7 @@ function Projects() {
           <img id="image" src={movie} alt="movie" />
           <a href="http://renato-movie-list.herokuapp.com" target="blank_" ><img id='website' src={WebsiteIcon} alt="movie" /></a>
           <a href="https://github.com/Netsujr/rails-watch-list" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
+          <a href="http://localhost:3000/projects/movie" id="link"><span>Learn More </span>{'→'}</a>
           <CardInfoContainer>
             <CardTitle>
               <h2>Movie List</h2>
@@ -138,7 +139,6 @@ function Projects() {
               <p>Create lists with your favorite movies to a selection. App is very open with users being able to destroy or edit each other's lists, an obvious security flaw, however this was one of my first ever apps that I built. I left it as is for
                 me to be able to see my own progress when looking back at my early work.
               </p>
-              <a href="http://localhost:3000/projects/movie" id="link">Learn More</a>
             </CardDesc>
           </CardInfoContainer>
         </CardBody>
@@ -150,10 +150,10 @@ function Projects() {
               <h2>My Web Store</h2>
             </CardTitle>
             <CardDesc>
+              <a href="http://localhost:3000/projects/" id="link"><span>Learn More </span>{'→'}</a>
               <p>A web-store for my kitty and her instagram. users are able to purchase my kitty Tachi snacks and toys. Will be updated soon to take real payments using stripe. Want to buy my
                 cat something? follow the link!
               </p>
-              <a href="http://localhost:3000/projects/" id="link">Learn More</a>
             </CardDesc>
           </CardInfoContainer>
         </CardBody>
@@ -173,117 +173,6 @@ const Cards = styled.div`
   justify-content: center;
   margin-top: 10px;
   flex-wrap: wrap;
-  /* margin-left: 25px; */
-  `;
-
-
-const CardBody = styled.div`
-  border: 2px solid rgba(83, 83, 83, 0.3);
-  min-width: 75vw;
-  min-height: 30vh;
-  margin: 20px;
-  padding: 10px;
-  border-radius: 5px;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-
-  &:hover {
-    #icon, #link, #website {
-      opacity: 1;
-    }
-    border: 2px solid rgba(83, 83, 83, 0.6);
-  }
-
-  img {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-    display: flex;
-    align-items: flex-start;
-    margin-right: 20px;
-    z-index: 0;
-    /* justify-content: center;
-    align-items: center; */
-  }
-
-  #icon {
-    z-index: 1;
-    height: 30px;
-    width: 30px;
-    display: flex;
-    position: absolute;
-    bottom: 10px;
-    left: 365px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 50px;
-    transition: all .3s;
-    opacity: 0;
-
-    &:hover {
-      height: 32px;
-      width: 32px;
-    }
-  }
-
-  #website {
-    z-index: 1;
-    height: 30px;
-    width: 30px;
-    display: flex;
-    position: absolute;
-    bottom: 10px;
-    left: 330px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 50px;
-    opacity: 0;
-    transition: all .3s;
-
-    &:hover {
-      height: 32px;
-      width: 32px;
-    }
-  }
-`;
-
-const CardInfoContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  position: relative;
-
-  #link {
-    padding: .75rem 1.25rem;
-    border-radius: 10rem;
-    color: black;
-    text-transform: uppercase;
-    font-size: 0.6rem;
-    letter-spacing: .15rem;
-    transition: all .3s;
-    overflow: hidden;
-    background-color: #A9E1FF;
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    opacity: 0;
-
-    &:hover {
-      background-color: black;
-      color: #ffffff;
-    }
-  }`;
-
-const CardTitle = styled.div`
-  margin-bottom: 2px;
-  `;
-
-const CardDesc = styled.div`
-  p {
-    text-align: start;
-    padding: 0px 10px;
-    font-size: 17px !important;
-    margin-top: 10px;
-  }
-
   `;
 
 const Wrap = styled.div`
@@ -297,7 +186,151 @@ const Wrap = styled.div`
   @media (max-width : 490px) {
     overflow-x: hidden;
   }
-}`
+  `;
+
+const CardBody = styled.div`
+  border: 2px solid rgba(83, 83, 83, 0.3);
+  min-width: 75vw;
+  min-height: 30vh;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  @media (max-width : 768px) {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+
+  &:hover {
+    #icon, #link, #website {
+      opacity: 1;
+    }
+    border: 2px solid rgba(83, 83, 83, 0.6);
+  }
+
+  &:hover {
+    background-color: white;
+  }
+
+  img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    display: flex;
+    align-items: flex-start;
+    margin-right: 20px;
+    z-index: 0;
+    @media (max-width : 768px) {
+      width: 200px;
+      height: 100px;
+      margin-right: 0;
+    }
+  }
+
+  #icon {
+    z-index: 1;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 360px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50px;
+    transition: all .3s;
+    opacity: 0;
+    @media (max-width : 768px) {
+      opacity: 1;
+      top: 3px;
+      left: 5px;
+
+    }
+
+    &:hover {
+      height: 27px;
+      width: 27px;
+    }
+  }
+
+  #website {
+    z-index: 1;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 330px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50px;
+    opacity: 0;
+    transition: all .3s;
+    @media (max-width : 768px) {
+      opacity: 1;
+      top: 40px;
+      left: 5px;
+    }
+
+    &:hover {
+      height: 27px;
+      width: 27px;
+    }
+  }
+
+  #link {
+    z-index: 3;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    color: black;
+    text-transform: uppercase;
+    font-size: 0.5rem;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    overflow: hidden;
+    background-color: #A9E1FF;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    opacity: 0;
+    @media (max-width : 768px) {
+      opacity: 1;
+      width: fit-content;
+      padding: 0px 5px;
+      font-size: 15px;
+      span {
+        display: none;
+      }
+    }
+
+    &:hover {
+      background-color: black;
+      color: #ffffff;
+    }
+  }
+  `;
+
+const CardInfoContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+}`;
+
+const CardTitle = styled.div`
+margin-bottom: 2px;
+`;
+
+const CardDesc = styled.div`
+p {
+  text-align: start;
+  padding: 0px 10px;
+  font-size: 17px !important;
+  margin-top: 10px;
+}
+
+`;
 
 // sc for const shortcut
 
