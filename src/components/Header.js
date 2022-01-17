@@ -33,7 +33,6 @@ function Header() {
         <a href="/"><li>Home</li></a>
         <a href="/aboutme"><li>About Me</li></a>
         <a href="/projects"><li>Projects</li></a>
-        <a href="/spotify"><li>Spotify Clone</li></a>
         <a href="/mini-projects"><li>Mini Projects</li></a>
         <RightIcons>
           <a href="https://github.com/netsujr" target="_blank" rel="noreferrer">

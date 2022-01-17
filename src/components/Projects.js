@@ -280,7 +280,7 @@ const CardBody = styled.div`
   }
 
   #link {
-    z-index: 3;
+    z-index: 1;
     padding: .75rem 1.25rem;
     border-radius: 10rem;
     color: black;
