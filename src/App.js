@@ -30,7 +30,7 @@ function App() {
     <Router>
     <Header />
     <Routes>
-      
+
     <Route exact path="/" element={
       <Home
       title="Landing page"/>
@@ -54,7 +54,7 @@ function App() {
       rightBtnText={<a href="https://github.com/Netsujr/spotify-clone" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
     } />
 
-    <Route exact path="/projects/artistible" element={
+    <Route exact path="/projects/art" element={
       <Artistible
       leftBtnText={<a href="https://artistible.herokuapp.com/" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
       rightBtnText={<a href="https://github.com/Netsujr/artistible" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
@@ -66,7 +66,7 @@ function App() {
       rightBtnText={<a href="https://github.com/Netsujr/tesla_clone_using_react" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
     } />
 
-    <Route exact path="/projects/movielist" element={
+    <Route exact path="/projects/movie" element={
       <MovieList
       leftBtnText={<a href="http://renato-movie-list.herokuapp.com" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
       rightBtnText={<a href="https://github.com/Netsujr/rails-watch-list" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
