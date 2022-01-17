@@ -27,74 +27,77 @@ function App() {
   }
   return (
     <div className="App">
-    <Router>
-    <Header />
-    <Routes>
+      <Router>
+        <Header />
+        <Routes>
 
-    <Route exact path="/" element={
-      <Home
-      title="Landing page"/>
-    } />
+          <Route exact path="/" element={
+            <AboutMe
+            /* <Home/> Here should be home landing page */
+              title="Landing page"
+              leftBtnText={<a href={Resume} alt="Download Resume" onClick={activateFinished} download>Download Resume</a>}
+              /> } />
 
-    <Route exact path="/projects/whatsapp" element={
-      <WhatsApp
-      leftBtnText={<a href="https://whatsapp-clone-40cda.web.app/" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
-      rightBtnText={<a href="https://github.com/Netsujr/whatsapp-clone" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
-    } />
+          <Route exact path="/projects/whatsapp" element={
+            <WhatsApp
+              leftBtnText={<a href="https://whatsapp-clone-40cda.web.app/" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
+              rightBtnText={<a href="https://github.com/Netsujr/whatsapp-clone" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
+          } />
 
-    <Route exact path="/projects/disney" element={
-      <DisneyClone
-      leftBtnText={<a href="https://disney-clone-renato.herokuapp.com/" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
-      rightBtnText={<a href="https://github.com/Netsujr/disney-clone" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
-    } />
+          <Route exact path="/projects/disney" element={
+            <DisneyClone
+              leftBtnText={<a href="https://disney-clone-renato.herokuapp.com/" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
+              rightBtnText={<a href="https://github.com/Netsujr/disney-clone" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
+          } />
 
-    <Route exact path="/projects/spotify" element={
-      <SpotifyClone
-      leftBtnText={<a href="http://renato-spotify-clone.herokuapp.com" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
-      rightBtnText={<a href="https://github.com/Netsujr/spotify-clone" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
-    } />
+          <Route exact path="/projects/spotify" element={
+            <SpotifyClone
+              leftBtnText={<a href="http://renato-spotify-clone.herokuapp.com" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
+              rightBtnText={<a href="https://github.com/Netsujr/spotify-clone" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
+          } />
 
-    <Route exact path="/projects/art" element={
-      <Artistible
-      leftBtnText={<a href="https://artistible.herokuapp.com/" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
-      rightBtnText={<a href="https://github.com/Netsujr/artistible" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
-    } />
+          <Route exact path="/projects/art" element={
+            <Artistible
+              leftBtnText={<a href="https://artistible.herokuapp.com/" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
+              rightBtnText={<a href="https://github.com/Netsujr/artistible" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
+          } />
 
-    <Route exact path="/projects/tesla" element={
-      <TeslaClone
-      leftBtnText={<a href="https://renato-tesla-clone.herokuapp.com/" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
-      rightBtnText={<a href="https://github.com/Netsujr/tesla_clone_using_react" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
-    } />
+          <Route exact path="/projects/tesla" element={
+            <TeslaClone
+              leftBtnText={<a href="https://renato-tesla-clone.herokuapp.com/" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
+              rightBtnText={<a href="https://github.com/Netsujr/tesla_clone_using_react" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
+          } />
 
-    <Route exact path="/projects/movie" element={
-      <MovieList
-      leftBtnText={<a href="http://renato-movie-list.herokuapp.com" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
-      rightBtnText={<a href="https://github.com/Netsujr/rails-watch-list" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
-    } />
+          <Route exact path="/projects/movie" element={
+            <MovieList
+              leftBtnText={<a href="http://renato-movie-list.herokuapp.com" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
+              rightBtnText={<a href="https://github.com/Netsujr/rails-watch-list" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
+          } />
 
-    <Route exact path="/projects/zoom" element={
-      <ZoomClone
-      // eslint-disable-next-line jsx-a11y/anchor-is-valid
-      leftBtnText={<a href="" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
-      rightBtnText={<a href="https://github.com/Netsujr/zoom-clone" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
-    } />
+          <Route exact path="/projects/zoom" element={
+            <ZoomClone
+              // eslint-disable-next-line jsx-a11y/anchor-is-valid
+              leftBtnText={<a href="" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
+              rightBtnText={<a href="https://github.com/Netsujr/zoom-clone" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
+          } />
 
-    <Route exact path="/mini-projects" element={
-      <MiniProjects />
-    } />
+          <Route exact path="/mini-projects" element={
+            <MiniProjects />
+          } />
 
-    <Route exact path="/projects" element={
-      <Projects />
-    } />
+          <Route exact path="/projects" element={
+            <Projects />
+          } />
 
-    <Route exact path="/aboutme" element={
-      <AboutMe
-      title="Landing page"
-      leftBtnText={<a href={Resume} alt="Download Resume" onClick={activateFinished} download>Download Resume</a>}/> } />
-      </Routes>
+          <Route exact path="/aboutme" element={
+            <AboutMe
+              title="Landing page"
+              leftBtnText={<a href={Resume} alt="Download Resume" onClick={activateFinished} download>Download Resume</a>} />}
+              />
+        </Routes>
       </Router>
-      </div>
-      );
-    }
+    </div>
+  );
+}
 
-    export default App;
+export default App;
