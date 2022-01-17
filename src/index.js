@@ -13,6 +13,7 @@ ReactDOM.render(
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')
+  // Add hashrouter later
 );
 
 // If you want your app to work offline and load faster, you can change
