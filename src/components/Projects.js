@@ -191,7 +191,7 @@ const Wrap = styled.div`
 const CardBody = styled.div`
   border: 2px solid rgba(83, 83, 83, 0.3);
   min-width: 75vw;
-  min-height: 30vh;
+  max-height: 40vh;
   margin: 20px;
   padding: 10px;
   border-radius: 5px;
@@ -216,8 +216,8 @@ const CardBody = styled.div`
   }
 
   img {
-    width: 300px;
-    height: 200px;
+    width: 250px;
+    height: 150px;
     object-fit: cover;
     display: flex;
     align-items: flex-start;
@@ -236,8 +236,8 @@ const CardBody = styled.div`
     width: 25px;
     display: flex;
     position: absolute;
-    bottom: 10px;
-    left: 360px;
+    top: 10px;
+    left: 300px;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 50px;
     transition: all .3s;
@@ -261,8 +261,8 @@ const CardBody = styled.div`
     width: 25px;
     display: flex;
     position: absolute;
-    bottom: 10px;
-    left: 330px;
+    top: 10px;
+    left: 270px;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 50px;
     opacity: 0;
@@ -281,7 +281,7 @@ const CardBody = styled.div`
 
   #link {
     z-index: 1;
-    padding: .75rem 1.25rem;
+    padding: .5rem .75rem;
     border-radius: 10rem;
     color: black;
     text-transform: uppercase;
@@ -292,7 +292,7 @@ const CardBody = styled.div`
     background-color: #A9E1FF;
     position: absolute;
     right: 5px;
-    bottom: 5px;
+    top: 10px;
     opacity: 0;
     @media (max-width : 768px) {
       opacity: 1;
@@ -315,19 +315,22 @@ const CardInfoContainer = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
-
-}`;
+`;
 
 const CardTitle = styled.div`
 margin-bottom: 2px;
 `;
 
 const CardDesc = styled.div`
+
 p {
   text-align: start;
   padding: 0px 10px;
-  font-size: 17px !important;
+  font-size: 16px !important;
   margin-top: 10px;
+  @media (max-width : 768px) {
+    font-size: 12px !important;
+  }
 }
 
 `;
