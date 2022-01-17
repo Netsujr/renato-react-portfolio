@@ -14,7 +14,7 @@ import art from '../images/Artistible/one.png';
 
 function Projects() {
   return (
-    <Wrap class="wrap">
+    <Wrap>
       <ItemText>
         <h1>Projects</h1>
       </ItemText>
@@ -212,7 +212,7 @@ const CardBody = styled.div`
   }
 
   &:hover {
-    background-color: white;
+    background-color: rgba(204, 243, 255, 0.2);
   }
 
   img {
