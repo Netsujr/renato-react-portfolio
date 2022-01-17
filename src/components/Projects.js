@@ -29,7 +29,12 @@ function Projects() {
               <h4>Spotify Clone</h4>
             </CardTitle>
             <CardDesc>
-              <p>A quick game of R-P-S, can you beat my super intelligent AI? Used Javascript, HTML and CSS Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, vitae nisi! Vitae asperiores harum ratione accusamus illum consequatur dolore fugit omnis, quaerat ipsam cupiditate earum quisquam nobis magnam sapiente. Eveniet.</p>
+              <p>
+                A spotify clone app designed for the user to be able to control
+                their personal spotify track-list / playlists through the web. This was
+                achieved by using Spotify's API and getting permission to authenticate the
+                user's unique token via gmail. Firebase used for database.
+              </p>
               <a href="http://localhost:3000/projects/spotify" id="link">Learn More</a>
             </CardDesc>
           </CardInfoContainer>
@@ -44,7 +49,12 @@ function Projects() {
               <h4>Disney Clone</h4>
             </CardTitle>
             <CardDesc>
-              <p>Can you beat my AI's logic? Dont think so... Made using JS, HTML, CSS. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet voluptatum vero atque autem nobis consequuntur quaerat, nisi quos esse perspiciatis voluptate unde sed ipsam. Quam id beatae numquam quo ipsum.</p>
+              <p>
+                Disney web App clone. I took on this project mainly to practice my React
+                design skills using styled components and DOM router. I also implemented
+                a database using Firebase for the movies and their respective details pages.
+                User auth was used for login but no information is stored.
+              </p>
               <a href="http://localhost:3000/projects/disney" id="link">Learn More</a>
             </CardDesc>
           </CardInfoContainer>
@@ -66,7 +76,8 @@ function Projects() {
         </CardBody>
         {/* --------------------------------------------- */}
         <CardBody>
-          <a href="" target="blank_" ><img id="image" src={zoom} alt="themeToggler" /></a>
+          <img id="image" src={zoom} alt="zoom" />
+          <a href="" target="blank_" ></a>
           <a href="https://github.com/Netsujr/zoom-clone" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
           <CardInfoContainer>
             <CardTitle>
@@ -80,7 +91,8 @@ function Projects() {
         </CardBody>
         {/* --------------------------------------------- */}
         <CardBody>
-          <a href="https://whatsapp-clone-40cda.web.app/" target="blank_" ><img id="image" src={whatsapp} alt="counter" /></a>
+          <img id="image" src={whatsapp} alt="whatsapp" />
+          <a href="https://whatsapp-clone-40cda.web.app/" target="blank_" ><img id='website' src={WebsiteIcon} alt="whatsapp" /></a>
           <a href="https://github.com/Netsujr/whatsapp-clone" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
           <CardInfoContainer>
             <CardTitle>
@@ -94,7 +106,8 @@ function Projects() {
         </CardBody>
         {/* --------------------------------------------- */}
         <CardBody>
-          <a href="https://artistible.herokuapp.com/" target="blank_" ><img id="image" src={art} alt="groceries" /></a>
+          <img id="image" src={art} alt="art" />
+          <a href="https://artistible.herokuapp.com/" target="blank_" ><img id='website' src={WebsiteIcon} alt="art" /></a>
           <a href="https://github.com/Netsujr/artistible" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
           <CardInfoContainer>
             <CardTitle>
@@ -108,7 +121,8 @@ function Projects() {
         </CardBody>
         {/* --------------------------------------------- */}
         <CardBody>
-          <a href="http://renato-movie-list.herokuapp.com" target="blank_" ><img id="image" src={movie} alt="groceries" /></a>
+          <img id="image" src={movie} alt="movie" />
+          <a href="http://renato-movie-list.herokuapp.com" target="blank_" ><img id='website' src={WebsiteIcon} alt="movie" /></a>
           <a href="https://github.com/Netsujr/rails-watch-list" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
           <CardInfoContainer>
             <CardTitle>
@@ -257,6 +271,8 @@ const CardDesc = styled.div`
   p {
     text-align: start;
     padding: 0px 10px;
+    font-size: 18px !important;
+    margin-top: 10px;
   }
 
   `;
