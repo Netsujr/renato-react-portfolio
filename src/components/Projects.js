@@ -79,7 +79,7 @@ function Projects() {
         {/* --------------------------------------------- */}
         <CardBody>
           <img id="image" src={zoom} alt="zoom" />
-          <a href="" target="blank_" ></a>
+          <a href="#" target="blank_" ></a>
           <a href="https://github.com/Netsujr/zoom-clone" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
           <a href="/projects/zoom" id="link"><span>Learn More </span>{'→'}</a>
           <CardInfoContainer>
