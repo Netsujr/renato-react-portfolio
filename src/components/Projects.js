@@ -105,7 +105,7 @@ function Projects() {
               <h2>WhatsApp Clone</h2>
             </CardTitle>
             <CardDesc>
-              <p>A simple JS counter. Can you find both secrets? Made using JS, HTML, CSS. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, dolores explicabo? Consequatur libero aliquid velit? Consectetur ad provident molestias, natus, cumque at corporis, dolore sint a necessitatibus quae dignissimos obcaecati!</p>
+              <p>WhatsApp clone that also uses firebase to store messages and Chat Rooms. user can login as normal to see messages but token is not stored like in the Spotify Clone for security measures. A really fun app to build. </p>
               <a href="http://localhost:3000/projects/whatsapp" id="link">Learn More</a>
             </CardDesc>
           </CardInfoContainer>
@@ -120,7 +120,7 @@ function Projects() {
               <h2>Artistable</h2>
             </CardTitle>
             <CardDesc>
-              <p>A simple JS grocery List. Add/Remove/Edit your items. Made using JS, HTML, CSS. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis corrupti, in eum culpa cupiditate esse delectus consectetur excepturi praesentium deserunt sint quis dicta, nihil quod assumenda ex? Illum, eum eligendi?</p>
+              <p>A marketplace app built during my time at Lewagon. Artists are able to sell their services by displaying their latest works. Users can choose artist the want to hire based on their work samples. Seeds were used, artists and works are for presentation purposes only. </p>
               <a href="http://localhost:3000/projects/art" id="link">Learn More</a>
             </CardDesc>
           </CardInfoContainer>
@@ -135,21 +135,24 @@ function Projects() {
               <h2>Movie List</h2>
             </CardTitle>
             <CardDesc>
-              <p>A simple JS grocery List. Add/Remove/Edit your items. Made using JS, HTML, CSS. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis corrupti, in eum culpa cupiditate esse delectus consectetur excepturi praesentium deserunt sint quis dicta, nihil quod assumenda ex? Illum, eum eligendi?</p>
+              <p>Create lists with your favorite movies to a selection. App is very open with users being able to destroy or edit each other's lists, an obvious security flaw, however this was one of my first ever apps that I built. I left it as is for
+                me to be able to see my own progress when looking back at my early work.
+              </p>
               <a href="http://localhost:3000/projects/movie" id="link">Learn More</a>
             </CardDesc>
           </CardInfoContainer>
         </CardBody>
         {/* --------------------------------------------- */}
         <CardBody>
-          <img src={comingSoon} alt="" />
-
+          <img id="image" src={comingSoon} alt="coming soon" />
           <CardInfoContainer>
             <CardTitle>
-              <h2>My Webstore</h2>
+              <h2>My Web Store</h2>
             </CardTitle>
             <CardDesc>
-              <p>A westore using a variety of tool. workshop ran by Ben W. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, harum nemo corrupti qui eveniet numquam odit. Beatae doloremque dolor dolorem dolorum iste non labore eligendi veniam quod. Recusandae, quod maiores!</p>
+              <p>A web-store for my kitty and her instagram. users are able to purchase my kitty Tachi snacks and toys. Will be updated soon to take real payments using stripe. Want to buy my
+                cat something? follow the link!
+              </p>
               <a href="http://localhost:3000/projects/" id="link">Learn More</a>
             </CardDesc>
           </CardInfoContainer>
