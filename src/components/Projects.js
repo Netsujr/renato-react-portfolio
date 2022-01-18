@@ -34,7 +34,7 @@ function Projects() {
                 A spotify clone app designed for the user to be able to control
                 their personal spotify track-list / playlists through the web. This was
                 achieved by using Spotify's API and getting permission to authenticate the
-                user's unique token via gmail. Firebase used for database.
+                user's unique token via gmail. Firebase used for database storage.
               </p>
             </CardDesc>
           </CardInfoContainer>
