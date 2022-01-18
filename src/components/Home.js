@@ -8,7 +8,7 @@ function Home() {
   return (
     <Container>
       <ItemText>
-        <h1>Coming Soon</h1>
+        <h1>Renato Delboni || Web Developer</h1>
       </ItemText>
       <Fade left>
         <ImgContainer>
@@ -46,18 +46,19 @@ const ItemText = styled.div`
   }
   `
 const ImgContainer = styled.div`
-/* border: 2px solid black; */
-width: 35vw;
-height: 100%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 30px;
+  border: 2px solid pink;
+  width: 35vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 
-img {
-  border-radius: 20px;
-  box-shadow: 2px 2px 10px 1px;
-  margin-bottom: 40px;
-}
-`;
+
+  img {
+    height: 100vh;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+  }
+  `;
