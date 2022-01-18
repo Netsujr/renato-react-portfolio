@@ -30,7 +30,7 @@ function Home() {
 export default Home;
 
 const Container = styled.div`
-  width: 100%;
+  width: 100vw;
   height: 100%;
   border: 2px solid orange;
   object-fit: contain;
@@ -79,7 +79,7 @@ const ImgContainer = styled.div`
 
 const DetailsContainer = styled.div`
   border: 2px solid blue;
-  width: 75vw;
+  width: 64vw;
   height: 100vh;
   padding: 10px;
   margin: 10px;
