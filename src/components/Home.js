@@ -10,22 +10,35 @@ function Home() {
       <ItemText>
         <h1>Renato Delboni || Web Developer</h1>
       </ItemText>
-      <Fade left>
-        <ImgContainer>
-          <img src={renato} alt="" />
-        </ImgContainer>
-      </Fade>
-    </Container>
+      <InfoContainer>
+        <Fade left>
+          <ImgContainer>
+            <img src={renato} alt="" />
+          </ImgContainer>
+        </Fade>
+        <Fade center
+        config={{ delay: 2000, duration: 29000 }}>
+          <DetailsContainer>
+            <h1>Hello</h1>
+          </DetailsContainer>
+        </Fade>
+      </InfoContainer>
+    </Container >
   );
 }
 
 export default Home;
 
 const Container = styled.div`
-  width: 100vw;
-
+  width: 100%;
+  height: 100%;
+  border: 2px solid orange;
+  object-fit: contain;
   `;
 
+const InfoContainer = styled.div`
+  display: flex;
+  `
 
 const ItemText = styled.div`
   /* border: 2px solid orange; */
@@ -53,12 +66,25 @@ const ImgContainer = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
-
+  object-fit: contain;
 
   img {
     height: 100vh;
     position: absolute;
     bottom: 0px;
     left: 0px;
+
   }
+  `;
+
+const DetailsContainer = styled.div`
+  border: 2px solid blue;
+  width: 75vw;
+  height: 100vh;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   `;
