@@ -190,6 +190,7 @@ const Wrap = styled.div`
 
 const CardBody = styled.div`
   border: 2px solid rgba(83, 83, 83, 0.3);
+  /* border: solid 1px red; */
   min-width: 75vw;
   max-height: 40vh;
   margin: 20px;
@@ -202,6 +203,7 @@ const CardBody = styled.div`
     flex-direction: column;
     display: flex;
     align-items: center;
+    max-height: 100%;
   }
 
   &:hover {
@@ -281,7 +283,7 @@ const CardBody = styled.div`
 
   #link {
     z-index: 1;
-    padding: .5rem .75rem;
+    padding: .75rem .75rem;
     border-radius: 10rem;
     color: black;
     text-transform: uppercase;
