@@ -34,6 +34,7 @@ function Header() {
         <a href="/aboutme"><li>About Me</li></a>
         <a href="/projects"><li>Projects</li></a>
         <a href="/mini-projects"><li>Mini Projects</li></a>
+        <a href="/javascript30"><li>Javascript 30</li></a>
         <RightIcons>
           <a href="https://github.com/netsujr" target="_blank" rel="noreferrer">
             <img src={GithubIcon} alt="Github" />
