@@ -13,6 +13,7 @@ import ZoomClone from './components/projects/ZoomClone';
 import MiniProjects from './components/MiniProjects';
 import Projects from './components/Projects';
 import AboutMe from './components/AboutMe';
+import Js30 from './components/Javascript30';
 import Resume from './DelboniRenatoResume.pdf';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -87,6 +88,10 @@ function App() {
 
           <Route exact path="/projects" element={
             <Projects />
+          } />
+
+          <Route exact path="/javascript30" element={
+            <Js30 />
           } />
 
           <Route exact path="/aboutme" element={
