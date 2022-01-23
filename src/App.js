@@ -32,7 +32,8 @@ function App() {
         <Routes>
 
           <Route exact path="/" element={
-            <Home /> } />
+            <Home />
+          } />
 
           <Route exact path="/projects/whatsapp" element={
             <WhatsApp
@@ -89,7 +90,7 @@ function App() {
             <AboutMe
               title="Landing page"
               leftBtnText={<a href={Resume} alt="Download Resume" onClick={activateFinished} download>Download Resume</a>} />}
-              />
+          />
         </Routes>
       </Router>
     </div>

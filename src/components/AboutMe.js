@@ -100,7 +100,7 @@ const Wrap = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-}`
+  `;
 
 // sc for const shortcut
 const ItemText = styled.div`
@@ -174,7 +174,7 @@ background: rgba(48, 197, 255, 0.4);
 const AboutMeContainer = styled.div`
 /* border: 2px solid purple; */
 flex: 1;
-min-width: 100vw;
+width: 100vw;
 display: flex;
 @media (max-width : 768px) {
   flex-direction: column-reverse;
@@ -215,6 +215,7 @@ align-items: center;
 p {
   text-align: justify;
   font-size: 16px;
+  padding: 20px;
 }
 
 `;

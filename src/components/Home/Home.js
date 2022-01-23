@@ -54,7 +54,6 @@ const Container = styled.div`
   object-fit: contain;
   `;
 
-
 const IconsContainer = styled.div`
   border: 2px solid blue;
   max-width: 100%;
