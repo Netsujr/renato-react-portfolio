@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header';
-import Home from './components/Home';
+import Home from './components/Home/Home';
 import DisneyClone from './components/projects/DisneyClone';
 import SpotifyClone from './components/projects/SpotifyClone';
 import Artistible from './components/projects/Artistible';
