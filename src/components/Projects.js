@@ -192,7 +192,7 @@ const CardBody = styled.div`
   border: 2px solid rgba(83, 83, 83, 0.3);
   /* border: solid 1px red; */
   min-width: 75vw;
-  max-height: 40vh;
+  min-height: 100%;
   margin: 20px;
   padding: 10px;
   border-radius: 5px;

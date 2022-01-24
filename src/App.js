@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header';
-// import Home from './components/Home';
+import Home from './components/Home/Home';
 import DisneyClone from './components/projects/DisneyClone';
 import SpotifyClone from './components/projects/SpotifyClone';
 import Artistible from './components/projects/Artistible';
@@ -33,11 +33,8 @@ function App() {
         <Routes>
 
           <Route exact path="/" element={
-            <AboutMe
-            /* <Home/> Here should be home landing page */
-              title="Landing page"
-              leftBtnText={<a href={Resume} alt="Download Resume" onClick={activateFinished} download>Download Resume</a>}
-              /> } />
+            <Home />
+          } />
 
           <Route exact path="/projects/whatsapp" element={
             <WhatsApp
@@ -98,7 +95,7 @@ function App() {
             <AboutMe
               title="Landing page"
               leftBtnText={<a href={Resume} alt="Download Resume" onClick={activateFinished} download>Download Resume</a>} />}
-              />
+          />
         </Routes>
       </Router>
     </div>
