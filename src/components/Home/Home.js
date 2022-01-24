@@ -13,6 +13,8 @@ import HerokuIcon from "../../images/Icons/heroku-original-wordmark.svg";
 import RubyIcon from "../../images/Icons/ruby-original-wordmark.svg";
 import RailsIcon from "../../images/Icons/rails-plain-wordmark.svg";
 import NodeIcon from "../../images/Icons/nodejs-original.svg";
+import GithubIcon from "../../images/Icons/github-original.svg";
+import LinkedinIcon from "../../images/Icons/linkedin-original.svg";
 
 function Home() {
   useEffect(() => {
@@ -43,12 +45,19 @@ function Home() {
         <div className="panel panel2">
           <p>Give</p>
           <p>Projects</p>
-          <p>Receive</p>
+          <a href="/projects"><p>Check it Out</p></a>
         </div>
         <div className="panel panel3">
           <p>Experience</p>
           <p>Renato Delboni</p>
-          <p>Today</p>
+          <ContactIcons>
+            <a href="https://github.com/netsujr" target="_blank" rel="noreferrer">
+              <img src={GithubIcon} alt="Github" />
+            </a>
+            <a href="https://www.linkedin.com/in/delbonirenato/" target="_blank" rel="noreferrer">
+              <img src={LinkedinIcon} alt="Linkedin" />
+            </a>
+          </ContactIcons>
         </div>
         <div className="panel panel4">
           <p>Give</p>
@@ -79,6 +88,22 @@ const Panels = styled.div`
   max-width: 100vw;
   overflow: hidden;
   display: flex;
+  `;
+
+const ContactIcons = styled.div`
+  display: flex;
+  justify-content: center;
+
+  img {
+    height: 60px;
+    /* border-radius: 5px; */
+    padding: 2px;
+    margin: 0 40px;
+
+    &:hover {
+      height: 65px;
+    }
+  }
   `;
 
 const IconsContainer = styled.div`
