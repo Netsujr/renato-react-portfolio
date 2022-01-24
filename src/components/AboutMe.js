@@ -35,7 +35,7 @@ function Section({ leftBtnText, rightBtnText }) {
   return (
     <Wrap>
       <ItemText>
-        <h1>About Me | </h1>
+        <h1>Front-End Developer | </h1>
         <RightIcons>
           <a href="https://github.com/netsujr" target="_blank" rel="noreferrer">
             <img src={GithubIcon} alt="Github" />

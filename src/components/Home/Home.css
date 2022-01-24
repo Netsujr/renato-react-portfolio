@@ -52,6 +52,10 @@
   transform: translateY(0);
 }
 
+.panel.open-active #main:first-child {
+  transform: translateY(120%);
+}
+
 .panel *:last-child {
   transform: translateY(100%);
 }
@@ -62,7 +66,7 @@
 
 .panel p {
   text-transform: uppercase;
-  font-family: "Amatic SC", cursive;
+  font-family: monospace;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.82), 0 0 14px rgba(0, 0, 0, 0.85);
   font-size: 30px;
   color: white;
@@ -83,5 +87,5 @@
 
 .panel.open {
   font-size: 20px;
-  flex: 2;
+  flex: 1.5;
 }

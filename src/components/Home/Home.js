@@ -27,17 +27,17 @@ function Home() {
     <Container>
       <Panels>
         <div className="panel panel1">
-          <p>Love: ☀️ 😸 </p>
+          <p>Love:☀️😸 </p>
           <p>About Me</p>
           <a href="/aboutme"><p>Learn More</p></a>
         </div>
         <div className="panel panel2">
-          <p>Hate: ❄️ 🦟 </p>
+          <p>Hate:❄️🦟 </p>
           <p>Projects</p>
           <a href="/projects"><p>Check it Out</p></a>
         </div>
         <div className="panel panel3">
-          <p>Food: 🥦 🍿 🍕 </p>
+          <p id='main'>Front-End Developer</p>
           <p>Renato Delboni</p>
           <ContactIcons>
             <a href="https://github.com/netsujr" target="_blank" rel="noreferrer">
@@ -49,12 +49,12 @@ function Home() {
           </ContactIcons>
         </div>
         <div className="panel panel4">
-          <p>Hobby: 🎥 🧳 ⚽ </p>
+          <p>SuperHero:<img id="spiderman" src={spiderman} alt="spiderman" /></p>
           <p>Mini-Projects</p>
           <a href="/mini-projects"><p>Check it Out</p></a>
         </div>
         <div className="panel panel5">
-          <p>SuperHero: <img id="spiderman" src={spiderman} alt="spiderman" /></p>
+          <p>Hobby:🎥🧳⚽ </p>
           <p className="d-flex">Javascript30</p>
           <a href="/javascript30"><p>Check it Out</p></a>
         </div>
@@ -82,6 +82,10 @@ const Panels = styled.div`
     height: 50px;
     width: 60px;
   }
+
+  #main {
+    font-size: 24px;
+  }
   `;
 
 const ContactIcons = styled.div`
@@ -89,7 +93,7 @@ const ContactIcons = styled.div`
   justify-content: center;
 
   img {
-    height: 50px;
+    height: 53px;
     /* border-radius: 5px; */
     padding: 2px;
     margin: 0 40px;
