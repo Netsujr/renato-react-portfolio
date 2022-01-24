@@ -191,7 +191,7 @@ const Wrap = styled.div`
 const CardBody = styled.div`
   border: 2px solid rgba(83, 83, 83, 0.3);
   min-width: 75vw;
-  max-height: 40vh;
+  min-height: 40vh;
   margin: 20px;
   padding: 10px;
   border-radius: 5px;
@@ -202,6 +202,7 @@ const CardBody = styled.div`
     flex-direction: column;
     display: flex;
     align-items: center;
+    min-height: 100%;
   }
 
   &:hover {

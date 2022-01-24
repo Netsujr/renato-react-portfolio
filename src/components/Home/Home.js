@@ -19,28 +19,33 @@ function Home() {
 
   return (
     <Container>
-      <div className="panels">
+      <Panels>
         <div className="panel panel1">
           <p>Hey</p>
-          <p>Let's</p>
+          <p>About Me</p>
           <p>Dance</p>
         </div>
         <div className="panel panel2">
           <p>Give</p>
-          <p>Take</p>
+          <p>Projects</p>
           <p>Receive</p>
         </div>
         <div className="panel panel3">
           <p>Experience</p>
-          <p>It</p>
+          <p>Renato Delboni</p>
           <p>Today</p>
         </div>
         <div className="panel panel4">
           <p>Give</p>
-          <p>All</p>
+          <p>Mini-Projects</p>
           <p>You can</p>
         </div>
-      </div>
+        <div className="panel panel5">
+          <p>Give</p>
+          <p>Javascript30</p>
+          <p>You can</p>
+        </div>
+      </Panels>
     </Container >
   );
 }
@@ -48,10 +53,17 @@ function Home() {
 export default Home;
 
 const Container = styled.div`
-  width: 100vw;
+  max-width: 100vw;
   height: 100%;
   border: 2px solid orange;
   object-fit: contain;
+  `;
+
+const Panels = styled.div`
+  min-height: 100vh;
+  max-width: 100vw;
+  overflow: hidden;
+  display: flex;
   `;
 
 const IconsContainer = styled.div`
