@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import './Home.css';
-import './panels';
 import Fade from 'react-reveal/Fade';
 import styled from 'styled-components';
 import renato from '../../images/renatobg.png';
@@ -16,6 +15,22 @@ import RailsIcon from "../../images/Icons/rails-plain-wordmark.svg";
 import NodeIcon from "../../images/Icons/nodejs-original.svg";
 
 function Home() {
+  useEffect(() => {
+    const panels = document.querySelectorAll('.panel');
+    console.log(panels)
+    panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+    panels.forEach(panel => panel.addEventListener('transitionend', wordAppear));
+  })
+
+  function toggleOpen() {
+    this.classList.toggle('open');
+  }
+
+  function wordAppear(event) {
+    if (event.propertyName.includes('flex')) {
+      this.classList.toggle('open-active');
+    }
+  }
 
   return (
     <Container>
@@ -23,7 +38,7 @@ function Home() {
         <div className="panel panel1">
           <p>Hey</p>
           <p>About Me</p>
-          <p>Dance</p>
+          <a href="/aboutme"><p>Learn More</p></a>
         </div>
         <div className="panel panel2">
           <p>Give</p>
