@@ -56,7 +56,7 @@ function Home() {
         <div className="panel panel5">
           <p>SuperHero: <img id="spiderman" src={spiderman} alt="spiderman" /></p>
           <p className="d-flex">Javascript30</p>
-          <a href="/js30"><p>Check it Out</p></a>
+          <a href="/javascript30"><p>Check it Out</p></a>
         </div>
       </Panels>
     </Container >
