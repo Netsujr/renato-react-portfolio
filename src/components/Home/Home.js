@@ -15,6 +15,7 @@ import RailsIcon from "../../images/Icons/rails-plain-wordmark.svg";
 import NodeIcon from "../../images/Icons/nodejs-original.svg";
 import GithubIcon from "../../images/Icons/github-original.svg";
 import LinkedinIcon from "../../images/Icons/linkedin-original.svg";
+import spiderman from '../../images/spiderman.png';
 
 function Home() {
   useEffect(() => {
@@ -38,17 +39,17 @@ function Home() {
     <Container>
       <Panels>
         <div className="panel panel1">
-          <p>Hey</p>
+          <p>Love: ☀️ 😸 </p>
           <p>About Me</p>
           <a href="/aboutme"><p>Learn More</p></a>
         </div>
         <div className="panel panel2">
-          <p>Give</p>
+          <p>Hate: ❄️ 🦟 </p>
           <p>Projects</p>
           <a href="/projects"><p>Check it Out</p></a>
         </div>
         <div className="panel panel3">
-          <p>Experience</p>
+          <p>Food: 🥦 🍿 🍕 </p>
           <p>Renato Delboni</p>
           <ContactIcons>
             <a href="https://github.com/netsujr" target="_blank" rel="noreferrer">
@@ -60,14 +61,14 @@ function Home() {
           </ContactIcons>
         </div>
         <div className="panel panel4">
-          <p>Give</p>
+          <p>Hobby: 🎥 🧳 ⚽ </p>
           <p>Mini-Projects</p>
-          <p>You can</p>
+          <a href="/mini-projects"><p>Check it Out</p></a>
         </div>
         <div className="panel panel5">
-          <p>Give</p>
-          <p>Javascript30</p>
-          <p>You can</p>
+          <p>SuperHero: <img id="spiderman" src={spiderman} alt="spiderman" /></p>
+          <p className="d-flex">Javascript30</p>
+          <a href="/js30"><p>Check it Out</p></a>
         </div>
       </Panels>
     </Container >
@@ -79,7 +80,7 @@ export default Home;
 const Container = styled.div`
   max-width: 100vw;
   height: 100%;
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
   object-fit: contain;
   `;
 
@@ -88,6 +89,11 @@ const Panels = styled.div`
   max-width: 100vw;
   overflow: hidden;
   display: flex;
+
+  #spiderman {
+    height: 50px;
+    width: 60px;
+  }
   `;
 
 const ContactIcons = styled.div`
@@ -99,6 +105,8 @@ const ContactIcons = styled.div`
     /* border-radius: 5px; */
     padding: 2px;
     margin: 0 40px;
+    background: white;
+    border-radius: 50%;
 
     &:hover {
       height: 65px;
@@ -106,21 +114,9 @@ const ContactIcons = styled.div`
   }
   `;
 
-const IconsContainer = styled.div`
-  border: 2px solid blue;
-  max-width: 100%;
-  max-height: 100%;
-  padding: 10px;
-  margin: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  `;
-
 const Icons = styled.img`
   /* border: 2px solid pink; */
-  height: 35px;
+  height: 25px;
   margin: 5px;
   @media (max-width : 768px) {
     height: 20px;

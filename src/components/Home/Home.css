@@ -6,7 +6,7 @@
   align-items: center;
   transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
     flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
-  font-size: 16px;
+  font-size: 12px;
   background-size: cover;
   background-position: center;
   flex: 1;
@@ -18,19 +18,19 @@
 }
 
 .panel1 {
-  background-image: url('https://source.unsplash.com/gYl-UtwNg_I/1500x1500');
+  background-image: url('../../images/backgrounds/deer.jpeg');
 }
 .panel2 {
-  background-image: url("https://source.unsplash.com/rFKUFzjPYiQ/1500x1500");
+  background-image: url("../../images/backgrounds/kitty.JPG");
 }
 .panel3 {
-  background-image: url("https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=1500&h=1500&fit=crop&s=967e8a713a4e395260793fc8c802901d");
+  background-image: url("../../images/backgrounds/movie.jpeg");
 }
 .panel4 {
-  background-image: url("https://source.unsplash.com/ITjiVXcwVng/1500x1500");
+  background-image: url("../../images/backgrounds/snake.JPG");
 }
 .panel5 {
-  background-image: url("https://source.unsplash.com/ITjiVXcwVng/1500x1500");
+  background-image: url("../../images/backgrounds/soccer.jpg");
 }
 
 /* Flex Children */
@@ -63,7 +63,7 @@
 .panel p {
   text-transform: uppercase;
   font-family: "Amatic SC", cursive;
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.85);
   font-size: 2em;
   color: white;
 }
@@ -74,5 +74,5 @@
 
 .panel.open {
   font-size: 20px;
-  flex: 5;
+  flex: 2;
 }
