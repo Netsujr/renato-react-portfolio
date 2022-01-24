@@ -1,18 +1,6 @@
 import React, { useEffect } from 'react';
 import './Home.css';
-import Fade from 'react-reveal/Fade';
 import styled from 'styled-components';
-import renato from '../../images/renatobg.png';
-import JavascriptIcon from "../../images/Icons/javascript-plain.svg";
-import ReactIcon from "../../images/Icons/react-original.svg";
-import FirebaseIcon from "../../images/Icons/firebase-plain-wordmark.svg";
-import HTMLIcon from "../../images/Icons/html5-original.svg";
-import CSSIcon from "../../images/Icons/css3-original.svg";
-import ReduxIcon from "../../images/Icons/redux-original.svg";
-import HerokuIcon from "../../images/Icons/heroku-original-wordmark.svg";
-import RubyIcon from "../../images/Icons/ruby-original-wordmark.svg";
-import RailsIcon from "../../images/Icons/rails-plain-wordmark.svg";
-import NodeIcon from "../../images/Icons/nodejs-original.svg";
 import GithubIcon from "../../images/Icons/github-original.svg";
 import LinkedinIcon from "../../images/Icons/linkedin-original.svg";
 import spiderman from '../../images/spiderman.png';
@@ -113,43 +101,3 @@ const ContactIcons = styled.div`
     }
   }
   `;
-
-const Icons = styled.img`
-  /* border: 2px solid pink; */
-  height: 25px;
-  margin: 5px;
-  @media (max-width : 768px) {
-    height: 20px;
-  }
-  `;
-
-
-
-// ----------------------------------------------------------------------------------------------------------------
-
-{/* <Fade center>
-    <IconsContainer>
-    <Tada spy={this.state.counter}>
-    <Icons src={JavascriptIcon} onClick={this.handleClick} />
-    <Icons src={ReactIcon} />
-    <Icons src={FirebaseIcon} />
-    <Icons src={HTMLIcon} />
-    <Icons src={CSSIcon} />
-    <Icons src={NodeIcon} />
-    <Icons src={RubyIcon} />
-    <Icons src={RailsIcon} />
-    <Icons src={ReduxIcon} />
-    <Icons src={HerokuIcon} />
-    </Tada>
-    </IconsContainer>
-    </Fade>
-
-    <InfoContainer>
-    <Fade left>
-    <ImgContainer>
-    <img src={renato} alt="" />
-    </ImgContainer>
-    </Fade>
-    </InfoContainer>
-
-  */}
