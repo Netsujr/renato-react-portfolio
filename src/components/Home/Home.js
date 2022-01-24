@@ -101,7 +101,7 @@ const ContactIcons = styled.div`
   justify-content: center;
 
   img {
-    height: 60px;
+    height: 50px;
     /* border-radius: 5px; */
     padding: 2px;
     margin: 0 40px;
@@ -109,7 +109,7 @@ const ContactIcons = styled.div`
     border-radius: 50%;
 
     &:hover {
-      height: 65px;
+      height: 55px;
     }
   }
   `;
