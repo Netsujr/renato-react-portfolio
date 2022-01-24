@@ -93,7 +93,7 @@ function App() {
 
           <Route exact path="/aboutme" element={
             <AboutMe
-              title="Landing page"
+              title=""
               leftBtnText={<a href={Resume} alt="Download Resume" onClick={activateFinished} download>Download Resume</a>} />}
           />
         </Routes>
