@@ -93,7 +93,7 @@ const Card = styled.div`
   margin: 15px auto;
   background: #000;
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 
   .content {
     align-items: center;
@@ -160,7 +160,7 @@ const Card = styled.div`
   }
 
   &:nth-child(n) .face.face2 {
-    background-image: linear-gradient(40deg, #fffc00 0%, #dbfe81 45%, #e1ffca 100%);
+    background-image: linear-gradient(25deg, #fda4a4 0%,#fbff50 100%);
     border-radius: 10px;
   }
   `;
