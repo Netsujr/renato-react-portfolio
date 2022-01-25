@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import GithubIcon from "../images/Icons/github-original.svg";
+import website from "../images/Icons/website.png";
 import "./CSS/js30.css"
 
 function Js30() {
@@ -11,6 +13,14 @@ function Js30() {
           <div class="content">
             <h2 class="card1">Drum Kit</h2>
             <p class="card1"> Hit each Ket for a different sound!</p>
+            <ContactIcons>
+              <a id='icons' href="https://github.com/Netsujr/JS1-DrumKit" target="_blank" rel="noreferrer">
+                <img src={GithubIcon} alt="Github" />
+              </a>
+              <a id='icons' href="https://netsujr.github.io/JS1-DrumKit/" target="_blank" rel="noreferrer">
+                <img src={website} alt="website" />
+              </a>
+            </ContactIcons>
           </div>
         </div>
         <div class="face face2">
@@ -85,6 +95,10 @@ const Card = styled.div`
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 
+  .content {
+    align-items: center;
+
+  }
   .face {
     position: absolute;
     bottom: 0;
@@ -148,5 +162,24 @@ const Card = styled.div`
   &:nth-child(n) .face.face2 {
     background-image: linear-gradient(40deg, #fffc00 0%, #dbfe81 45%, #e1ffca 100%);
     border-radius: 10px;
+  }
+  `;
+
+const ContactIcons = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: 40px auto;
+
+  img {
+    height: 30px;
+    /* border-radius: 5px; */
+    padding: 2px;
+    margin: 0 10px;
+    background: white;
+    border-radius: 50%;
+
+    &:hover {
+      height: 32px;
+    }
   }
   `;
