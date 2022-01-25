@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react';
-import './Home.css';
+import '../CSS/Home.css';
 import styled from 'styled-components';
 import GithubIcon from "../../images/Icons/github-original.svg";
 import LinkedinIcon from "../../images/Icons/linkedin-original.svg";
-import spiderman from '../../images/spiderman.png';
 
 function Home() {
   useEffect(() => {
