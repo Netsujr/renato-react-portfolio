@@ -30,8 +30,16 @@ function Js30() {
       <Card>
         <div class="face face1">
           <div class="content">
-            <h2 class="card2">card2</h2>
-            <p class="card2">card2 is an interpreted, high-level and general-purpose programming language.</p>
+            <h2 class="card2">Clock</h2>
+            <p class="card2">Real-time clock made with javascript. Probably needs further styling</p>
+            <ContactIcons>
+              <a id='icons' href="https://github.com/Netsujr/JS2-Clock" target="_blank" rel="noreferrer">
+                <img src={GithubIcon} alt="Github" />
+              </a>
+              <a id='icons' href="https://netsujr.github.io/JS2-Clock/" target="_blank" rel="noreferrer">
+                <img src={website} alt="website" />
+              </a>
+            </ContactIcons>
           </div>
         </div>
         <div class="face face2">
