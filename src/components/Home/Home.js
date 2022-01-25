@@ -27,37 +27,37 @@ function Home() {
     <Container>
       <Panels>
         <div className="panel panel1">
-          <p>Love:☀️😸 </p>
+          <p></p>
           <p>About Me</p>
-          <a href="/aboutme"><p>Learn More</p></a>
+          <p><a href="/aboutme">Learn More</a></p>
         </div>
         <div className="panel panel2">
-          <p>Hate:❄️🦟 </p>
+          <p></p>
           <p>Projects</p>
-          <a href="/projects"><p>Check it Out</p></a>
+          <p><a href="/projects">Check it Out</a></p>
         </div>
         <div className="panel panel3">
           <p id='main'>Front-End Developer</p>
-          <p>Renato Delboni</p>
+          <p id='name' >Renato Delboni</p>
           <ContactIcons>
-            <a href="https://github.com/netsujr" target="_blank" rel="noreferrer">
+            <a id='icons' href="https://github.com/netsujr" target="_blank" rel="noreferrer">
               <img src={GithubIcon} alt="Github" />
             </a>
-            <a href="https://www.linkedin.com/in/delbonirenato/" target="_blank" rel="noreferrer">
+            <a id='icons' href="https://www.linkedin.com/in/delbonirenato/" target="_blank" rel="noreferrer">
               <img src={LinkedinIcon} alt="Linkedin" />
             </a>
           </ContactIcons>
         </div>
         <div className="panel panel4">
-          <p>SuperHero:<img id="spiderman" src={spiderman} alt="spiderman" /></p>
+          <p></p>
           <p>Mini-Projects</p>
-          <a href="/mini-projects"><p>Check it Out</p></a>
+          <p><a href="/mini-projects">Check it Out</a></p>
         </div>
         <div className="panel panel5">
-          <p>Hobby:🎥🧳⚽ </p>
+          <p></p>
           <p className="d-flex">Javascript30</p>
-          <a href="/javascript30"><p>Check it Out</p></a>
-        </div>
+          <p><a href="/javascript30">Check it Out</a></p>
+          </div>
       </Panels>
     </Container >
   );
@@ -78,12 +78,11 @@ const Panels = styled.div`
   overflow: hidden;
   display: flex;
 
-  #spiderman {
-    height: 50px;
-    width: 60px;
+  #main {
+    font-size: 24px;
   }
 
-  #main {
+  #name {
     font-size: 24px;
   }
   `;
