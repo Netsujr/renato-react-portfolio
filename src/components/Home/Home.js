@@ -27,12 +27,12 @@ function Home() {
     <Container>
       <Panels>
         <div className="panel panel1">
-          <p>Love:☀️😸 </p>
+          <p></p>
           <p>About Me</p>
           <a href="/aboutme"><p>Learn More</p></a>
         </div>
         <div className="panel panel2">
-          <p>Hate:❄️🦟 </p>
+          <p></p>
           <p>Projects</p>
           <a href="/projects"><p>Check it Out</p></a>
         </div>
@@ -49,12 +49,12 @@ function Home() {
           </ContactIcons>
         </div>
         <div className="panel panel4">
-          <p>SuperHero:<img id="spiderman" src={spiderman} alt="spiderman" /></p>
+          <p></p>
           <p>Mini-Projects</p>
           <a href="/mini-projects"><p>Check it Out</p></a>
         </div>
         <div className="panel panel5">
-          <p>Hobby:🎥🧳⚽ </p>
+          <p></p>
           <p className="d-flex">Javascript30</p>
           <a href="/javascript30"><p>Check it Out</p></a>
         </div>
