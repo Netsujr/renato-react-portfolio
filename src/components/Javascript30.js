@@ -9,9 +9,8 @@ function Js30() {
       <Card>
         <div class="face face1">
           <div class="content">
-            <span class="stars"></span>
-            <h2 class="java">Java</h2>
-            <p class="java">Java is a class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.</p>
+            <h2 class="card1">Drum Kit</h2>
+            <p class="card1"> Hit each Ket for a different sound!</p>
           </div>
         </div>
         <div class="face face2">
@@ -21,9 +20,8 @@ function Js30() {
       <Card>
         <div class="face face1">
           <div class="content">
-            <span class="stars"></span>
-            <h2 class="python">Python</h2>
-            <p class="python">Python is an interpreted, high-level and general-purpose programming language.</p>
+            <h2 class="card2">card2</h2>
+            <p class="card2">card2 is an interpreted, high-level and general-purpose programming language.</p>
           </div>
         </div>
         <div class="face face2">
@@ -33,9 +31,8 @@ function Js30() {
       <Card>
         <div class="face face1">
           <div class="content">
-            <span class="stars"></span>
-            <h2 class="cSharp">C#</h2>
-            <p class="cSharp">C# is a general-purpose, multi-paradigm programming language encompassing static typing, strong typing, lexically scoped and component-oriented programming disciplines.</p>
+            <h2 class="card3">C#</h2>
+            <p class="card3">C# is a general-purpose, multi-paradigm programming language encompassing static typing, strong typing, lexically scoped and component-oriented programming disciplines.</p>
           </div>
         </div>
         <div class="face face2">
@@ -45,9 +42,8 @@ function Js30() {
       <Card>
         <div class="face face1">
           <div class="content">
-            <span class="stars"></span>
-            <h2 class="cSharp">C#</h2>
-            <p class="cSharp">C# is a general-purpose, multi-paradigm programming language encompassing static typing, strong typing, lexically scoped and component-oriented programming disciplines.</p>
+            <h2 class="card3">C#</h2>
+            <p class="card3">C# is a general-purpose, multi-paradigm programming language encompassing static typing, strong typing, lexically scoped and component-oriented programming disciplines.</p>
           </div>
         </div>
         <div class="face face2">
@@ -57,9 +53,8 @@ function Js30() {
       <Card>
         <div class="face face1">
           <div class="content">
-            <span class="stars"></span>
-            <h2 class="cSharp">C#</h2>
-            <p class="cSharp">C# is a general-purpose, multi-paradigm programming language encompassing static typing, strong typing, lexically scoped and component-oriented programming disciplines.</p>
+            <h2 class="card3">C#</h2>
+            <p class="card3">C# is a general-purpose, multi-paradigm programming language encompassing static typing, strong typing, lexically scoped and component-oriented programming disciplines.</p>
           </div>
         </div>
         <div class="face face2">
@@ -77,8 +72,8 @@ const CardContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 5px;
-  margin-top: 70px;
-  padding: 20px 0;
+  margin: 30px auto;
+  padding: 40px 0;
   `;
 
 const Card = styled.div`
@@ -98,7 +93,6 @@ const Card = styled.div`
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
   }
 
   .face1 {
@@ -111,19 +105,19 @@ const Card = styled.div`
     }
   }
 
-  .java {
+  .card1 {
     background-color: #fffc00;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
-  .python {
+  .card2 {
     background-color: #00fffc;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
-  .cSharp {
+  .card3 {
     background-color: #fc00ff;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -153,6 +147,6 @@ const Card = styled.div`
 
   &:nth-child(n) .face.face2 {
     background-image: linear-gradient(40deg, #fffc00 0%, #dbfe81 45%, #e1ffca 100%);
-    border-radius: 15px;
+    border-radius: 10px;
   }
   `;
