@@ -15,7 +15,7 @@ function Js30() {
           </div>
         </div>
         <div class="face face2">
-          <h2>01</h2>
+          <h2>JS1</h2>
         </div>
       </Card>
       <Card>
@@ -27,7 +27,7 @@ function Js30() {
           </div>
         </div>
         <div class="face face2">
-          <h2>02</h2>
+          <h2>JS2</h2>
         </div>
       </Card>
       <Card>
@@ -39,7 +39,31 @@ function Js30() {
           </div>
         </div>
         <div class="face face2">
-          <h2>03</h2>
+          <h2>JS3</h2>
+        </div>
+      </Card>
+      <Card>
+        <div class="face face1">
+          <div class="content">
+            <span class="stars"></span>
+            <h2 class="cSharp">C#</h2>
+            <p class="cSharp">C# is a general-purpose, multi-paradigm programming language encompassing static typing, strong typing, lexically scoped and component-oriented programming disciplines.</p>
+          </div>
+        </div>
+        <div class="face face2">
+          <h2>JS3</h2>
+        </div>
+      </Card>
+      <Card>
+        <div class="face face1">
+          <div class="content">
+            <span class="stars"></span>
+            <h2 class="cSharp">C#</h2>
+            <p class="cSharp">C# is a general-purpose, multi-paradigm programming language encompassing static typing, strong typing, lexically scoped and component-oriented programming disciplines.</p>
+          </div>
+        </div>
+        <div class="face face2">
+          <h2>JS3</h2>
         </div>
       </Card>
     </CardContainer>
@@ -51,20 +75,20 @@ export default Js30;
 const CardContainer = styled.div`
   max-width: 100vw;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 35px;
-  margin: 0 auto;
-  padding: 40px 0;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 5px;
+  margin-top: 70px;
+  padding: 20px 0;
   `;
 
 const Card = styled.div`
   position: relative;
-  width: 300px;
-  height: 400px;
-  margin: 0 auto;
+  width: 200px;
+  height: 250px;
+  margin: 15px auto;
   background: #000;
   border-radius: 15px;
-  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 
   .face {
     position: absolute;
@@ -111,8 +135,8 @@ const Card = styled.div`
     h2 {
       margin: 0;
       padding: 0;
-      font-size: 10em;
-      color: #fff;
+      font-size: 100px;
+      color: black;
       transition: 0.5s;
       text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
       z-index: 10;
@@ -128,12 +152,7 @@ const Card = styled.div`
   }
 
   &:nth-child(n) .face.face2 {
-    background-image: linear-gradient(
-      40deg,
-      #fffc00 0%,
-      #fc00ff 45%,
-      #00fffc 100%
-      );
-      border-radius: 15px;
-    }
-    `;
+    background-image: linear-gradient(40deg, #fffc00 0%, #dbfe81 45%, #e1ffca 100%);
+    border-radius: 15px;
+  }
+  `;
