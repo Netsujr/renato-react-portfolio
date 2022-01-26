@@ -7,172 +7,175 @@ import "./CSS/js30.css"
 function Js30() {
 
   return (
+    <><ItemText>
+      <h1>These are some challenges from JavaScript 30 Course</h1>
+    </ItemText>
     <CardContainer>
-      <Card>
-        <div class="face face1">
-          <div class="content">
-            <h2 class="card1">Drum Kit</h2>
-            <p class="card1"> Hit each Ket for a different sound!</p>
-            <ContactIcons>
-              <a id='icons' href="https://github.com/Netsujr/JS1-DrumKit" target="_blank" rel="noreferrer">
-                <img src={GithubIcon} alt="Github" />
-              </a>
-              <a id='icons' href="https://netsujr.github.io/JS1-DrumKit/" target="_blank" rel="noreferrer">
-                <img src={website} alt="website" />
-              </a>
-            </ContactIcons>
+        <Card>
+          <div class="face face1">
+            <div class="content">
+              <h2 class="card1">Drum Kit</h2>
+              <p class="card1"> Hit each Ket for a different sound!</p>
+              <ContactIcons>
+                <a id='icons' href="https://github.com/Netsujr/JS1-DrumKit" target="_blank" rel="noreferrer">
+                  <img src={GithubIcon} alt="Github" />
+                </a>
+                <a id='icons' href="https://netsujr.github.io/JS1-DrumKit/" target="_blank" rel="noreferrer">
+                  <img src={website} alt="website" />
+                </a>
+              </ContactIcons>
+            </div>
           </div>
-        </div>
-        <div class="face face2">
-          <h2>JS1</h2>
-        </div>
-      </Card>
-      <Card>
-        <div class="face face1">
-          <div class="content">
-            <h2 class="card2">Clock</h2>
-            <p class="card2">Real-time clock. Probably needs further styling</p>
-            <ContactIcons>
-              <a id='icons' href="https://github.com/Netsujr/JS2-Clock" target="_blank" rel="noreferrer">
-                <img src={GithubIcon} alt="Github" />
-              </a>
-              <a id='icons' href="https://netsujr.github.io/JS2-Clock/" target="_blank" rel="noreferrer">
-                <img src={website} alt="website" />
-              </a>
-            </ContactIcons>
+          <div class="face face2">
+            <h2>JS1</h2>
           </div>
-        </div>
-        <div class="face face2">
-          <h2>JS2</h2>
-        </div>
-      </Card>
-      <Card>
-        <div class="face face1">
-          <div class="content">
-            <h2 class="card3">CSS Variables</h2>
-            <p class="card3">Playing with variables within CSS</p>
-            <ContactIcons>
-              <a id='icons' href="https://github.com/Netsujr/JS3-CSS_Variables" target="_blank" rel="noreferrer">
-                <img src={GithubIcon} alt="Github" />
-              </a>
-              <a id='icons' href="https://netsujr.github.io/JS3-CSS_Variables/" target="_blank" rel="noreferrer">
-                <img src={website} alt="website" />
-              </a>
-            </ContactIcons>
+        </Card>
+        <Card>
+          <div class="face face1">
+            <div class="content">
+              <h2 class="card2">Clock</h2>
+              <p class="card2">Real-time clock. Probably needs further styling</p>
+              <ContactIcons>
+                <a id='icons' href="https://github.com/Netsujr/JS2-Clock" target="_blank" rel="noreferrer">
+                  <img src={GithubIcon} alt="Github" />
+                </a>
+                <a id='icons' href="https://netsujr.github.io/JS2-Clock/" target="_blank" rel="noreferrer">
+                  <img src={website} alt="website" />
+                </a>
+              </ContactIcons>
+            </div>
           </div>
-        </div>
-        <div class="face face2">
-          <h2>JS3</h2>
-        </div>
-      </Card>
-      <Card>
-        <div class="face face1">
-          <div class="content">
-            <h2 class="card5">Flex Panels</h2>
-            <p class="card5">Where panels from this portfolio got inspiration!</p>
-            <ContactIcons>
-              <a id='icons' href="https://github.com/Netsujr/JS5-Flex_Panel_Gallery" target="_blank" rel="noreferrer">
-                <img src={GithubIcon} alt="Github" />
-              </a>
-              <a id='icons' href="https://netsujr.github.io/JS5-Flex_Panel_Gallery/" target="_blank" rel="noreferrer">
-                <img src={website} alt="website" />
-              </a>
-            </ContactIcons>
+          <div class="face face2">
+            <h2>JS2</h2>
           </div>
-        </div>
-        <div class="face face2">
-          <h2>JS5</h2>
-        </div>
-      </Card>
-      <Card>
-        <div class="face face1">
-          <div class="content">
-            <h2 class="card6">Type Ahead</h2>
-            <p class="card6">Predictive text, hightlights and searches</p>
-            <ContactIcons>
-              <a id='icons' href="https://github.com/Netsujr/JS6-Type_Ahead" target="_blank" rel="noreferrer">
-                <img src={GithubIcon} alt="Github" />
-              </a>
-              <a id='icons' href="https://netsujr.github.io/JS6-Type_Ahead/" target="_blank" rel="noreferrer">
-                <img src={website} alt="website" />
-              </a>
-            </ContactIcons>
+        </Card>
+        <Card>
+          <div class="face face1">
+            <div class="content">
+              <h2 class="card3">CSS Variables</h2>
+              <p class="card3">Playing with variables within CSS</p>
+              <ContactIcons>
+                <a id='icons' href="https://github.com/Netsujr/JS3-CSS_Variables" target="_blank" rel="noreferrer">
+                  <img src={GithubIcon} alt="Github" />
+                </a>
+                <a id='icons' href="https://netsujr.github.io/JS3-CSS_Variables/" target="_blank" rel="noreferrer">
+                  <img src={website} alt="website" />
+                </a>
+              </ContactIcons>
+            </div>
           </div>
-        </div>
-        <div class="face face2">
-          <h2>JS6</h2>
-        </div>
-      </Card>
-      <Card>
-        <div class="face face1">
-          <div class="content">
-            <h2 class="card8">HTML Canvas</h2>
-            <p class="card8">Draw to your heart's content</p>
-            <ContactIcons>
-              <a id='icons' href="https://github.com/Netsujr/JS8-HTML_Canvas" target="_blank" rel="noreferrer">
-                <img src={GithubIcon} alt="Github" />
-              </a>
-              <a id='icons' href="https://netsujr.github.io/JS8-HTML_Canvas/" target="_blank" rel="noreferrer">
-                <img src={website} alt="website" />
-              </a>
-            </ContactIcons>
+          <div class="face face2">
+            <h2>JS3</h2>
           </div>
-        </div>
-        <div class="face face2">
-          <h2>JS8</h2>
-        </div>
-      </Card>
-      <Card>
-        <div class="face face1">
-          <div class="content">
-            <h2 class="card10">CheckBoxes</h2>
-            <p class="card10">Hold Shift to select boxes in between two boxes.</p>
-            <ContactIcons>
-              <a id='icons' href="https://github.com/Netsujr/JS10-Checkboxes" target="_blank" rel="noreferrer">
-                <img src={GithubIcon} alt="Github" />
-              </a>
-              <a id='icons' href="https://netsujr.github.io/JS10-Checkboxes/" target="_blank" rel="noreferrer">
-                <img src={website} alt="website" />
-              </a>
-            </ContactIcons>
+        </Card>
+        <Card>
+          <div class="face face1">
+            <div class="content">
+              <h2 class="card5">Flex Panels</h2>
+              <p class="card5">Where panels from this portfolio got inspiration!</p>
+              <ContactIcons>
+                <a id='icons' href="https://github.com/Netsujr/JS5-Flex_Panel_Gallery" target="_blank" rel="noreferrer">
+                  <img src={GithubIcon} alt="Github" />
+                </a>
+                <a id='icons' href="https://netsujr.github.io/JS5-Flex_Panel_Gallery/" target="_blank" rel="noreferrer">
+                  <img src={website} alt="website" />
+                </a>
+              </ContactIcons>
+            </div>
           </div>
-        </div>
-        <div class="face face2">
-          <h2>JS10</h2>
-        </div>
-      </Card>
-      <Card>
-        <div class="face face1">
-          <div class="content">
-            <h2 class="card11">Video Player</h2>
-            <p class="card11">Coding video controls, DOM manipulation</p>
-            <ContactIcons>
-              <a id='icons' href="https://github.com/Netsujr/JS11-Video_player" target="_blank" rel="noreferrer">
-                <img src={GithubIcon} alt="Github" />
-              </a>
-              <a id='icons' href="https://netsujr.github.io/JS11-Video_player/" target="_blank" rel="noreferrer">
-                <img src={website} alt="website" />
-              </a>
-            </ContactIcons>
+          <div class="face face2">
+            <h2>JS5</h2>
           </div>
-        </div>
-        <div class="face face2">
-          <h2>JS11</h2>
-        </div>
-      </Card>
-    </CardContainer>
+        </Card>
+        <Card>
+          <div class="face face1">
+            <div class="content">
+              <h2 class="card6">Type Ahead</h2>
+              <p class="card6">Predictive text, hightlights and searches</p>
+              <ContactIcons>
+                <a id='icons' href="https://github.com/Netsujr/JS6-Type_Ahead" target="_blank" rel="noreferrer">
+                  <img src={GithubIcon} alt="Github" />
+                </a>
+                <a id='icons' href="https://netsujr.github.io/JS6-Type_Ahead/" target="_blank" rel="noreferrer">
+                  <img src={website} alt="website" />
+                </a>
+              </ContactIcons>
+            </div>
+          </div>
+          <div class="face face2">
+            <h2>JS6</h2>
+          </div>
+        </Card>
+        <Card>
+          <div class="face face1">
+            <div class="content">
+              <h2 class="card8">HTML Canvas</h2>
+              <p class="card8">Draw to your heart's content</p>
+              <ContactIcons>
+                <a id='icons' href="https://github.com/Netsujr/JS8-HTML_Canvas" target="_blank" rel="noreferrer">
+                  <img src={GithubIcon} alt="Github" />
+                </a>
+                <a id='icons' href="https://netsujr.github.io/JS8-HTML_Canvas/" target="_blank" rel="noreferrer">
+                  <img src={website} alt="website" />
+                </a>
+              </ContactIcons>
+            </div>
+          </div>
+          <div class="face face2">
+            <h2>JS8</h2>
+          </div>
+        </Card>
+        <Card>
+          <div class="face face1">
+            <div class="content">
+              <h2 class="card10">CheckBoxes</h2>
+              <p class="card10">Hold Shift to select boxes in between two boxes.</p>
+              <ContactIcons>
+                <a id='icons' href="https://github.com/Netsujr/JS10-Checkboxes" target="_blank" rel="noreferrer">
+                  <img src={GithubIcon} alt="Github" />
+                </a>
+                <a id='icons' href="https://netsujr.github.io/JS10-Checkboxes/" target="_blank" rel="noreferrer">
+                  <img src={website} alt="website" />
+                </a>
+              </ContactIcons>
+            </div>
+          </div>
+          <div class="face face2">
+            <h2>JS10</h2>
+          </div>
+        </Card>
+        <Card>
+          <div class="face face1">
+            <div class="content">
+              <h2 class="card11">Video Player</h2>
+              <p class="card11">Coding video controls, DOM manipulation</p>
+              <ContactIcons>
+                <a id='icons' href="https://github.com/Netsujr/JS11-Video_player" target="_blank" rel="noreferrer">
+                  <img src={GithubIcon} alt="Github" />
+                </a>
+                <a id='icons' href="https://netsujr.github.io/JS11-Video_player/" target="_blank" rel="noreferrer">
+                  <img src={website} alt="website" />
+                </a>
+              </ContactIcons>
+            </div>
+          </div>
+          <div class="face face2">
+            <h2>JS11</h2>
+          </div>
+        </Card>
+      </CardContainer></>
   );
 }
 
 export default Js30;
 
 const CardContainer = styled.div`
-  max-width: 100vw;
+  max-width: 90vw;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 5px;
-  margin: 30px auto;
-  padding: 40px 0;
+  grid-gap: 1px;
+  margin: 0 auto;
+  padding: 30px 0;
   `;
 
 const Card = styled.div`
@@ -309,3 +312,22 @@ const ContactIcons = styled.div`
     }
   }
   `;
+
+const ItemText = styled.div`
+/* border: 2px solid orange; */
+width: 100vw;
+padding-top: 15vh;
+justify-content: center;
+text-align: center;
+color: black;
+display: flex;
+
+h1{
+  margin-top: -7px;
+  margin-right: 2px;
+  @media (max-width : 768px) {
+    font-size: 24px;
+    margin-top: -4px;
+  }
+}
+`
