@@ -328,7 +328,7 @@ const ContactIcons = styled.div`
 const ItemText = styled.div`
 /* border: 2px solid orange; */
 width: 45vw;
-padding-top: 15vh;
+padding-top: 12vh;
 justify-content: center;
 text-align: center;
 color: black;
