@@ -31,7 +31,7 @@ function Js30() {
         <div class="face face1">
           <div class="content">
             <h2 class="card2">Clock</h2>
-            <p class="card2">Real-time clock made with javascript. Probably needs further styling</p>
+            <p class="card2">Real-time clock. Probably needs further styling</p>
             <ContactIcons>
               <a id='icons' href="https://github.com/Netsujr/JS2-Clock" target="_blank" rel="noreferrer">
                 <img src={GithubIcon} alt="Github" />
@@ -49,8 +49,16 @@ function Js30() {
       <Card>
         <div class="face face1">
           <div class="content">
-            <h2 class="card3">C#</h2>
-            <p class="card3">C# is a general-purpose, multi-paradigm programming language encompassing static typing, strong typing, lexically scoped and component-oriented programming disciplines.</p>
+            <h2 class="card3">CSS Variables</h2>
+            <p class="card3">Playing with variables within CSS</p>
+            <ContactIcons>
+              <a id='icons' href="https://github.com/Netsujr/JS3-CSS_Variables" target="_blank" rel="noreferrer">
+                <img src={GithubIcon} alt="Github" />
+              </a>
+              <a id='icons' href="https://netsujr.github.io/JS3-CSS_Variables/" target="_blank" rel="noreferrer">
+                <img src={website} alt="website" />
+              </a>
+            </ContactIcons>
           </div>
         </div>
         <div class="face face2">
@@ -60,23 +68,77 @@ function Js30() {
       <Card>
         <div class="face face1">
           <div class="content">
-            <h2 class="card3">C#</h2>
-            <p class="card3">C# is a general-purpose, multi-paradigm programming language encompassing static typing, strong typing, lexically scoped and component-oriented programming disciplines.</p>
+            <h2 class="card4">Flex Panels</h2>
+            <p class="card4">Where panels from this portfolio got inspiration!</p>
+            <ContactIcons>
+              <a id='icons' href="https://github.com/Netsujr/JS5-Flex_Panel_Gallery" target="_blank" rel="noreferrer">
+                <img src={GithubIcon} alt="Github" />
+              </a>
+              <a id='icons' href="https://netsujr.github.io/JS5-Flex_Panel_Gallery/" target="_blank" rel="noreferrer">
+                <img src={website} alt="website" />
+              </a>
+            </ContactIcons>
           </div>
         </div>
         <div class="face face2">
-          <h2>JS3</h2>
+          <h2>JS5</h2>
         </div>
       </Card>
       <Card>
         <div class="face face1">
           <div class="content">
-            <h2 class="card3">C#</h2>
-            <p class="card3">C# is a general-purpose, multi-paradigm programming language encompassing static typing, strong typing, lexically scoped and component-oriented programming disciplines.</p>
+            <h2 class="card5">Type Ahead</h2>
+            <p class="card5">Predictive text, hightlights and searches</p>
+            <ContactIcons>
+              <a id='icons' href="https://github.com/Netsujr/JS6-Type_Ahead" target="_blank" rel="noreferrer">
+                <img src={GithubIcon} alt="Github" />
+              </a>
+              <a id='icons' href="https://netsujr.github.io/JS6-Type_Ahead/" target="_blank" rel="noreferrer">
+                <img src={website} alt="website" />
+              </a>
+            </ContactIcons>
           </div>
         </div>
         <div class="face face2">
-          <h2>JS3</h2>
+          <h2>JS6</h2>
+        </div>
+      </Card>
+      <Card>
+        <div class="face face1">
+          <div class="content">
+            <h2 class="card5">HTML Canvas</h2>
+            <p class="card5">Draw to your heart's content</p>
+            <ContactIcons>
+              <a id='icons' href="https://github.com/Netsujr/JS8-HTML_Canvas" target="_blank" rel="noreferrer">
+                <img src={GithubIcon} alt="Github" />
+              </a>
+              <a id='icons' href="https://netsujr.github.io/JS8-HTML_Canvas/" target="_blank" rel="noreferrer">
+                <img src={website} alt="website" />
+              </a>
+            </ContactIcons>
+          </div>
+        </div>
+        <div class="face face2">
+          <h2>JS8</h2>
+        </div>
+      </Card>
+      <Card>
+        <div class="face face1">
+          <div class="content">
+            <h2 class="card5">CheckBoxes</h2>
+            <p class="card5">Hold Shift to select boxes in between two boxes.</p>
+            <ContactIcons>
+              <a id='icons' href="https://github.com/Netsujr/JS10-Checkboxes" target="_blank" rel="noreferrer">
+                <img src={GithubIcon} alt="Github" />
+              </a>
+              <a id='icons' href="https://netsujr.github.io/JS10-Checkboxes/" target="_blank" rel="noreferrer">
+                <img src={website} alt="website" />
+              </a>
+            </ContactIcons>
+          </div>
+        </div>
+        <div class="face face2">
+          <h2>JS10</h2>
         </div>
       </Card>
     </CardContainer>
@@ -107,6 +169,7 @@ const Card = styled.div`
     align-items: center;
 
   }
+
   .face {
     position: absolute;
     bottom: 0;
@@ -140,6 +203,18 @@ const Card = styled.div`
   }
 
   .card3 {
+    background-color: #fc00ff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .card4 {
+    background-color: #fc00ff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .card5 {
     background-color: #fc00ff;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
