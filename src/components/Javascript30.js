@@ -2,12 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 import GithubIcon from "../images/Icons/github-original.svg";
 import website from "../images/Icons/website.png";
-import "./CSS/js30.css"
+// import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
 function Js30() {
 
   return (
-    <><ItemText>
+    <><CardBody>
+    <ItemText>
       <h1>These are some challenges from JavaScript 30 Course</h1>
     </ItemText>
     <CardContainer>
@@ -163,11 +164,21 @@ function Js30() {
             <h2>JS11</h2>
           </div>
         </Card>
-      </CardContainer></>
+      </CardContainer>
+    </CardBody></>
   );
 }
 
 export default Js30;
+
+const CardBody = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Righteous", cursive !important;
+  min-height: 100vh;
+`;
 
 const CardContainer = styled.div`
   max-width: 90vw;
