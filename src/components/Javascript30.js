@@ -68,8 +68,8 @@ function Js30() {
       <Card>
         <div class="face face1">
           <div class="content">
-            <h2 class="card4">Flex Panels</h2>
-            <p class="card4">Where panels from this portfolio got inspiration!</p>
+            <h2 class="card5">Flex Panels</h2>
+            <p class="card5">Where panels from this portfolio got inspiration!</p>
             <ContactIcons>
               <a id='icons' href="https://github.com/Netsujr/JS5-Flex_Panel_Gallery" target="_blank" rel="noreferrer">
                 <img src={GithubIcon} alt="Github" />
@@ -87,8 +87,8 @@ function Js30() {
       <Card>
         <div class="face face1">
           <div class="content">
-            <h2 class="card5">Type Ahead</h2>
-            <p class="card5">Predictive text, hightlights and searches</p>
+            <h2 class="card6">Type Ahead</h2>
+            <p class="card6">Predictive text, hightlights and searches</p>
             <ContactIcons>
               <a id='icons' href="https://github.com/Netsujr/JS6-Type_Ahead" target="_blank" rel="noreferrer">
                 <img src={GithubIcon} alt="Github" />
@@ -106,8 +106,8 @@ function Js30() {
       <Card>
         <div class="face face1">
           <div class="content">
-            <h2 class="card5">HTML Canvas</h2>
-            <p class="card5">Draw to your heart's content</p>
+            <h2 class="card8">HTML Canvas</h2>
+            <p class="card8">Draw to your heart's content</p>
             <ContactIcons>
               <a id='icons' href="https://github.com/Netsujr/JS8-HTML_Canvas" target="_blank" rel="noreferrer">
                 <img src={GithubIcon} alt="Github" />
@@ -125,8 +125,8 @@ function Js30() {
       <Card>
         <div class="face face1">
           <div class="content">
-            <h2 class="card5">CheckBoxes</h2>
-            <p class="card5">Hold Shift to select boxes in between two boxes.</p>
+            <h2 class="card10">CheckBoxes</h2>
+            <p class="card10">Hold Shift to select boxes in between two boxes.</p>
             <ContactIcons>
               <a id='icons' href="https://github.com/Netsujr/JS10-Checkboxes" target="_blank" rel="noreferrer">
                 <img src={GithubIcon} alt="Github" />
@@ -139,6 +139,25 @@ function Js30() {
         </div>
         <div class="face face2">
           <h2>JS10</h2>
+        </div>
+      </Card>
+      <Card>
+        <div class="face face1">
+          <div class="content">
+            <h2 class="card11">Video Player</h2>
+            <p class="card11">Coding video controls, DOM manipulation</p>
+            <ContactIcons>
+              <a id='icons' href="https://github.com/Netsujr/JS11-Video_player" target="_blank" rel="noreferrer">
+                <img src={GithubIcon} alt="Github" />
+              </a>
+              <a id='icons' href="https://netsujr.github.io/JS11-Video_player/" target="_blank" rel="noreferrer">
+                <img src={website} alt="website" />
+              </a>
+            </ContactIcons>
+          </div>
+        </div>
+        <div class="face face2">
+          <h2>JS11</h2>
         </div>
       </Card>
     </CardContainer>
@@ -209,13 +228,37 @@ const Card = styled.div`
   }
 
   .card4 {
-    background-color: #fc00ff;
+    background-color: #6B4D57;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   .card5 {
-    background-color: #fc00ff;
+    background-color: #95BF8F;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .card6 {
+    background-color: #FE5D26;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .card8 {
+    background-color: #99C24D;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .card10 {
+    background-color: #DAB6C4;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .card11 {
+    background-color: #CCC9DC;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
