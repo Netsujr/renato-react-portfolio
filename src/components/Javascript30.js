@@ -9,7 +9,8 @@ function Js30() {
   return (
     <><CardBody>
     <ItemText>
-      <h1>These are some challenges from JavaScript 30 Course</h1>
+      <h1>JavaScript 30</h1>
+      <p>Challenges from JS30 course (some challenges are done using only the console, so those haven't been uploaded, but you can still check them out in my repositories.)</p>
     </ItemText>
     <CardContainer>
         <Card>
@@ -326,12 +327,13 @@ const ContactIcons = styled.div`
 
 const ItemText = styled.div`
 /* border: 2px solid orange; */
-width: 100vw;
+width: 45vw;
 padding-top: 15vh;
 justify-content: center;
 text-align: center;
 color: black;
 display: flex;
+flex-direction: column;
 
 h1{
   margin-top: -7px;
