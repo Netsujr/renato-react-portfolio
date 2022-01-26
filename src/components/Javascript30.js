@@ -17,7 +17,7 @@ function Js30() {
           <div class="face face1">
             <div class="content">
               <h2 class="card1">Drum Kit</h2>
-              <p class="card1"> Hit each Ket for a different sound!</p>
+              <p class="card1"> Hit each key for a different sound!</p>
               <ContactIcons>
                 <a id='icons' href="https://github.com/Netsujr/JS1-DrumKit" target="_blank" rel="noreferrer">
                   <img src={GithubIcon} alt="Github" />
@@ -93,7 +93,7 @@ function Js30() {
           <div class="face face1">
             <div class="content">
               <h2 class="card6">Type Ahead</h2>
-              <p class="card6">Predictive text, hightlights and searches</p>
+              <p class="card6">Predictive text, highlights and searches in real-time.</p>
               <ContactIcons>
                 <a id='icons' href="https://github.com/Netsujr/JS6-Type_Ahead" target="_blank" rel="noreferrer">
                   <img src={GithubIcon} alt="Github" />
@@ -131,7 +131,7 @@ function Js30() {
           <div class="face face1">
             <div class="content">
               <h2 class="card10">CheckBoxes</h2>
-              <p class="card10">Hold Shift to select boxes in between two boxes.</p>
+              <p class="card10">Hold shift to check boxes in between two boxes.</p>
               <ContactIcons>
                 <a id='icons' href="https://github.com/Netsujr/JS10-Checkboxes" target="_blank" rel="noreferrer">
                   <img src={GithubIcon} alt="Github" />
