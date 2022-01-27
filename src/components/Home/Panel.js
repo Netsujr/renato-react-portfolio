@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 import React from 'react';
 
-const Panel = ({ title, link, word, backgroundImage, panelNum }) => {
+const Panel = ({ title, link, word, backgroundImage, extraWord }) => {
   return (
-    <PanelContainer>
-      <PanelBody backgroundImage={backgroundImage}>
-      <p></p>
-      <p>{title}</p>
-      <p><a href={link}>{word}</a></p>
+    <PanelContainer backgroundImage={backgroundImage}>
+      <PanelBody>
+        <p>{extraWord}</p>
+        <p>{title}</p>
+        <p><a href={link}>{word}</a></p>
       </PanelBody>
     </PanelContainer>
   );
@@ -17,44 +17,37 @@ export default Panel;
 
 const PanelContainer = styled.div`
   background: #f0d5ff;
+  background-image: url(${props => props.backgroundImage});
   box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
   color: white;
   text-align: center;
   align-items: center;
   transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
   flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
-
-`
-
-const PanelBody = styled.div`
-  background-image: url(${props => props.backgroundImage});
   font-size: 12px;
   background-size: cover;
   background-position: center;
   flex: 1;
+  display: flex;
   align-items: center;
   justify-content: center;
-  display: flex;
   flex-direction: column;
   cursor: pointer;
 
+  `
+
+const PanelBody = styled.div`
+  border: 2px solid blue;
+
   * {
-    margin: 0;
-    width: 100%;
-    transition: transform 0.5s;
-    flex: 1 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-/* &#name{
-  transform: translateY(-12%);
+  margin: 0;
+  max-width: 100%;
+  transition: transform 0.5s;
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-&#main{
-  transform: translateY(-100%);
-} */
 
 p {
   text-transform: uppercase;
@@ -72,30 +65,4 @@ p a {
   color: white;
   font-family: monospace;
 }
-
-p:nth-child(2) {
-  font-size: 22px;
-}
-
-.open {
-  font-size: 20px;
-  flex: 1.5;
-}
-
-.open-active #main{
-  transform: translateY(105%);
-}
-
-:last-child {
-  transform: translateY(100%);
-}
-
-.open-active :last-child {
-  transform: translateY(-50%);
-}
-
-.open-active #icons {
-  transform: translateY(50%);
-}
-
 `

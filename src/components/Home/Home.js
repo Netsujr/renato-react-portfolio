@@ -41,18 +41,20 @@ function Home() {
           word={'Check it Out'}
         />
 
-        <div className="panel panel3">
-          <p id='main'>Front-End Developer</p>
-          <p id='name' >Renato Delboni</p>
-          <ContactIcons>
+        <Panel
+          backgroundImage={require('../../images/backgrounds/code.png')}
+          title={'Renato Delboni'}
+          extraWord={'Front-End Developer'}
+          word={<ContactIcons>
             <a id='icons' href="https://github.com/netsujr" target="_blank" rel="noreferrer">
               <img src={GithubIcon} alt="Github" />
             </a>
             <a id='icons' href="https://www.linkedin.com/in/delbonirenato/" target="_blank" rel="noreferrer">
               <img src={LinkedinIcon} alt="Linkedin" />
             </a>
-          </ContactIcons>
-        </div>
+          </ContactIcons>}
+        />
+
         <Panel
           backgroundImage={require('../../images/backgrounds/snake.JPG')}
           title={'Mini-Projects'}
@@ -75,23 +77,42 @@ export default Home;
 const Container = styled.div`
   max-width: 100vw;
   height: 100%;
-  /* border: 2px solid orange; */
-  object-fit: contain;
-
+  border: 2px solid orange;
   `;
 
 const Panels = styled.div`
+  border: 2px solid red;
   min-height: 100vh;
   max-width: 100vw;
   overflow: hidden;
   display: flex;
 
-  #main {
-    font-size: 24px;
+  .open-active #main{
+    transform: translateY(105%);
   }
 
-  #name {
-    font-size: 24px;
+  p:last-child {
+    transform: translateY(100%);
+    border: 2px solid red;
+  }
+
+
+  p:nth-child(2) {
+    font-size: 22px;
+    border: 2px solid red;
+  }
+
+  .open-active p:nth-child(2) {
+    transform: translateY(-50%);
+  }
+
+  .open-active #icons {
+    transform: translateY(50%);
+  }
+
+  .open {
+    font-size: 20px;
+    flex: 1.5;
   }
   `;
 
@@ -101,9 +122,7 @@ const ContactIcons = styled.div`
 
   img {
     height: 53px;
-    /* border-radius: 5px; */
-    padding: 2px;
-    margin: 0 40px;
+    border: 2px solid red;
     background: white;
     border-radius: 50%;
 
