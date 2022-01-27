@@ -1,9 +1,17 @@
 import styled from 'styled-components';
-import React from 'react';
+import React, { useState } from 'react';
 
 const Panel = ({ title, link, word, backgroundImage, extraWord }) => {
+  const [isActive, setIsActive] = useState(false);
+
+  const toggleClass = () => {
+    setIsActive(!isActive);
+  };
+
   return (
-    <PanelContainer backgroundImage={backgroundImage}>
+    <PanelContainer
+      className={isActive ? 'open' : ''} onClick={toggleClass}
+      backgroundImage={backgroundImage}>
       <PanelBody>
         <p>{extraWord}</p>
         <p>{title}</p>

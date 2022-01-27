@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../CSS/Home.css';
 import styled from 'styled-components';
 import GithubIcon from "../../images/Icons/github-original.svg";
@@ -6,23 +6,13 @@ import LinkedinIcon from "../../images/Icons/linkedin-original.svg";
 import Panel from './Panel';
 
 function Home() {
-  useEffect(() => {
-    const panels = document.querySelectorAll('.panel');
-    console.log(panels)
-    panels.forEach(panel => panel.addEventListener('click', toggleOpen));
-    panels.forEach(panel => panel.addEventListener('transitionend', wordAppear));
-  })
 
+  // function wordAppear(event) {
+  //   if (event.propertyName.includes('flex')) {
+  //     this.classList.toggle('open-active');
+  //   }
+  // }
 
-  function toggleOpen() {
-    this.classList.toggle('open');
-  }
-
-  function wordAppear(event) {
-    if (event.propertyName.includes('flex')) {
-      this.classList.toggle('open-active');
-    }
-  }
 
   return (
     <Container>
@@ -75,59 +65,54 @@ function Home() {
 export default Home;
 
 const Container = styled.div`
-  max-width: 100vw;
-  height: 100%;
-  border: 2px solid orange;
-  `;
+    max-width: 100vw;
+    height: 100%;
+    border: 2px solid orange;
+    `;
 
 const Panels = styled.div`
-  border: 2px solid red;
-  min-height: 100vh;
-  max-width: 100vw;
-  overflow: hidden;
-  display: flex;
-
-  .open-active #main{
-    transform: translateY(105%);
-  }
-
-  p:last-child {
-    transform: translateY(100%);
     border: 2px solid red;
-  }
+    min-height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
+    display: flex;
 
+    p:last-child {
+      transform: translateY(100%);
+      border: 2px solid red;
+    }
 
-  p:nth-child(2) {
-    font-size: 22px;
-    border: 2px solid red;
-  }
+    p:nth-child(2) {
+      font-size: 22px;
+      border: 2px solid red;
+    }
 
-  .open-active p:nth-child(2) {
-    transform: translateY(-50%);
-  }
+    .open-active p:nth-child(2) {
+      transform: translateY(-50%);
+    }
 
-  .open-active #icons {
-    transform: translateY(50%);
-  }
+    .open-active #icons {
+      transform: translateY(50%);
+    }
 
-  .open {
-    font-size: 20px;
-    flex: 1.5;
-  }
-  `;
+    .open {
+      font-size: 20px;
+      flex: 1.5;
+    }
+    `;
 
 const ContactIcons = styled.div`
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 
-  img {
-    height: 53px;
-    border: 2px solid red;
-    background: white;
-    border-radius: 50%;
+    img {
+      height: 53px;
+      border: 2px solid red;
+      background: white;
+      border-radius: 50%;
 
-    &:hover {
-      height: 55px;
+      &:hover {
+        height: 55px;
+      }
     }
-  }
-  `;
+    `;
