@@ -28,17 +28,19 @@ function Home() {
     <Container>
       <Panels>
         <Panel
-        backgroundImage={require('../../images/backgrounds/deer.jpeg')}
-        title={'About Me'}
-        link={'/about'}
-        word={'Learn More'}
+          backgroundImage={require('../../images/backgrounds/deer.jpeg')}
+          title={'About Me'}
+          link={'/about'}
+          word={'Learn More'}
         />
 
-        <div className="panel panel2">
-          <p></p>
-          <p>Projects</p>
-          <p><a href="/projects">Check it Out</a></p>
-        </div>
+        <Panel
+          backgroundImage={require('../../images/backgrounds/movie.jpeg')}
+          title={'Projects'}
+          link={'/projects'}
+          word={'Check it Out'}
+        />
+
         <div className="panel panel3">
           <p id='main'>Front-End Developer</p>
           <p id='name' >Renato Delboni</p>
@@ -51,16 +53,18 @@ function Home() {
             </a>
           </ContactIcons>
         </div>
-        <div className="panel panel4">
-          <p></p>
-          <p>Mini-Projects</p>
-          <p><a href="/mini-projects">Check it Out</a></p>
-        </div>
-        <div className="panel panel5">
-          <p></p>
-          <p className="d-flex">Javascript30</p>
-          <p><a href="/javascript30">Check it Out</a></p>
-          </div>
+        <Panel
+          backgroundImage={require('../../images/backgrounds/snake.JPG')}
+          title={'Mini-Projects'}
+          link={'/miniprojects'}
+          word={'Check it Out'}
+        />
+        <Panel
+          backgroundImage={require('../../images/backgrounds/soccer.jpg')}
+          title={'JavaScript30'}
+          link={'/javascript30'}
+          word={'Check it Out'}
+        />
       </Panels>
     </Container >
   );

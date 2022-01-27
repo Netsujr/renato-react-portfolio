@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import React from 'react';
 
-const Panel = ({ title, link, word, backgroundImage }) => {
+const Panel = ({ title, link, word, backgroundImage, panelNum }) => {
   return (
     <PanelContainer>
       <PanelBody backgroundImage={backgroundImage}>
@@ -37,13 +37,16 @@ const PanelBody = styled.div`
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  margin: 0;
-  width: 100%;
-  transition: transform 0.5s;
-  flex: 1 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+  * {
+    margin: 0;
+    width: 100%;
+    transition: transform 0.5s;
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 /* &#name{
   transform: translateY(-12%);
@@ -52,22 +55,6 @@ const PanelBody = styled.div`
 &#main{
   transform: translateY(-100%);
 } */
-
-.open-active #main{
-  transform: translateY(105%);
-}
-
-:last-child {
-  transform: translateY(100%);
-}
-
-.open-active :last-child {
-  transform: translateY(-50%);
-}
-
-.open-active #icons {
-  transform: translateY(50%);
-}
 
 p {
   text-transform: uppercase;
@@ -93,6 +80,22 @@ p:nth-child(2) {
 .open {
   font-size: 20px;
   flex: 1.5;
+}
+
+.open-active #main{
+  transform: translateY(105%);
+}
+
+:last-child {
+  transform: translateY(100%);
+}
+
+.open-active :last-child {
+  transform: translateY(-50%);
+}
+
+.open-active #icons {
+  transform: translateY(50%);
 }
 
 `
