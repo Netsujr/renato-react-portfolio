@@ -10,7 +10,8 @@ const Panel = ({ title, link, word, backgroundImage, extraWord }) => {
 
   return (
     <PanelContainer
-      className={isActive ? 'open' : ''} onClick={toggleClass}
+      className={isActive ? `open open-active`  : ''} onClick={toggleClass}
+
       backgroundImage={backgroundImage}>
       <PanelBody>
         <p>{extraWord}</p>
@@ -45,13 +46,12 @@ const PanelContainer = styled.div`
   `
 
 const PanelBody = styled.div`
-  border: 2px solid blue;
 
-  * {
+* {
+  /* border: 2px solid blue; */
   margin: 0;
   max-width: 100%;
   transition: transform 0.5s;
-  flex: 1 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;

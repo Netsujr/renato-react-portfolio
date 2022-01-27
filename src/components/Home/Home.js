@@ -1,4 +1,4 @@
-import React  from 'react';
+import React from 'react';
 import '../CSS/Home.css';
 import styled from 'styled-components';
 import GithubIcon from "../../images/Icons/github-original.svg";
@@ -29,10 +29,10 @@ function Home() {
           title={'Renato Delboni'}
           extraWord={'Front-End Developer'}
           word={<ContactIcons>
-            <a id='icons' href="https://github.com/netsujr" target="_blank" rel="noreferrer">
+            <a href="https://github.com/netsujr" target="_blank" rel="noreferrer">
               <img src={GithubIcon} alt="Github" />
             </a>
-            <a id='icons' href="https://www.linkedin.com/in/delbonirenato/" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/delbonirenato/" target="_blank" rel="noreferrer">
               <img src={LinkedinIcon} alt="Linkedin" />
             </a>
           </ContactIcons>}
@@ -60,36 +60,49 @@ export default Home;
 const Container = styled.div`
     max-width: 100vw;
     height: 100%;
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
     `;
 
 const Panels = styled.div`
-    border: 2px solid red;
+    /* border: 2px solid red; */
     min-height: 100vh;
     max-width: 100vw;
     overflow: hidden;
     display: flex;
 
+    p:first-child {
+      transition-delay: 0.5s;
+      transform: translateY(-1000%);
+      font-size: 23px;
+      /* border: 2px solid red; */
+    }
+
+    .open-active p:first-child {
+      transition-delay: 0.5s;
+      transform: translateY(200%);
+      font-size: 23px;
+      /* border: 2px solid red; */
+    }
+
+
     p:last-child {
+      transition-delay: 0.5s;
+      transform: translateY(1000%);
+      /* border: 2px solid red; */
+    }
+
+    .open-active p:last-child {
+      transition-delay: 0.5s;
       transform: translateY(100%);
-      border: 2px solid red;
+      /* border: 2px solid red; */
     }
 
     p:nth-child(2) {
       font-size: 22px;
-      border: 2px solid red;
-    }
-
-    .open-active p:nth-child(2) {
-      transform: translateY(-50%);
-    }
-
-    .open-active #icons {
-      transform: translateY(50%);
+      /* border: 2px solid red; */
     }
 
     .open {
-      font-size: 20px;
       flex: 1.5;
     }
     `;
@@ -100,9 +113,9 @@ const ContactIcons = styled.div`
 
     img {
       height: 53px;
-      border: 2px solid red;
+      /* border: 2px solid red; */
       background: white;
-      border-radius: 50%;
+      border-radius: 10%;
 
       &:hover {
         height: 55px;
