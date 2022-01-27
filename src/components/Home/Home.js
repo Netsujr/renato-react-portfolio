@@ -3,6 +3,7 @@ import '../CSS/Home.css';
 import styled from 'styled-components';
 import GithubIcon from "../../images/Icons/github-original.svg";
 import LinkedinIcon from "../../images/Icons/linkedin-original.svg";
+import Panel from './Panel';
 
 function Home() {
   useEffect(() => {
@@ -11,6 +12,7 @@ function Home() {
     panels.forEach(panel => panel.addEventListener('click', toggleOpen));
     panels.forEach(panel => panel.addEventListener('transitionend', wordAppear));
   })
+
 
   function toggleOpen() {
     this.classList.toggle('open');
@@ -25,11 +27,13 @@ function Home() {
   return (
     <Container>
       <Panels>
-        <div className="panel panel1">
-          <p></p>
-          <p>About Me</p>
-          <p><a href="/aboutme">Learn More</a></p>
-        </div>
+        <Panel
+        backgroundImage={require('../../images/backgrounds/deer.jpeg')}
+        title={'About Me'}
+        link={'/about'}
+        word={'Learn More'}
+        />
+
         <div className="panel panel2">
           <p></p>
           <p>Projects</p>
@@ -69,6 +73,7 @@ const Container = styled.div`
   height: 100%;
   /* border: 2px solid orange; */
   object-fit: contain;
+
   `;
 
 const Panels = styled.div`
