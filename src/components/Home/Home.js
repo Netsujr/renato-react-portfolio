@@ -1,5 +1,4 @@
 import React from 'react';
-import '../CSS/Home.css';
 import styled from 'styled-components';
 import GithubIcon from "../../images/Icons/github-original.svg";
 import LinkedinIcon from "../../images/Icons/linkedin-original.svg";
