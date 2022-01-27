@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React  from 'react';
 import '../CSS/Home.css';
 import styled from 'styled-components';
 import GithubIcon from "../../images/Icons/github-original.svg";
@@ -6,17 +6,10 @@ import LinkedinIcon from "../../images/Icons/linkedin-original.svg";
 import Panel from './Panel';
 
 function Home() {
-
-  // function wordAppear(event) {
-  //   if (event.propertyName.includes('flex')) {
-  //     this.classList.toggle('open-active');
-  //   }
-  // }
-
-
   return (
     <Container>
       <Panels>
+
         <Panel
           backgroundImage={require('../../images/backgrounds/deer.jpeg')}
           title={'About Me'}
