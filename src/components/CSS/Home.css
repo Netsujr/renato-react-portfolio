@@ -67,7 +67,7 @@
 }
 
 .panel.open-active #icons {
-  transform: translateY(0) !important;
+  transform: translateY(50%);
 }
 
 .panel p {
