@@ -71,7 +71,7 @@ const Panels = styled.div`
 
     p:first-child {
       transition-delay: 0.5s;
-      transform: translateY(-1000%);
+      transform: translateY(-100vh);
       font-size: 23px;
       /* border: 2px solid red; */
     }
@@ -86,7 +86,7 @@ const Panels = styled.div`
 
     p:last-child {
       transition-delay: 0.5s;
-      transform: translateY(1000%);
+      transform: translateY(100vh);
       /* border: 2px solid red; */
     }
 
