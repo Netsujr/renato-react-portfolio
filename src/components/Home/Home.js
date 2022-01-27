@@ -111,13 +111,15 @@ const ContactIcons = styled.div`
     justify-content: center;
 
     img {
-      height: 53px;
+      height: 50px;
       /* border: 2px solid red; */
       background: white;
       border-radius: 10%;
+      padding: 2px;
 
       &:hover {
-        height: 55px;
+        transition-delay: 0.5s;
+        background: pink;
       }
     }
     `;
