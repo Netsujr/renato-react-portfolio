@@ -4,12 +4,14 @@ import JS30Card from './JS30Card';
 
 
 function Js30() {
-  const colors = ["#00fffc", "#fc00ff", "#FE5D26"];
+  const colors = ["#00fffc", "#fc00ff", "#1dff00", "#f6ff00", "#00f6ff",
+    "#ee00ff", "#ffbaba", "#b37aff",];
   function getRandomColor() {
-  colors.forEach(color => color[Math.floor(Math.random() * colors.length)]);
+    return colors[Math.floor(Math.random() * colors.length)];
   }
 
-  console.log(getRandomColor());
+  // console.log(getRandomColor());
+  // console.log(getRandomColor());
 
   return (
     <CardBody>
