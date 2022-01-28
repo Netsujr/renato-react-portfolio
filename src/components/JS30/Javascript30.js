@@ -19,7 +19,9 @@ function Js30() {
           description="A drum kit that uses the HTML5 Audio API to play sounds."
           githubLink="https://github.com/Netsujr/JS1-DrumKit"
           websiteLink="https://netsujr.github.io/JS1-DrumKit/"
-          faceTitle="JS1" />
+          faceTitle="JS1"
+          bgColor="#95BF8F"
+          />
         {/* <Card>
           <div class="face face1">
             <div class="content">

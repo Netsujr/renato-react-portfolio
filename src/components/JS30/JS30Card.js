@@ -3,37 +3,33 @@ import styled from 'styled-components';
 import GithubIcon from "../../images/Icons/github-original.svg";
 import website from "../../images/Icons/website.png";
 
-function JS30Card({ title, description, githubLink, websiteLink, faceTitle }) {
+function JS30Card({ title, description, githubLink, websiteLink, faceTitle, bgColor }) {
   return (
     <Card>
-    <Face>
-    <InnerFace>
-    <Content>
-    <h2>{title}</h2>
-    <p> {description}</p>
-    <ContactIcons>
-    <a href={githubLink} target="_blank" rel="noreferrer">
-    <img src={GithubIcon} alt="Github" />
-    </a>
-    <a href={websiteLink} target="_blank" rel="noreferrer">
-    <img src={website} alt="WebSite" />
-    </a>
-    </ContactIcons>
-    </Content>
-    </InnerFace>
-    </Face>
-    <Face>
-    <OuterFace>
-    <h2>{faceTitle}</h2>
-    </OuterFace>
-    </Face>
+      <Face className="face1">
+        <Content backgroundColor={bgColor}>
+          <h2>{title}</h2>
+          <p> {description}</p>
+          <ContactIcons>
+            <a href={githubLink} target="_blank" rel="noreferrer">
+              <img src={GithubIcon} alt="Github" />
+            </a>
+            <a href={websiteLink} target="_blank" rel="noreferrer">
+              <img src={website} alt="WebSite" />
+            </a>
+          </ContactIcons>
+        </Content>
+      </Face>
+      <Face className="face2">
+        <h2>{faceTitle}</h2>
+      </Face>
     </Card>
-    );
-  }
+  );
+}
 
-  export default JS30Card;
+export default JS30Card;
 
-  const Card = styled.div`
+const Card = styled.div`
   position: relative;
   width: 200px;
   height: 250px;
@@ -41,13 +37,53 @@ function JS30Card({ title, description, githubLink, websiteLink, faceTitle }) {
   background: #000;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+
+  .face1 {
+    box-sizing: border-box;
+    padding: 20px;
+    h2 {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .face2 {
+    transition: 0.5s;
+
+    h2 {
+      margin: 0;
+      padding: 0;
+      font-size: 100px;
+      color: black;
+      transition: 0.5s;
+      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      z-index: 10;
+    }
+  }
+
+  &:hover .face2 {
+    height: 60px;
+
+    h2 {
+      font-size: 2em;
+    }
+  }
+
+  .face2 {
+    background-image: linear-gradient(25deg, #fda4a4 0%,#fbff50 100%);
+    border-radius: 10px;
+  }
   `;
 
-  const Content = styled.div`
+const Content = styled.div`
   align-items: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-color: ${props => props.bgColor};
   `;
 
-  const ContactIcons = styled.div`
+const ContactIcons = styled.div`
   display: flex;
   justify-content: center;
   margin: 40px auto;
@@ -66,7 +102,7 @@ function JS30Card({ title, description, githubLink, websiteLink, faceTitle }) {
   }
   `;
 
-  const Face = styled.div`
+const Face = styled.div`
   position: absolute;
   bottom: 0;
   left: 0;
@@ -74,9 +110,10 @@ function JS30Card({ title, description, githubLink, websiteLink, faceTitle }) {
   height: 100%;
   display: flex;
   justify-content: center;
+
   `;
 
-  const InnerFace = styled.div`
+const InnerFace = styled.div`
   /* face1  */
   box-sizing: border-box;
   padding: 20px;
@@ -84,31 +121,6 @@ function JS30Card({ title, description, githubLink, websiteLink, faceTitle }) {
   h2 {
     margin: 0;
     padding: 0;
-  }
-
-  `;
-
-  const OuterFace = styled.div`
-  /* face2  */
-  transition: 0.5s;
-  background-image: linear-gradient(25deg, #fda4a4 0%,#fbff50 100%);
-  border-radius: 10px;
-
-  h2 {
-    margin: 0;
-    padding: 0;
-    font-size: 100px;
-    color: black;
-    transition: 0.5s;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 10;
-  }
-
-  &:hover {
-    height: 60px;
-    h2 {
-      font-size: 2em;
-    }
   }
 
   `;
