@@ -16,7 +16,7 @@ function Js30() {
       <CardContainer>
         <JS30Card
           title="Drum Kit"
-          description="A drum kit that uses the HTML5 Audio API to play sounds."
+          description="A drum kit that plays sounds with keyboard."
           githubLink="https://github.com/Netsujr/JS1-DrumKit"
           websiteLink="https://netsujr.github.io/JS1-DrumKit/"
           faceTitle="JS1"

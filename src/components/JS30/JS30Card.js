@@ -7,7 +7,7 @@ function JS30Card({ title, description, githubLink, websiteLink, faceTitle, bgCo
   return (
     <Card>
       <Face className="face1">
-        <Content backgroundColor={bgColor}>
+        <Content style={{ backgroundColor: `${bgColor}` }}>
           <h2>{title}</h2>
           <p> {description}</p>
           <ContactIcons>
@@ -80,7 +80,6 @@ const Content = styled.div`
   align-items: center;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-color: ${props => props.bgColor};
   `;
 
 const ContactIcons = styled.div`
