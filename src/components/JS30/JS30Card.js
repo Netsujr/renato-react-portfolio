@@ -111,16 +111,4 @@ const Face = styled.div`
   display: flex;
   justify-content: center;
 
-  `;
-
-const InnerFace = styled.div`
-  /* face1  */
-  box-sizing: border-box;
-  padding: 20px;
-
-  h2 {
-    margin: 0;
-    padding: 0;
-  }
-
-  `;
+`;
