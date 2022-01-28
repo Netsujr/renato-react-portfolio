@@ -13,7 +13,7 @@ import ZoomClone from './components/projects/ZoomClone';
 import MiniProjects from './components/MiniProjects';
 import Projects from './components/Projects';
 import AboutMe from './components/AboutMe';
-import Js30 from './components/Javascript30';
+import Js30 from './components/JS30/Javascript30';
 import Resume from './DelboniRenatoResume.pdf';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 

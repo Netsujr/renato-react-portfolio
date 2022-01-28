@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import GithubIcon from "../images/Icons/github-original.svg";
-import website from "../images/Icons/website.png";
-// import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+import GithubIcon from "../../images/Icons/github-original.svg";
+import website from "../../images/Icons/website.png";
+import JS30Card from './JS30Card';
+
 
 function Js30() {
 
@@ -13,6 +14,7 @@ function Js30() {
       <p>Challenges from JS30 course (some challenges are done using only the console, so those haven't been uploaded, but you can still check them out in my repositories.)</p>
     </ItemText>
     <CardContainer>
+      <JS30Card />
         <Card>
           <div class="face face1">
             <div class="content">
