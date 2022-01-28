@@ -289,7 +289,7 @@ const Card = styled.div`
     }
   }
 
-  &:hover .face.face2 {
+  &:hover .face2 {
     height: 60px;
 
     h2 {
@@ -297,7 +297,7 @@ const Card = styled.div`
     }
   }
 
-  &:nth-child(n) .face.face2 {
+  &:nth-child(n) .face2 {
     background-image: linear-gradient(25deg, #fda4a4 0%,#fbff50 100%);
     border-radius: 10px;
   }

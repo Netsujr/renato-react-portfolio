@@ -6,34 +6,34 @@ import website from "../../images/Icons/website.png";
 function JS30Card({ title, description, githubLink, websiteLink, faceTitle }) {
   return (
     <Card>
-      <Face>
-        <InnerFace>
-          <Content>
-            <h2>{title}</h2>
-            <p> {description}</p>
-            <ContactIcons>
-              <a href={githubLink} target="_blank" rel="noreferrer">
-                <img src={GithubIcon} alt="Github" />
-              </a>
-              <a href={websiteLink} target="_blank" rel="noreferrer">
-                <img src={website} alt="WebSite" />
-              </a>
-            </ContactIcons>
-          </Content>
-        </InnerFace>
-      </Face>
-      <Face>
-        <OuterFace>
-          <h2>{faceTitle}</h2>
-        </OuterFace>
-      </Face>
+    <Face>
+    <InnerFace>
+    <Content>
+    <h2>{title}</h2>
+    <p> {description}</p>
+    <ContactIcons>
+    <a href={githubLink} target="_blank" rel="noreferrer">
+    <img src={GithubIcon} alt="Github" />
+    </a>
+    <a href={websiteLink} target="_blank" rel="noreferrer">
+    <img src={website} alt="WebSite" />
+    </a>
+    </ContactIcons>
+    </Content>
+    </InnerFace>
+    </Face>
+    <Face>
+    <OuterFace>
+    <h2>{faceTitle}</h2>
+    </OuterFace>
+    </Face>
     </Card>
-  );
-}
+    );
+  }
 
-export default JS30Card;
+  export default JS30Card;
 
-const Card = styled.div`
+  const Card = styled.div`
   position: relative;
   width: 200px;
   height: 250px;
@@ -43,11 +43,11 @@ const Card = styled.div`
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   `;
 
-const Content = styled.div`
+  const Content = styled.div`
   align-items: center;
   `;
 
-const ContactIcons = styled.div`
+  const ContactIcons = styled.div`
   display: flex;
   justify-content: center;
   margin: 40px auto;
@@ -66,7 +66,7 @@ const ContactIcons = styled.div`
   }
   `;
 
-const Face = styled.div`
+  const Face = styled.div`
   position: absolute;
   bottom: 0;
   left: 0;
@@ -76,7 +76,8 @@ const Face = styled.div`
   justify-content: center;
   `;
 
-const InnerFace = styled.div`
+  const InnerFace = styled.div`
+  /* face1  */
   box-sizing: border-box;
   padding: 20px;
 
@@ -84,10 +85,14 @@ const InnerFace = styled.div`
     margin: 0;
     padding: 0;
   }
+
   `;
 
-const OuterFace = styled.div`
+  const OuterFace = styled.div`
+  /* face2  */
   transition: 0.5s;
+  background-image: linear-gradient(25deg, #fda4a4 0%,#fbff50 100%);
+  border-radius: 10px;
 
   h2 {
     margin: 0;
@@ -106,8 +111,4 @@ const OuterFace = styled.div`
     }
   }
 
-   &:nth-child(n) {
-    background-image: linear-gradient(25deg, #fda4a4 0%,#fbff50 100%);
-    border-radius: 10px;
-  }
   `;
