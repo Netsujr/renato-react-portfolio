@@ -1,0 +1,142 @@
+import React from 'react';
+import styled from 'styled-components';
+import JS30Card from './JS30Card';
+
+
+function Js30() {
+  const colors = ["#00fffc", "#fc00ff", "#1dff00", "#f6ff00", "#00f6ff",
+    "#ee00ff", "#ffbaba", "#b37aff",];
+  function getRandomColor() {
+    return colors[Math.floor(Math.random() * colors.length)];
+  }
+
+  // console.log(getRandomColor());
+  // console.log(getRandomColor());
+
+  return (
+    <CardBody>
+      <ItemText>
+        <h1>JavaScript 30</h1>
+        <p>Challenges from JS30 course (some challenges are done using only the console, so those haven't been uploaded, but you can still check them out in my repositories.)</p>
+      </ItemText>
+      <CardContainer>
+
+        <JS30Card
+          title="Drum Kit"
+          description="A drum kit that plays sounds with keyboard."
+          githubLink="https://github.com/Netsujr/JS1-DrumKit"
+          websiteLink="https://netsujr.github.io/JS1-DrumKit/"
+          faceTitle="JS1"
+          bgColor={getRandomColor()}
+        />
+
+        <JS30Card
+          title="Clock"
+          description="Real-time clock. Probably needs further styling."
+          githubLink="https://github.com/Netsujr/JS2-Clock"
+          websiteLink="https://netsujr.github.io/JS2-Clock/"
+          faceTitle="JS2"
+          bgColor={getRandomColor()}
+        />
+
+        <JS30Card
+          title="CSS Variables"
+          description="Playing with variables within CSS."
+          githubLink="https://github.com/Netsujr/JS3-CSS_Variables"
+          websiteLink="https://netsujr.github.io/JS3-CSS_Variables/"
+          faceTitle="JS3"
+          bgColor={getRandomColor()}
+        />
+
+        <JS30Card
+          title="Flex Panels"
+          description="Where panels from this portfolio got inspiration!"
+          githubLink="https://github.com/Netsujr/JS5-Flex_Panel_Gallery"
+          websiteLink="https://netsujr.github.io/JS5-Flex_Panel_Gallery/"
+          faceTitle="JS5"
+          bgColor={getRandomColor()}
+        />
+
+        <JS30Card
+          title="Type Ahead"
+          description="Predictive text, highlights and searches in real-time."
+          githubLink="https://github.com/Netsujr/JS6-Type_Ahead"
+          websiteLink="https://netsujr.github.io/JS6-Type_Ahead/"
+          faceTitle="JS6"
+          bgColor={getRandomColor()}
+        />
+
+        <JS30Card
+          title="HTML Canvas"
+          description="Draw to your heart's content."
+          githubLink="https://github.com/Netsujr/JS8-HTML_Canvas"
+          websiteLink="https://netsujr.github.io/JS8-HTML_Canvas/"
+          faceTitle="JS8"
+          bgColor={getRandomColor()}
+        />
+
+        <JS30Card
+          title="CheckBoxes"
+          description="Hold shift to check boxes in between two boxes."
+          githubLink="https://github.com/Netsujr/JS10-Checkboxes"
+          websiteLink="https://netsujr.github.io/JS10-Checkboxes/"
+          faceTitle="JS10"
+          bgColor={getRandomColor()}
+        />
+
+        <JS30Card
+          title="Video Player"
+          description="Coding video controls, DOM manipulation."
+          githubLink="https://github.com/Netsujr/JS11-Video_player"
+          websiteLink="https://netsujr.github.io/JS11-Video_player/"
+          faceTitle="JS11"
+          bgColor={getRandomColor()}
+        />
+
+      </CardContainer>
+    </CardBody>
+  );
+}
+
+export default Js30;
+
+const CardBody = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Righteous", cursive !important;
+  min-height: 100vh;
+  `;
+
+const CardContainer = styled.div`
+  max-width: 90vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1px;
+  margin: 0 auto;
+  padding: 30px 0;
+  `;
+
+const ItemText = styled.div`
+  /* border: 2px solid orange; */
+  width: 50vw;
+  margin-top: 12vh;
+  justify-content: center;
+  text-align: center;
+  color: black;
+  display: flex;
+  flex-direction: column;
+
+  h1{
+    margin-top: -7px;
+    @media (max-width : 768px) {
+      font-size: 24px;
+      margin-top: -4px;
+    }
+  }
+
+  p {
+    font-size: 16px;
+  }
+  `
