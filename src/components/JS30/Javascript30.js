@@ -120,8 +120,8 @@ const CardContainer = styled.div`
 
 const ItemText = styled.div`
   /* border: 2px solid orange; */
-  width: 45vw;
-  padding-top: 12vh;
+  width: 50vw;
+  margin-top: 12vh;
   justify-content: center;
   text-align: center;
   color: black;
@@ -130,10 +130,13 @@ const ItemText = styled.div`
 
   h1{
     margin-top: -7px;
-    margin-right: 2px;
     @media (max-width : 768px) {
       font-size: 24px;
       margin-top: -4px;
     }
+  }
+
+  p {
+    font-size: 16px;
   }
   `
