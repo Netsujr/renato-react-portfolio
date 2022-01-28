@@ -9,13 +9,18 @@ function Js30() {
 
   return (
     <><CardBody>
-    <ItemText>
-      <h1>JavaScript 30</h1>
-      <p>Challenges from JS30 course (some challenges are done using only the console, so those haven't been uploaded, but you can still check them out in my repositories.)</p>
-    </ItemText>
-    <CardContainer>
-      <JS30Card />
-        <Card>
+      <ItemText>
+        <h1>JavaScript 30</h1>
+        <p>Challenges from JS30 course (some challenges are done using only the console, so those haven't been uploaded, but you can still check them out in my repositories.)</p>
+      </ItemText>
+      <CardContainer>
+        <JS30Card
+          title="Drum Kit"
+          description="A drum kit that uses the HTML5 Audio API to play sounds."
+          githubLink="https://github.com/Netsujr/JS1-DrumKit"
+          websiteLink="https://netsujr.github.io/JS1-DrumKit/"
+          faceTitle="JS1" />
+        {/* <Card>
           <div class="face face1">
             <div class="content">
               <h2 class="card1">Drum Kit</h2>
@@ -33,7 +38,7 @@ function Js30() {
           <div class="face face2">
             <h2>JS1</h2>
           </div>
-        </Card>
+        </Card> */}
         <Card>
           <div class="face face1">
             <div class="content">
@@ -181,7 +186,7 @@ const CardBody = styled.div`
   flex-direction: column;
   font-family: "Righteous", cursive !important;
   min-height: 100vh;
-`;
+  `;
 
 const CardContainer = styled.div`
   max-width: 90vw;
@@ -214,16 +219,6 @@ const Card = styled.div`
     height: 100%;
     display: flex;
     justify-content: center;
-  }
-
-  .face1 {
-    box-sizing: border-box;
-    padding: 20px;
-
-    h2 {
-      margin: 0;
-      padding: 0;
-    }
   }
 
   .card1 {
@@ -328,21 +323,21 @@ const ContactIcons = styled.div`
   `;
 
 const ItemText = styled.div`
-/* border: 2px solid orange; */
-width: 45vw;
-padding-top: 12vh;
-justify-content: center;
-text-align: center;
-color: black;
-display: flex;
-flex-direction: column;
+  /* border: 2px solid orange; */
+  width: 45vw;
+  padding-top: 12vh;
+  justify-content: center;
+  text-align: center;
+  color: black;
+  display: flex;
+  flex-direction: column;
 
-h1{
-  margin-top: -7px;
-  margin-right: 2px;
-  @media (max-width : 768px) {
-    font-size: 24px;
-    margin-top: -4px;
+  h1{
+    margin-top: -7px;
+    margin-right: 2px;
+    @media (max-width : 768px) {
+      font-size: 24px;
+      margin-top: -4px;
+    }
   }
-}
-`
+  `

@@ -3,26 +3,30 @@ import styled from 'styled-components';
 import GithubIcon from "../../images/Icons/github-original.svg";
 import website from "../../images/Icons/website.png";
 
-function JS30Card(props) {
+function JS30Card({ title, description, githubLink, websiteLink, faceTitle }) {
   return (
     <Card>
-      <div class="face face1">
-        <div class="content">
-          <h2 class="card1">Drum Kit</h2>
-          <p class="card1"> Hit each key for a different sound!</p>
-          <ContactIcons>
-            <a id='icons' href="https://github.com/Netsujr/JS1-DrumKit" target="_blank" rel="noreferrer">
-              <img src={GithubIcon} alt="Github" />
-            </a>
-            <a id='icons' href="https://netsujr.github.io/JS1-DrumKit/" target="_blank" rel="noreferrer">
-              <img src={website} alt="website" />
-            </a>
-          </ContactIcons>
-        </div>
-      </div>
-      <div class="face face2">
-        <h2>JS1</h2>
-      </div>
+      <Face>
+        <InnerFace>
+          <Content>
+            <h2>{title}</h2>
+            <p> {description}</p>
+            <ContactIcons>
+              <a href={githubLink} target="_blank" rel="noreferrer">
+                <img src={GithubIcon} alt="Github" />
+              </a>
+              <a href={websiteLink} target="_blank" rel="noreferrer">
+                <img src={website} alt="WebSite" />
+              </a>
+            </ContactIcons>
+          </Content>
+        </InnerFace>
+      </Face>
+      <Face>
+        <OuterFace>
+          <h2>{faceTitle}</h2>
+        </OuterFace>
+      </Face>
     </Card>
   );
 }
@@ -37,11 +41,11 @@ const Card = styled.div`
   background: #000;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  `;
 
-  .content {
-    align-items: center;
-  }
-`;
+const Content = styled.div`
+  align-items: center;
+  `;
 
 const ContactIcons = styled.div`
   display: flex;
@@ -59,5 +63,51 @@ const ContactIcons = styled.div`
     &:hover {
       height: 32px;
     }
+  }
+  `;
+
+const Face = styled.div`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  `;
+
+const InnerFace = styled.div`
+  box-sizing: border-box;
+  padding: 20px;
+
+  h2 {
+    margin: 0;
+    padding: 0;
+  }
+  `;
+
+const OuterFace = styled.div`
+  transition: 0.5s;
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 100px;
+    color: black;
+    transition: 0.5s;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+
+  &:hover {
+    height: 60px;
+    h2 {
+      font-size: 2em;
+    }
+  }
+
+   &:nth-child(n) {
+    background-image: linear-gradient(25deg, #fda4a4 0%,#fbff50 100%);
+    border-radius: 10px;
   }
   `;
