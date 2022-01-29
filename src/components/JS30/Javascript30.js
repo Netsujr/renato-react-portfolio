@@ -93,6 +93,15 @@ function Js30() {
           bgColor={getRandomColor()}
         />
 
+        <JS30Card
+          title="Local Storage"
+          description="Testing user local storage & event delegation."
+          githubLink="https://github.com/Netsujr/JS15-LocalStorage"
+          websiteLink="https://netsujr.github.io/JS15-LocalStorage/"
+          faceTitle="JS15"
+          bgColor={getRandomColor()}
+        />
+
       </CardContainer>
     </CardBody>
   );
