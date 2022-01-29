@@ -58,7 +58,7 @@ const Card = styled.div`
       color: black;
       transition: 0.5s;
       text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-      z-index: 10;
+      z-index: 1;
     }
   }
 
