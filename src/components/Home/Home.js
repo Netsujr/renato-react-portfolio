@@ -68,6 +68,11 @@ const Panels = styled.div`
     max-width: 100vw;
     overflow: hidden;
     display: flex;
+    @media (max-width : 768px) {
+      flex-direction: column;
+      max-height: 100vh;
+      margin-top: 9vh;
+    }
 
     p:first-child {
       transition-delay: 0.5s;
@@ -94,6 +99,9 @@ const Panels = styled.div`
       transition-delay: 0.5s;
       transform: translateY(100%);
       /* border: 2px solid red; */
+      @media (max-width : 768px) {
+        transform: translateY(35%);
+      }
     }
 
     p:nth-child(2) {
@@ -116,6 +124,9 @@ const ContactIcons = styled.div`
       background: white;
       border-radius: 10%;
       padding: 2px;
+      @media (max-width : 768px) {
+        height: 30px;
+      }
 
       &:hover {
         transition-delay: 0.5s;
