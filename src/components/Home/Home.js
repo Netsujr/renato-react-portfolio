@@ -40,7 +40,7 @@ function Home() {
         <Panel
           backgroundImage={require('../../images/backgrounds/snake.JPG')}
           title={'Mini-Projects'}
-          link={'/miniprojects'}
+          link={'/mini-projects'}
           word={'Check it Out'}
         />
         <Panel
