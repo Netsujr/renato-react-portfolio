@@ -27,7 +27,7 @@ function Js30() {
           githubLink="https://github.com/Netsujr/JS1-DrumKit"
           websiteLink="https://netsujr.github.io/JS1-DrumKit/"
           faceTitle="JS1"
-          bgColor={getRandomColor()}
+          textColor={getRandomColor()}
         />
 
         <JS30Card
@@ -36,7 +36,7 @@ function Js30() {
           githubLink="https://github.com/Netsujr/JS2-Clock"
           websiteLink="https://netsujr.github.io/JS2-Clock/"
           faceTitle="JS2"
-          bgColor={getRandomColor()}
+          textColor={getRandomColor()}
         />
 
         <JS30Card
@@ -45,7 +45,7 @@ function Js30() {
           githubLink="https://github.com/Netsujr/JS3-CSS_Variables"
           websiteLink="https://netsujr.github.io/JS3-CSS_Variables/"
           faceTitle="JS3"
-          bgColor={getRandomColor()}
+          textColor={getRandomColor()}
         />
 
         <JS30Card
@@ -54,7 +54,7 @@ function Js30() {
           githubLink="https://github.com/Netsujr/JS5-Flex_Panel_Gallery"
           websiteLink="https://netsujr.github.io/JS5-Flex_Panel_Gallery/"
           faceTitle="JS5"
-          bgColor={getRandomColor()}
+          textColor={getRandomColor()}
         />
 
         <JS30Card
@@ -63,7 +63,7 @@ function Js30() {
           githubLink="https://github.com/Netsujr/JS6-Type_Ahead"
           websiteLink="https://netsujr.github.io/JS6-Type_Ahead/"
           faceTitle="JS6"
-          bgColor={getRandomColor()}
+          textColor={getRandomColor()}
         />
 
         <JS30Card
@@ -72,7 +72,7 @@ function Js30() {
           githubLink="https://github.com/Netsujr/JS8-HTML_Canvas"
           websiteLink="https://netsujr.github.io/JS8-HTML_Canvas/"
           faceTitle="JS8"
-          bgColor={getRandomColor()}
+          textColor={getRandomColor()}
         />
 
         <JS30Card
@@ -81,7 +81,7 @@ function Js30() {
           githubLink="https://github.com/Netsujr/JS10-Checkboxes"
           websiteLink="https://netsujr.github.io/JS10-Checkboxes/"
           faceTitle="JS10"
-          bgColor={getRandomColor()}
+          textColor={getRandomColor()}
         />
 
         <JS30Card
@@ -90,7 +90,7 @@ function Js30() {
           githubLink="https://github.com/Netsujr/JS11-Video_player"
           websiteLink="https://netsujr.github.io/JS11-Video_player/"
           faceTitle="JS11"
-          bgColor={getRandomColor()}
+          textColor={getRandomColor()}
         />
 
         <JS30Card
@@ -99,7 +99,7 @@ function Js30() {
           githubLink="https://github.com/Netsujr/JS15-LocalStorage"
           websiteLink="https://netsujr.github.io/JS15-LocalStorage/"
           faceTitle="JS15"
-          bgColor={getRandomColor()}
+          textColor={getRandomColor()}
         />
 
       </CardContainer>
