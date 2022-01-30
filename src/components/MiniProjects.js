@@ -116,11 +116,14 @@ const Cards = styled.div`
 const CardBody = styled.div`
   border: 2px solid rgba(83, 83, 83, 0.3);
   max-width: 200px;
-  max-height: 100%;
+  max-height: 295px;
   margin: 20px;
   padding: 10px;
   border-radius: 5px;
   position: relative;
+  @media (max-width: 600px) {
+    max-height: 100%;
+  }
 
   &:hover {
     border: 2px solid rgba(83, 83, 83, 0.6);
