@@ -121,7 +121,7 @@ const CardBody = styled.div`
   padding: 10px;
   border-radius: 5px;
   position: relative;
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     max-height: 100%;
   }
 
