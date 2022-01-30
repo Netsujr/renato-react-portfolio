@@ -3,13 +3,13 @@ import styled from 'styled-components';
 import GithubIcon from "../../images/Icons/github-original.svg";
 import website from "../../images/Icons/website.png";
 
-function JS30Card({ title, description, githubLink, websiteLink, faceTitle, bgColor }) {
+function JS30Card({ title, description, githubLink, websiteLink, faceTitle, textColor }) {
   return (
     <Card>
       <Face className="face1">
-        <Content style={{ backgroundColor: `${bgColor}` }}>
-          <h2>{title}</h2>
-          <p> {description}</p>
+        <Content>
+          <h2 style={{ color: textColor }}>{title}</h2>
+          <p style={{ color: textColor }}>{description}</p>
           <ContactIcons>
             <a href={githubLink} target="_blank" rel="noreferrer">
               <img src={GithubIcon} alt="Github" />
@@ -37,7 +37,6 @@ const Card = styled.div`
   background: #000;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-
 
   .face1 {
     box-sizing: border-box;
@@ -78,8 +77,6 @@ const Card = styled.div`
 
 const Content = styled.div`
   align-items: center;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   `;
 
 const ContactIcons = styled.div`
@@ -110,4 +107,4 @@ const Face = styled.div`
   display: flex;
   justify-content: center;
 
-`;
+  `;

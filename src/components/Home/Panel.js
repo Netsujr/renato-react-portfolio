@@ -10,7 +10,7 @@ const Panel = ({ title, link, word, backgroundImage, extraWord }) => {
 
   return (
     <PanelContainer
-      className={isActive ? `open open-active`  : ''} onClick={toggleClass}
+      className={isActive ? `open open-active` : ''} onClick={toggleClass}
 
       backgroundImage={backgroundImage}>
       <PanelBody>
@@ -42,19 +42,19 @@ const PanelContainer = styled.div`
   justify-content: center;
   flex-direction: column;
   cursor: pointer;
-
   `
 
 const PanelBody = styled.div`
 
-* {
-  /* border: 2px solid blue; */
-  margin: 0;
-  max-width: 100%;
-  transition: transform 0.5s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  * {
+    /* border: 2px solid blue; */
+    margin: 0;
+    max-width: 100%;
+    transition: transform 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 p {
@@ -66,11 +66,14 @@ p {
 }
 
 p a {
-  background: rgba(0, 0, 0, 0.22);
+  background-color: rgba(0, 0, 0, 0.22);
   border-radius: 5px;
   padding: 10px;
   font-size: 24px !important;
   color: white;
   font-family: monospace;
+  @media (max-width : 768px) {
+    font-size: 14px !important;
+  }
 }
 `
