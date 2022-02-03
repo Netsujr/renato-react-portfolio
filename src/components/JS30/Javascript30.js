@@ -172,6 +172,9 @@ const ItemText = styled.div`
   color: black;
   display: flex;
   flex-direction: column;
+  @media (max-width: 768px) {
+    width: 80vw;
+  }
 
   h1{
     margin-top: -7px;

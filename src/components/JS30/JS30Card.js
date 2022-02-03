@@ -45,7 +45,6 @@ const Card = styled.div`
       margin: 0;
       padding: 0;
       font-size: 1.2rem;
-      text-decoration: underline;
     }
   }
 
@@ -84,7 +83,7 @@ const Content = styled.div`
 const ContactIcons = styled.div`
   display: flex;
   justify-content: center;
-  margin: 40px auto;
+  margin-top: 30px;
 
   img {
     height: 30px;
