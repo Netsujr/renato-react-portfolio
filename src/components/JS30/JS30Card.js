@@ -53,7 +53,7 @@ const Card = styled.div`
     h2 {
       margin: 0;
       padding: 0;
-      font-size: 100px;
+      font-size: 80px;
       color: black;
       transition: 0.5s;
       text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
