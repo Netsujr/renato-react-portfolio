@@ -121,7 +121,7 @@ function Js30() {
         />
 
         <JS30Card
-          title="Total from data-time"
+          title="Data-Time"
           description="Converting hrs/min to secs to add up a total time."
           githubLink="https://github.com/Netsujr/JS18-stringNames_reduce"
           websiteLink="https://netsujr.github.io/JS18-stringNames_reduce/"

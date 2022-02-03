@@ -44,6 +44,8 @@ const Card = styled.div`
     h2 {
       margin: 0;
       padding: 0;
+      font-size: 1.2rem;
+      text-decoration: underline;
     }
   }
 
