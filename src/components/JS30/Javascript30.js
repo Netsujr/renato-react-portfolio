@@ -102,6 +102,42 @@ function Js30() {
           textColor={getRandomColor()}
         />
 
+        <JS30Card
+          title="Shadow Effect"
+          description="Shadow effect on mouse move."
+          githubLink="https://github.com/Netsujr/JS16-mouse_move_effect"
+          websiteLink="https://netsujr.github.io/JS16-mouse_move_effect/"
+          faceTitle="JS16"
+          textColor={getRandomColor()}
+        />
+
+        <JS30Card
+          title="Band Names"
+          description="Sorting names bypassing A/An/The."
+          githubLink="https://github.com/Netsujr/JS17-Sorting_band_names"
+          websiteLink="https://netsujr.github.io/JS17-Sorting_band_names/"
+          faceTitle="JS17"
+          textColor={getRandomColor()}
+        />
+
+        <JS30Card
+          title="Total from data-time"
+          description="Converting hrs/min to secs to add up a total time."
+          githubLink="https://github.com/Netsujr/JS18-stringNames_reduce"
+          websiteLink="https://netsujr.github.io/JS18-stringNames_reduce/"
+          faceTitle="JS18"
+          textColor={getRandomColor()}
+        />
+
+        <JS30Card
+          title="Speech Detection"
+          description="Pause speaking to create a new paragraph."
+          githubLink="https://github.com/Netsujr/JS20-Speech_Detection"
+          websiteLink="https://netsujr.github.io/JS20-Speech_Detection/"
+          faceTitle="JS20"
+          textColor={getRandomColor()}
+        />
+
       </CardContainer>
     </CardBody>
   );
