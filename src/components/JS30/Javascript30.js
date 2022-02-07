@@ -138,6 +138,69 @@ function Js30() {
           textColor={getRandomColor()}
         />
 
+        <JS30Card
+          title="Speech Synthesis"
+          description="Type something and choose language."
+          githubLink="https://github.com/Netsujr/JS23-Speech_synthesis"
+          websiteLink="https://netsujr.github.io/JS23-Speech_synthesis/"
+          faceTitle="JS23"
+          textColor={getRandomColor()}
+        />
+
+        <JS30Card
+          title="Sticky Nav"
+          description="Dynamic sticky nav at top of page."
+          githubLink="https://github.com/Netsujr/JS24-Sticky_Nav"
+          websiteLink="https://netsujr.github.io/JS24-Sticky_Nav/"
+          faceTitle="JS24"
+          textColor={getRandomColor()}
+        />
+
+        <JS30Card
+          title="Hover Nav Bar"
+          description="Cool transitioning Nav that follows you."
+          githubLink="https://github.com/Netsujr/JS26-Stripe_follow_Nav"
+          websiteLink="https://netsujr.github.io/JS26-Stripe_follow_Nav/"
+          faceTitle="JS26"
+          textColor={getRandomColor()}
+        />
+
+        <JS30Card
+          title="Click and Drag"
+          description="Dynamic click and drag to move elements."
+          githubLink="https://github.com/Netsujr/JS27-Click_and_Drag"
+          websiteLink="https://netsujr.github.io/JS27-Click_and_Drag/"
+          faceTitle="JS27"
+          textColor={getRandomColor()}
+        />
+
+        <JS30Card
+          title="Video Speed controller"
+          description="Highlight then click on how fast video plays."
+          githubLink="https://github.com/Netsujr/JS28-Video_speed_controller"
+          websiteLink="https://netsujr.github.io/JS28-Video_speed_controller/"
+          faceTitle="JS28"
+          textColor={getRandomColor()}
+        />
+
+        <JS30Card
+          title="CountDown Clock"
+          description="Feel free to use this for anything."
+          githubLink="https://github.com/Netsujr/JS29-Countdown_Clock"
+          websiteLink="https://netsujr.github.io/JS29-Countdown_Clock/"
+          faceTitle="JS29"
+          textColor={getRandomColor()}
+        />
+
+        <JS30Card
+          title="Wack-a-mole"
+          description="How many moles can you wack?"
+          githubLink="https://github.com/Netsujr/JS30-Wack_a_mole"
+          websiteLink="https://netsujr.github.io/JS30-Wack_a_mole/"
+          faceTitle="JS30"
+          textColor={getRandomColor()}
+        />
+
       </CardContainer>
     </CardBody>
   );
