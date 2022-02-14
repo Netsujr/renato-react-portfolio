@@ -11,6 +11,7 @@ import zoom from "../images/zoomClone/one.png";
 import whatsapp from "../images/WhatsappClone/wa1.png";
 import movie from '../images/MovieList/one.png';
 import art from '../images/Artistible/one.png';
+import travel from '../images/TravelAdvisor/one.png';
 
 function Projects() {
   return (
@@ -21,7 +22,41 @@ function Projects() {
       <Cards>
         {/* --------------------------------------------- */}
         <CardBody>
-          <img id="image" src={spotify} alt="RockPaperScissors" />
+          <img id="image" src={travel} alt="travelAdvisor" />
+          <a href="https://renato-travel-advisor.netlify.app/" target="blank_" ><img id='website' src={WebsiteIcon} alt="spotify" /></a>
+          <a href="https://github.com/Netsujr/Renato_Travel_App" target="_blank" rel="noreferrer"><img id='icon' src={GithubIcon} alt="Github" /></a>
+          <a href="/projects/travel" id="link"><span>Learn More </span>{'→'}</a>
+          <CardInfoContainer>
+            <CardTitle>
+              <h2>Travel Advisor</h2>
+            </CardTitle>
+            <CardDesc>
+              <p>
+                A Travel Advisor app built with React.js and MaterialUI. This app can be used to
+                find the best places to go for a trip. It uses the Google Maps API and Rapid API to find the
+                best places to go for a trip. Choose between hotels, restaurants, and attractions.
+              </p>
+            </CardDesc>
+          </CardInfoContainer>
+        </CardBody>
+        {/* --------------------------------------------- */}
+        <CardBody>
+          <img id="image" src={comingSoon} alt="coming soon" />
+          <CardInfoContainer>
+            <CardTitle>
+              <h2>My Web Store</h2>
+            </CardTitle>
+            <CardDesc>
+              <a href="/projects/" id="link"><span>Learn More </span>{'→'}</a>
+              <p>A web-store for my kitty and her instagram. users are able to purchase my kitty Tachi snacks and toys. Will be updated soon to take real payments using stripe. Want to buy my
+                cat something? follow the link!
+              </p>
+            </CardDesc>
+          </CardInfoContainer>
+        </CardBody>
+        {/* --------------------------------------------- */}
+        <CardBody>
+          <img id="image" src={spotify} alt="spotify" />
           <a href="http://renato-spotify-clone.herokuapp.com" target="blank_" ><img id='website' src={WebsiteIcon} alt="spotify" /></a>
           <a href="https://github.com/Netsujr/spotify-clone" target="_blank" rel="noreferrer"><img id='icon' src={GithubIcon} alt="Github" /></a>
           <a href="/projects/spotify" id="link"><span>Learn More </span>{'→'}</a>
@@ -138,21 +173,6 @@ function Projects() {
             <CardDesc>
               <p>Create lists with your favorite movies to a selection. App is very open with users being able to destroy or edit each other's lists, an obvious security flaw, however this was one of my first ever apps that I built. I left it as is for
                 me to be able to see my own progress when looking back at my early work.
-              </p>
-            </CardDesc>
-          </CardInfoContainer>
-        </CardBody>
-        {/* --------------------------------------------- */}
-        <CardBody>
-          <img id="image" src={comingSoon} alt="coming soon" />
-          <CardInfoContainer>
-            <CardTitle>
-              <h2>My Web Store</h2>
-            </CardTitle>
-            <CardDesc>
-              <a href="/projects/" id="link"><span>Learn More </span>{'→'}</a>
-              <p>A web-store for my kitty and her instagram. users are able to purchase my kitty Tachi snacks and toys. Will be updated soon to take real payments using stripe. Want to buy my
-                cat something? follow the link!
               </p>
             </CardDesc>
           </CardInfoContainer>
@@ -317,43 +337,43 @@ const CardInfoContainer = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
-`;
+  `;
 
 const CardTitle = styled.div`
-margin-bottom: 2px;
-`;
+  margin-bottom: 2px;
+  `;
 
 const CardDesc = styled.div`
 
-p {
-  text-align: start;
-  padding: 0px 10px;
-  font-size: 16px !important;
-  margin-top: 10px;
-  @media (max-width : 768px) {
-    font-size: 12px !important;
+  p {
+    text-align: start;
+    padding: 0px 10px;
+    font-size: 16px !important;
+    margin-top: 10px;
+    @media (max-width : 768px) {
+      font-size: 12px !important;
+    }
   }
-}
 
-`;
+  `;
 
 // sc for const shortcut
 
 const ItemText = styled.div`
-/* border: 2px solid orange; */
-width: 100vw;
-padding-top: 12vh;
-justify-content: center;
-text-align: center;
-color: black;
-display: flex;
+  /* border: 2px solid orange; */
+  width: 100vw;
+  padding-top: 12vh;
+  justify-content: center;
+  text-align: center;
+  color: black;
+  display: flex;
 
-h1{
-  margin-top: -7px;
-  margin-right: 2px;
-  @media (max-width : 768px) {
-    font-size: 24px;
-    margin-top: -4px;
+  h1{
+    margin-top: -7px;
+    margin-right: 2px;
+    @media (max-width : 768px) {
+      font-size: 24px;
+      margin-top: -4px;
+    }
   }
-}
-`
+  `

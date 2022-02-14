@@ -8,6 +8,7 @@ import Artistible from './components/projects/Artistible';
 import TeslaClone from './components/projects/TeslaClone';
 import MovieList from './components/projects/MovieList';
 import WhatsApp from './components/projects/WhatsappClone';
+import Travel from './components/projects/TravelAdvisor';
 // import TinyMe from './components/projects/TinyMe';
 import ZoomClone from './components/projects/ZoomClone';
 import MiniProjects from './components/MiniProjects';
@@ -34,6 +35,12 @@ function App() {
 
           <Route exact path="/" element={
             <Home />
+          } />
+
+          <Route exact path="/projects/travel" element={
+            <Travel
+              leftBtnText={<a href="https://renato-travel-advisor.netlify.app/" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
+              rightBtnText={<a href="https://github.com/Netsujr/Renato_Travel_App" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
           } />
 
           <Route exact path="/projects/whatsapp" element={
