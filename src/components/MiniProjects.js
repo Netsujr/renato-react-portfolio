@@ -8,6 +8,7 @@ import theme from '../images/MiniProjects/theme_toggle.png';
 import counter from '../images/MiniProjects/counter.png';
 import grocery from '../images/MiniProjects/grocery.png';
 import blackjack from '../images/MiniProjects/blackjack.png';
+import calculator from '../images/MiniProjects/calculator.png';
 
 
 
@@ -18,6 +19,17 @@ function Section() {
         <h1>Mini Projects</h1>
       </ItemText>
       <Cards>
+        {/* --------------------------------------------- */}
+        <CardBody>
+          <a href="https://netsujr.github.io/JS_Calculator/" target="blank_" > <h2>Visit Site</h2><img id="image" src={calculator} alt="calculator" /></a>
+          <a href="https://github.com/Netsujr/JS_Calculator" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
+          <CardTitle>
+            <h4>Javascript Calculator</h4>
+          </CardTitle>
+          <CardDesc>
+            <p>A simple JS calculator. Made using JS, HTML, CSS.</p>
+          </CardDesc>
+        </CardBody>
         {/* --------------------------------------------- */}
         <CardBody>
           <a href="https://distracted-mahavira-252b8c.netlify.app/" target="blank_" > <h2>Visit Site</h2><img id="image" src={rps} alt="RockPaperScissors" /></a>
