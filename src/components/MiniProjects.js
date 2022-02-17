@@ -9,6 +9,7 @@ import counter from '../images/MiniProjects/counter.png';
 import grocery from '../images/MiniProjects/grocery.png';
 import blackjack from '../images/MiniProjects/blackjack.png';
 import calculator from '../images/MiniProjects/calculator.png';
+import snake from '../images/MiniProjects/snake.png';
 
 
 
@@ -19,6 +20,17 @@ function Section() {
         <h1>Mini Projects</h1>
       </ItemText>
       <Cards>
+        {/* --------------------------------------------- */}
+        <CardBody>
+          <a href="https://netsujr.github.io/JS_SnakeGame/" target="blank_" > <h2>Visit Site</h2><img id="image" src={snake} alt="calculator" /></a>
+          <a href="https://github.com/Netsujr/JS_SnakeGame" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
+          <CardTitle>
+            <h4>JS Snake Game</h4>
+          </CardTitle>
+          <CardDesc>
+            <p>Speed increases as you eat food. Whats your highest score?</p>
+          </CardDesc>
+        </CardBody>
         {/* --------------------------------------------- */}
         <CardBody>
           <a href="https://netsujr.github.io/JS_Calculator/" target="blank_" > <h2>Visit Site</h2><img id="image" src={calculator} alt="calculator" /></a>
