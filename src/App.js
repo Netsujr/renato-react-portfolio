@@ -6,6 +6,7 @@ import DisneyClone from './components/projects/DisneyClone';
 import SpotifyClone from './components/projects/SpotifyClone';
 import Artistible from './components/projects/Artistible';
 import TeslaClone from './components/projects/TeslaClone';
+import DoggyTeam from './components/projects/DoggyTeam';
 import MovieList from './components/projects/MovieList';
 import WhatsApp from './components/projects/WhatsappClone';
 import Travel from './components/projects/TravelAdvisor';
@@ -35,6 +36,12 @@ function App() {
 
           <Route exact path="/" element={
             <Home />
+          } />
+
+          <Route exact path="/projects/doggyteam" element={
+            <DoggyTeam
+              leftBtnText={<a href="https://github.com/Netsujr/dog_soccer_team" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
+              rightBtnText={<a href="https://renato-doggyteam.netlify.app/" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
           } />
 
           <Route exact path="/projects/travel" element={

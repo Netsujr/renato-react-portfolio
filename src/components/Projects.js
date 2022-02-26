@@ -27,7 +27,7 @@ function Projects() {
           <img id="image" src={doggy} alt="travelAdvisor" />
           <a href="https://renato-doggyteam.netlify.app/" target="blank_" ><img id='website' src={WebsiteIcon} alt="spotify" /></a>
           <a href="https://github.com/Netsujr/dog_soccer_team" target="_blank" rel="noreferrer"><img id='icon' src={GithubIcon} alt="Github" /></a>
-          <a href="/projects/travel" id="link"><span>Learn More </span>{'→'}</a>
+          <a href="/projects/doggyteam" id="link"><span>Learn More </span>{'→'}</a>
           <CardInfoContainer>
             <CardTitle>
               <h2>DOG Soccer Team (CRUD React)</h2>
