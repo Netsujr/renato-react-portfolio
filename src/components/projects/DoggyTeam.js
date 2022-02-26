@@ -32,7 +32,6 @@ function Section({ leftBtnText, rightBtnText }) {
           <p>For this project, I wanted to practice CRUD using Reactjs.
             I also used react-dom, APIs, Cloudinary, GlobalContext and a few other features which need to be upgraded.
             I'm in the process of improving the styling in general and refactoring some code to make GET requests a little faster.</p>
-          </p>
           <h4>Problems:</h4>
           <p>I had a few issues during production. There was an issue with the edit/update functionalities due to updated of React syntax.
              I had to use the useParams hook in order to pull the ID of my objects. It took me a while to wrap my head around how to use it (reading the documentation helped), but
