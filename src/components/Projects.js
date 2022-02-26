@@ -12,6 +12,9 @@ import whatsapp from "../images/WhatsappClone/wa1.png";
 import movie from '../images/MovieList/one.png';
 import art from '../images/Artistible/one.png';
 import travel from '../images/TravelAdvisor/one.png';
+import doggy from '../images/DoggyTeam/one.png';
+
+
 
 function Projects() {
   return (
@@ -19,7 +22,27 @@ function Projects() {
       <ItemText>
         <h1>Projects</h1>
       </ItemText>
-      <Cards>
+      <Cards>        {/* --------------------------------------------- */}
+        <CardBody>
+          <img id="image" src={doggy} alt="travelAdvisor" />
+          <a href="https://renato-doggyteam.netlify.app/" target="blank_" ><img id='website' src={WebsiteIcon} alt="spotify" /></a>
+          <a href="https://github.com/Netsujr/dog_soccer_team" target="_blank" rel="noreferrer"><img id='icon' src={GithubIcon} alt="Github" /></a>
+          <a href="/projects/doggyteam" id="link"><span>Learn More </span>{'→'}</a>
+          <CardInfoContainer>
+            <CardTitle>
+              <h2>DOG Soccer Team (CRUD React)</h2>
+            </CardTitle>
+            <CardDesc>
+              <p>
+                An App created using React that follows the basic CRUD pattern.
+                It allows you to create, read, update and delete dogs on your doggy team.
+                The dogs comes from a JSON file that is stored on the backend and
+                is updated every time you make a change. I was also fetching dog information
+                from 3 different third party APIs to fill in information about dogs.
+              </p>
+            </CardDesc>
+          </CardInfoContainer>
+        </CardBody>
         {/* --------------------------------------------- */}
         <CardBody>
           <img id="image" src={travel} alt="travelAdvisor" />
