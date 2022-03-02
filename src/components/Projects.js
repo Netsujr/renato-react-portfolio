@@ -6,6 +6,7 @@ import GithubIcon from "../images/Icons/github-original.svg";
 import WebsiteIcon from "../images/Icons/website.png";
 import spotify from "../images/SpotifyClone/one.png";
 import disney from "../images/DisneyClone/one.png";
+import CRUD from "../images/CRUD-store/one.png";
 import tesla from "../images/TeslaClone/one.png";
 import zoom from "../images/zoomClone/one.png";
 import whatsapp from "../images/WhatsappClone/wa1.png";
@@ -22,9 +23,30 @@ function Projects() {
       <ItemText>
         <h1>Projects</h1>
       </ItemText>
-      <Cards>        {/* --------------------------------------------- */}
+      <Cards>
+        {/* --------------------------------------------- */}
         <CardBody>
-          <img id="image" src={doggy} alt="travelAdvisor" />
+          <img id="image" src={CRUD} alt="redux store" />
+          <a href="renato-redux-store.netlify.app/" target="blank_" ><img id='website' src={WebsiteIcon} alt="spotify" /></a>
+          <a href="https://github.com/Netsujr/redux_store" target="_blank" rel="noreferrer"><img id='icon' src={GithubIcon} alt="Github" /></a>
+          <a href="/projects/redux-store" id="link"><span>Learn More </span>{'→'}</a>
+          <CardInfoContainer>
+            <CardTitle>
+              <h2>CRUD-React & Redux store</h2>
+            </CardTitle>
+            <CardDesc>
+              <p>
+                An App created using React that follows the basic CRUD pattern, changing the state from API call.
+                It allows you to create, read, update and delete products in your store.
+                The user can also add and remove products to the cart. I still need to add a checkout feature, and implement Local Storage.
+                At the moment I am working on the inputs for adding/editing products. I will be adding more features as I learn more.
+              </p>
+            </CardDesc>
+          </CardInfoContainer>
+        </CardBody>
+        {/* --------------------------------------------- */}
+        <CardBody>
+          <img id="image" src={doggy} alt="doggyteam" />
           <a href="https://renato-doggyteam.netlify.app/" target="blank_" ><img id='website' src={WebsiteIcon} alt="spotify" /></a>
           <a href="https://github.com/Netsujr/dog_soccer_team" target="_blank" rel="noreferrer"><img id='icon' src={GithubIcon} alt="Github" /></a>
           <a href="/projects/doggyteam" id="link"><span>Learn More </span>{'→'}</a>
