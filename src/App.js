@@ -38,6 +38,12 @@ function App() {
             <Home />
           } />
 
+          <Route exact path="/projects/redux-store" element={
+            <DoggyTeam
+              leftBtnText={<a href="https://renato-redux-store.netlify.app/" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
+              rightBtnText={<a href="https://github.com/Netsujr/redux_store" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
+          } />
+
           <Route exact path="/projects/doggyteam" element={
             <DoggyTeam
               leftBtnText={<a href="https://github.com/Netsujr/dog_soccer_team" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
