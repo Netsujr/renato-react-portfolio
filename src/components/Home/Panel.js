@@ -65,6 +65,7 @@ p {
   color: white;
 }
 
+
 p a {
   background-color: rgba(0, 0, 0, 0.22);
   border-radius: 5px;
