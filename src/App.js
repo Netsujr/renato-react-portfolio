@@ -12,6 +12,7 @@ import WhatsApp from './components/projects/WhatsappClone';
 import Travel from './components/projects/TravelAdvisor';
 // import TinyMe from './components/projects/TinyMe';
 import ZoomClone from './components/projects/ZoomClone';
+import CRUDStore from './components/projects/CRUD-store';
 import MiniProjects from './components/MiniProjects';
 import Projects from './components/Projects';
 import AboutMe from './components/AboutMe';
@@ -39,7 +40,7 @@ function App() {
           } />
 
           <Route exact path="/projects/redux-store" element={
-            <DoggyTeam
+            <CRUDStore
               leftBtnText={<a href="https://renato-redux-store.netlify.app/" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
               rightBtnText={<a href="https://github.com/Netsujr/redux_store" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
           } />
