@@ -25,7 +25,7 @@ function Home() {
 
         <Panel
           backgroundImage={require('../../images/backgrounds/code.png')}
-          title={'Renato Delboni'}
+          title={<div className='special'>Renato Delboni</div>}
           extraWord={'Front-End Developer'}
           word={<ContactIcons>
             <a href="https://github.com/netsujr" target="_blank" rel="noreferrer">
@@ -112,6 +112,16 @@ const Panels = styled.div`
     .open {
       flex: 1.5;
     }
+
+    .special {
+      text-transform: uppercase;
+      font-family: monospace;
+      text-shadow: 0 0 4px rgba(0, 0, 0, 0.82), 0 0 14px rgba(0, 0, 0, 0.85);
+      font-size: 23px;
+      color: white;
+      position: relative;
+      bottom: 5px;
+    }
     `;
 
 const ContactIcons = styled.div`
@@ -123,14 +133,14 @@ const ContactIcons = styled.div`
       /* border: 2px solid red; */
       background: white;
       border-radius: 10%;
-      padding: 2px;
+      padding: 1px;
       @media (max-width : 768px) {
         height: 30px;
       }
 
       &:hover {
         transition-delay: 0.5s;
-        background: pink;
+        background: rgba(255, 255, 255, 0.5);
       }
     }
     `;
