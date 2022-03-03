@@ -20,7 +20,7 @@ function Section() {
         <h1>Mini Projects</h1>
       </ItemText>
       <Cards>
-        {/* --------------------------------------------- */}
+
         <MiniProjectCard
           title="JS Snake Game"
           siteLink="https://netsujr.github.io/JS_SnakeGame/"
@@ -28,7 +28,7 @@ function Section() {
           description="Speed increases as you eat food. Whats your highest score?"
           cardImg={snake}
         />
-        {/* --------------------------------------------- */}
+
         <MiniProjectCard
           title="Javascript Calculator"
           siteLink="https://netsujr.github.io/JS_Calculator/"
@@ -36,83 +36,62 @@ function Section() {
           description="A simple calculator that can do basic math operations."
           cardImg={calculator}
         />
-        {/* --------------------------------------------- */}
-        <CardBody>
-          <a href="https://distracted-mahavira-252b8c.netlify.app/" target="blank_" > <h2>Visit Site</h2><img id="image" src={rps} alt="RockPaperScissors" /></a>
-          <a href="https://github.com/Netsujr/rock-paper-scissors" target="_blank" rel="noreferrer"><img id="icon" src='' alt="Github" /></a>
-          <CardTitle>
-            <h4>Rock, Paper, Scissors</h4>
-          </CardTitle>
-          <CardDesc>
-            <p>A quick game of R-P-S, can you beat my super intelligent AI? Used Javascript, HTML and CSS</p>
-          </CardDesc>
-        </CardBody>
-        {/* --------------------------------------------- */}
-        <CardBody>
-          <a href="https://hungry-mestorf-4efc96.netlify.app/" target="blank_" > <h2>Visit Site</h2><img id="image" src={blackjack} alt="blackjack" /></a>
-          <a href="https://github.com/Netsujr/javascript_blackjack" target="_blank" rel="noreferrer"><img id="icon" src='' alt="Github" /></a>
-          <CardTitle>
-            <h4>Javascript BlackJack</h4>
-          </CardTitle>
-          <CardDesc>
-            <p>Can you beat my AI's logic? Dont think so... Made using JS, HTML, CSS.</p>
-          </CardDesc>
-        </CardBody>
-        {/* --------------------------------------------- */}
-        <CardBody>
-          <a href="https://reverent-hermann-98a8cb.netlify.app/" target="blank_" > <h2>Visit Site</h2><img id="image" src={tm1} alt="TinymeStudios" /></a>
-          <a href="https://github.com/Netsujr/TinymeStudios" target="_blank" rel="noreferrer"><img id="icon" src='' alt="Github" /></a>
-          <CardTitle>
-            <h4>TinyMe Studios</h4>
-          </CardTitle>
-          <CardDesc>
-            <p>A landing page for a photographer client. Styling practice using JS, HTML, CSS.</p>
-          </CardDesc>
-        </CardBody>
-        {/* --------------------------------------------- */}
-        <CardBody>
-          <a href="https://naughty-einstein-a30f95.netlify.app/" target="blank_" > <h2>Visit Site</h2><img id="image" src={theme} alt="themeToggler" /></a>
-          <a href="https://github.com/Netsujr/Changing_Themes" target="_blank" rel="noreferrer"><img id="icon" src='' alt="Github" /></a>
-          <CardTitle>
-            <h4>Theme toggler</h4>
-          </CardTitle>
-          <CardDesc>
-            <p>A simple page practicing color scheming. Changes theme of page, made using JS, HTML, CSS.</p>
-          </CardDesc>
-        </CardBody>
-        {/* --------------------------------------------- */}
-        <CardBody>
-          <a href="https://modest-colden-be1fdb.netlify.app/" target="blank_" > <h2>Visit Site</h2><img id="image" src={counter} alt="counter" /></a>
-          <a href="https://github.com/Netsujr/simple_counter_js" target="_blank" rel="noreferrer"><img id="icon" src='' alt="Github" /></a>
-          <CardTitle>
-            <h4>Javascript Counter</h4>
-          </CardTitle>
-          <CardDesc>
-            <p>A simple JS counter. Can you find both secrets? Made using JS, HTML, CSS.</p>
-          </CardDesc>
-        </CardBody>
-        {/* --------------------------------------------- */}
-        <CardBody>
-          <a href="https://thirsty-austin-932dc8.netlify.app" target="blank_" > <h2>Visit Site</h2><img id="image" src={grocery} alt="groceries" /></a>
-          <a href="https://github.com/Netsujr/JavaScript_grocery_list" target="_blank" rel="noreferrer"><img id="icon" src='' alt="Github" /></a>
-          <CardTitle>
-            <h4>Javascript Grocery List</h4>
-          </CardTitle>
-          <CardDesc>
-            <p>A simple JS grocery List. Add/Remove/Edit your items. Made using JS, HTML, CSS.</p>
-          </CardDesc>
-        </CardBody>
-        {/* --------------------------------------------- */}
-        <CardBody>
-          <img src={comingSoon} alt="" />
-          <CardTitle>
-            <h4>My Webstore</h4>
-          </CardTitle>
-          <CardDesc>
-            <p>A westore using a variety of tool. workshop ran by Ben W.</p>
-          </CardDesc>
-        </CardBody>
-        {/* --------------------------------------------- */}
+
+        <MiniProjectCard
+          title="Rock, Paper, Scissors"
+          siteLink="https://distracted-mahavira-252b8c.netlify.app/"
+          GhLink="https://github.com/Netsujr/rock-paper-scissors"
+          description="A quick game of R-P-S, can you beat my super intelligent AI? Used Javascript, HTML and CSS"
+          cardImg={rps}
+        />
+
+        <MiniProjectCard
+          title="Javascript BlackJack"
+          siteLink="https://hungry-mestorf-4efc96.netlify.app/"
+          GhLink="https://github.com/Netsujr/javascript_blackjack"
+          description="Can you beat my AI's logic? Dont think so... Made using JS, HTML, CSS"
+          cardImg={blackjack}
+        />
+
+        <MiniProjectCard
+          title="TinyMe Studios"
+          siteLink="https://reverent-hermann-98a8cb.netlify.app/"
+          GhLink="https://github.com/Netsujr/TinymeStudios"
+          description="A landing page for a photographer client. Styling practice using JS, HTML, CSS"
+          cardImg={tm1}
+        />
+
+          <MiniProjectCard
+          title="Theme Toggler"
+          siteLink="https://naughty-einstein-a30f95.netlify.app/"
+          GhLink="https://github.com/Netsujr/Changing_Themes"
+          description="A simple theme changer. Styling practice using JS, HTML, CSS"
+          cardImg={theme}
+        />
+
+        <MiniProjectCard
+          title="JS Counter"
+          siteLink="https://modest-colden-be1fdb.netlify.app/"
+          GhLink="https://github.com/Netsujr/simple_counter_js"
+          description="A simple JS counter. Can you find both secrets? Made using JS, HTML, CSS"
+          cardImg={counter}
+        />
+
+        <MiniProjectCard
+          title="JS Grocery List"
+          siteLink="https://thirsty-austin-932dc8.netlify.app"
+          GhLink="https://github.com/Netsujr/JavaScript_grocery_list"
+          description="A JS grocery List. Add/Remove/Edit your items. Made using JS, HTML, CSS"
+          cardImg={grocery}
+        />
+
+        <MiniProjectCard
+          title="My Webstore"
+          siteLink=""
+          GhLink=""
+          description="A webstore using a variety of tools. workshop ran by Ben W."
+          cardImg={comingSoon}
+        />
       </Cards>
     </Wrap>
   );
