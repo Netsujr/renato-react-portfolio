@@ -14,7 +14,7 @@ import movie from '../../images/PersonalProjects/MovieList/one.png';
 import art from '../../images/PersonalProjects/Artistible/one.png';
 import travel from '../../images/PersonalProjects/TravelAdvisor/one.png';
 import doggy from '../../images/PersonalProjects/DoggyTeam/one.png';
-
+import ProjectCard from './ProjectCard';
 
 
 function Projects() {
@@ -24,205 +24,123 @@ function Projects() {
         <h1>Projects</h1>
       </ItemText>
       <Cards>
-        {/* --------------------------------------------- */}
-        <CardBody>
-          <img id="image" src={CRUD} alt="redux store" />
-          <a href="renato-redux-store.netlify.app/" target="blank_" ><img id='website' src={WebsiteIcon} alt="spotify" /></a>
-          <a href="https://github.com/Netsujr/redux_store" target="_blank" rel="noreferrer"><img id='icon' src={GithubIcon} alt="Github" /></a>
-          <a href="/projects/redux-store" id="link"><span>Learn More </span>{'→'}</a>
-          <CardInfoContainer>
-            <CardTitle>
-              <h2>CRUD-React & Redux store</h2>
-            </CardTitle>
-            <CardDesc>
-              <p>
-                An App created using React that follows the basic CRUD pattern, changing the state from API call.
-                It allows you to create, read, update and delete products in your store.
-                The user can also add and remove products to the cart. I still need to add a checkout feature, and implement Local Storage.
-                At the moment I am working on the inputs for adding/editing products. I will be adding more features as I learn more.
-              </p>
-            </CardDesc>
-          </CardInfoContainer>
-        </CardBody>
-        {/* --------------------------------------------- */}
-        <CardBody>
-          <img id="image" src={doggy} alt="doggyteam" />
-          <a href="https://renato-doggyteam.netlify.app/" target="blank_" ><img id='website' src={WebsiteIcon} alt="spotify" /></a>
-          <a href="https://github.com/Netsujr/dog_soccer_team" target="_blank" rel="noreferrer"><img id='icon' src={GithubIcon} alt="Github" /></a>
-          <a href="/projects/doggyteam" id="link"><span>Learn More </span>{'→'}</a>
-          <CardInfoContainer>
-            <CardTitle>
-              <h2>DOG Soccer Team (CRUD React)</h2>
-            </CardTitle>
-            <CardDesc>
-              <p>
-                An App created using React that follows the basic CRUD pattern.
-                It allows you to create, read, update and delete dogs on your doggy team.
-                The dogs comes from a JSON file that is stored on the backend and
-                is updated every time you make a change. I was also fetching dog information
-                from 3 different third party APIs to fill in information about dogs.
-              </p>
-            </CardDesc>
-          </CardInfoContainer>
-        </CardBody>
-        {/* --------------------------------------------- */}
-        <CardBody>
-          <img id="image" src={travel} alt="travelAdvisor" />
-          <a href="https://renato-travel-advisor.netlify.app/" target="blank_" ><img id='website' src={WebsiteIcon} alt="spotify" /></a>
-          <a href="https://github.com/Netsujr/Renato_Travel_App" target="_blank" rel="noreferrer"><img id='icon' src={GithubIcon} alt="Github" /></a>
-          <a href="/projects/travel" id="link"><span>Learn More </span>{'→'}</a>
-          <CardInfoContainer>
-            <CardTitle>
-              <h2>Travel Advisor</h2>
-            </CardTitle>
-            <CardDesc>
-              <p>
-                A Travel Advisor app built with React.js and MaterialUI. This app can be used to
-                find the best places to go for a trip. It uses the Google Maps API and Rapid API to find the
-                best places to go for a trip. Choose between hotels, restaurants, and attractions.
-              </p>
-            </CardDesc>
-          </CardInfoContainer>
-        </CardBody>
-        {/* --------------------------------------------- */}
-        <CardBody>
-          <img id="image" src={comingSoon} alt="coming soon" />
-          <CardInfoContainer>
-            <CardTitle>
-              <h2>My Web Store</h2>
-            </CardTitle>
-            <CardDesc>
-              <a href="/projects/" id="link"><span>Learn More </span>{'→'}</a>
-              <p>A web-store for my kitty and her instagram. users are able to purchase my kitty Tachi snacks and toys. Will be updated soon to take real payments using stripe. Want to buy my
-                cat something? follow the link!
-              </p>
-            </CardDesc>
-          </CardInfoContainer>
-        </CardBody>
-        {/* --------------------------------------------- */}
-        <CardBody>
-          <img id="image" src={spotify} alt="spotify" />
-          <a href="http://renato-spotify-clone.herokuapp.com" target="blank_" ><img id='website' src={WebsiteIcon} alt="spotify" /></a>
-          <a href="https://github.com/Netsujr/spotify-clone" target="_blank" rel="noreferrer"><img id='icon' src={GithubIcon} alt="Github" /></a>
-          <a href="/projects/spotify" id="link"><span>Learn More </span>{'→'}</a>
-          <CardInfoContainer>
-            <CardTitle>
-              <h2>Spotify Clone</h2>
-            </CardTitle>
-            <CardDesc>
-              <p>
-                A spotify clone app designed for the user to be able to control
-                their personal spotify track-list / playlists through the web. This was
-                achieved by using Spotify's API and getting permission to authenticate the
-                user's unique token via gmail. Firebase used for database storage.
-              </p>
-            </CardDesc>
-          </CardInfoContainer>
-        </CardBody>
-        {/* --------------------------------------------- */}
-        <CardBody>
-          <img id="image" src={disney} alt="disney" />
-          <a href="https://disney-clone-renato.herokuapp.com/" target="blank_" ><img id='website' src={WebsiteIcon} alt="disney" /></a>
-          <a href="https://github.com/Netsujr/disney-clone" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
-          <a href="/projects/disney" id="link"><span>Learn More </span>{'→'}</a>
-          <CardInfoContainer>
-            <CardTitle>
-              <h2>Disney Clone</h2>
-            </CardTitle>
-            <CardDesc>
-              <p>
-                Disney web App clone. I took on this project mainly to practice my React
-                design skills using styled components and DOM router. I also implemented
-                a database using Firebase for the movies and their respective details pages.
-                User auth was used for login but no information is stored.
-              </p>
-            </CardDesc>
-          </CardInfoContainer>
-        </CardBody>
-        {/* --------------------------------------------- */}
-        <CardBody>
-          <img id="image" src={tesla} alt="Tesla" />
-          <a href="https://renato-tesla-clone.herokuapp.com/" target="blank_" ><img id='website' src={WebsiteIcon} alt="tesla" /></a>
-          <a href="https://github.com/Netsujr/tesla_clone_using_react" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
-          <a href="/projects/tesla" id="link"><span>Learn More </span>{'→'}</a>
-          <CardInfoContainer>
-            <CardTitle>
-              <h2>Tesla Clone</h2>
-            </CardTitle>
-            <CardDesc>
-              <p>One of my early React projects. Used to practice using sections and Redux to prevent prop drilling. The links don't work and aren't supposed to, they are there for styling purposes.
-                A lot of inspiration form the Tesla Clone project style was used on my portfolio. Pictures from tesla website.
-              </p>
-            </CardDesc>
-          </CardInfoContainer>
-        </CardBody>
-        {/* --------------------------------------------- */}
-        <CardBody>
-          <img id="image" src={zoom} alt="zoom" />
-          <a href="#" target="blank_" ></a>
-          <a href="https://github.com/Netsujr/zoom-clone" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
-          <a href="/projects/zoom" id="link"><span>Learn More </span>{'→'}</a>
-          <CardInfoContainer>
-            <CardTitle>
-              <h2>Zoom Clone (React Native)</h2>
-            </CardTitle>
-            <CardDesc>
-              <p>
-                By far one of my most difficult React projects. Custom API built to host users
-                video transmission but I was unable to get cross streaming video between 2 users.
-                At the moment even when there are 2 users in the same 'chatroom', user can only see them selves. App will be deployed when this issue is sorted.
-              </p>
-            </CardDesc>
-          </CardInfoContainer>
-        </CardBody>
-        {/* --------------------------------------------- */}
-        <CardBody>
-          <img id="image" src={whatsapp} alt="whatsapp" />
-          <a href="https://whatsapp-clone-40cda.web.app/" target="blank_" ><img id='website' src={WebsiteIcon} alt="whatsapp" /></a>
-          <a href="https://github.com/Netsujr/whatsapp-clone" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
-          <a href="/projects/whatsapp" id="link"><span>Learn More </span>{'→'}</a>
-          <CardInfoContainer>
-            <CardTitle>
-              <h2>WhatsApp Clone</h2>
-            </CardTitle>
-            <CardDesc>
-              <p>WhatsApp clone that also uses firebase to store messages and Chat Rooms. user can login as normal to see messages but token is not stored like in the Spotify Clone for security measures. A really fun app to build. </p>
-            </CardDesc>
-          </CardInfoContainer>
-        </CardBody>
-        {/* --------------------------------------------- */}
-        <CardBody>
-          <img id="image" src={art} alt="art" />
-          <a href="https://artistible.herokuapp.com/" target="blank_" ><img id='website' src={WebsiteIcon} alt="art" /></a>
-          <a href="https://github.com/Netsujr/artistible" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
-          <a href="/projects/art" id="link"><span>Learn More </span>{'→'}</a>
-          <CardInfoContainer>
-            <CardTitle>
-              <h2>Artistable</h2>
-            </CardTitle>
-            <CardDesc>
-              <p>A marketplace app built during my time at Lewagon. Artists are able to sell their services by displaying their latest works. Users can choose artist the want to hire based on their work samples. Seeds were used, artists and works are for presentation purposes only. </p>
-            </CardDesc>
-          </CardInfoContainer>
-        </CardBody>
-        {/* --------------------------------------------- */}
-        <CardBody>
-          <img id="image" src={movie} alt="movie" />
-          <a href="http://renato-movie-list.herokuapp.com" target="blank_" ><img id='website' src={WebsiteIcon} alt="movie" /></a>
-          <a href="https://github.com/Netsujr/rails-watch-list" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
-          <a href="/projects/movie" id="link"><span>Learn More </span>{'→'}</a>
-          <CardInfoContainer>
-            <CardTitle>
-              <h2>Movie List</h2>
-            </CardTitle>
-            <CardDesc>
-              <p>Create lists with your favorite movies to a selection. App is very open with users being able to destroy or edit each other's lists, an obvious security flaw, however this was one of my first ever apps that I built. I left it as is for
-                me to be able to see my own progress when looking back at my early work.
-              </p>
-            </CardDesc>
-          </CardInfoContainer>
-        </CardBody>
-        {/* --------------------------------------------- */}
+
+        <ProjectCard
+          title="CRUD-React & Redux store"
+          description="An App created using React that follows the basic CRUD pattern, changing the state from API call.
+    It allows you to create, read, update and delete products in your store.
+    The user can also add and remove products to the cart. I still need to add a checkout feature, and implement Local Storage.
+    At the moment I am working on the inputs for adding/editing products. I will be adding more features as I learn more."
+          siteLink="https://renato-redux-store.netlify.app/"
+          GhLink="https://github.com/Netsujr/redux_store"
+          path="redux-store"
+          image={CRUD}
+        />
+
+        <ProjectCard
+          title="DOG Soccer Team (CRUD React)"
+          description="An App created using React that follows the basic CRUD pattern.
+    It allows you to create, read, update and delete dogs on your doggy team.
+    The dogs comes from a JSON file that is stored on the backend and
+    is updated every time you make a change. I was also fetching dog information
+    from 3 different third party APIs to fill in information about dogs."
+          siteLink="https://renato-doggyteam.netlify.app/"
+          GhLink="https://github.com/Netsujr/dog_soccer_team"
+          path="doggyteam"
+          image={doggy}
+        />
+
+        <ProjectCard
+          title="Travel Advisor"
+          description="A Travel Advisor app built with React.js and MaterialUI. This app can be used to find the best places to go for a trip. It uses the Google Maps API and Rapid API to find the best places to go for a trip. Choose between hotels, restaurants, and attractions."
+          siteLink="https://renato-traveladvisor.netlify.app/"
+          GhLink="https://github.com/Netsujr/Renato_Travel_App"
+          path="travel"
+          image={travel}
+        />
+
+        <ProjectCard
+          title="Spotify Clone"
+          description="A spotify clone app designed for the user to be able to control
+    their personal spotify track-list / playlists through the web. This was
+    achieved by using Spotify's API and getting permission to authenticate the
+    user's unique token via gmail. Firebase used for database storage."
+          siteLink="http://renato-spotify-clone.herokuapp.app/"
+          GhLink="https://github.com/Netsujr/spotify-clone"
+          path="spotify"
+          image={spotify}
+        />
+
+        <ProjectCard
+          title="Disney Clone"
+          description="Disney web App clone. I took on this project mainly to practice my React
+    design skills using styled components and DOM router. I also implemented
+    a database using Firebase for the movies and their respective details pages.
+    User auth was used for login but no information is stored."
+          siteLink="https://disney-clone-renato.herokuapp.com/"
+          GhLink="https://github.com/Netsujr/disney-clone"
+          path="disney"
+          image={disney}
+        />
+
+        <ProjectCard
+          title="Tesla Clone"
+          description="One of my early React projects. Used to practice using sections and Redux to prevent prop drilling. The links don't work and aren't supposed to, they are there for styling purposes.
+    A lot of inspiration form the Tesla Clone project style was used on my portfolio. Pictures from tesla website."
+          siteLink="https://renato-tesla-clone.herokuapp.com/"
+          GhLink="https://github.com/Netsujr/tesla_clone_using_react"
+          path="tesla"
+          image={tesla}
+        />
+
+        <ProjectCard
+          title="Zoom Clone (React Native)"
+          description="By far one of my most difficult React projects. Custom API built to host users
+    video transmission but I was unable to get cross streaming video between 2 users.
+    At the moment even when there are 2 users in the same 'chatroom', user can only see them selves. App will be deployed when this issue is sorted."
+          // siteLink=""
+          GhLink="https://github.com/Netsujr/zoom-clone"
+          path="zoom"
+          image={zoom}
+        />
+
+        <ProjectCard
+          title="Whatsapp Clone"
+          description="WhatsApp clone that also uses firebase to store messages and Chat Rooms. user can login as normal to see messages but token is not stored like in the Spotify Clone for security measures. A really fun app to build."
+          siteLink="https://whatsapp-clone-40cda.web.app/"
+          GhLink="https://github.com/Netsujr/whatsapp-clone"
+          path="whatsapp"
+          image={whatsapp}
+        />
+
+        <ProjectCard
+          title="Artistable"
+          description="A marketplace app built during my time at Lewagon. Artists are able to sell their services by displaying their latest works. Users can choose artist the want to hire based on their work samples. Seeds were used, artists and works are for presentation purposes only."
+          siteLink="https://artistible.herokuapp.com/"
+          GhLink="https://github.com/Netsujr/artistible"
+          path="art"
+          image={art}
+        />
+
+        <ProjectCard
+          title="Movie List"
+          description="Create lists with your favorite movies to a selection. App is very open with users being able to destroy or edit each other's lists, an obvious security flaw, however this was one of my first ever apps that I built. I left it as is for
+    me to be able to see my own progress when looking back at my early work."
+          siteLink="https://movie-list-renato.herokuapp.com/"
+          GhLink="https://github.com/Netsujr/rails-watch-list"
+          path="movie"
+          image={movie}
+        />
+
+        <ProjectCard
+          title="My Web Store"
+          description="A web-store for my kitty and her instagram. users are able to purchase my kitty Tachi snacks and toys. Will be updated soon to take real payments using stripe. Want to buy my cat something? follow the link!"
+          // siteLink=""
+          // GhLink=""
+          // path=""
+          image={comingSoon}
+        />
+
       </Cards>
     </Wrap>
   );
