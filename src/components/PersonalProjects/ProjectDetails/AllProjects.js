@@ -1,47 +1,36 @@
 import React from 'react';
 import styled from 'styled-components';
-import ImgSlider from '../../../ImgSlider';
+import ImgSlider from '../../ImgSlider';
 import Fade from 'react-reveal/Fade';
-import crud1 from "../../../images/PersonalProjects/CRUD-store/one.png";
-import crud2 from "../../../images/PersonalProjects/CRUD-store/two.png";
-import crud3 from "../../../images/PersonalProjects/CRUD-store/three.png";
-import JavascriptIcon from "../../../images/Icons/javascript-plain.svg";
-import ReactIcon from "../../../images/Icons/react-original.svg";
-import ReduxIcon from "../../../images/Icons/redux-original.svg";
-import HTMLIcon from "../../../images/Icons/html5-original.svg";
-import CSSIcon from "../../../images/Icons/css3-original.svg";
 
-function AllProjects({ leftBtnText, rightBtnText }) {
+function AllProjects({ leftBtnText, rightBtnText, title, role, problems, solutions, img1, img2, img3, icon1, icon2, icon3, icon4, icon5, icon6 }) {
   return (
     <Wrap>
       <Fade top>
         <ItemText>
-          <h1>React & Redux CRUD Store |  </h1>
-          {/*Put Icons innside Itemtext */}
-          <Icons src={JavascriptIcon} />
-          <Icons src={ReactIcon} />
-          <Icons src={ReduxIcon} />
-          <Icons src={HTMLIcon} />
-          <Icons src={CSSIcon} />
+          <h1>{title}</h1>
+          <Icons src={icon1} />
+          <Icons src={icon2} />
+          <Icons src={icon3} />
+          <Icons src={icon4} />
+          <Icons src={icon5} />
         </ItemText>
       </Fade>
       <ProjectContainer>
         <ProjectInfo >
           <h2>Details</h2>
           <h4>Role:</h4>
-          <p>For this project, I wanted to practice state CRUD using Reactjs.
-            I also used react-dom, APIs, Redux and a few other features.
-            I'm in the process of improving the styling in general and refactoring some code to make GET requests a little faster.</p>
+          <p>{role}</p>
           <h4>Problems:</h4>
-          <p>I had a few issues during production. Redux was a little tricky to set up at first. I didn't want to bother with inputs just yet when creating ot editing a product, but it will be implemented in the near future. </p>
+          <p>{problems}</p>
           <h4>Solutions:</h4>
-          <p> Reading up about Redux and everything it brings was a little confusing, but having worked with GlobalContext before, I realized they are similar. I just wanted to use Redux in a non-complicated way, which I did. I will be building on the Actions and Reducers as I learn more about them. </p>
+          <p>{solutions}</p>
         </ProjectInfo>
         <SliderContainer>
           <ImgSlider
-            FirstImg={crud1}
-            SecondImg={crud2}
-            ThirdImg={crud3}
+            FirstImg={img1}
+            SecondImg={img2}
+            ThirdImg={img3}
           />
         </SliderContainer>
       </ProjectContainer>
