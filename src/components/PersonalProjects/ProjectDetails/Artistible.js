@@ -11,7 +11,7 @@ import CSSIcon from "../../../images/Icons/css3-original.svg";
 import RubyIcon from "../../../images/Icons/ruby-original-wordmark.svg";
 import RailsIcon from "../../../images/Icons/rails-plain-wordmark.svg";
 
-function Section({ leftBtnText, rightBtnText }) {
+function Artistable({ leftBtnText, rightBtnText }) {
   return (
     <Wrap>
       <Fade top>
@@ -60,7 +60,7 @@ function Section({ leftBtnText, rightBtnText }) {
   );
 }
 
-export default Section;
+export default Artistable;
 
 const Wrap = styled.div`
   max-width: 100vw;

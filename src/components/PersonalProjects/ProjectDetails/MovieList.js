@@ -10,7 +10,7 @@ import RubyIcon from "../../../images/Icons/ruby-original-wordmark.svg";
 import RailsIcon from "../../../images/Icons/rails-plain-wordmark.svg";
 import CSSIcon from "../../../images/Icons/css3-original.svg";
 
-function Section({ leftBtnText, rightBtnText }) {
+function MovieList({ leftBtnText, rightBtnText }) {
   return (
     <Wrap>
       <Fade top>
@@ -58,7 +58,7 @@ function Section({ leftBtnText, rightBtnText }) {
   );
 }
 
-export default Section;
+export default MovieList;
 
 const Wrap = styled.div`
   max-width: 100vw;

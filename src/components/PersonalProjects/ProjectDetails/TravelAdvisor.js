@@ -11,7 +11,8 @@ import HTMLIcon from "../../../images/Icons/html5-original.svg";
 import CSSIcon from "../../../images/Icons/css3-original.svg";
 import GoogleCloud from '../../../images/Icons/google_cloud-icon.svg';
 import RapidAPI from '../../../images/Icons/rapidapi-icon.svg';
-function Section({ leftBtnText, rightBtnText }) {
+
+function TravelAdvisor({ leftBtnText, rightBtnText }) {
   return (
     <Wrap>
       <Fade top>
@@ -62,7 +63,7 @@ function Section({ leftBtnText, rightBtnText }) {
   );
 }
 
-export default Section;
+export default TravelAdvisor;
 
 const Wrap = styled.div`
   max-width: 100vw;

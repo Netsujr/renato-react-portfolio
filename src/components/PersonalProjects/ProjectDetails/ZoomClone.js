@@ -11,7 +11,7 @@ import ReduxIcon from "../../../images/Icons/redux-original.svg";
 import HTMLIcon from "../../../images/Icons/html5-original.svg";
 import CSSIcon from "../../../images/Icons/css3-original.svg";
 
-function Section({ leftBtnText, rightBtnText }) {
+function zoomClone({ leftBtnText, rightBtnText }) {
   return (
     <Wrap>
       <Fade top>
@@ -60,7 +60,7 @@ function Section({ leftBtnText, rightBtnText }) {
   );
 }
 
-export default Section;
+export default zoomClone;
 
 const Wrap = styled.div`
   max-width: 100vw;
