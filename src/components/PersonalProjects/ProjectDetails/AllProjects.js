@@ -1,49 +1,36 @@
 import React from 'react';
 import styled from 'styled-components';
-import ImgSlider from '../ImgSlider';
+import ImgSlider from '../../ImgSlider';
 import Fade from 'react-reveal/Fade';
-import dt1 from "../../images/PersonalProjects/DoggyTeam/one.png";
-import dt2 from "../../images/PersonalProjects/DoggyTeam/two.png";
-import dt3 from "../../images/PersonalProjects/DoggyTeam/three.png";
-import JavascriptIcon from "../../images/Icons/javascript-plain.svg";
-import ReactIcon from "../../images/Icons/react-original.svg";
-import ReduxIcon from "../../images/Icons/redux-original.svg";
-import HTMLIcon from "../../images/Icons/html5-original.svg";
-import CSSIcon from "../../images/Icons/css3-original.svg";
 
-function Section({ leftBtnText, rightBtnText }) {
+function AllProjects({ leftBtnText, rightBtnText, title, role, problems, solutions, img1, img2, img3, icon1, icon2, icon3, icon4, icon5, icon6 }) {
   return (
     <Wrap>
       <Fade top>
         <ItemText>
-          <h1>Doggy Team |  </h1>
-          {/*Put Icons innside Itemtext */}
-          <Icons src={JavascriptIcon} />
-          <Icons src={ReactIcon} />
-          <Icons src={ReduxIcon} />
-          <Icons src={HTMLIcon} />
-          <Icons src={CSSIcon} />
+          <h1>{title}</h1>
+          <Icons src={icon1} />
+          <Icons src={icon2} />
+          <Icons src={icon3} />
+          <Icons src={icon4} />
+          <Icons src={icon5} />
         </ItemText>
       </Fade>
       <ProjectContainer>
         <ProjectInfo >
           <h2>Details</h2>
           <h4>Role:</h4>
-          <p>For this project, I wanted to practice CRUD using Reactjs.
-            I also used react-dom, APIs, Cloudinary, GlobalContext and a few other features which need to be upgraded.
-            I'm in the process of improving the styling in general and refactoring some code to make GET requests a little faster.</p>
+          <p>{role}</p>
           <h4>Problems:</h4>
-          <p>I had a few issues during production. There was an issue with the edit/update functionalities due to updated of React syntax.
-             I had to use the useParams hook in order to pull the ID of my objects. It took me a while to wrap my head around how to use it (reading the documentation helped), but
-             it made more sense once it was implemented. </p>
+          <p>{problems}</p>
           <h4>Solutions:</h4>
-          <p> As always, I should have gone straight to the documentation for the hook. I asked for some help from my peers and they were able to help me debug and implement the hook without breaking the rest of my code. </p>
+          <p>{solutions}</p>
         </ProjectInfo>
         <SliderContainer>
           <ImgSlider
-            FirstImg={dt1}
-            SecondImg={dt2}
-            ThirdImg={dt3}
+            FirstImg={img1}
+            SecondImg={img2}
+            ThirdImg={img3}
           />
         </SliderContainer>
       </ProjectContainer>
@@ -65,7 +52,7 @@ function Section({ leftBtnText, rightBtnText }) {
   );
 }
 
-export default Section;
+export default AllProjects;
 
 const Wrap = styled.div`
   max-width: 100vw;
