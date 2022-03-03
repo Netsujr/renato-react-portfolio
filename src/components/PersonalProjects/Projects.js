@@ -1,19 +1,19 @@
 import React from 'react';
-import '../App.css';
+// import '../../App.css';
 import styled from 'styled-components';
-import comingSoon from "../images/comingsoon.png";
-import GithubIcon from "../images/Icons/github-original.svg";
-import WebsiteIcon from "../images/Icons/website.png";
-import spotify from "../images/SpotifyClone/one.png";
-import disney from "../images/DisneyClone/one.png";
-import CRUD from "../images/CRUD-store/one.png";
-import tesla from "../images/TeslaClone/one.png";
-import zoom from "../images/zoomClone/one.png";
-import whatsapp from "../images/WhatsappClone/wa1.png";
-import movie from '../images/MovieList/one.png';
-import art from '../images/Artistible/one.png';
-import travel from '../images/TravelAdvisor/one.png';
-import doggy from '../images/DoggyTeam/one.png';
+import comingSoon from "../../images/comingsoon.png";
+import GithubIcon from "../../images/Icons/github-original.svg";
+import WebsiteIcon from "../../images/Icons/website.png";
+import spotify from "../../images/PersonalProjects/SpotifyClone/one.png";
+import disney from "../../images/PersonalProjects/DisneyClone/one.png";
+import CRUD from "../../images/PersonalProjects/CRUD-store/one.png";
+import tesla from "../../images/PersonalProjects/TeslaClone/one.png";
+import zoom from "../../images/PersonalProjects/zoomClone/one.png";
+import whatsapp from "../../images/PersonalProjects/WhatsappClone/wa1.png";
+import movie from '../../images/PersonalProjects/MovieList/one.png';
+import art from '../../images/PersonalProjects/Artistible/one.png';
+import travel from '../../images/PersonalProjects/TravelAdvisor/one.png';
+import doggy from '../../images/PersonalProjects/DoggyTeam/one.png';
 
 
 

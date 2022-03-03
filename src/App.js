@@ -14,7 +14,7 @@ import Travel from './components/projects/TravelAdvisor';
 import ZoomClone from './components/projects/ZoomClone';
 import CRUDStore from './components/projects/CRUD-store';
 import MiniProjects from './components/MiniProjects/MiniProjects';
-import Projects from './components/Projects';
+import Projects from './components/PersonalProjects/Projects';
 import AboutMe from './components/AboutMe';
 import Js30 from './components/JS30/Javascript30';
 import Resume from './RenatoDelboniResume.pdf';
