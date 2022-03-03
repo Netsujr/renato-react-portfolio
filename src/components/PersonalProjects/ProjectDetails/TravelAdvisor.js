@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ImgSlider from '../ImgSlider';
+import ImgSlider from '../../ImgSlider';
 import Fade from 'react-reveal/Fade';
 import ta1 from "../../images/PersonalProjects/TravelAdvisor/one.png";
 import ta2 from "../../images/PersonalProjects/TravelAdvisor/two.png";

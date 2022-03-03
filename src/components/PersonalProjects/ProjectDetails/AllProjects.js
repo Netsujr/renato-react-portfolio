@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ImgSlider from '../../ImgSlider';
+import ImgSlider from '../../../ImgSlider';
 import Fade from 'react-reveal/Fade';
 import crud1 from "../../images/PersonalProjects/CRUD-store/one.png";
 import crud2 from "../../images/PersonalProjects/CRUD-store/two.png";

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ImgSlider from '../../../ImgSlider';
+import ImgSlider from '../../../../ImgSlider';
 import Fade from 'react-reveal/Fade';
 import tm1 from "../../images/PersonalProjects/TinyMe/one.png";
 import tm2 from "../../images/PersonalProjects/TinyMe/two.png";

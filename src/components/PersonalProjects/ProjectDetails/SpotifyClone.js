@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ImgSlider from '../ImgSlider';
+import ImgSlider from '../../ImgSlider';
 import Fade from 'react-reveal/Fade';
 import sp1 from "../../images/PersonalProjects/SpotifyClone/one.png";
 import sp2 from "../../images/PersonalProjects/SpotifyClone/two.png";

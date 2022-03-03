@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ImgSlider from '../ImgSlider';
+import ImgSlider from '../../ImgSlider';
 import Fade from 'react-reveal/Fade';
 import ar1 from "../../images/PersonalProjects/Artistible/one.png";
 import ar2 from "../../images/PersonalProjects/Artistible/two.png";

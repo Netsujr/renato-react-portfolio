@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ImgSlider from '../ImgSlider';
+import ImgSlider from '../../ImgSlider';
 import Fade from 'react-reveal/Fade';
 import zc1 from "../../images/PersonalProjects/zoomClone/one.png";
 import zc2 from "../../images/PersonalProjects/zoomClone/two.png";

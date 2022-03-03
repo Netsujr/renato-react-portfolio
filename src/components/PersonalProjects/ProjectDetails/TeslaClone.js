@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ImgSlider from '../ImgSlider';
+import ImgSlider from '../../ImgSlider';
 import Fade from 'react-reveal/Fade';
 import tc1 from "../../images/PersonalProjects/TeslaClone/one.png";
 import tc2 from "../../images/PersonalProjects/TeslaClone/two.png";

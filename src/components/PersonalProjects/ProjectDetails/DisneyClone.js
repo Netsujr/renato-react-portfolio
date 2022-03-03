@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ImgSlider from '../ImgSlider';
+import ImgSlider from '../../ImgSlider';
 import Fade from 'react-reveal/Fade';
 import dc1 from "../../images/PersonalProjects/DisneyClone/one.png";
 import dc2 from "../../images/PersonalProjects/DisneyClone/two.png";

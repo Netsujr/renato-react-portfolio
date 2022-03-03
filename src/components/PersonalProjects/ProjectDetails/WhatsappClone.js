@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ImgSlider from '../ImgSlider';
+import ImgSlider from '../../ImgSlider';
 import Fade from 'react-reveal/Fade';
 import wa1 from "../../images/PersonalProjects/WhatsappClone/wa1.png";
 import wa2 from "../../images/PersonalProjects/WhatsappClone/wa2.png";

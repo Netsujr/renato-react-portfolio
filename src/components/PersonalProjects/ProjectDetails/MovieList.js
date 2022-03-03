@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ImgSlider from '../ImgSlider';
+import ImgSlider from '../../ImgSlider';
 import Fade from 'react-reveal/Fade';
 import ml1 from "../../images/PersonalProjects/MovieList/one.png";
 import ml2 from "../../images/PersonalProjects/MovieList/two.png";

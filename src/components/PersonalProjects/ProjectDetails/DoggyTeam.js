@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ImgSlider from '../ImgSlider';
+import ImgSlider from '../../ImgSlider';
 import Fade from 'react-reveal/Fade';
 import dt1 from "../../images/PersonalProjects/DoggyTeam/one.png";
 import dt2 from "../../images/PersonalProjects/DoggyTeam/two.png";
