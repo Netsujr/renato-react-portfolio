@@ -2,15 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 import ImgSlider from '../../ImgSlider';
 import Fade from 'react-reveal/Fade';
-import ta1 from "../../images/PersonalProjects/TravelAdvisor/one.png";
-import ta2 from "../../images/PersonalProjects/TravelAdvisor/two.png";
-import ta3 from "../../images/PersonalProjects/TravelAdvisor/three.png";
-import JavascriptIcon from "../../images/Icons/javascript-plain.svg";
-import ReactIcon from "../../images/Icons/react-original.svg";
-import HTMLIcon from "../../images/Icons/html5-original.svg";
-import CSSIcon from "../../images/Icons/css3-original.svg";
-import GoogleCloud from '../../images/Icons/google_cloud-icon.svg';
-import RapidAPI from '../../images/Icons/rapidapi-icon.svg';
+import ta1 from "../../../images/PersonalProjects/TravelAdvisor/one.png";
+import ta2 from "../../../images/PersonalProjects/TravelAdvisor/two.png";
+import ta3 from "../../../images/PersonalProjects/TravelAdvisor/three.png";
+import JavascriptIcon from "../../../images/Icons/javascript-plain.svg";
+import ReactIcon from "../../../images/Icons/react-original.svg";
+import HTMLIcon from "../../../images/Icons/html5-original.svg";
+import CSSIcon from "../../../images/Icons/css3-original.svg";
+import GoogleCloud from '../../../images/Icons/google_cloud-icon.svg';
+import RapidAPI from '../../../images/Icons/rapidapi-icon.svg';
 function Section({ leftBtnText, rightBtnText }) {
   return (
     <Wrap>

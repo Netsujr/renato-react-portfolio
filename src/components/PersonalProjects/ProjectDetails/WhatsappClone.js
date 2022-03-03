@@ -2,15 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 import ImgSlider from '../../ImgSlider';
 import Fade from 'react-reveal/Fade';
-import wa1 from "../../images/PersonalProjects/WhatsappClone/wa1.png";
-import wa2 from "../../images/PersonalProjects/WhatsappClone/wa2.png";
-import wa3 from "../../images/PersonalProjects/WhatsappClone/wa3.png";
-import JavascriptIcon from "../../images/Icons/javascript-plain.svg";
-import ReactIcon from "../../images/Icons/react-original.svg";
-import FirebaseIcon from "../../images/Icons/firebase-plain-wordmark.svg";
-import HTMLIcon from "../../images/Icons/html5-original.svg";
-import CSSIcon from "../../images/Icons/css3-original.svg";
-import ReduxIcon from "../../images/Icons/redux-original.svg";
+import wa1 from "../../../images/PersonalProjects/WhatsappClone/wa1.png";
+import wa2 from "../../../images/PersonalProjects/WhatsappClone/wa2.png";
+import wa3 from "../../../images/PersonalProjects/WhatsappClone/wa3.png";
+import JavascriptIcon from "../../../images/Icons/javascript-plain.svg";
+import ReactIcon from "../../../images/Icons/react-original.svg";
+import FirebaseIcon from "../../../images/Icons/firebase-plain-wordmark.svg";
+import HTMLIcon from "../../../images/Icons/html5-original.svg";
+import CSSIcon from "../../../images/Icons/css3-original.svg";
+import ReduxIcon from "../../../images/Icons/redux-original.svg";
 
 function Section({ leftBtnText, rightBtnText }) {
   return (

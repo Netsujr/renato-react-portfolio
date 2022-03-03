@@ -2,12 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import ImgSlider from '../../../../ImgSlider';
 import Fade from 'react-reveal/Fade';
-import tm1 from "../../images/PersonalProjects/TinyMe/one.png";
-import tm2 from "../../images/PersonalProjects/TinyMe/two.png";
-import tm3 from "../../images/PersonalProjects/TinyMe/three.png";
-import JavascriptIcon from "../../images/Icons/javascript-plain.svg";
-import HTMLIcon from "../../images/Icons/html5-original.svg";
-import CSSIcon from "../../images/Icons/css3-original.svg";
+import tm1 from "../../../images/PersonalProjects/TinyMe/one.png";
+import tm2 from "../../../images/PersonalProjects/TinyMe/two.png";
+import tm3 from "../../../images/PersonalProjects/TinyMe/three.png";
+import JavascriptIcon from "../../../images/Icons/javascript-plain.svg";
+import HTMLIcon from "../../../images/Icons/html5-original.svg";
+import CSSIcon from "../../../images/Icons/css3-original.svg";
 
 function Section({ leftBtnText, rightBtnText }) {
   return (

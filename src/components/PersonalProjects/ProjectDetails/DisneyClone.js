@@ -2,15 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 import ImgSlider from '../../ImgSlider';
 import Fade from 'react-reveal/Fade';
-import dc1 from "../../images/PersonalProjects/DisneyClone/one.png";
-import dc2 from "../../images/PersonalProjects/DisneyClone/two.png";
-import dc3 from "../../images/PersonalProjects/DisneyClone/three.png";
-import JavascriptIcon from "../../images/Icons/javascript-plain.svg";
-import ReactIcon from "../../images/Icons/react-original.svg";
-import ReduxIcon from "../../images/Icons/redux-original.svg";
-import HTMLIcon from "../../images/Icons/html5-original.svg";
-import CSSIcon from "../../images/Icons/css3-original.svg";
-import FirebaseIcon from "../../images/Icons/firebase-plain-wordmark.svg";
+import dc1 from "../../../images/PersonalProjects/DisneyClone/one.png";
+import dc2 from "../../../images/PersonalProjects/DisneyClone/two.png";
+import dc3 from "../../../images/PersonalProjects/DisneyClone/three.png";
+import JavascriptIcon from "../../../images/Icons/javascript-plain.svg";
+import ReactIcon from "../../../images/Icons/react-original.svg";
+import ReduxIcon from "../../../images/Icons/redux-original.svg";
+import HTMLIcon from "../../../images/Icons/html5-original.svg";
+import CSSIcon from "../../../images/Icons/css3-original.svg";
+import FirebaseIcon from "../../../images/Icons/firebase-plain-wordmark.svg";
 
 function Section({ leftBtnText, rightBtnText }) {
   return (

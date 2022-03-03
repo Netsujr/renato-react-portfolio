@@ -2,14 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import ImgSlider from '../../ImgSlider';
 import Fade from 'react-reveal/Fade';
-import ar1 from "../../images/PersonalProjects/Artistible/one.png";
-import ar2 from "../../images/PersonalProjects/Artistible/two.png";
-import ar3 from "../../images/PersonalProjects/Artistible/three.png";
-import JavascriptIcon from "../../images/Icons/javascript-plain.svg";
-import HTMLIcon from "../../images/Icons/html5-original.svg";
-import CSSIcon from "../../images/Icons/css3-original.svg";
-import RubyIcon from "../../images/Icons/ruby-original-wordmark.svg";
-import RailsIcon from "../../images/Icons/rails-plain-wordmark.svg";
+import ar1 from "../../../images/PersonalProjects/Artistible/one.png";
+import ar2 from "../../../images/PersonalProjects/Artistible/two.png";
+import ar3 from "../../../images/PersonalProjects/Artistible/three.png";
+import JavascriptIcon from "../../../images/Icons/javascript-plain.svg";
+import HTMLIcon from "../../../images/Icons/html5-original.svg";
+import CSSIcon from "../../../images/Icons/css3-original.svg";
+import RubyIcon from "../../../images/Icons/ruby-original-wordmark.svg";
+import RailsIcon from "../../../images/Icons/rails-plain-wordmark.svg";
 
 function Section({ leftBtnText, rightBtnText }) {
   return (

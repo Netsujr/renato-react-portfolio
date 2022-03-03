@@ -2,14 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import ImgSlider from '../../ImgSlider';
 import Fade from 'react-reveal/Fade';
-import crud1 from "../../images/PersonalProjects/CRUD-store/one.png";
-import crud2 from "../../images/PersonalProjects/CRUD-store/two.png";
-import crud3 from "../../images/PersonalProjects/CRUD-store/three.png";
-import JavascriptIcon from "../../images/Icons/javascript-plain.svg";
-import ReactIcon from "../../images/Icons/react-original.svg";
-import ReduxIcon from "../../images/Icons/redux-original.svg";
-import HTMLIcon from "../../images/Icons/html5-original.svg";
-import CSSIcon from "../../images/Icons/css3-original.svg";
+import crud1 from "../../../images/PersonalProjects/CRUD-store/one.png";
+import crud2 from "../../../images/PersonalProjects/CRUD-store/two.png";
+import crud3 from "../../../images/PersonalProjects/CRUD-store/three.png";
+import JavascriptIcon from "../../../images/Icons/javascript-plain.svg";
+import ReactIcon from "../../../images/Icons/react-original.svg";
+import ReduxIcon from "../../../images/Icons/redux-original.svg";
+import HTMLIcon from "../../../images/Icons/html5-original.svg";
+import CSSIcon from "../../../images/Icons/css3-original.svg";
 
 function Section({ leftBtnText, rightBtnText }) {
   return (

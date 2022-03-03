@@ -2,13 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 import ImgSlider from '../../ImgSlider';
 import Fade from 'react-reveal/Fade';
-import ml1 from "../../images/PersonalProjects/MovieList/one.png";
-import ml2 from "../../images/PersonalProjects/MovieList/two.png";
-import ml3 from "../../images/PersonalProjects/MovieList/three.png";
-import HTMLIcon from "../../images/Icons/html5-original.svg";
-import RubyIcon from "../../images/Icons/ruby-original-wordmark.svg";
-import RailsIcon from "../../images/Icons/rails-plain-wordmark.svg";
-import CSSIcon from "../../images/Icons/css3-original.svg";
+import ml1 from "../../../images/PersonalProjects/MovieList/one.png";
+import ml2 from "../../../images/PersonalProjects/MovieList/two.png";
+import ml3 from "../../../images/PersonalProjects/MovieList/three.png";
+import HTMLIcon from "../../../images/Icons/html5-original.svg";
+import RubyIcon from "../../../images/Icons/ruby-original-wordmark.svg";
+import RailsIcon from "../../../images/Icons/rails-plain-wordmark.svg";
+import CSSIcon from "../../../images/Icons/css3-original.svg";
 
 function Section({ leftBtnText, rightBtnText }) {
   return (
