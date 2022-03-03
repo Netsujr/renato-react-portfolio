@@ -18,8 +18,8 @@ function ReduxStore({ leftBtnText, rightBtnText }) {
       role="For this project, I wanted to practice state CRUD using Reactjs.
     I also used react-dom, APIs, Redux and a few other features.
     I'm in the process of improving the styling in general and refactoring some code to make GET requests a little faster."
-      problem="I had a few issues during production. Redux was a little tricky to set up at first. I didn't want to bother with inputs just yet when creating ot editing a product, but it will be implemented in the near future."
-      solution=" Reading up about Redux and everything it brings was a little confusing, but having worked with GlobalContext before, I realized they are similar. I just wanted to use Redux in a non-complicated way, which I did. I will be building on the Actions and Reducers as I learn more about them."
+      problems="I had a few issues during production. Redux was a little tricky to set up at first. I didn't want to bother with inputs just yet when creating ot editing a product, but it will be implemented in the near future."
+      solutions=" Reading up about Redux and everything it brings was a little confusing, but having worked with GlobalContext before, I realized they are similar. I just wanted to use Redux in a non-complicated way, which I did. I will be building on the Actions and Reducers as I learn more about them."
       img1={crud1}
       img2={crud2}
       img3={crud3}
