@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import comingSoon from "../../images/comingsoon.png";
-import GithubIcon from "../../images/Icons/github-original.svg";
 import rps from "../../images/MiniProjects/Rock-paper-scissors.png";
 import tm1 from "../../images/TinyMe/one.png";
 import theme from '../../images/MiniProjects/theme_toggle.png';
@@ -10,6 +9,7 @@ import grocery from '../../images/MiniProjects/grocery.png';
 import blackjack from '../../images/MiniProjects/blackjack.png';
 import calculator from '../../images/MiniProjects/calculator.png';
 import snake from '../../images/MiniProjects/snake.png';
+import MiniProjectCard from './MiniProjectCard';
 
 
 
@@ -21,31 +21,25 @@ function Section() {
       </ItemText>
       <Cards>
         {/* --------------------------------------------- */}
-        <CardBody>
-          <a href="https://netsujr.github.io/JS_SnakeGame/" target="blank_" > <h2>Visit Site</h2><img id="image" src={snake} alt="calculator" /></a>
-          <a href="https://github.com/Netsujr/JS_SnakeGame" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
-          <CardTitle>
-            <h4>JS Snake Game</h4>
-          </CardTitle>
-          <CardDesc>
-            <p>Speed increases as you eat food. Whats your highest score?</p>
-          </CardDesc>
-        </CardBody>
+        <MiniProjectCard
+          title="JS Snake Game"
+          siteLink="https://netsujr.github.io/JS_SnakeGame/"
+          GhLink="https://github.com/Netsujr/JS_SnakeGame"
+          description="Speed increases as you eat food. Whats your highest score?"
+          cardImg={snake}
+        />
         {/* --------------------------------------------- */}
-        <CardBody>
-          <a href="https://netsujr.github.io/JS_Calculator/" target="blank_" > <h2>Visit Site</h2><img id="image" src={calculator} alt="calculator" /></a>
-          <a href="https://github.com/Netsujr/JS_Calculator" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
-          <CardTitle>
-            <h4>Javascript Calculator</h4>
-          </CardTitle>
-          <CardDesc>
-            <p>A simple JS calculator. Made using JS, HTML, CSS.</p>
-          </CardDesc>
-        </CardBody>
+        <MiniProjectCard
+          title="Javascript Calculator"
+          siteLink="https://netsujr.github.io/JS_Calculator/"
+          GhLink="https://github.com/Netsujr/JS_Calculator"
+          description="A simple calculator that can do basic math operations."
+          cardImg={calculator}
+        />
         {/* --------------------------------------------- */}
         <CardBody>
           <a href="https://distracted-mahavira-252b8c.netlify.app/" target="blank_" > <h2>Visit Site</h2><img id="image" src={rps} alt="RockPaperScissors" /></a>
-          <a href="https://github.com/Netsujr/rock-paper-scissors" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
+          <a href="https://github.com/Netsujr/rock-paper-scissors" target="_blank" rel="noreferrer"><img id="icon" src='' alt="Github" /></a>
           <CardTitle>
             <h4>Rock, Paper, Scissors</h4>
           </CardTitle>
@@ -56,7 +50,7 @@ function Section() {
         {/* --------------------------------------------- */}
         <CardBody>
           <a href="https://hungry-mestorf-4efc96.netlify.app/" target="blank_" > <h2>Visit Site</h2><img id="image" src={blackjack} alt="blackjack" /></a>
-          <a href="https://github.com/Netsujr/javascript_blackjack" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
+          <a href="https://github.com/Netsujr/javascript_blackjack" target="_blank" rel="noreferrer"><img id="icon" src='' alt="Github" /></a>
           <CardTitle>
             <h4>Javascript BlackJack</h4>
           </CardTitle>
@@ -67,7 +61,7 @@ function Section() {
         {/* --------------------------------------------- */}
         <CardBody>
           <a href="https://reverent-hermann-98a8cb.netlify.app/" target="blank_" > <h2>Visit Site</h2><img id="image" src={tm1} alt="TinymeStudios" /></a>
-          <a href="https://github.com/Netsujr/TinymeStudios" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
+          <a href="https://github.com/Netsujr/TinymeStudios" target="_blank" rel="noreferrer"><img id="icon" src='' alt="Github" /></a>
           <CardTitle>
             <h4>TinyMe Studios</h4>
           </CardTitle>
@@ -78,7 +72,7 @@ function Section() {
         {/* --------------------------------------------- */}
         <CardBody>
           <a href="https://naughty-einstein-a30f95.netlify.app/" target="blank_" > <h2>Visit Site</h2><img id="image" src={theme} alt="themeToggler" /></a>
-          <a href="https://github.com/Netsujr/Changing_Themes" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
+          <a href="https://github.com/Netsujr/Changing_Themes" target="_blank" rel="noreferrer"><img id="icon" src='' alt="Github" /></a>
           <CardTitle>
             <h4>Theme toggler</h4>
           </CardTitle>
@@ -89,7 +83,7 @@ function Section() {
         {/* --------------------------------------------- */}
         <CardBody>
           <a href="https://modest-colden-be1fdb.netlify.app/" target="blank_" > <h2>Visit Site</h2><img id="image" src={counter} alt="counter" /></a>
-          <a href="https://github.com/Netsujr/simple_counter_js" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
+          <a href="https://github.com/Netsujr/simple_counter_js" target="_blank" rel="noreferrer"><img id="icon" src='' alt="Github" /></a>
           <CardTitle>
             <h4>Javascript Counter</h4>
           </CardTitle>
@@ -100,7 +94,7 @@ function Section() {
         {/* --------------------------------------------- */}
         <CardBody>
           <a href="https://thirsty-austin-932dc8.netlify.app" target="blank_" > <h2>Visit Site</h2><img id="image" src={grocery} alt="groceries" /></a>
-          <a href="https://github.com/Netsujr/JavaScript_grocery_list" target="_blank" rel="noreferrer"><img id="icon" src={GithubIcon} alt="Github" /></a>
+          <a href="https://github.com/Netsujr/JavaScript_grocery_list" target="_blank" rel="noreferrer"><img id="icon" src='' alt="Github" /></a>
           <CardTitle>
             <h4>Javascript Grocery List</h4>
           </CardTitle>
