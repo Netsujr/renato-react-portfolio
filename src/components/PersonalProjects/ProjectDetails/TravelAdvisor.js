@@ -11,6 +11,7 @@ import HTMLIcon from "../../../images/Icons/html5-original.svg";
 import CSSIcon from "../../../images/Icons/css3-original.svg";
 import GoogleCloud from '../../../images/Icons/google_cloud-icon.svg';
 import RapidAPI from '../../../images/Icons/rapidapi-icon.svg';
+import AllProjects from './AllProjects';
 
 function TravelAdvisor({ leftBtnText, rightBtnText }) {
   return (

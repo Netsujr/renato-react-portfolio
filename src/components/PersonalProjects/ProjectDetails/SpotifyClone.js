@@ -10,6 +10,7 @@ import ReactIcon from "../../../images/Icons/react-original.svg";
 import FirebaseIcon from "../../../images/Icons/firebase-plain-wordmark.svg";
 import HTMLIcon from "../../../images/Icons/html5-original.svg";
 import CSSIcon from "../../../images/Icons/css3-original.svg";
+import AllProjects from './AllProjects';
 
 function SpotifyClone({ leftBtnText, rightBtnText }) {
   return (

@@ -9,6 +9,7 @@ import HTMLIcon from "../../../images/Icons/html5-original.svg";
 import RubyIcon from "../../../images/Icons/ruby-original-wordmark.svg";
 import RailsIcon from "../../../images/Icons/rails-plain-wordmark.svg";
 import CSSIcon from "../../../images/Icons/css3-original.svg";
+import AllProjects from './AllProjects';
 
 function MovieList({ leftBtnText, rightBtnText }) {
   return (
