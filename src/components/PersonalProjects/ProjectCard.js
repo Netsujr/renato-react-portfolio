@@ -1,24 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
+import GithubIcon from "../../images/Icons/github-original.svg";
+import WebsiteIcon from "../../images/Icons/website.png";
 
-const ProjectCard = () => {
+const ProjectCard = ({ title, description, siteLink, GhLink, path, image }) => {
   return (
     <CardBody>
-      <img id="image" src='' alt="redux store" />
-      <a href="renato-redux-store.netlify.app/" target="blank_" ><img id='website' src={WebsiteIcon} alt="spotify" /></a>
-      <a href="https://github.com/Netsujr/redux_store" target="_blank" rel="noreferrer"><img id='icon' src={GithubIcon} alt="Github" /></a>
-      <a href="/projects/redux-store" id="link"><span>Learn More </span>{'→'}</a>
+      <img id="image" src={image} alt="redux store" />
+      <a href={siteLink} target="blank_" ><img id='website' src={WebsiteIcon} alt={title} /></a>
+      <a href={GhLink} target="_blank" rel="noreferrer"><img id='icon' src={GithubIcon} alt="Github" /></a>
+      <a href={`/projects/${path}`} id="link"><span>Learn More </span>{'→'}</a>
       <CardInfoContainer>
         <CardTitle>
-          <h2>CRUD-React & Redux store</h2>
+          <h2>{title}</h2>
         </CardTitle>
         <CardDesc>
-          <p>
-            An App created using React that follows the basic CRUD pattern, changing the state from API call.
-            It allows you to create, read, update and delete products in your store.
-            The user can also add and remove products to the cart. I still need to add a checkout feature, and implement Local Storage.
-            At the moment I am working on the inputs for adding/editing products. I will be adding more features as I learn more.
-          </p>
+          <p>{description}</p>
         </CardDesc>
       </CardInfoContainer>
     </CardBody>
