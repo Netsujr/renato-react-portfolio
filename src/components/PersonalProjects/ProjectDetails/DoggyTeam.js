@@ -13,6 +13,8 @@ function DoggyTeam({ leftBtnText, rightBtnText }) {
   return (
     <AllProjects
       title="Doggy Team |  "
+      leftBtnText={leftBtnText}
+      rightBtnText={rightBtnText}
       role="For this project, I wanted to practice CRUD using Reactjs.
     I also used react-dom, APIs, Cloudinary, GlobalContext and a few other features which need to be upgraded.
     I'm in the process of improving the styling in general and refactoring some code to make GET requests a little faster."
