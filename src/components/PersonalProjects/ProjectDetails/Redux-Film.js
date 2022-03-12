@@ -15,7 +15,7 @@ function ReduxMovieList({ leftBtnText, rightBtnText }) {
       title="React MovieList |  "
       leftBtnText={leftBtnText}
       rightBtnText={rightBtnText}
-      role="A sire made using React using Redux and Redux-toolkit. It is a movie list app that allows the user to search for movies and add them to their list."
+      role="A site made using React using Redux and Redux-toolkit. It is a movie list app that allows the user to search for movies and add them to their list."
       problems="Trying to use redux's state management was a little tricky. I had to use a lot of middleware and async functions to make sure that the state was updated correctly. Also experimenting with Slice was a good learning experience."
       solutions="I looked up many solutions on Youtube and documentation to help me with this project. I am getting a lot more familiar with Redux the more I use it, but there are still some things I'm trying to figure out."
       img1={rf1}
