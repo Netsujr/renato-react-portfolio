@@ -55,7 +55,9 @@ function Section({ leftBtnText, rightBtnText }) {
               Even though I'm currently looking for a Front-end position, my ultimate goal would be to become a tech lead/full-stack developer in the future. It's ambitious, However, I am a very fast learner and my passion to do better always drives me forward. Most of my experience comes from using Ruby on Rails, but I am keen to learn further technologies. I’ve been actively improving my Javascript/React.js skills, as I really enjoy the Front-End aspect of web development. I am excited to start learning other frameworks as well. It would be great to be given the opportunity to display my skills and become part of a strong team.
               <br />
               <br />
-              Currently, I am working part-time for Stats Perform as a soccer scout/data analyst. My passion for soccer takes me around Japan where I get to watch something I love and work at the same time. This work requires a lot of attention to detail, organization, communication and data interpretation, all skills I feel are very much transferable to Web Development, and I have been using them in my projects. Feel free to check them out above!
+              Currently, I am working part-time for Stats Perform as a soccer scout/data analyst. My passion for soccer takes me around Japan where I get to watch something I love and work at the same time. I'm also participating in an internship with
+              <strong> <a href="https://www.kammeko.com/"> Kammeko</a> </strong>,
+              as a front-end developer. This work requires a lot of attention to detail, organization, communication and data interpretation, all skills I feel are very much transferable to Web Development and I have been using them in my projects. Feel free to check them out above!
               <br />
               Renato Delboni</p>
           </InfoContainer>

@@ -1,12 +1,10 @@
 import React from 'react';
-// import '../../App.css';
 import styled from 'styled-components';
 import comingSoon from "../../images/comingsoon.png";
-import GithubIcon from "../../images/Icons/github-original.svg";
-import WebsiteIcon from "../../images/Icons/website.png";
 import spotify from "../../images/PersonalProjects/SpotifyClone/one.png";
 import disney from "../../images/PersonalProjects/DisneyClone/one.png";
 import CRUD from "../../images/PersonalProjects/CRUD-store/one.png";
+import ReduxFilm from "../../images/PersonalProjects/Redux-film/one.png";
 import tesla from "../../images/PersonalProjects/TeslaClone/one.png";
 import zoom from "../../images/PersonalProjects/zoomClone/one.png";
 import whatsapp from "../../images/PersonalProjects/WhatsappClone/wa1.png";
@@ -24,6 +22,15 @@ function Projects() {
         <h1>Projects</h1>
       </ItemText>
       <Cards>
+
+        <ProjectCard
+          title="React Film List"
+          description="An App created using React and Redux. It allows the user to search for movies and tv-shows. This app uses the MovieDB API to search for movies and tv-shows with each movie having its own details page with dynamic data from the API. The next step will be for the user to be able to create their own lists, add movies to their list and view their list."
+          siteLink="https://renato-redux-filmlist.netlify.app/"
+          GhLink="https://github.com/Netsujr/Redux-Movie_List"
+          path="redux-film"
+          image={ReduxFilm}
+        />
 
         <ProjectCard
           title="CRUD-React & Redux store"
@@ -170,157 +177,6 @@ const Wrap = styled.div`
     overflow-x: hidden;
   }
   `;
-
-const CardBody = styled.div`
-  border: 2px solid rgba(83, 83, 83, 0.3);
-  /* border: solid 1px red; */
-  min-width: 75vw;
-  min-height: 100%;
-  margin: 20px;
-  padding: 10px;
-  border-radius: 5px;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  @media (max-width : 768px) {
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    max-height: 100%;
-  }
-
-  &:hover {
-    #icon, #link, #website {
-      opacity: 1;
-    }
-    border: 2px solid rgba(83, 83, 83, 0.6);
-  }
-
-  &:hover {
-    background-color: rgba(204, 243, 255, 0.2);
-  }
-
-  img {
-    width: 250px;
-    height: 150px;
-    object-fit: cover;
-    display: flex;
-    align-items: flex-start;
-    margin-right: 20px;
-    z-index: 0;
-    @media (max-width : 768px) {
-      width: 200px;
-      height: 100px;
-      margin-right: 0;
-    }
-  }
-
-  #icon {
-    z-index: 1;
-    height: 25px;
-    width: 25px;
-    display: flex;
-    position: absolute;
-    top: 10px;
-    left: 300px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 50px;
-    transition: all .3s;
-    opacity: 0;
-    @media (max-width : 768px) {
-      opacity: 1;
-      top: 3px;
-      left: 5px;
-
-    }
-
-    &:hover {
-      height: 27px;
-      width: 27px;
-    }
-  }
-
-  #website {
-    z-index: 1;
-    height: 25px;
-    width: 25px;
-    display: flex;
-    position: absolute;
-    top: 10px;
-    left: 270px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 50px;
-    opacity: 0;
-    transition: all .3s;
-    @media (max-width : 768px) {
-      opacity: 1;
-      top: 40px;
-      left: 5px;
-    }
-
-    &:hover {
-      height: 27px;
-      width: 27px;
-    }
-  }
-
-  #link {
-    z-index: 1;
-    padding: .75rem .75rem;
-    border-radius: 10rem;
-    color: black;
-    text-transform: uppercase;
-    font-size: 0.5rem;
-    letter-spacing: .15rem;
-    transition: all .3s;
-    overflow: hidden;
-    background-color: #A9E1FF;
-    position: absolute;
-    right: 5px;
-    top: 10px;
-    opacity: 0;
-    @media (max-width : 768px) {
-      opacity: 1;
-      width: fit-content;
-      padding: 0px 5px;
-      font-size: 15px;
-      span {
-        display: none;
-      }
-    }
-
-    &:hover {
-      background-color: black;
-      color: #ffffff;
-    }
-  }
-  `;
-
-const CardInfoContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  `;
-
-const CardTitle = styled.div`
-  margin-bottom: 2px;
-  `;
-
-const CardDesc = styled.div`
-
-  p {
-    text-align: start;
-    padding: 0px 10px;
-    font-size: 16px !important;
-    margin-top: 10px;
-    @media (max-width : 768px) {
-      font-size: 12px !important;
-    }
-  }
-
-  `;
-
-// sc for const shortcut
 
 const ItemText = styled.div`
   /* border: 2px solid orange; */

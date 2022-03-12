@@ -8,6 +8,7 @@ import Artistible from './components/PersonalProjects/ProjectDetails/Artistible'
 import TeslaClone from './components/PersonalProjects/ProjectDetails/TeslaClone';
 import DoggyTeam from './components/PersonalProjects/ProjectDetails/DoggyTeam';
 import MovieList from './components/PersonalProjects/ProjectDetails/MovieList';
+import ReduxFilmList from './components/PersonalProjects/ProjectDetails/Redux-Film';
 import WhatsApp from './components/PersonalProjects/ProjectDetails/WhatsappClone';
 import Travel from './components/PersonalProjects/ProjectDetails/TravelAdvisor';
 // import TinyMe from './components/PersonalProjects/ProjectDetails/TinyMe';
@@ -37,6 +38,12 @@ function App() {
 
           <Route exact path="/" element={
             <Home />
+          } />
+
+          <Route exact path="/projects/redux-film" element={
+            <ReduxFilmList
+              leftBtnText={<a href="renato-redux-filmlist.netlify.app/" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
+              rightBtnText={<a href="https://github.com/Netsujr/Redux-Movie_List" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
           } />
 
           <Route exact path="/projects/redux-store" element={
