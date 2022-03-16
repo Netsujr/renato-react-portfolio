@@ -24,7 +24,7 @@ function Section() {
 
         <MiniProjectCard
           title="TypeScript Notes"
-          siteLink="https://app.netlify.com/sites/typescript-notes/overview"
+          siteLink="https://typescript-notes.netlify.app/"
           GhLink="https://github.com/Netsujr/typescript-notes-practice"
           description="User can create and delete notes! Created using React and TypeScript."
           cardImg={notes}
