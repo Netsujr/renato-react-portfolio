@@ -42,7 +42,7 @@ function App() {
 
           <Route exact path="/projects/redux-film" element={
             <ReduxFilmList
-              leftBtnText={<a href="renato-redux-filmlist.netlify.app/" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
+              leftBtnText={<a href="https://renato-redux-filmlist.netlify.app/" alt="visitSite" target="_blank" rel="noreferrer">Visit Site</a>}
               rightBtnText={<a href="https://github.com/Netsujr/Redux-Movie_List" alt="visitGH" target="_blank" rel="noreferrer">Visit Github Repository</a>} />
           } />
 
