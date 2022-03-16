@@ -9,6 +9,7 @@ import grocery from '../../images/MiniProjects/grocery.png';
 import blackjack from '../../images/MiniProjects/blackjack.png';
 import calculator from '../../images/MiniProjects/calculator.png';
 import snake from '../../images/MiniProjects/snake.png';
+import notes from '../../images/MiniProjects/notes.png';
 import MiniProjectCard from './MiniProjectCard';
 
 
@@ -20,6 +21,14 @@ function Section() {
         <h1>Mini Projects</h1>
       </ItemText>
       <Cards>
+
+        <MiniProjectCard
+          title="TypeScript Notes"
+          siteLink="https://app.netlify.com/sites/typescript-notes/overview"
+          GhLink="https://github.com/Netsujr/typescript-notes-practice"
+          description="User can create and delete notes! Created using React and TypeScript."
+          cardImg={notes}
+        />
 
         <MiniProjectCard
           title="JS Snake Game"
