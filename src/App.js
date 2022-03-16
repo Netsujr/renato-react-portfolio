@@ -18,7 +18,7 @@ import MiniProjects from './components/MiniProjects/MiniProjects';
 import Projects from './components/PersonalProjects/Projects';
 import AboutMe from './components/AboutMe';
 import Js30 from './components/JS30/Javascript30';
-import Resume from './RenatoDelboniResume.pdf';
+import Resume from './DelboniRenatoCV.pdf';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
