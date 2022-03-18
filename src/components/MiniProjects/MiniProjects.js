@@ -10,6 +10,7 @@ import blackjack from '../../images/MiniProjects/blackjack.png';
 import calculator from '../../images/MiniProjects/calculator.png';
 import snake from '../../images/MiniProjects/snake.png';
 import notes from '../../images/MiniProjects/notes.png';
+import quiz from '../../images/MiniProjects/quiz.png';
 import MiniProjectCard from './MiniProjectCard';
 
 
@@ -21,6 +22,14 @@ function Section() {
         <h1>Mini Projects</h1>
       </ItemText>
       <Cards>
+
+        <MiniProjectCard
+          title="Quiz Night"
+          siteLink="https://renato-quiz-night.netlify.app/"
+          GhLink="https://github.com/Netsujr/quiz-night"
+          description="Take on this Sports Quiz and test your knowledge. Chelsea quiz coming soon..."
+          cardImg={quiz}
+        />
 
         <MiniProjectCard
           title="TypeScript Notes"
