@@ -11,6 +11,7 @@ import calculator from '../../images/MiniProjects/calculator.png';
 import snake from '../../images/MiniProjects/snake.png';
 import notes from '../../images/MiniProjects/notes.png';
 import quiz from '../../images/MiniProjects/quiz.png';
+import task from '../../images/MiniProjects/task.png';
 import MiniProjectCard from './MiniProjectCard';
 
 
@@ -22,6 +23,14 @@ function Section() {
         <h1>Mini Projects</h1>
       </ItemText>
       <Cards>
+
+        <MiniProjectCard
+          title="TypeScript Tasks"
+          siteLink="https://typescript-taskapp.netlify.app/"
+          GhLink="https://github.com/Netsujr/typescript-taskapp"
+          description="Create tasks and set a deadline to them. User can also delete completed tasks"
+          cardImg={task}
+        />
 
         <MiniProjectCard
           title="Quiz Night"
