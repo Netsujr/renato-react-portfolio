@@ -12,6 +12,7 @@ import snake from '../../images/MiniProjects/snake.png';
 import notes from '../../images/MiniProjects/notes.png';
 import quiz from '../../images/MiniProjects/quiz.png';
 import task from '../../images/MiniProjects/task.png';
+import weather from '../../images/MiniProjects/weather.png';
 import MiniProjectCard from './MiniProjectCard';
 
 
@@ -23,6 +24,14 @@ function Section() {
         <h1>Mini Projects</h1>
       </ItemText>
       <Cards>
+
+        <MiniProjectCard
+          title="Vue Weather-App"
+          siteLink="https://kitty-vue-weather-app.netlify.app/"
+          GhLink="https://github.com/Netsujr/vue-weather-app"
+          description="Check the weather in you city or from anywhere in the world. Type city or country!"
+          cardImg={weather}
+        />
 
         <MiniProjectCard
           title="TypeScript Tasks"
@@ -88,7 +97,7 @@ function Section() {
           cardImg={tm1}
         />
 
-          <MiniProjectCard
+        <MiniProjectCard
           title="Theme Toggler"
           siteLink="https://naughty-einstein-a30f95.netlify.app/"
           GhLink="https://github.com/Netsujr/Changing_Themes"
