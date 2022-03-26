@@ -21,7 +21,11 @@ import Js30 from './components/JS30/Javascript30';
 import Resume from './DelboniRenatoCV.pdf';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-
+// TODO
+// add new tab and new panel for industry projects
+// add kammeko to industry projects
+// add new routes for industry projects
+// details page?
 
 function App() {
   const activateFinished = () => {
