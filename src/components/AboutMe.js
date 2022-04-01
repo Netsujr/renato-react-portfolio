@@ -52,12 +52,13 @@ function Section({ leftBtnText, rightBtnText }) {
                Front-end developer working Tokyo. Experienced with HTML, CSS, Javascript, and libraries such as React, Vue, Typescript. Also have some experience with Node.js, Express, Cloudinary, Firebase and calling APIs.
               <br />
               <br />
-              Even though I'm currently working in a Front-end position, my ultimate goal would be to become a tech lead/full-stack developer in the future. It's ambitious, however, I very keen to learn and my passion to do better always drives me forward. Most of my experience comes from using Ruby on Rails and React, but I wish to expand to further technologies. I’ve been actively improving my Javascript/React.js skills and right now I am really excited to be part of the <strong> <a href="https://www.hivelocity.co.jp/"> HiVelocity</a> </strong>, team as a FrontEnd developer.
+              Even though I'm currently working in a front-end position, my ultimate goal would be to become a tech lead/full-stack developer in the future. It's ambitious, however, I very keen to learn and my passion to do better always drives me forward. Most of my experience comes from using Ruby on Rails and React, but I wish to expand to further technologies. I’ve been actively improving my Javascript/React.js skills and right now I am really excited to be part of the <strong> <a href="https://www.hivelocity.co.jp/"> HiVelocity</a></strong>, team as a front-end developer.
               <br />
               <br />
               I'm also participating in an internship with
               <strong> <a href="https://www.kammeko.com/"> Kammeko</a> </strong>,
               as a front-end developer as well as working part-time, on the weekends, for Stats Perform as a soccer scout/data analyst. My passion for soccer takes me around Japan where I get to watch something I love and work at the same time.This work requires a lot of attention to detail, organization, communication and data interpretation, all skills I feel are very much transferable to Web Development and I have been using them in my projects. Feel free to check them out above!
+              <br />
               <br />
               Renato Delboni</p>
           </InfoContainer>
