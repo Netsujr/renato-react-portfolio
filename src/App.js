@@ -16,6 +16,7 @@ import ZoomClone from './components/PersonalProjects/ProjectDetails/ZoomClone';
 import CRUDStore from './components/PersonalProjects/ProjectDetails/CRUD-store';
 import MiniProjects from './components/MiniProjects/MiniProjects';
 import Projects from './components/PersonalProjects/Projects';
+import ProProjects from './components/ProProjects/Project';
 import AboutMe from './components/AboutMe';
 import Js30 from './components/JS30/Javascript30';
 import Resume from './DelboniRenatoCV.pdf';
@@ -117,6 +118,10 @@ function App() {
 
           <Route exact path="/projects" element={
             <Projects />
+          } />
+
+          <Route exact path="/pro-projects" element={
+            <ProProjects />
           } />
 
           <Route exact path="/javascript30" element={

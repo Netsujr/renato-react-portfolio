@@ -6,12 +6,6 @@ import running from "../images/gifs/mm-running.gif";
 import finished from "../images/gifs/mm-finished.gif";
 import GithubIcon from "../images/Icons/github-original.svg";
 import LinkedinIcon from "../images/Icons/linkedin-original.svg";
-// import HerokuIcon from "../images/Icons/heroku-original-wordmark.svg";
-// const gif = {
-//   running: "../images/gifs/mm-running.gif",
-//   finished: "../images/gifs/mm-finished.gif"
-// }
-
 
 function Section({ leftBtnText, rightBtnText }) {
 
@@ -29,8 +23,6 @@ function Section({ leftBtnText, rightBtnText }) {
     run.style.display = "flex";
     done.style.display = "none";
   }
-
-
 
   return (
     <Wrap>

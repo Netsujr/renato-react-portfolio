@@ -20,6 +20,7 @@ function Header() {
       <Menu>
         <a href="/aboutme"><span>About Me</span></a>
         <a href="/projects"><span>Projects</span></a>
+        <a href="/pro-projects"><span>Professional Projects</span></a>
         <a href="/mini-projects"><span id="mp" >Mini Projects</span></a>
         <a href="/javascript30"><span>Javascript 30</span></a>
       </Menu>
@@ -33,6 +34,7 @@ function Header() {
         <a href="/"><li>Home</li></a>
         <a href="/aboutme"><li>About Me</li></a>
         <a href="/projects"><li>Projects</li></a>
+        <a href="/pro-projects"><li>Professional Projects</li></a>
         <a href="/mini-projects"><li>Mini Projects</li></a>
         <a href="/javascript30"><li>Javascript 30</li></a>
         <RightIcons>

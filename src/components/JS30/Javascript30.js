@@ -10,9 +10,6 @@ function Js30() {
     return colors[Math.floor(Math.random() * colors.length)];
   }
 
-  // console.log(getRandomColor());
-  // console.log(getRandomColor());
-
   return (
     <CardBody>
       <ItemText>

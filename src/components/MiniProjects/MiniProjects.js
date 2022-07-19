@@ -157,7 +157,7 @@ const Wrap = styled.div`
   @media (max-width : 490px) {
     overflow-x: hidden;
   }
-}`
+`
 
 // sc for const shortcut
 const ItemText = styled.div`
